@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="297mm"
+   height="210mm"
+   viewBox="0 0 297 210"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="jointplot_petals-sepals_classification.svg"
+   inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/jointplot_petals-sepals_classification.png"
+   inkscape:export-xdpi="300.02234"
+   inkscape:export-ydpi="300.02234"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.2774943"
+     inkscape:cx="725.24784"
+     inkscape:cy="587.08676"
+     inkscape:window-width="2500"
+     inkscape:window-height="1080"
+     inkscape:window-x="60"
+     inkscape:window-y="163"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <image
+       width="150"
+       height="152.72728"
+       preserveAspectRatio="none"
+       style="stroke-width:1.64536;image-rendering:optimizeQuality"
+       xlink:href="jointplot_petals.png"
+       id="image832"
+       x="2.341645"
+       y="33.786812"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/jointplot_petals-classification.png"
+       inkscape:export-xdpi="599.98798"
+       inkscape:export-ydpi="599.98798" />
+    <ellipse
+       style="opacity:0.6;fill:none;fill-opacity:1;stroke:#708ec0;stroke-width:1;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path858"
+       cx="-51.113232"
+       cy="153.99493"
+       rx="12.396345"
+       ry="9.9674196"
+       transform="rotate(-29.041726)" />
+    <ellipse
+       style="opacity:0.6;fill:none;fill-opacity:1;stroke:#dd8452;stroke-width:0.999998;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path858-3"
+       cx="-11.55026"
+       cy="134.44171"
+       rx="23.704315"
+       ry="13.288789"
+       transform="matrix(0.82194789,-0.56956269,0.56842584,0.82273451,0,0)" />
+    <ellipse
+       style="opacity:0.6;fill:none;fill-opacity:1;stroke:#55a868;stroke-width:1;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path858-3-3"
+       transform="matrix(0.83636551,-0.54817218,0.54587493,0.83786667,0,0)"
+       ry="15.905861"
+       rx="26.966621"
+       cy="129.51999"
+       cx="25.048363" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.35px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#55a868;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="115.70732"
+       y="111.01463"
+       id="text28310"><tspan
+         sodipodi:role="line"
+         id="tspan28308"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.35px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#55a868;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="115.70732"
+         y="111.01463">virginica</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.35px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#dd8452;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="79.803909"
+       y="137.56491"
+       id="text28310-4"><tspan
+         sodipodi:role="line"
+         id="tspan28308-3"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.35px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#dd8452;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="79.803909"
+         y="137.56491">versicolor</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.35px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4c72b0;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="31.412653"
+       y="147.40416"
+       id="text28310-4-3"><tspan
+         sodipodi:role="line"
+         id="tspan28308-3-0"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.35px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#4c72b0;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="31.412653"
+         y="147.40416">setosa</tspan></text>
+    <image
+       width="150"
+       height="152.72728"
+       preserveAspectRatio="none"
+       style="stroke-width:1.64536;image-rendering:optimizeQuality"
+       xlink:href="jointplot_sepals.png"
+       id="image839"
+       x="152.34164"
+       y="33.786812" />
+    <ellipse
+       style="opacity:0.6;fill:none;fill-opacity:1;stroke:#708ec0;stroke-width:1;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path858-8"
+       transform="rotate(-29.041726)"
+       ry="9.9674196"
+       rx="29.927696"
+       cy="238.0809"
+       cx="131.13419" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.35px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4c72b0;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="250.50784"
+       y="156.16612"
+       id="text28310-4-3-8"><tspan
+         sodipodi:role="line"
+         id="tspan28308-3-0-9"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.35px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#4c72b0;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="250.50784"
+         y="156.16612">setosa</tspan></text>
+    <ellipse
+       style="opacity:0.6;fill:none;fill-opacity:1;stroke:#dd8452;stroke-width:0.999999;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path858-3-7"
+       cx="95.537346"
+       cy="218.06792"
+       rx="33.591072"
+       ry="18.840672"
+       transform="matrix(0.82157393,-0.57010199,0.5678866,0.8231068,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.35px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#dd8452;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="175.57542"
+       y="155.81079"
+       id="text28310-4-7"><tspan
+         sodipodi:role="line"
+         id="tspan28308-3-6"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.35px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#dd8452;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="175.57542"
+         y="155.81079">versicolor</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.35px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#55a868;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="259.90387"
+       y="94.699509"
+       id="text28310-43"><tspan
+         sodipodi:role="line"
+         id="tspan28308-0"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.35px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#55a868;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+         x="259.90387"
+         y="94.699509">virginica</tspan></text>
+    <ellipse
+       style="opacity:0.6;fill:none;fill-opacity:1;stroke:#55a868;stroke-width:1;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="path858-3-3-3"
+       transform="matrix(0.8360486,-0.5486554,0.54539207,0.83818106,0,0)"
+       ry="23.22891"
+       rx="37.914043"
+       cy="206.45325"
+       cx="119.95219" />
+  </g>
+</svg>
