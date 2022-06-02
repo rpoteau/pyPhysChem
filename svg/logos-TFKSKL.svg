@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="logos-TFKSKL.svg"
+   inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/logos-TFKSKL.png"
+   inkscape:export-xdpi="300.20801"
+   inkscape:export-ydpi="300.20801"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.91936027"
+     inkscape:cx="307.82274"
+     inkscape:cy="561.25984"
+     inkscape:window-width="2580"
+     inkscape:window-height="1080"
+     inkscape:window-x="456"
+     inkscape:window-y="166"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <image
+       width="71.161049"
+       height="20.629658"
+       preserveAspectRatio="none"
+       style="stroke-width:15.3905;image-rendering:optimizeQuality"
+       xlink:href="Keras-logo.png"
+       id="image832"
+       x="95.543205"
+       y="39.743732" />
+    <image
+       width="50.799999"
+       height="42.333336"
+       preserveAspectRatio="none"
+       style="stroke-width:10;image-rendering:optimizeQuality"
+       xlink:href="TensorFlow-Logo.png"
+       id="image844"
+       x="36.805687"
+       y="44.498375" />
+    <image
+       width="56.697826"
+       height="30.519379"
+       preserveAspectRatio="none"
+       style="stroke-width:11.9464;image-rendering:optimizeQuality"
+       xlink:href="SKL-logo.png"
+       id="image831"
+       x="99.717354"
+       y="65.492432" />
+  </g>
+</svg>
