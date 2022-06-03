@@ -1,4 +1,6 @@
-# PytChim.
+<a name="top"></a>
+
+[<img width="600px" src="./svg/logoReadme"/>](#top)
 
 Document principal : index.ipynb
 
