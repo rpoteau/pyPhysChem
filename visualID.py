@@ -21,13 +21,13 @@ class color:
    UNDERLINE = '\033[4m'
    OFF = '\033[0m'
 
-#def css_styling():
-#    styles = open("./css/visualID.css", "r").read()
-#    display(HTML(styles))
 def css_styling():
-    html = urlopen("file:./css/visualID.css")
-    HTML(html.read().decode('utf-8'))
-    #display(HTML(styles))
+    styles = open("./css/visualID.css", "r").read()
+    display(HTML(styles))
+#def css_styling():
+#    html = urlopen("file:./css/visualID.css")
+#    styles = HTML(html.read().decode('utf-8'))
+#    display(HTML(styles))
 
 def display_md(text):
     display(Markdown(text))
