@@ -1,7 +1,9 @@
 import os,sys,platform
 from datetime import datetime
 import datetime, time
-from IPython.core.display import display,Image,Markdown,HTML
+#from IPython.core.display import display,Image,Markdown,HTML
+from IPython.display import display,Image,Markdown,HTML
+from urllib.request import urlopen
 _start_time   = None
 _end_time     = None
 _chrono_start = None
@@ -19,9 +21,13 @@ class color:
    UNDERLINE = '\033[4m'
    OFF = '\033[0m'
 
+#def css_styling():
+#    styles = open("./css/visualID.css", "r").read()
+#    display(HTML(styles))
 def css_styling():
-    styles = open("./css/visualID.css", "r").read()
-    display(HTML(styles))
+    html = urlopen("file:./css/visualID.css")
+    HTML(html.read().decode('utf-8'))
+    #display(HTML(styles))
 
 def display_md(text):
     display(Markdown(text))
