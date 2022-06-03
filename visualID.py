@@ -72,7 +72,7 @@ def init():
     display_md(md)
     #print('Run time             :', _start_time.strftime("%A %d %B %Y, %H:%M:%S"))
     #print('Hostname             :', f'{h[1]} ({h[0]})')
-    md = '<p style="text-align: center"><img width="800px" src="./svg/logoBegin.svg" style="margin-left:auto; margin-right:auto"></img></p>'
+    md = '<p style="text-align: center"><img width="800px" src="./svg/logoBegin.svg" style="margin-left:auto; margin-right:auto"/></p>'
     display_md(md)
     
 def end():
@@ -83,7 +83,7 @@ def end():
     md = f'**Fin à:** {end_time}  \n'
     md+= f'**Durée:** {duration}'
     display_md(md)
-    md = '<p style="text-align: center"><img width="800px" src="./svg/logoEnd.svg" style="margin-left:auto; margin-right:auto"></img></p>'
+    md = '<p style="text-align: center"><img width="800px" src="./svg/logoEnd.svg" style="margin-left:auto; margin-right:auto"/></p>'
     display_md(md)
 
 def y2c(mc2i,y):
