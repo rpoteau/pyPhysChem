@@ -21,7 +21,6 @@ La solution la plus simple est d'installer et utiliser [Anaconda](https://www.an
     * JupyterLab & Jupyter Notebook
     * Spyder
     * RStudio
-    *   
     * ...
 * Anaconda est disponible pour MacOS, Windows, Linux.
 
