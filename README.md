@@ -10,15 +10,25 @@ Il faut lire le fichier `index.ipynb`, qui contient les objectifs de ces TP, ain
 ## Comment lire et utiliser ces notebooks?
 
 ### 1. Installer Anaconda Navigator ainsi qu'une distribution Python 
+
 Il faut d'abord avoir installé [Jupyter](https://jupyter.org/) ainsi qu'une distribution python sur son PC. 
 
-Une solution simple est d'installer et utiliser [Anaconda](https://www.anaconda.com/), qui est une distribution libre et open source du langage de programmation Python.
+La solution la plus simple est d'installer et utiliser [Anaconda](https://www.anaconda.com/), qui est une distribution libre et open source du langage de programmation Python :
+
+* Les versions de paquetages sont gérées par le système de gestion de paquets conda
+* Elle comprend également Anaconda Navigator, qui est une interface graphique "user-friendly"
+* Les applications suivantes sont disponibles par défaut dans le navigateur :
+    * JupyterLab & Jupyter Notebook
+    * Spyder
+    * RStudio
+    *   
+    * ...
+* Anaconda est disponible pour MacOS, Windows, Linux.
 
 ### 2. Cloner le dépôt (repository) PytChim
 
-- téléchargez l'archive zip
-- ou bien clonez ce dépôt, depuis le répertoie où vous voulez installer les notebooks :
-
+* téléchargez l'archive zip
+* ou bien clonez ce dépôt, depuis le répertoie où vous voulez installer les notebooks :
     ```bash
     $ git clone https://github.com/rpoteau/PytChim.git
     ```
