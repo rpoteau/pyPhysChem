@@ -5,7 +5,7 @@
 Ces exemples commentés et illustrés sont disponibles sous forme de Jupyter Notebooks
 
 ## Document principal
-Il faut lire le fichier `index.ipynb`, qui contient les obkectifs de ces TP, ainsi qu'une table des matières qui permet d'accéder aux cours/TP et aux exercices.
+Il faut lire le fichier `index.ipynb`, qui contient les objectifs de ces TP, ainsi qu'une table des matières qui permet d'accéder aux cours/TP et aux exercices.
 
 ## Comment lire et utiliser ces notebooks?
 
