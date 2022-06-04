@@ -27,7 +27,7 @@ La solution la plus simple est d'installer et utiliser [Anaconda](https://www.an
 ### 2. Cloner le dépôt (repository) PytChim
 
 * téléchargez l'archive zip
-* ou bien clonez ce dépôt, depuis le répertoie où vous voulez installer les notebooks :
+* ou bien clonez ce dépôt, depuis le répertoire où vous voulez installer les notebooks :
     ```bash
     $ git clone https://github.com/rpoteau/PytChim.git
     ```
