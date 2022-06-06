@@ -9,7 +9,7 @@ Il faut lire le fichier `index.ipynb`, qui contient les objectifs de ces TP, ain
 
 ## Comment lire et utiliser ces notebooks?
 
-### 1. Installer Anaconda Navigator ainsi qu'une distribution Python 
+### 1. Installer Jupyter ainsi qu'une distribution Python 
 
 Il faut d'abord avoir installé [Jupyter](https://jupyter.org/) ainsi qu'une distribution python sur son PC. 
 
