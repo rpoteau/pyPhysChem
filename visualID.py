@@ -4,6 +4,12 @@ import datetime, time
 #from IPython.core.display import display,Image,Markdown,HTML
 from IPython.display import display,Image,Markdown,HTML
 from urllib.request import urlopen
+
+__author__ = "Romuald POTEAU"
+__maintainer__ =  "Romuald POTEAU"
+__email__ = "romuald.poteau@univ-tlse3.fr"
+__status__ = "Development"
+
 _start_time   = None
 _end_time     = None
 _chrono_start = None
