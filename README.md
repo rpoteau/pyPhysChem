@@ -53,7 +53,7 @@ La solution la plus simple est d'installer et utiliser [Anaconda](https://www.an
     ```  
 
 ## Librairies nécessaires / *Required librarires*
-Vous devez installer les libraries suivantes dans votre environnement Python / *You must install the following libraries in your Python environment*:  
+Vous devez installer les librairies suivantes dans votre environnement Python / *You must install the following libraries in your Python environment*:  
 
 
 - matplotlib
