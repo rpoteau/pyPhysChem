@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="128.38113mm"
+   height="52.935627mm"
+   viewBox="0 0 128.38113 52.935627"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04)"
+   sodipodi:docname="iris-English.svg"
+   inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-JupyterNotebooks/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/iris-images/iris-English.png"
+   inkscape:export-xdpi="300.008"
+   inkscape:export-ydpi="300.008"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="false"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.8066499"
+     inkscape:cx="194.28225"
+     inkscape:cy="151.10841"
+     inkscape:window-width="3380"
+     inkscape:window-height="1417"
+     inkscape:window-x="60"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath8375">
+      <rect
+         style="opacity:0.2;fill:#a02c2c;stroke:none;stroke-width:0.499996;stroke-linecap:square;paint-order:stroke fill markers"
+         id="rect8377"
+         width="40"
+         height="40"
+         x="71.85659"
+         y="44.515934" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath8580">
+      <rect
+         style="opacity:0.2;fill:#a02c2c;stroke:none;stroke-width:0.499996;stroke-linecap:square;paint-order:stroke fill markers"
+         id="rect8582"
+         width="40"
+         height="40"
+         x="123.98523"
+         y="44.355217" />
+    </clipPath>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter12323"
+       x="-0.045799855"
+       width="1.0837032">
+      <feFlood
+         flood-opacity="0.607843"
+         flood-color="rgb(255,255,255)"
+         result="flood"
+         id="feFlood12313" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite12315" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.2"
+         result="blur"
+         id="feGaussianBlur12317" />
+      <feOffset
+         dx="-0.1"
+         dy="0.2"
+         result="offset"
+         id="feOffset12319" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite12321" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter12335"
+       x="-0.062497742"
+       y="-0.025315714"
+       width="1.1160324"
+       height="1.0599867">
+      <feFlood
+         flood-opacity="0.607843"
+         flood-color="rgb(255,255,255)"
+         result="flood"
+         id="feFlood12325" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite12327" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.2"
+         result="blur"
+         id="feGaussianBlur12329" />
+      <feOffset
+         dx="-0.1"
+         dy="0.2"
+         result="offset"
+         id="feOffset12331" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite12333" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter12737"
+       x="-0.2380147"
+       y="-0.054635176"
+       width="1.5151969"
+       height="1.130504">
+      <feFlood
+         flood-opacity="0.607843"
+         flood-color="rgb(255,255,255)"
+         result="flood"
+         id="feFlood12727" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite12729" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.2"
+         result="blur"
+         id="feGaussianBlur12731" />
+      <feOffset
+         dx="0.1"
+         dy="0.2"
+         result="offset"
+         id="feOffset12733" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite12735" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-25.266888,-37.448332)">
+    <image
+       width="40"
+       height="40"
+       preserveAspectRatio="none"
+       xlink:href="setosa.jpg"
+       id="image844"
+       x="25.266888"
+       y="44.355217"
+       style="stroke-width:5.29167" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:6.35px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="45.38781"
+       y="89.252243"
+       id="text1422"><tspan
+         sodipodi:role="line"
+         id="tspan1420"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.35px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke:none;stroke-width:0.264583px"
+         x="45.38781"
+         y="89.252243">setosa</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:6.35px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="89.646584"
+       y="89.252243"
+       id="text1422-8"><tspan
+         sodipodi:role="line"
+         id="tspan1420-8"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.35px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke:none;stroke-width:0.264583px"
+         x="89.646584"
+         y="89.252243">virginica</tspan></text>
+    <image
+       width="53.691273"
+       height="40"
+       preserveAspectRatio="none"
+       xlink:href="virginica.jpg"
+       id="image2190"
+       x="65.010956"
+       y="44.515938"
+       style="stroke-width:1.26153"
+       clip-path="url(#clipPath8375)"
+       transform="translate(-2.3991454)" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:6.35px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="133.64182"
+       y="89.252243"
+       id="text1422-8-7"><tspan
+         sodipodi:role="line"
+         id="tspan1420-8-7"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.35px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke:none;stroke-width:0.264583px"
+         x="133.64182"
+         y="89.252243">versicolor</tspan></text>
+    <image
+       width="53.693336"
+       height="40"
+       preserveAspectRatio="none"
+       xlink:href="versicolor.jpg"
+       id="image6764"
+       x="117.13857"
+       y="44.355217"
+       style="stroke-width:2.47214"
+       clip-path="url(#clipPath8580)"
+       transform="translate(-10.337215)" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.93889px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="98.543541"
+       y="40.956818"
+       id="text2828"><tspan
+         sodipodi:role="line"
+         id="tspan2826"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#000000;stroke:none;stroke-width:0.264583px"
+         x="98.543541"
+         y="40.956818">sepals</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 92.185077,41.972635 H 104.84887"
+       id="path9724-3" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter12737)"
+       d="m 99.557207,41.972634 -2.553136,9.419027"
+       id="path11329"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.93889px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="73.003922"
+       y="41.268032"
+       id="text2828-7-0"><tspan
+         sodipodi:role="line"
+         id="tspan2826-7-9"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#000000;stroke:none;stroke-width:0.264583px"
+         x="73.003922"
+         y="41.268032">petals</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 66.744374,42.176787 H 79.40817"
+       id="path9724-2" />
+    <path
+       style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter12335)"
+       d="M 74.116504,42.176785 85.273401,63.555069"
+       id="path11451-5"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
