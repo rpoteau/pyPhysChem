@@ -30,36 +30,32 @@ La solution la plus simple est d'installer et utiliser [Anaconda](https://www.an
     * ...
 * Anaconda est disponible pour MacOS, Windows, Linux.
 
-<span style="italic">
-First install [Jupyter](https://jupyter.org/) as well as a Python distribution on your PC. 
+*First install [Jupyter](https://jupyter.org/) as well as a Python distribution on your PC.*
 
-A simple and easy possibility is to install [Anaconda](https://www.anaconda.com/), a free and opensource distribution of the Python programming language:
+*A simple and easy possibility is to install [Anaconda](https://www.anaconda.com/), a free and opensource distribution of the Python programming language:*
 
-<ul>
-<li> Package versions are managed by the package management system conda
-<li> It also includes a user friendly GUI, Anaconda Navigator
-<li> The following applications are available by default in Navigator:
-<ul>
-    <li> JupyterLab & Jupyter Notebook
-    <li> Spyder
-    <li> RStudio
-    <li> ...
-</ul>
-<li> Anaconda runs under MacOS, Windows, Linux.
-</ul>
-</span>
+- *Package versions are managed by the package management system conda*
+- *It also includes a user friendly GUI, Anaconda Navigator*
+- *The following applications are available by default in Navigator:*
+    - *JupyterLab & Jupyter Notebook*
+    - *Spyder*
+    - *RStudio*
+    - ...
+- *Anaconda runs under MacOS, Windows, Linux.*
 
 ### 2. Cloner le dépôt (repository) PytChem / *Clone the PytChem repository*
 
-* téléchargez l'archive zip
-* ou bien clonez ce dépôt, depuis le répertoire où vous voulez installer les notebooks :
+* téléchargez l'archive zip / *download the zip archive*
+* ou bien clonez ce dépôt, depuis le répertoire où vous voulez installer les notebooks / *or clone this repository, from the folder in which the notebooks will be installed*:  
+* 
+
     ```bash
     $ git clone https://github.com/rpoteau/PytChem.git
     ```
 
 <i>
-<li> download the zip archive
-<li> or clone this repository, from the folder in which depuis le répertoire où vous voulez installer les notebooks :
+<li> 
+<li> s :
     ```bash
     $ git clone https://github.com/rpoteau/PytChem.git
     ```
