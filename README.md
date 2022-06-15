@@ -24,12 +24,12 @@ La solution la plus simple est d'installer et utiliser [Anaconda](https://www.an
     * ...
 * Anaconda est disponible pour MacOS, Windows, Linux.
 
-### 2. Cloner le dépôt (repository) PytChim
+### 2. Cloner le dépôt (repository) PytChem
 
 * téléchargez l'archive zip
 * ou bien clonez ce dépôt, depuis le répertoire où vous voulez installer les notebooks :
     ```bash
-    $ git clone https://github.com/rpoteau/PytChim.git
+    $ git clone https://github.com/rpoteau/PytChem.git
     ```
 
 ## Librairies nécessaires
