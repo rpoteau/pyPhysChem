@@ -47,24 +47,14 @@ La solution la plus simple est d'installer et utiliser [Anaconda](https://www.an
 
 * téléchargez l'archive zip / *download the zip archive*
 * ou bien clonez ce dépôt, depuis le répertoire où vous voulez installer les notebooks / *or clone this repository, from the folder in which the notebooks will be installed*:  
-* 
 
     ```bash
     $ git clone https://github.com/rpoteau/PytChem.git
-    ```
-
-<i>
-<li> 
-<li> s :
-    ```bash
-    $ git clone https://github.com/rpoteau/PytChem.git
-    ```
-</i>
+    ```  
 
 ## Librairies nécessaires / *Required librarires*
-Vous devez installer les libraries suivantes dans votre environnement Python
+Vous devez installer les libraries suivantes dans votre environnement Python / *You must install the following libraries in your Python environment*:  
 
-*You must install the following libraries in your Python environment*
 
 - matplotlib
 - numpy
