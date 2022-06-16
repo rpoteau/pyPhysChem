@@ -1,6 +1,6 @@
 <a name="top"></a>
 
-[<img width="700px" src="./svg/logoReadme.svg"/>](#top)
+[<img width="700px" src="./svg/logoPytChem.svg"/>](#top)
 
 Des exemples commentés et généralement illustrés sont disponibles sous forme de Jupyter Notebooks
   
