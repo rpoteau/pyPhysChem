@@ -52,7 +52,7 @@ La solution la plus simple est d'installer et utiliser [Anaconda](https://www.an
     $ git clone https://github.com/rpoteau/PytChem.git
     ```  
 
-## Librairies nécessaires / *Required librarires*
+## Librairies nécessaires / *Required libraries*
 Vous devez installer les librairies suivantes dans votre environnement Python / *You must install the following libraries in your Python environment*:  
 
 
