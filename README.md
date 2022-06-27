@@ -64,4 +64,5 @@ Vous devez installer les librairies suivantes dans votre environnement Python / 
 - tensorflow
 - keras
 - scipy
+- plotly
 
