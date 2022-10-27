@@ -38,7 +38,7 @@ La solution la plus simple est d'installer et utiliser [Anaconda](https://www.an
 - *It also includes a user friendly GUI, Anaconda Navigator*
 - *The following applications are available by default in Navigator:*
     - *JupyterLab & Jupyter Notebook*
-    - *Spyder*
+    - *Spyder*XXXXX
     - *RStudio*
     - ...
 - *Anaconda runs under MacOS, Windows, Linux.*
@@ -49,7 +49,7 @@ La solution la plus simple est d'installer et utiliser [Anaconda](https://www.an
 * ou bien clonez ce dépôt, depuis le répertoire où vous voulez installer les notebooks / *or clone this repository, from the folder in which the notebooks will be installed*:  
 
     ```bash
-    $ git clone https://github.com/rpoteau/PytChem.git
+    git clone https://github.com/rpoteau/PytChem.git
     ```  
 
     Vous avez maintenant un répertoire `PytChem` dans le répertoire depuis lequel vous avez lancé la commande `git` / *You now have a `PytChem` folder installed in the folder from which the `git` command was ran*
@@ -61,7 +61,7 @@ La solution la plus simple est d'installer et utiliser [Anaconda](https://www.an
     puis tapez / *and then*
 
     ```bash
-    $ git pull origin main
+    git pull origin main
     ```  
 
 ## Librairies nécessaires / *Required libraries*
