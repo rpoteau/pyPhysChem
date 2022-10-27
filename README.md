@@ -52,6 +52,18 @@ La solution la plus simple est d'installer et utiliser [Anaconda](https://www.an
     $ git clone https://github.com/rpoteau/PytChem.git
     ```  
 
+    Vous avez maintenant un répertoire `PytChem` dans le répertoire depuis lequel vous avez lancé la commande `git` / *You now have a `PytChem` folder installed in the folder from which the `git` command was ran*
+
+    PytChem étant un projet en évolution, il faut régulièrement vérifier qu'il n'y a pas de mise à jour. La commande suivante met si nécessaire à jour le contenu du répertoire `Pytchem` / *Pytchem being a work-in-progress project, it is necessary to regularly check for a possible update. The content of the `PytChem` folder is updated by using the following command*:  
+
+    allez d'abord dans le répertoire PytChem / *first go into the `PytChem` folder*
+
+    puis tapez / *and then*
+
+    ```bash
+    $ git pull origin main
+    ```  
+
 ## Librairies nécessaires / *Required libraries*
 Vous devez installer les librairies suivantes dans votre environnement Python / *You must install the following libraries in your Python environment*:  
 
