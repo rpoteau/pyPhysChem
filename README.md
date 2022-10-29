@@ -38,7 +38,7 @@ La solution la plus simple est d'installer et utiliser [Anaconda](https://www.an
 - *It also includes a user friendly GUI, Anaconda Navigator*
 - *The following applications are available by default in Navigator:*
     - *JupyterLab & Jupyter Notebook*
-    - *Spyder*XXXXX
+    - *Spyder*
     - *RStudio*
     - ...
 - *Anaconda runs under MacOS, Windows, Linux.*
