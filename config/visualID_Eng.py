@@ -27,8 +27,8 @@ class color:
    UNDERLINE = '\033[4m'
    OFF = '\033[0m'
 
-def css_styling():
-    styles = open("./css/visualID.css", "r").read()
+def css_styling(pwy):
+    styles = open(pwy+"/css/visualID.css", "r").read()
     display(HTML(styles))
 #def css_styling():
 #    html = urlopen("file:./css/visualID.css")
@@ -68,34 +68,36 @@ def chrono_stop(hdelay=False):
 def chrono_show():
     print('\nDuration : ', hdelay_ms(time.time() - _chrono_start))
 
-def init():
+def init(pwy):
     global _start_time
     # Styling notebook
     #
-    css_styling()
+    css_styling(pwy)
     # Today, now and hostname
     #
     _start_time = datetime.datetime.now()
     start_time = _start_time.strftime("%A %d %B %Y, %H:%M:%S")
     _h = platform.uname()
     h = _h[1]+" ("+_h[0]+")"
-    md = f'**Début à:** {start_time}  \n'
+    md = f'**Start at:** {start_time}  \n'
     md+= f'**Hostname:** {h}'
     display_md(md)
     #print('Run time             :', _start_time.strftime("%A %d %B %Y, %H:%M:%S"))
     #print('Hostname             :', f'{h[1]} ({h[0]})')
-    md = '<p style="text-align: center"><img width="800px" src="./svg/logoBegin.svg" style="margin-left:auto; margin-right:auto"/></p>'
+    path2svg=pwy + 'svg/'
+    md = '<p style="text-align: center"><img width="800px" src="' + path2svg + 'logoPytChem.svg" style="margin-left:auto; margin-right:auto"/></p>'
     display_md(md)
     
-def end():
+def end(pwy):
     global _end_time
     _end_time = datetime.datetime.now()
     end_time = time.strftime("%A %d %B %Y, %H:%M:%S")
     duration = hdelay_ms(_end_time - _start_time)
-    md = f'**Fin à:** {end_time}  \n'
-    md+= f'**Durée:** {duration}'
+    md = f'**End at:** {end_time}  \n'
+    md+= f'**Duration:** {duration}'
     display_md(md)
-    md = '<p style="text-align: center"><img width="800px" src="./svg/logoFin.svg" style="margin-left:auto; margin-right:auto"/></p>'
+    path2svg=pwy + 'svg/'
+    md = '<p style="text-align: center"><img width="800px" src="' + path2svg + 'logoEnd.svg" style="margin-left:auto; margin-right:auto"/></p>'
     display_md(md)
 
 def y2c(mc2i,y):
