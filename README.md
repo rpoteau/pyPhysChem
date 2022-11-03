@@ -7,10 +7,10 @@ Des exemples commentés et généralement illustrés sont disponibles sous forme
 *Commented and generally illustrated examples are available in the form of Jupyter Notebooks*
 
 ## Document principal / *Main document*
-Il faut lire le fichier `index.ipynb`, qui renvoie vers des sous-thèmes.
+Il faut lire le fichier `TOC.ipynb`, qui renvoie vers des sous-thèmes.
 Chaque sous-thème est introduit par les objectifs de ces TP, ainsi qu'une table des matières qui permet d'accéder aux cours/TP et aux exercices.
 
-*You have to read the `index.ipynb` file, which points to subtopics.
+*You have to read the `TOC.ipynb` file, which points to subtopics.
 Each subtopic is introduced by the goals of the course, as well as a table of contents that allows access to the courses/tutorials and exercises*.
 
 ## Comment lire et utiliser ces notebooks ? / *How to read and use these notebooks?*
@@ -48,7 +48,7 @@ La solution la plus simple est d'installer et utiliser [Anaconda](https://www.an
 * téléchargez l'archive zip / *download the zip archive*
 * ou bien clonez ce dépôt, depuis le répertoire où vous voulez installer les notebooks / *or clone this repository, from the folder in which the notebooks will be installed*:  
 
-    ```bash
+    ```
     git clone https://github.com/rpoteau/PytChem.git
     ```  
 
@@ -60,7 +60,7 @@ La solution la plus simple est d'installer et utiliser [Anaconda](https://www.an
 
     puis tapez / *and then*
 
-    ```bash
+    ```  
     git pull origin main
     ```  
 
@@ -70,11 +70,12 @@ Vous devez installer les librairies suivantes dans votre environnement Python / 
 
 - matplotlib
 - numpy
+- scipy
+- sympy
 - pandas
 - seaborn
 - scikit learn
 - tensorflow
 - keras
-- scipy
 - plotly
 
