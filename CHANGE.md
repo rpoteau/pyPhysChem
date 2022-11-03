@@ -2,7 +2,7 @@
 
 [<img width="700px" src="./config/svg/logoPytChem.svg"/>](#top)
 
-##### **2022.11.02. v1.3.0beta**
+##### **2022.11.02. v1.3.0alpha**
 
 - Reorganization of the folder(s) and file renaming (`DS4B*` prefix added to all *Data Science for Beginners* files and folders)
 - Exercises and solution to exercises of the *Data Science for Beginners* topic entirely rewritten:
