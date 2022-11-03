@@ -1,6 +1,6 @@
 <a name="top"></a>
 
-[<img width="700px" src="./coinfig/svg/logoPytChem.svg"/>](#top)
+[<img width="700px" src="./config/svg/logoPytChem.svg"/>](#top)
 
 Des exemples commentés et généralement illustrés sont disponibles sous forme de Jupyter Notebooks
   
@@ -78,4 +78,8 @@ Vous devez installer les librairies suivantes dans votre environnement Python / 
 - tensorflow
 - keras
 - plotly
+- latex
 
+## Liste des changements / *List of changes*
+
+[Liste des changements / *List of changes*](./CHANGE.md)
