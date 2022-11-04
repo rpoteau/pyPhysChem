@@ -2,6 +2,11 @@
 
 [<img width="700px" src="./config/svg/logoPytChem.svg"/>](#top)
 
+##### **2022.11.02.
+- New [*Equations différentielles* notebook](./DeriveesIntegrales2.ipynb)
+    - Requires sympy module,
+    - Version 0. Strong improvements are needed as well as the implementation of numerical solution of ODE
+
 ##### **2022.11.02. v1.3.0alpha**
 
 - Reorganization of the folder(s) and file renaming (`DS4B*` prefix added to all *Data Science for Beginners* files and folders)
