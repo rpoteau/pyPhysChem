@@ -2,7 +2,10 @@
 
 [<img width="700px" src="./config/svg/logoPytChem.svg"/>](#top)
 
-##### **2022.11.02. v1.3.0alpha2**
+##### **2022.11.06. v1.3.0alpha3**
+- New [*Hydrogen atom* notebook](./HydrogenAtom.ipynb) (work in progress)
+ 
+##### **2022.11.05. v1.3.0alpha2**
 - New [*Equations différentielles* notebook](./DeriveesIntegrales2.ipynb)
     - Requires sympy module,as already needed for the [*Dérivées et Intégrales* notebook](./DeriveesIntegrales1.ipynb)
     - Version 0. Strong improvements are needed as well as the implementation of numerical solution of ODE
