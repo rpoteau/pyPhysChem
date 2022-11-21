@@ -32,6 +32,16 @@ def categorizeY_2ohe(Ctot, y1, y2):
     return y1ohe, y2ohe
 
 def PrintLatexStyleSymPyEquation(spe):
+    """
+    Function that displays a SymPy expression (spe) in a jupyter notebbok after its conversion into a LaTeX / Math output
+
+    Input:
+    spe: SymPy expression
+
+    Output:
+    Pretty printing of spe
+
+    """
     from IPython.display import display,Math
     import sympy as sym
     display(Math(sym.latex(spe)))
