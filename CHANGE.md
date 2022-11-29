@@ -2,6 +2,17 @@
 
 [<img width="700px" src="./config/svg/logoPytChem.svg"/>](#top)
 
+##### **2022.11.29. v1.4.0alpha**
+- New release with a decent NMR notebook (although work is still in progress) and of the associated White Paper
+- TOC updated (the Huckel.ipynb and InfiniteSquareWell.ipynb are not yet mentioned)
+
+##### **2022.11.27. not released**
+- New [*2nd-order NMR* notebook](./NMR.ipynb) (work in progress)
+
+##### **2022.11.26. not released**
+- New [*Infinite Square Well* notebook](./InfiniteSquareWell.ipynb) (work in progress)
+- New [*Huckel* notebook](./Huckel.ipynb) (work in progress)
+
 ##### **2022.11.06. v1.3.0alpha3**
 - New [*Hydrogen atom* notebook](./HydrogenAtom.ipynb) (work in progress)
  
