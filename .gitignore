@@ -7,8 +7,8 @@ __pycache__/
 Thumbs.db
 */Thumbs.db
 Corrections-Exercises-Private/
-Misc-Unshared/
-Misc-Unshared/*
+MiscUnshared/
+MiscUnshared/*
 Huckel.ipynb
 HydrogenAtom.ipynb
 InfiniteSquareWell.ipynb

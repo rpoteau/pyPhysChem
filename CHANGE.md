@@ -2,6 +2,13 @@
 
 [<img width="700px" src="./config/svg/logoPytChem.svg"/>](#top)
 
+##### **2023.01.xx. v1.5.0alpha**
+- New "Python in the Physical Chemistry Lab (PPCL) in a nutshell" project (in English)
+- New or modified css classes (ex, app, rq (formerly warn), intro (formerly rq))
+
+##### **2022.12.11. Unreleased version **
+- New "Puits de potentiel infiniment profond" project (in French, aka "Particle in a box" project)
+
 ##### **2022.11.29. v1.4.0alpha**
 - New release with a decent NMR notebook (although work is still in progress) and of the associated White Paper
 - TOC updated (the Huckel.ipynb and InfiniteSquareWell.ipynb are not yet mentioned)

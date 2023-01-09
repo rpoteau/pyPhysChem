@@ -14,11 +14,15 @@ def y2c(mc2i,y):
     return yohe
 
 def categorizeY_2ohe(Ctot, y1, y2):
-# one-hot-encodes a pandas column of categorical data
-# Ctot is the reference pandas column, necessary to find all unique categories in this column
-# y1 and y2 are the actual pandas column that will be categorized. y1 and y2 are supposed to be
-# the ytest and ytrain subsets of Ctot 
-# y1ohe and y2ohe are the numpy arrays returned by this routine
+    """
+    one-hot-encodes a pandas column of categorical data
+    input:
+        - Ctot is the reference pandas column, necessary to find all unique categories in this column
+        - y1 and y2 are the actual pandas column that will be categorized. y1 and y2 are supposed to be the ytest and ytrain subsets of Ctot  
+    output:
+        - y1ohe and y2ohe are the numpy arrays returned by this routine
+    """
+    
     uv = Ctot.unique()
     print(f"Catégories uniques : {uv}") 
     mapc2i = {}
