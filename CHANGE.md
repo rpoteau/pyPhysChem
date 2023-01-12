@@ -6,7 +6,7 @@
 - New "Python in the Physical Chemistry Lab (PPCL) in a nutshell" project (in English)
 - New or modified css classes (ex, app, rq (formerly warn), intro (formerly rq))
 
-##### **2022.12.11. Unreleased version **
+##### **2022.12.11. Unreleased version**
 - New "Puits de potentiel infiniment profond" project (in French, aka "Particle in a box" project)
 
 ##### **2022.11.29. v1.4.0alpha**
