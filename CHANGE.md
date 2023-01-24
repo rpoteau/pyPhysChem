@@ -2,6 +2,9 @@
 
 [<img width="700px" src="./config/svg/logoPytChem.svg"/>](#top)
 
+##### **2023.01.16. v1.5.0beta**
+- "Python in the Physical Chemistry Lab (PPCL) in a nutshell" project completed, prior to a peer review
+
 ##### **2023.01.16. v1.5.0alpha**
 - New "Python in the Physical Chemistry Lab (PPCL) in a nutshell" project (in English)
 - New or modified css classes (ex, app, rq (formerly warn), intro (formerly rq))
