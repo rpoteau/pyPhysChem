@@ -128,14 +128,19 @@ Vous devez installer les bibliothèques suivantes dans votre environnement Pytho
 - sympy &#x2705;
 - pandas &#x2705;
 - seaborn &#x2705;
-- scikit learn
-- tensorflow
-- keras
+- scikit learn &#x2705;
+- tensorflow &#x274C;
+- keras &#x274C;
 - plotly &#x2705;
 
-&#x2705; = installées par défaut avec Anaconda
+&#x2705; = bibliothèque installée par défaut avec Anaconda / *library installed by default in Anaconda*
 
-&#x274C; = il faut l'installer dans l'environnement de base de Anaconda ()
+&#x274C; = bibliothèque à installer dans l'environnement de base de Anaconda / *library to be installed in the base environment of Anaconda*:
+
+- dans Anaconda navigator, cliquez sur "Environments", puis sur "Base" / *select "Environments" and "Base" in Anaconda Navigator*
+- puis sélectionnez "not installed", et enfin entrez dans le champ "search package" le nom de la bibliothèque que vous voulez installer (exemple keras) / *then select "not installed", and finally enter in the "search package" field the name of the library you want to install (e.g. keras)*
+
+<img width="800px" src="./MiscImages/AnacondaAddLib.png"/>
 
 ## Liste des changements / *List of changes*
 
