@@ -46,12 +46,15 @@ La solution la plus simple est d'installer et utiliser [Anaconda](https://www.an
 ### **2.** Cloner ou Télécharger le dépôt (repository) PytChem / *Clone or Download the PytChem repository*
 
 #### Télécharger / *Download*
-Ce n'est pas la façon de faire qui est recommandée / *It is not the recommended way.*
-* téléchargez l'archive zip / *download the zip archive*
+Ce n'est pas la façon de faire qui est recommandée, bien que ce soit la plus simple / *It is not the recommended way, although it is the simplest*
+
+Téléchargez l'archive zip / Download the zip archive
+
+[<img width="650px" src="./MiscImages/DownloadZip.png"/>]
 
 #### Cloner le dépôt / *Clone the repository*
 
-C'est la méthode recommandée, car elle facilite la mise à jour des notebooks / * This is the recommended way, given the ease of updating notebooks *
+**C'est la méthode recommandée**, car elle facilite la mise à jour des notebooks / ***This is the recommended way**, given the ease of updating notebooks*
 
 ##### Sous Linux / *Under Linux*
 
