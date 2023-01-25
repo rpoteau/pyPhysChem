@@ -1,3 +1,114 @@
+<style type="text/css" media="screen">
+#suggestions {
+    margin-top: 35px;
+    color: #ccc;
+}
+#suggestions a {
+    color: #666666;
+    font-weight: 200;
+    font-size: 14px;
+    margin: 0 10px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
+  font-weight: bold;
+}
+body, exercice {
+  font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
+  font-weight: 200;
+}
+h1 {
+  border: 0 solid #333;
+  padding: 30px ;
+  color: white;
+  background: #b11d01;
+  text-align: center;
+}
+h2 {
+  border: 3px solid #333;
+  padding: 18px ;
+  color: #b11d01;
+  background: #ffffff;
+  text-align: center;
+}
+h3 {
+  border: 0 solid #333;
+  padding: 12px ;
+  color: #000000;
+  background: #c1c1c1;
+  text-align: left;
+}
+h4 {
+  border: 0 solid #333;
+  padding: 2px ;
+  color: #000000;
+  background: #d9fffc;
+  text-align: left;
+}
+h5 {
+  border: 1px solid #333;
+  padding: 2px ;
+  color: #000000;
+  background: #ffffff;
+  text-align: left;
+}
+.rq {    
+    background-color: #fcf2f2;
+    border-color: #dFb5b4;
+    border-left: 5px solid #dfb5b4;
+    padding: 0.5em;
+    font-weight: 200;
+    }
+.intro {    
+    background-color: #f1f1f1;
+    border-color: #969696;
+    border-left: 5px solid #969696;
+    padding: 0.5em;
+    font-weight: 200;
+    }
+.exold {    
+    background-color: #b2dbea80;
+    border-color: #0055ff;
+    border-left: 10px solid #0055ff;
+    padding: 0.5em;
+    font-weight: 200;
+    }
+.ex {    
+    background-color: #b2dbea80;
+    padding: 0.5em;
+    padding-top: 0em;
+    font-weight: 200;
+    position:relative;
+    }
+.ex::before {
+    background-color: #b2dbea;
+    content:"Exercice";
+    margin-left:-0.5em;
+    margin-right:-0.5em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    font-weight: 600;
+    display: block;
+    }
+.app {    
+    background-color: #b2dbea80;
+    padding: 0.5em;
+    padding-top: 0em;
+    font-weight: 200;
+    position:relative;
+    }
+.app::before {
+    background-color: #b2dbea;
+    content:"Application";
+    margin-left:-0.5em;
+    margin-right:-0.5em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    font-weight: 600;
+    display: block;
+    }
+</style>
+
 <a name="top">
 
 </a><img width="700px" src="./config/svg/logoPytChem.svg"/>
@@ -8,7 +119,7 @@ forme de Jupyter Notebooks
 *Commented and generally illustrated examples are available in the form
 of Jupyter Notebooks*
 
--   [Document principal / *Main document*](#main)
+-   [Document principal et pré-requis / *Main document and prerequisites*](#main)
 -   [Comment lire et utiliser ces notebooks ? / *How to read and use these notebooks?*](#howto)
     -   [**1.** Installer Jupyter ainsi qu'une distribution Python /
         *Install Jupyter as well as a Python
@@ -25,18 +136,24 @@ of Jupyter Notebooks*
     *Required libraries*](#lib)
 -   [Liste des changements /
     *List of changes*](#changes)
+    
+## <a name="main"></a> Document principal et pré-requis / *Main document and prerequisites*
 
-## <a name="main"></a> Document principal / *Main document*
 
-Il faut lire le fichier [TOC.ipynb](./TOC.ipynb), qui renvoie vers des
-sous-thèmes. Chaque sous-thème est introduit par les objectifs de ces
-TP, ainsi qu'une table des matières qui permet d'accéder aux cours/TP et
-aux exercices.
+Il faut lire le fichier [TOC.ipynb](./TOC.ipynb), qui renvoie vers des sous-thèmes. Chaque sous-thème est introduit par les objectifs de ces TP, ainsi qu'une table des matières qui permet d'accéder aux cours/TP et aux exercices.
 
-*Read the [TOC.ipynb](./TOC.ipynb) file, which points to
-subtopics. Each subtopic is introduced by the goals of the course, as
-well as a table of contents that allows access to the courses/tutorials
-and exercises*.
+**Pré-requis** : des notions très élémentaires d'algorithmique (variables, tests conditionnels, boucles).
+<span style="color:red">&#x1F914; Vous voulez rafraîchir vos connaissances et renforcer vos acquis ?</span>
+**Le notebook [PPCL.ipynb](./PPCL.ipynb) est fait pour ça. Il est un peu long, mais il en vaut la peine** &#x1F60A;.
+ Vous pouvez peut-être même vous lancer sans aucune connaissance algorithmique de base. C'est à vous de voir si cela vous suffit.&#x1F4AA;&#x1F4AA;&#x1F3FC;&#x1F4AA;&#x1F3FF;
+
+*Read the [TOC.ipynb](./TOC.ipynb) file, which points to subtopics. Each subtopic is introduced by the goals of the course, as
+well as a table of contents that allows access to the courses/tutorials and exercises.*
+
+***Prerequisite** : very basic notions of algorithmic (variables, conditional tests, loops).* 
+<span style="color:red">&#x1F914; *Do you want to refresh your knowledge and reinforce your skills?*</span>
+***This is what the [PPCL.ipynb](./PPCL.ipynb) notebook is for. It's a bit long, but it's worth the effort*** &#x1F60A;. *You may even be able to get started without any basic algorithmic knowledge. It's up to you to see if that's enough for you.*&#x1F4AA;&#x1F4AA;&#x1F3FC;&#x1F4AA;&#x1F3FF;
+
 
 ## <a name="howto"></a>Comment lire et utiliser ces notebooks ? / *How to read and use these notebooks?*
 
