@@ -50,7 +50,7 @@ Ce n'est pas la façon de faire qui est recommandée, bien que ce soit la plus s
 
 Téléchargez l'archive zip / Download the zip archive
 
-[<img width="650px" src="./MiscImages/DownloadZip.png"/>]
+<img width="650px" src="./MiscImages/DownloadZip.png"/>
 
 #### Cloner le dépôt / *Clone the repository*
 
@@ -82,15 +82,15 @@ Vous devez télécharger et installer [l'application  git](https://gitforwindows
 
 Exécutez ensuite l'application Git GUI. Ça devrait ressembler à ça : / *Then run the Git GUI application. It should look like:*
 
-[<img width="400px" src="./MiscImages/GitGUI-Windows-0.png"/>]
+<img width="400px" src="./MiscImages/GitGUI-Windows-0.png"/>
 
 Cliquez sur "Clone existing repository". Collez l'adresse https://github.com/rpoteau/PytChem.git dans le champ "Source location". Choisissez un emplacement où cloner PytChem dans "Target Directory", ajoutez PytChem au chemin. Ce répertoire va être créé par Git GUI / *Click on "Clone existing repository". Paste the https://github.com/rpoteau/PytChem.git in the "Source location" field. Choose the local target folder. Add PytChem to the pathway. This folder will be created by Git GUI*
 
-[<img width="550px" src="./MiscImages/GitGUI-Windows-1.png"/>]
+<img width="550px" src="./MiscImages/GitGUI-Windows-1.png"/>
 
 Cliquez sur "Clone". Patientez. À la fin de l'installation, vous allez voir cette fenêtre : / *Click on "Clone". Wait. This window will appear after the installation is completed:* 
 
-[<img width="650px" src="./MiscImages/GitGUI-Windows-2.png"/>]
+<img width="650px" src="./MiscImages/GitGUI-Windows-2.png"/>
 
 Vous pouvez fermer cette application / *You can close this application*
 
@@ -111,11 +111,11 @@ jupyter-lab TOC.ipynb
 
 Le plus simple est de passer par Anaconda Navigator, puis sélectionner JupyterLab / *The easiest way is to select jupyterLab from Anaconda Navigator*
 
-[<img width="700px" src="./MiscImages/Anaconda.png"/>]
+<img width="700px" src="./MiscImages/Anaconda.png"/>
 
 Il ne reste plus qu'à naviguer jusqu'au répertoire qui contient PytChem, et à charger la table des matières intitulé `TOC.ipynb` / *All that remains is to navigate to the directory that contains PytChem, and load the table of contents entitled `TOC.ipynb`.*
 
-[<img width="650px" src="./MiscImages/JupyterLab.png"/>]
+<img width="650px" src="./MiscImages/JupyterLab.png"/>
 
 ## Librairies nécessaires / *Required libraries*
 Vous devez installer les librairies suivantes dans votre environnement Python / *You must install the following libraries in your Python environment*:  
