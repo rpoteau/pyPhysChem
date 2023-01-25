@@ -46,7 +46,9 @@ La solution la plus simple est d'installer et utiliser [Anaconda](https://www.an
 ### **2.** Cloner ou Télécharger le dépôt (repository) PytChem / *Clone or Download the PytChem repository*
 
 #### Télécharger / *Download*
-Ce n'est pas la façon de faire qui est recommandée, bien que ce soit la plus simple / *It is not the recommended way, although it is the simplest*
+
+**Ce n'est pas la façon de faire qui est recommandée**, bien que ce soit la plus simple. Essayez plutôt le clonage (voir paragraphe "cloner le dépôt" ci-dessous &#x1F447;) / ***It is not the recommended way**, although it is the simplest. Try 
+clone the repository instead (see the "clone repository" subsection below* &#x1F447;)
 
 Téléchargez l'archive zip / Download the zip archive
 
@@ -109,30 +111,32 @@ jupyter-lab TOC.ipynb
 #### Sous Windows / *Under Windows*
 
 
-Le plus simple est de passer par Anaconda Navigator, puis sélectionner JupyterLab / *The easiest way is to select jupyterLab from Anaconda Navigator*
+Le plus simple est de passer par Anaconda Navigator, puis de sélectionner JupyterLab / *The easiest way is to select JupyterLab from Anaconda Navigator*
 
 <img width="700px" src="./MiscImages/Anaconda.png"/>
 
-Il ne reste plus qu'à naviguer jusqu'au répertoire qui contient PytChem, et à charger la table des matières intitulé `TOC.ipynb` / *All that remains is to navigate to the directory that contains PytChem, and load the table of contents entitled `TOC.ipynb`.*
+Il ne reste plus qu'à naviguer jusqu'au répertoire qui contient PytChem, et à charger la table des matières intitulée `TOC.ipynb` / *All that remains is to navigate to the directory that contains PytChem, and load the table of contents entitled `TOC.ipynb`.*
 
 <img width="650px" src="./MiscImages/JupyterLab.png"/>
 
-## Librairies nécessaires / *Required libraries*
-Vous devez installer les librairies suivantes dans votre environnement Python / *You must install the following libraries in your Python environment*:  
+## Bibliothèques nécessaires / *Required libraries*
+Vous devez installer les bibliothèques suivantes dans votre environnement Python / *You must install the following libraries in your Python environment*:  
 
-
-- matplotlib
-- numpy
-- scipy
-- sympy
-- pandas
-- seaborn
+- matplotlib &#x2705;
+- numpy &#x2705;
+- scipy &#x2705;
+- sympy &#x2705;
+- pandas &#x2705;
+- seaborn &#x2705;
 - scikit learn
 - tensorflow
 - keras
-- plotly
-- latex
+- plotly &#x2705;
+
+&#x2705; = installées par défaut avec Anaconda
+
+&#x274C; = il faut l'installer dans l'environnement de base de Anaconda ()
 
 ## Liste des changements / *List of changes*
 
-[Liste des changements / *List of changes*](./CHANGE.md)
+[&#x1F504; Liste des changements / *List of changes* &#x1F504;](./CHANGE.md)
