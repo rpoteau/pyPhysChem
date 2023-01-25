@@ -28,12 +28,12 @@ of Jupyter Notebooks*
 
 ## <a name="main"></a> Document principal / *Main document*
 
-Il faut lire le fichier [`TOC.ipynb`](./TOC.ipynb), qui renvoie vers des
+Il faut lire le fichier [TOC.ipynb](./TOC.ipynb), qui renvoie vers des
 sous-thèmes. Chaque sous-thème est introduit par les objectifs de ces
 TP, ainsi qu'une table des matières qui permet d'accéder aux cours/TP et
 aux exercices.
 
-*You have to read the [`TOC.ipynb`](./TOC.ipynb) file, which points to
+*Read the [TOC.ipynb](./TOC.ipynb) file, which points to
 subtopics. Each subtopic is introduced by the goals of the course, as
 well as a table of contents that allows access to the courses/tutorials
 and exercises*.
@@ -211,16 +211,12 @@ Python environment*:
 -   tensorflow ❌
 -   keras ❌
 -   plotly ✅
-
-✅ = bibliothèque installée par défaut avec Anaconda / *library
-installed by default in Anaconda*
-
-❌ = bibliothèque à installer dans l'environnement de base de Anaconda /
-*library to be installed in the base environment of Anaconda*:
-
--   dans Anaconda navigator, cliquez sur "Environments", puis sur "Base"
+<br><br>
+- ✅ = bibliothèque installée par défaut avec Anaconda / *library installed by default in Anaconda*
+- ❌ = bibliothèque à installer dans l'environnement de base de Anaconda / *library to be installed in the base environment of Anaconda*:
+    -   dans Anaconda navigator, cliquez sur "Environments", puis sur "Base"
     / *select "Environments" and "Base" in Anaconda Navigator*
--   puis sélectionnez "not installed", et enfin entrez dans le champ
+    -   puis sélectionnez "not installed", et enfin entrez dans le champ
     "search package" le nom de la bibliothèque que vous voulez installer
     (exemple keras) / *then select "not installed", and finally enter in
     the "search package" field the name of the library you want to
