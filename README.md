@@ -21,8 +21,10 @@ of Jupyter Notebooks*
         Run these notebooks with JupyterLab](#howto3)
         - [Linux](#jupL)
         - [Windows](#jupW)
--   [Bibliothèques nécessaires /
-    *Required libraries*](#lib)
+-   [Bibliothèques Python & extensions Jupyter nécessaires /
+    *Required Python libraries and JupyterLab extensions*](#lib)
+    - [Bibliothèques / *Libraries*](#bib)
+    - [Extensions JupyterLab / *JupyterLab extensions*](#ext)
 -   [Liste des changements /
     *List of changes*](#changes)
     
@@ -112,7 +114,7 @@ Ouvrez un terminal. Depuis le répertoire où vous voulez installer les
 notebooks, tapez la commande : / *Open a terminal. Go into the folder in
 which the notebooks will be installed, and type:*
 
-```
+```bash
 git clone https://github.com/rpoteau/PytChem.git
 ```
 
@@ -132,7 +134,7 @@ folder*
 
 puis tapez / *and then enter*
 
-```
+```bash
 git pull origin main
 ```
 
@@ -180,7 +182,7 @@ Vous pouvez fermer cette application / *You can close this application*
     (`cd pathway`)*
 -   tapez la commande / *enter the command*
 
-```
+```bash
 jupyter-lab TOC.ipynb
 ```
 
@@ -201,11 +203,11 @@ the table of contents entitled `TOC.ipynb`.*
 
 [&#x1F51D; top &#x1F51D;](#top)
 
-## <a name="lib"></a>Bibliothèques nécessaires / *Required libraries*
+## <a name="lib"></a>Bibliothèques Python & extensions Jupyter nécessaires / *Required Python libraries and JupyterLab extensions*
 
-Vous devez installer les bibliothèques suivantes dans votre
-environnement Python / *You must install the following libraries in your
-Python environment*:
+### <a name="bib"></a>Bibliothèques / *Libraries*
+    
+Vous devez installer les bibliothèques suivantes dans votre environnement Python / *You must install the following libraries in your Python environment*:
 
 -   matplotlib ✅
 -   numpy ✅
@@ -229,6 +231,17 @@ Python environment*:
     install (e.g. keras)*
 
 <img width="800px" src="./MiscImages/AnacondaAddLib.png"/>
+    
+### <a name="ext"></a>Extensions JupyterLab / *JupyterLab extensions*
+    
+Certaines extensions JupyterLab sont recommandées, voire nécessaires / *Some JupyterLab extensions are recommended or even necessary*:
+
+- @jupyterlab/plotly
+- @jupyterlab/latex
+
+Les installer via l'onglet "extension manager" de JupterLab ; vous pouvez faire les chercher dans la liste ou bien utiliser le champ "search" / *Install them using the JupyterLab "extension manager" tab; you can search them in the list or use the "search" field*
+
+<img width="250px" src="./MiscImages/JupyterLabExt.png"/>
 
 ## <a name="changes"></a>Liste des changements / *List of changes*
 
