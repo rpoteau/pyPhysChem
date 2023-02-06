@@ -1,6 +1,6 @@
 <a name="top">
 
-</a><img width="700px" src="./config/svg/logoPytChem.svg"/>
+</a><img width="700px" src="./config/svg/PytChemBanner.svg"/>
 
 Des exemples commentés et généralement illustrés sont disponibles sous
 forme de Jupyter Notebooks

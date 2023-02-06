@@ -1,6 +1,6 @@
 <a name="top"></a>
 
-[<img width="700px" src="./config/svg/logoPytChem.svg"/>](#top)
+[<img width="700px" src="./config/svg/PytChemBanner.svg"/>](#top)
 
 ##### **2023.01.25. v1.5.0beta2**
 - install instructions more detailed in [README.md](./README.md) 
