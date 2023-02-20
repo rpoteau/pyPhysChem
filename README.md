@@ -219,6 +219,7 @@ Vous devez installer les bibliothèques suivantes dans votre environnement Pytho
 -   tensorflow ❌
 -   keras ❌
 -   plotly ✅
+-   jupyter_jsmol ❌
 <br><br>
 - ✅ = bibliothèque installée par défaut avec Anaconda / *library installed by default in Anaconda*
 - ❌ = bibliothèque à installer dans l'environnement de base de Anaconda / *library to be installed in the base environment of Anaconda*:
