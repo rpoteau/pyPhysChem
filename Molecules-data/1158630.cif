@@ -1,0 +1,81 @@
+####################################################################### 
+# 
+# This file contains crystal structure data downloaded from the 
+# Cambridge Structural Database (CSD) hosted by the Cambridge 
+# Crystallographic Data Centre (CCDC).
+# 
+# Full information about CCDC data access policies and citation 
+# guidelines are available at http://www.ccdc.cam.ac.uk/access/V1 
+# 
+# Audit and citation data items may have been added by the CCDC. 
+# Please retain this information to preserve the provenance of 
+# this file and to allow appropriate attribution of the data. 
+# 
+#######################################################################
+
+data_FOJBOV03
+#This CIF has been generated from an entry in the Cambridge Structural Database
+_database_code_depnum_ccdc_archive 'CCDC 1158630'
+_database_code_CSD               FOJBOV03
+loop_
+_citation_id
+_citation_doi
+_citation_year
+1 10.1021/om00028a082 1993
+_audit_creation_method           'Created from the CSD'
+_audit_update_record             
+;
+2020-05-24 downloaded from the CCDC.
+;
+_database_code_NBS               624209
+_chemical_formula_moiety         'C5 Fe1 O5'
+_chemical_name_systematic        Pentacarbonyl-iron
+_chemical_absolute_configuration unk
+_diffrn_ambient_temperature      198
+_exptl_crystal_density_diffrn    1.829
+#These two values have been output from a single CSD field.
+_refine_ls_R_factor_gt           0.019
+_refine_ls_wR_factor_gt          0.019
+_diffrn_radiation_probe          x-ray
+_symmetry_cell_setting           monoclinic
+_symmetry_space_group_name_H-M   'C 2/c'
+_symmetry_Int_Tables_number      15
+_space_group_name_Hall           '-C 2yn'
+loop_
+_symmetry_equiv_pos_site_id
+_symmetry_equiv_pos_as_xyz
+1 x,y,z
+2 1/2+x,1/2+y,z
+3 -x,y,1/2-z
+4 1/2-x,1/2+y,1/2-z
+5 -x,-y,-z
+6 1/2-x,1/2-y,-z
+7 x,-y,1/2+z
+8 1/2+x,1/2-y,1/2+z
+_cell_length_a                   11.740(2)
+_cell_length_b                   6.806(1)
+_cell_length_c                   9.341(3)
+_cell_angle_alpha                90
+_cell_angle_beta                 107.59(1)
+_cell_angle_gamma                90
+_cell_volume                     711.471
+_cell_formula_units_Z            4
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+Fe1 Fe 0.0000 0.16650(4) 0.2500
+C1 C 0.08312(13) 0.3035(2) 0.4136(2)
+C2 C 0.12939(15) 0.1640(2) 0.1828(2)
+C3 C 0.0000 -0.0981(4) 0.2500
+O1 O 0.13541(12) 0.3912(3) 0.5158(2)
+O2 O 0.20922(13) 0.1609(2) 0.1413(2)
+O3 O 0.0000 -0.2639(3) 0.2500
+C1B C -0.08312(13) 0.3035(2) 0.0864(2)
+C2B C -0.12939(15) 0.1640(2) 0.3172(2)
+O1B O -0.13541(12) 0.3912(3) -0.0158(2)
+O2B O -0.20922(13) 0.1609(2) 0.3587(2)
+
+#END
