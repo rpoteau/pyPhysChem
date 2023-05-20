@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
   font-weight: bold;
 }
-body, exercice {
+body, exercice, exercise {
   font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
   font-weight: 200;
 }
@@ -56,12 +56,47 @@ h5 {
     padding: 0.5em;
     font-weight: 200;
     }
+.rqE {    
+    background-color: #fcf2f2;
+    border-color: #dFb5b4;
+    color : #117996;
+    border-left: 5px solid #dfb5b4;
+    padding: 0.5em;
+    font-weight: 200;
+    }
+.introE {    
+    background-color: #f1f1f1;
+    border-color: #969696;
+    border-left: 5px solid #969696;
+    color : #117996;
+    padding: 0.5em;
+    font-weight: 200;
+    }
 .exold {    
     background-color: #b2dbea80;
     border-color: #0055ff;
     border-left: 10px solid #0055ff;
     padding: 0.5em;
     font-weight: 200;
+    }
+.exE {    
+    background-color: #b2dbea80;
+    padding: 0.5em;
+    padding-top: 0em;
+    font-weight: 200;
+    color : #117996;
+    position:relative;
+    }
+.exE::before {
+    background-color: #b2dbea;
+    content:"Exercise";
+    margin-left:-0.5em;
+    margin-right:-0.5em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    color : #117996;
+    font-weight: 600;
+    display: block;
     }
 .ex {    
     background-color: #b2dbea80;
@@ -78,6 +113,25 @@ h5 {
     padding-left:0.5em;
     padding-right:0.5em;
     font-weight: 600;
+    display: block;
+    }
+.appE {    
+    background-color: #b2dbea80;
+    padding: 0.5em;
+    padding-top: 0em;
+    font-weight: 200;
+    color : #117996;
+    position:relative;
+    }
+.appE::before {
+    background-color: #b2dbea;
+    content:"Application";
+    margin-left:-0.5em;
+    margin-right:-0.5em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    font-weight: 600;
+    color : #117996;
     display: block;
     }
 .app {    

@@ -2,15 +2,27 @@
 
 [<img width="700px" src="./config/svg/PytChemBanner.svg"/>](#top)
 
+##### **2023.05.20. v1.5.9**
+- "Iris1" = [Lecture et analyse de la base de données par la librairie pandas](./Exercices-DS4B/DS4B-Iris1-Exercice.ipynb) is now also available in English (*Reading and analyzis of the "iris" database with the pandas library*)
+- [Iris1](./DS4B-Iris1.ipynb):
+    - default value for `corr()` changed in Pandas version 2.0.0: The default value of `numeric_only` is now `False` => script changed with `dfi.corr(numeric_only=True)`
+- "Iris2" = [Statistiques et régression](./DS4B-Iris2.ipynb) is now also available in English (*Statistics and regression*)
+
+##### **2023.05.18. Unreleased version**
+- New [Molecules notebook](./Molecules.ipynb) (in English), mainly based on the ```RDKit``` library and on the ```jupyter_jsmol``` extension
+- New [ML-SVR notebook](./DS4B-CO2_solubility-SVR.ipynb) (in English): Prediction of the solubility of CO<sub>2</sub> in ionic liquids with the Support Vector Regression (SVR) method. Illustration of an optimal hyperparameters search (**author: *Stella Christodoulou***)
+- New [ML-SVR exercise](./DS4B-Exercices/DS4B-CO2_solubility-SVR-Exercise.ipynb), with the [solution](/DS4B-Exercices/DS4B-CO2_solubility-SVR-ExerciseWithAnswer.ipynb) (**author: *Stella Christodoulou***)
+- The need for the [rdkit](https://www.rdkit.org/) and [jupyter-jsmol](https://pypi.org/project/jupyter-jsmol/) libraries is now indicated in the README.md document
+
 ##### **2023.01.25. v1.5.0beta2**
-- install instructions more detailed in [README.md](./README.md) 
+- Install instructions more detailed in [README.md](./README.md) 
 
 ##### **2023.01.24. v1.5.0beta**
-- "Python in the Physical Chemistry Lab (PPCL) in a nutshell" project completed, prior to a peer review
+- ["Python in the Physical Chemistry Lab (PPCL) in a nutshell"](./PPCL.ipynb) project completed, prior to a peer review
 
 ##### **2023.01.16. v1.5.0alpha**
 - New [*Python in the Physical Chemistry Lab (PPCL) in a nutshell* notebook](./PPCL.ipynb) (in English)
-- New or modified css classes (ex, app, rq (formerly warn), intro (formerly rq))
+- New or modified css classes (ex, app, rq - formerly warn), intro -formerly rq)
 
 ##### **2022.12.11. Unreleased version**
 - New "Puits de potentiel infiniment profond" project (in French, aka "Particle in a box" project)
@@ -31,7 +43,7 @@
  
 ##### **2022.11.05. v1.3.0alpha2**
 - New [*Equations différentielles* notebook](./DeriveesIntegrales2.ipynb)
-    - Requires sympy module,as already needed for the [*Dérivées et Intégrales* notebook](./DeriveesIntegrales1.ipynb)
+    - Requires [sympy module](https://www.sympy.org/en/index.html),as already needed for the [*Dérivées et Intégrales* notebook](./DeriveesIntegrales1.ipynb)
     - Version 0. Strong improvements are needed as well as the implementation of numerical solution of ODE
 
 ##### **2022.11.02. v1.3.0alpha**
@@ -48,10 +60,10 @@
 
 ##### **2022.08.19. v1.2.1**
 
-Comments added to the [PCA notebook](./DataSc4Beginners-IrisPCA.ipynb)
+- Comments added to the [PCA notebook](./DataSc4Beginners-IrisPCA.ipynb)
 
 ##### **2022.06.27. v1.2.0**
 
-New [Principal Component Analysis (PCA) topic](./DataSc4Beginners-IrisPCA.ipynb)<br>
+- New [Principal Component Analysis (PCA) topic](./DataSc4Beginners-IrisPCA.ipynb)<br>
 Minimalistic comments (so far)<br>
 Requires modules: keras, tensorflow, scikit-learn, pandas, **plotly**

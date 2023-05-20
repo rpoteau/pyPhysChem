@@ -27,6 +27,42 @@ class color:
    UNDERLINE = '\033[4m'
    OFF = '\033[0m'
 
+class fg:
+    PURPLE = '\033[95m'
+    CYAN = '\033[96m'
+    DARKCYAN = '\033[36m'
+    BLUE = '\033[94m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    RED = '\033[91m'
+    LIGHTGRAY = "\033[37m"
+    DARKGRAY = "\033[90m"    
+    BLACK = '\033[30m'
+    WHITE = "\033[38;5;231m"
+    OFF = '\033[0m'
+class hl:
+    BLINK = "\033[5m"
+    blink = "\033[25m" #reset blink
+    BOLD = '\033[1m'
+    bold = "\033[21m" #reset bold
+    UNDERL = '\033[4m'
+    underl = "\033[24m" #reset underline
+    ITALIC = "\033[3m"
+    italic = "\033[23m"
+    OFF = '\033[0m'
+class bg:
+    DARKRED = "\033[38;5;231;48;5;52m"
+    DARKREDB = "\033[38;5;231;48;5;52;1m"
+    LIGHTRED = "\033[48;5;217m"
+    LIGHTREDB = "\033[48;5;217;1m"
+    LIGHTYELLOW = "\033[48;5;228m"
+    LIGHTYELLOWB = "\033[48;5;228;1m"
+    LIGHTGREEN = "\033[48;5;156m"
+    LIGHTGREENB = "\033[48;5;156;1m"
+    LIGHTBLUE = "\033[48;5;117m"
+    LIGHTBLUEB = "\033[48;5;117;1m"
+    OFF = "\033[0m"
+
 def css_styling(pwy):
     styles = open(pwy+"/css/visualID.css", "r").read()
     display(HTML(styles))

@@ -209,17 +209,18 @@ the table of contents entitled `TOC.ipynb`.*
     
 Vous devez installer les bibliothèques suivantes dans votre environnement Python / *You must install the following libraries in your Python environment*:
 
--   matplotlib ✅
--   numpy ✅
--   scipy ✅
--   sympy ✅
--   pandas ✅
--   seaborn ✅
--   scikit learn ✅
--   tensorflow ❌
--   keras ❌
--   plotly ✅
--   jupyter_jsmol ❌
+-   ```matplotlib``` ✅
+-   ```numpy``` ✅
+-   ```scipy``` ✅
+-   ```sympy``` ✅
+-   ```pandas``` ✅
+-   ```seaborn``` ✅
+-   ```scikit learn``` ✅
+-   ```tensorflow``` ❌
+-   ```keras``` ❌
+-   ```plotly``` ✅
+-   ```jupyter_jsmol``` ❌
+-   ```rdkit``` ❌
 <br><br>
 - ✅ = bibliothèque installée par défaut avec Anaconda / *library installed by default in Anaconda*
 - ❌ = bibliothèque à installer dans l'environnement de base de Anaconda / *library to be installed in the base environment of Anaconda*:
@@ -227,9 +228,9 @@ Vous devez installer les bibliothèques suivantes dans votre environnement Pytho
     / *select "Environments" and "Base" in Anaconda Navigator*
     -   puis sélectionnez "not installed", et enfin entrez dans le champ
     "search package" le nom de la bibliothèque que vous voulez installer
-    (exemple keras) / *then select "not installed", and finally enter in
+    (exemple ```keras```) / *then select "not installed", and finally enter in
     the "search package" field the name of the library you want to
-    install (e.g. keras)*
+    install (e.g. ```keras```)*
 
 <img width="800px" src="./MiscImages/AnacondaAddLib.png"/>
     
@@ -237,8 +238,8 @@ Vous devez installer les bibliothèques suivantes dans votre environnement Pytho
     
 Certaines extensions JupyterLab sont recommandées, voire nécessaires / *Some JupyterLab extensions are recommended or even necessary*:
 
-- @jupyterlab/plotly
-- @jupyterlab/latex
+- ```@jupyterlab/plotly```
+- ```@jupyterlab/latex```
 
 Les installer via l'onglet "extension manager" de JupterLab ; vous pouvez faire les chercher dans la liste ou bien utiliser le champ "search" / *Install them using the JupyterLab "extension manager" tab; you can search them in the list or use the "search" field*
 
