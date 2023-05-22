@@ -2,7 +2,7 @@
 
 [<img width="700px" src="./config/svg/PytChemBanner.svg"/>](#top)
 
-##### **2023.05.21. v1.6.0**
+##### **2023.05.22. v1.6.0**
 - "Iris3" = [Régression logistique](./DS4B-Iris3.ipynb) is now also available in English (*Supervised Machine Learning applied to classification*)
 - "Iris1" Exercise and Solution to exercise is now available in English
 
