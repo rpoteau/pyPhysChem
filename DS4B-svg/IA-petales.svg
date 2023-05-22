@@ -7,7 +7,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg5"
-   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    sodipodi:docname="IA-petales.svg"
    inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/IA-petales.png"
    inkscape:export-xdpi="300.022"
@@ -32,8 +32,8 @@
      inkscape:snap-object-midpoints="false"
      inkscape:snap-center="false"
      inkscape:zoom="1.2774943"
-     inkscape:cx="1005.0925"
-     inkscape:cy="612.52719"
+     inkscape:cx="575.73642"
+     inkscape:cy="796.48105"
      inkscape:window-width="2295"
      inkscape:window-height="1236"
      inkscape:window-x="257"
@@ -1265,6 +1265,609 @@
          d="M 0,0 5,-5 -12.5,0 5,5 Z"
          id="path1199-2-6" />
     </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1199-6" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1002"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1000" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker1006"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1004" />
+    </marker>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter15576-7"
+       x="-0.045971888"
+       y="-0.22828762"
+       width="1.2624216"
+       height="1.5177906">
+      <feFlood
+         flood-opacity="0.607843"
+         flood-color="rgb(255,255,255)"
+         result="flood"
+         id="feFlood15566-5" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite15568-3" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.1"
+         result="blur"
+         id="feGaussianBlur15570-5" />
+      <feOffset
+         dx="0.3"
+         dy="0.3"
+         result="offset"
+         id="feOffset15572-6" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite15574-2" />
+    </filter>
+    <marker
+       style="overflow:visible"
+       id="marker1016"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1014" />
+    </marker>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter15564-9"
+       x="-0.030334845"
+       y="-63.767195"
+       width="1.2570636"
+       height="146.10729">
+      <feFlood
+         flood-opacity="0.607843"
+         flood-color="rgb(255,255,255)"
+         result="flood"
+         id="feFlood15554-1" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite15556-2" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.1"
+         result="blur"
+         id="feGaussianBlur15558-7" />
+      <feOffset
+         dx="0.3"
+         dy="0.3"
+         result="offset"
+         id="feOffset15560-0" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite15562-9" />
+    </filter>
+    <marker
+       style="overflow:visible"
+       id="marker1026"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1024" />
+    </marker>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter15552-3"
+       x="-0.045991166"
+       y="-0.18938138"
+       width="1.2624148"
+       height="1.5172284">
+      <feFlood
+         flood-opacity="0.607843"
+         flood-color="rgb(255,255,255)"
+         result="flood"
+         id="feFlood15542-6" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite15544-0" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.1"
+         result="blur"
+         id="feGaussianBlur15546-6" />
+      <feOffset
+         dx="0.3"
+         dy="0.3"
+         result="offset"
+         id="feOffset15548-26" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite15550-1" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter105918-8"
+       x="-0.026433819"
+       y="-0.036493434"
+       width="1.0689038"
+       height="1.0850165">
+      <feFlood
+         flood-opacity="0.545098"
+         flood-color="rgb(0,0,0)"
+         result="flood"
+         id="feFlood105908-7" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite105910-9" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.6"
+         result="blur"
+         id="feGaussianBlur105912-2" />
+      <feOffset
+         dx="1"
+         dy="1"
+         result="offset"
+         id="feOffset105914-0" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite105916-23" />
+    </filter>
+    <filter
+       inkscape:label="Sharpen"
+       inkscape:menu="Image Effects"
+       inkscape:menu-tooltip="Sharpen edges and boundaries within the object, force=0.15"
+       style="color-interpolation-filters:sRGB"
+       id="filter13121-9-7"
+       x="-0.016633977"
+       y="-0.019012122"
+       width="1.033268"
+       height="1.037914">
+      <feConvolveMatrix
+         order="3 3"
+         kernelMatrix="0 -0.15 0 -0.15 1.6 -0.15 0 -0.15 0"
+         divisor="1"
+         in="SourceGraphic"
+         targetX="1"
+         targetY="1"
+         id="feConvolveMatrix13119-4-5" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath227876-92">
+      <path
+         style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter13121-9-5)"
+         d="m 138.17233,71.253838 4.6119,0.131792 4.15189,-4.236181 -0.23153,-2.874872 2.86176,-2.834071 10.6497,0.146449 3.12079,-2.974418 11.20676,0.162803 1.99371,1.771729 h 9.54434 l 2.73759,2.737593 h 5.43376 l 4.5426,4.457941 h 4.31608 l 4.24172,4.399955 2.02359,-0.542222 6.79824,6.798236 v 2.91405 l 3.94226,3.942257 v 8.130198 l -1.98389,1.98388 v 6.341303 l -2.54356,2.54356 v 5.09283 l 1.24459,0.71856 v 5.71282 l -4.90803,4.90803 0.28013,1.04546 -4.26155,4.26155 h -3.92723 l -4.20773,4.20772 v 1.07728 l 2.50748,2.50748 -0.44128,1.64687 2.31545,2.31545 v 1.78341 l -2.52004,1.45494 h -4.04098 l -4.63503,-4.63502 0.51701,-1.92947 -10.17093,-9.65843 v -1.53384 l -1.94823,-1.94823 h -4.64406 l -2.40629,-2.40629 -1.42191,0.381 -2.10411,2.10411 h -9.46744 l -3.77917,-3.77917 v -1.47376 l -1.79426,-2.17832 h -2.89729 l -2.04722,-2.04722 v -4.0564 l 0.9712,-1.68216 h -8.2057 l -1.96575,1.96574 h -7.23888 l -2.39698,-2.39698 h -2.63554 l -2.84757,-2.84756 v -8.490283 l 2.35788,-2.35787 v -6.394515 l 2.47233,-2.472323 v -5.545986 z"
+         id="path227878-2" />
+    </clipPath>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Diffuse Light"
+       id="filter222499-8"
+       x="-0.55110495"
+       y="-3.4186924"
+       width="2.1022099"
+       height="7.8373848">
+      <feComponentTransfer
+         result="fbSourceGraphic"
+         id="feComponentTransfer222497-9">
+        <feFuncR
+           type="gamma"
+           amplitude="1"
+           exponent="1"
+           offset="0"
+           id="feFuncR222491-7" />
+        <feFuncG
+           type="gamma"
+           amplitude="1"
+           exponent="1"
+           offset="0"
+           id="feFuncG222493-3" />
+        <feFuncB
+           type="gamma"
+           amplitude="1"
+           exponent="1"
+           offset="0"
+           id="feFuncB222495-6" />
+        <feFuncA
+           id="feFuncA222519-1"
+           type="identity" />
+      </feComponentTransfer>
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix222521-2" />
+      <feGaussianBlur
+         id="feGaussianBlur222523-93"
+         in="fbSourceGraphic"
+         stdDeviation="6"
+         result="blur" />
+      <feDiffuseLighting
+         id="feDiffuseLighting222525-1"
+         diffuseConstant="1"
+         surfaceScale="10"
+         lighting-color="#ffffff"
+         result="diffuse">
+        <feDistantLight
+           id="feDistantLight222527-9"
+           elevation="25"
+           azimuth="235" />
+      </feDiffuseLighting>
+      <feComposite
+         in2="diffuse"
+         id="feComposite222529-4"
+         in="diffuse"
+         operator="arithmetic"
+         k1="1"
+         result="composite1"
+         k2="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite222531-7"
+         in="composite1"
+         k1="1"
+         operator="arithmetic"
+         k3="1"
+         result="composite2"
+         k2="0"
+         k4="0" />
+    </filter>
+    <filter
+       inkscape:label="Light Contour"
+       inkscape:menu="Image Paint and Draw"
+       inkscape:menu-tooltip="Uses vertical specular light to draw lines"
+       style="color-interpolation-filters:sRGB"
+       id="filter210937-8"
+       x="-0.14464588"
+       y="-0.89728782"
+       width="1.2892918"
+       height="2.7945756">
+      <feGaussianBlur
+         in="SourceGraphic"
+         stdDeviation="1.5"
+         result="result3"
+         id="feGaussianBlur210911-4" />
+      <feComponentTransfer
+         result="result1"
+         in="result3"
+         id="feComponentTransfer210919-5">
+        <feFuncR
+           type="discrete"
+           tableValues="0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1"
+           id="feFuncR210913-0" />
+        <feFuncG
+           type="discrete"
+           tableValues="0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1"
+           id="feFuncG210915-3" />
+        <feFuncB
+           type="discrete"
+           tableValues="0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1"
+           id="feFuncB210917-6" />
+      </feComponentTransfer>
+      <feGaussianBlur
+         result="result5"
+         stdDeviation="0.01"
+         id="feGaussianBlur210921-1" />
+      <feBlend
+         in2="result5"
+         result="result6"
+         mode="lighten"
+         in="result5"
+         id="feBlend210923-0" />
+      <feColorMatrix
+         in="result6"
+         type="luminanceToAlpha"
+         result="result2"
+         id="feColorMatrix210925-6" />
+      <feSpecularLighting
+         surfaceScale="5"
+         result="result9"
+         specularExponent="20"
+         in="result2"
+         specularConstant="1"
+         id="feSpecularLighting210929-3">
+        <feDistantLight
+           azimuth="180"
+           elevation="90"
+           id="feDistantLight210927-2" />
+      </feSpecularLighting>
+      <feComposite
+         in2="result6"
+         operator="arithmetic"
+         in="result9"
+         k1="0.4"
+         k3="0.7"
+         result="result3"
+         id="feComposite210931-0"
+         k2="0"
+         k4="0" />
+      <feBlend
+         in2="result1"
+         in="result3"
+         mode="normal"
+         result="result8"
+         id="feBlend210933-6" />
+      <feComposite
+         in2="SourceGraphic"
+         in="result8"
+         operator="in"
+         result="result7"
+         id="feComposite210935-1" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Diffuse Light"
+       id="filter224623-5"
+       x="-0.43468102"
+       y="-5.8606116"
+       width="1.869362"
+       height="12.721223">
+      <feGaussianBlur
+         in="SourceGraphic"
+         stdDeviation="6"
+         result="blur"
+         id="feGaussianBlur224613-5" />
+      <feDiffuseLighting
+         diffuseConstant="1"
+         surfaceScale="10"
+         lighting-color="#ffffff"
+         result="diffuse"
+         id="feDiffuseLighting224617-4">
+        <feDistantLight
+           elevation="25"
+           azimuth="235"
+           id="feDistantLight224615-7" />
+      </feDiffuseLighting>
+      <feComposite
+         in="diffuse"
+         in2="diffuse"
+         operator="arithmetic"
+         k1="1"
+         result="composite1"
+         id="feComposite224619-65"
+         k2="0"
+         k3="0"
+         k4="0" />
+      <feComposite
+         in="composite1"
+         in2="SourceGraphic"
+         k1="1"
+         operator="arithmetic"
+         k3="1"
+         result="composite2"
+         id="feComposite224621-6"
+         k2="0"
+         k4="0" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Light Contour"
+       id="filter190944-9"
+       x="-0.090789165"
+       y="-0.47736666"
+       width="1.1873836"
+       height="1.9852573"
+       inkscape:menu="Image Paint and Draw"
+       inkscape:menu-tooltip="Uses vertical specular light to draw lines">
+      <feFlood
+         flood-opacity="0.686275"
+         flood-color="rgb(255,255,255)"
+         result="flood"
+         id="feFlood190934-3" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite190936-7" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.2"
+         result="blur"
+         id="feGaussianBlur190938-4" />
+      <feOffset
+         dx="0.3"
+         dy="0.3"
+         result="offset"
+         id="feOffset190940-52" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="fbSourceGraphic"
+         id="feComposite190942-5" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix224841-4" />
+      <feGaussianBlur
+         id="feGaussianBlur224843-7"
+         in="fbSourceGraphic"
+         stdDeviation="1.5"
+         result="result3" />
+      <feComponentTransfer
+         id="feComponentTransfer224845-44"
+         result="result1"
+         in="result3">
+        <feFuncR
+           id="feFuncR224847-30"
+           type="discrete"
+           tableValues="0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1" />
+        <feFuncG
+           id="feFuncG224849-7"
+           type="discrete"
+           tableValues="0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1" />
+        <feFuncB
+           id="feFuncB224851-8"
+           type="discrete"
+           tableValues="0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 1" />
+      </feComponentTransfer>
+      <feGaussianBlur
+         id="feGaussianBlur224853-6"
+         result="result5"
+         stdDeviation="0.01" />
+      <feBlend
+         in2="result5"
+         id="feBlend224855-8"
+         result="result6"
+         mode="lighten"
+         in="result5" />
+      <feColorMatrix
+         id="feColorMatrix224857-84"
+         in="result6"
+         type="luminanceToAlpha"
+         result="result2" />
+      <feSpecularLighting
+         id="feSpecularLighting224859-3"
+         surfaceScale="5"
+         result="result9"
+         specularExponent="20"
+         in="result2"
+         specularConstant="1">
+        <feDistantLight
+           id="feDistantLight224861-1"
+           azimuth="180"
+           elevation="90" />
+      </feSpecularLighting>
+      <feComposite
+         in2="result6"
+         id="feComposite224863-4"
+         operator="arithmetic"
+         in="result9"
+         k1="0.4"
+         k3="0.7"
+         result="result3"
+         k2="0"
+         k4="0" />
+      <feBlend
+         in2="result1"
+         id="feBlend224865-9"
+         in="result3"
+         mode="normal"
+         result="result8" />
+      <feComposite
+         in2="fbSourceGraphic"
+         id="feComposite224867-2"
+         in="result8"
+         operator="in"
+         result="result7" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Blur"
+       id="filter190944-6-0"
+       x="-0.32911856"
+       y="-0.23945319"
+       width="1.7017768"
+       height="1.5105841">
+      <feFlood
+         flood-opacity="0.686275"
+         flood-color="rgb(255,255,255)"
+         result="flood"
+         id="feFlood190934-2-6" />
+      <feComposite
+         in="flood"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite1"
+         id="feComposite190936-4-8" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.2"
+         result="blur"
+         id="feGaussianBlur190938-7-9" />
+      <feOffset
+         dx="0.3"
+         dy="0.3"
+         result="offset"
+         id="feOffset190940-9-2" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="fbSourceGraphic"
+         id="feComposite190942-3-6" />
+      <feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix226175-6" />
+      <feGaussianBlur
+         id="feGaussianBlur226177-4"
+         stdDeviation="0.5 0.5"
+         result="blur"
+         in="fbSourceGraphic" />
+    </filter>
   </defs>
   <g
      inkscape:label="Layer 1"
@@ -1291,11 +1894,11 @@
        inkscape:export-ydpi="300.20752"><tspan
          x="41.942547"
          y="227.66731"
-         id="tspan4636"><tspan
+         id="tspan5736"><tspan
            style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan4632">ℓ</tspan><tspan
+           id="tspan5732">ℓ</tspan><tspan
            style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-           id="tspan4634">P</tspan></tspan></text>
+           id="tspan5734">P</tspan></tspan></text>
     <circle
        style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path870-4"
@@ -1317,17 +1920,17 @@
        inkscape:export-ydpi="300.20752"><tspan
          x="41.942547"
          y="227.66731"
-         id="tspan4642"><tspan
+         id="tspan5742"><tspan
            style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan4638">L</tspan><tspan
+           id="tspan5738">L</tspan><tspan
            style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-           id="tspan4640">P</tspan></tspan></text>
+           id="tspan5740">P</tspan></tspan></text>
     <g
        id="g66301"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
        inkscape:export-ydpi="300.022"
-       transform="translate(0,31.749997)">
+       transform="translate(-27.545785,17.252215)">
       <circle
          style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
          id="path870-8"
@@ -1343,18 +1946,18 @@
          transform="translate(6.1322511,-49.773756)"><tspan
            x="41.942547"
            y="227.66731"
-           id="tspan4648"><tspan
+           id="tspan5748"><tspan
              style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-             id="tspan4644">ℓ</tspan><tspan
+             id="tspan5744">ℓ</tspan><tspan
              style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-             id="tspan4646">P</tspan></tspan></text>
+             id="tspan5746">P</tspan></tspan></text>
     </g>
     <g
        id="g66308"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
        inkscape:export-ydpi="300.022"
-       transform="translate(0,31.749997)">
+       transform="translate(-27.545785,17.252215)">
       <circle
          style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
          id="path870-4-8"
@@ -1370,11 +1973,11 @@
          transform="translate(6.0832321,-31.816586)"><tspan
            x="41.942547"
            y="227.66731"
-           id="tspan4654"><tspan
+           id="tspan5754"><tspan
              style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-             id="tspan4650">L</tspan><tspan
+             id="tspan5750">L</tspan><tspan
              style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-             id="tspan4652">P</tspan></tspan></text>
+             id="tspan5752">P</tspan></tspan></text>
     </g>
     <rect
        style="fill:none;fill-opacity:1;stroke:#4c72b0;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
@@ -1510,8 +2113,8 @@
     <circle
        style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path870-8-7"
-       cx="68.521706"
-       cy="196.82358"
+       cx="40.975922"
+       cy="182.32579"
        r="4.7625017"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
@@ -1519,8 +2122,8 @@
     <circle
        style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path870-8-7-6"
-       cx="68.521706"
-       cy="212.14487"
+       cx="40.975922"
+       cy="197.64708"
        r="4.7625017"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
@@ -1528,8 +2131,8 @@
     <circle
        style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path870-8-7-4"
-       cx="68.521706"
-       cy="236.54897"
+       cx="40.975922"
+       cy="222.05118"
        r="4.7625017"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
@@ -1537,8 +2140,8 @@
     <text
        xml:space="preserve"
        style="font-weight:bold;font-size:7.05556px;line-height:3.52777px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
-       x="68.521706"
-       y="221.12576"
+       x="40.975922"
+       y="206.62798"
        id="text1471"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
@@ -1546,23 +2149,23 @@
          sodipodi:role="line"
          id="tspan1469"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.05556px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#4d4d4d;stroke-width:0.264583px"
-         x="68.521706"
-         y="221.12576">.</tspan><tspan
+         x="40.975922"
+         y="206.62798">.</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.05556px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#4d4d4d;stroke-width:0.264583px"
-         x="68.521706"
-         y="224.65353"
+         x="40.975922"
+         y="210.15575"
          id="tspan1473">.</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.05556px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#4d4d4d;stroke-width:0.264583px"
-         x="68.521706"
-         y="228.1813"
+         x="40.975922"
+         y="213.68352"
          id="tspan1475">.</tspan></text>
     <circle
        style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path870-8-7-2"
-       cx="88.808693"
-       cy="196.82358"
+       cx="61.262909"
+       cy="182.32579"
        r="4.7625017"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
@@ -1570,8 +2173,8 @@
     <circle
        style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path870-8-7-6-5"
-       cx="88.808693"
-       cy="212.14487"
+       cx="61.262909"
+       cy="197.64708"
        r="4.7625017"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
@@ -1579,8 +2182,8 @@
     <circle
        style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path870-8-7-4-4"
-       cx="88.808693"
-       cy="236.54897"
+       cx="61.262909"
+       cy="222.05118"
        r="4.7625017"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
@@ -1588,8 +2191,8 @@
     <text
        xml:space="preserve"
        style="font-weight:bold;font-size:7.05556px;line-height:3.52777px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
-       x="88.808693"
-       y="221.12576"
+       x="61.262909"
+       y="206.62798"
        id="text1471-0"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
@@ -1597,23 +2200,23 @@
          sodipodi:role="line"
          id="tspan1469-5"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.05556px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#4d4d4d;stroke-width:0.264583px"
-         x="88.808693"
-         y="221.12576">.</tspan><tspan
+         x="61.262909"
+         y="206.62798">.</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.05556px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#4d4d4d;stroke-width:0.264583px"
-         x="88.808693"
-         y="224.65353"
+         x="61.262909"
+         y="210.15575"
          id="tspan1473-9">.</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.05556px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#4d4d4d;stroke-width:0.264583px"
-         x="88.808693"
-         y="228.1813"
+         x="61.262909"
+         y="213.68352"
          id="tspan1475-4">.</tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:bold;font-size:4.93889px;line-height:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
-       x="48.234726"
-       y="181.75682"
+       x="20.68894"
+       y="167.25903"
        id="text61955"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
@@ -1621,18 +2224,18 @@
          sodipodi:role="line"
          id="tspan61953"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke-width:0.264583px"
-         x="48.234726"
-         y="181.75682">couche</tspan><tspan
+         x="20.68894"
+         y="167.25903">couche</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke-width:0.264583px"
-         x="48.234726"
-         y="186.69571"
+         x="20.68894"
+         y="172.19792"
          id="tspan61957">d'entrée</tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:bold;font-size:4.93889px;line-height:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
-       x="109.09567"
-       y="181.75682"
+       x="81.549889"
+       y="167.25903"
        id="text61955-5"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
@@ -1640,18 +2243,18 @@
          sodipodi:role="line"
          id="tspan61953-11"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke-width:0.264583px"
-         x="109.09567"
-         y="181.75682">couche</tspan><tspan
+         x="81.549889"
+         y="167.25903">couche</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke-width:0.264583px"
-         x="109.09567"
-         y="186.69571"
+         x="81.549889"
+         y="172.19792"
          id="tspan61957-08">de sortie</tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:bold;font-size:4.93889px;line-height:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
-       x="78.656761"
-       y="181.75682"
+       x="51.110977"
+       y="167.25903"
        id="text61955-2"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
@@ -1659,16 +2262,16 @@
          sodipodi:role="line"
          id="tspan61953-1"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke-width:0.264583px"
-         x="78.656761"
-         y="181.75682">couches</tspan><tspan
+         x="51.110977"
+         y="167.25903">couches</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke-width:0.264583px"
-         x="78.656761"
-         y="186.69571"
+         x="51.110977"
+         y="172.19792"
          id="tspan61957-0">cachées</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 52.440227,205.36953 11.875977,-6.31108"
+       d="m 24.894442,190.87175 11.875979,-6.31109"
        id="path66380"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1679,7 +2282,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="m 52.882229,208.64456 10.991973,2.46014"
+       d="m 25.336445,194.14678 10.991973,2.46013"
        id="path66898"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1690,7 +2293,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="m 52.440237,228.00311 11.875957,6.311"
+       d="m 24.894453,213.50533 11.875957,6.311"
        id="path68072"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1701,7 +2304,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="M 73.284207,196.82358 H 84.046191"
+       d="m 45.738423,182.32579 10.761984,0"
        id="path68074"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1712,7 +2315,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="M 73.284207,212.14487 H 84.046191"
+       d="M 45.738423,197.64708 H 56.500407"
        id="path68076"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1723,7 +2326,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="M 73.284207,236.54897 H 84.046191"
+       d="M 45.738423,222.05118 H 56.500407"
        id="path68078"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1734,7 +2337,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="m 70.687684,232.30761 15.95503,-31.24268"
+       d="M 43.1419,217.80982 59.09693,186.56715"
        id="path68080"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1745,7 +2348,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="M 71.566118,232.88671 85.76428,215.80712"
+       d="M 44.020334,218.38892 58.218496,201.30934"
        id="path68082"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1756,7 +2359,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="M 71.566118,215.80712 85.76428,232.88671"
+       d="m 44.020334,201.30934 14.198162,17.07958"
        id="path68084"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1767,7 +2370,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="m 72.322091,209.27471 12.686217,-9.58098"
+       d="m 44.776307,194.77692 12.686217,-9.58097"
        id="path68086"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1778,7 +2381,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 68.521706,196.82358 v 0"
+       d="m 40.975922,182.32579 v 0"
        id="path68088"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1789,7 +2392,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="M 85.008308,209.27471 72.322091,199.69373"
+       d="M 57.462524,194.77692 44.776307,185.19595"
        id="path68090"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1800,7 +2403,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="m 70.687684,201.06493 15.95503,31.24268"
+       d="m 43.1419,186.56715 15.95503,31.24267"
        id="path68494"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1811,7 +2414,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="m 93.482527,197.73794 10.939313,2.14009"
+       d="m 65.936742,183.24015 10.939312,2.1401"
        id="path68630"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1822,7 +2425,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="m 93.456148,213.18526 10.992072,2.4607"
+       d="m 65.910364,198.68747 10.992069,2.46071"
        id="path68632"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1833,7 +2436,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="m 93.482532,235.63464 10.939298,-2.14002"
+       d="m 65.936748,221.13685 10.9393,-2.14002"
        id="path68634"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1844,7 +2447,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="m 92.964646,209.81922 11.975074,-6.70119"
+       d="m 65.418863,195.32143 11.975071,-6.70118"
        id="path68919"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1855,7 +2458,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="m 92.21165,200.15538 13.48107,13.19917"
+       d="m 64.665866,185.65759 13.481065,13.19918"
        id="path68921"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1866,7 +2469,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="M 91.158842,232.40674 106.74552,204.93461"
+       d="M 63.613058,217.90895 79.199739,190.43683"
        id="path68923"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1877,7 +2480,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="M 92.211664,233.21718 105.6927,220.01814"
+       d="M 64.66588,218.71939 78.146916,205.52036"
        id="path68925"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1888,7 +2491,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="M 105.74043,229.20049 92.16394,215.52466"
+       d="M 78.194642,214.70271 64.618155,201.02688"
        id="path68927"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -1902,7 +2505,7 @@
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
        inkscape:export-ydpi="300.022"
-       transform="translate(0,31.749997)">
+       transform="translate(-27.545785,17.252215)">
       <circle
          style="fill:none;stroke:#4c72b0;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
          id="path870-8-7-2-9"
@@ -1930,7 +2533,7 @@
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
        inkscape:export-ydpi="300.022"
-       transform="translate(0,31.749997)">
+       transform="translate(-27.545785,17.252215)">
       <circle
          style="fill:none;stroke:#dd8452;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
          id="path870-8-7-6-5-2"
@@ -1958,7 +2561,7 @@
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
        inkscape:export-ydpi="300.022"
-       transform="translate(0,31.749997)">
+       transform="translate(-27.545785,17.252215)">
       <circle
          style="fill:none;stroke:#55a868;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
          id="path870-8-7-4-4-2"
@@ -2399,6 +3002,605 @@
          id="tspan3112">(boîte noire)</tspan></text>
     <circle
        style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="path870-9"
+       cx="259.40656"
+       cy="183.18643"
+       r="4.7625017"
+       inkscape:export-filename="AI-petals.png"
+       inkscape:export-xdpi="300.20752"
+       inkscape:export-ydpi="300.20752" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:8.46667px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:9.75723;display:inline;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="41.942547"
+       y="227.66731"
+       id="text5134-5"
+       transform="translate(217.30407,-42.441748)"
+       inkscape:export-filename="/home/romuald/VanitetinaV/FIGURES/2022-Enseignement-TPNumPython-Iris/IA-petales.png"
+       inkscape:export-xdpi="300.20752"
+       inkscape:export-ydpi="300.20752"><tspan
+         x="41.942547"
+         y="227.66731"
+         id="tspan5760"><tspan
+           style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
+           id="tspan5756">ℓ</tspan><tspan
+           style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
+           id="tspan5758">P</tspan></tspan></text>
+    <circle
+       style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="path870-4-0"
+       cx="259.40656"
+       cy="201.3503"
+       r="4.7625017"
+       inkscape:export-filename="/home/romuald/VanitetinaV/FIGURES/2022-Enseignement-TPNumPython-Iris/IA-petales.png"
+       inkscape:export-xdpi="300.20752"
+       inkscape:export-ydpi="300.20752" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:8.46667px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:9.75723;display:inline;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="41.942547"
+       y="227.66731"
+       id="text5134-4-4"
+       transform="translate(217.25505,-24.484578)"
+       inkscape:export-filename="/home/romuald/VanitetinaV/FIGURES/2022-Enseignement-TPNumPython-Iris/IA-petales.png"
+       inkscape:export-xdpi="300.20752"
+       inkscape:export-ydpi="300.20752"><tspan
+         x="41.942547"
+         y="227.66731"
+         id="tspan5766"><tspan
+           style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
+           id="tspan5762">L</tspan><tspan
+           style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
+           id="tspan5764">P</tspan></tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#4c72b0;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect42223-8"
+       width="44.941673"
+       height="9.5216703"
+       x="349.08646"
+       y="172.99561"
+       ry="3.7359602"
+       rx="3.7359602"
+       inkscape:export-filename="/home/romuald/VanitetinaV/FIGURES/2022-Enseignement-TPNumPython-Iris/IA-petales.png"
+       inkscape:export-xdpi="300.20752"
+       inkscape:export-ydpi="300.20752" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:8.46667px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="371.47464"
+       y="179.97853"
+       id="text43256-7"
+       inkscape:export-filename="/home/romuald/VanitetinaV/FIGURES/2022-Enseignement-TPNumPython-Iris/IA-petales.png"
+       inkscape:export-xdpi="300.20752"
+       inkscape:export-ydpi="300.20752"><tspan
+         sodipodi:role="line"
+         id="tspan43254-1"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke-width:0.264583px"
+         x="371.47464"
+         y="179.97853"><tspan
+   style="font-style:italic"
+   id="tspan58249-7">P</tspan>(setosa)</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#dd8452;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect42223-9-2"
+       width="44.941673"
+       height="9.5216703"
+       x="349.08646"
+       y="187.50752"
+       ry="3.7359602"
+       rx="3.7359605"
+       inkscape:export-filename="/home/romuald/VanitetinaV/FIGURES/2022-Enseignement-TPNumPython-Iris/IA-petales.png"
+       inkscape:export-xdpi="300.20752"
+       inkscape:export-ydpi="300.20752" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:8.46667px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="371.47464"
+       y="194.49043"
+       id="text43256-2-72"
+       inkscape:export-filename="/home/romuald/VanitetinaV/FIGURES/2022-Enseignement-TPNumPython-Iris/IA-petales.png"
+       inkscape:export-xdpi="300.20752"
+       inkscape:export-ydpi="300.20752"><tspan
+         sodipodi:role="line"
+         id="tspan43254-2-26"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke-width:0.264583px"
+         x="371.47464"
+         y="194.49043"><tspan
+   style="font-style:italic"
+   id="tspan56671-1">P</tspan>(versicolor)</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#55a868;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect42223-9-7-0"
+       width="44.941669"
+       height="9.5216703"
+       x="349.08646"
+       y="202.01944"
+       ry="3.7359602"
+       rx="3.73596"
+       inkscape:export-filename="/home/romuald/VanitetinaV/FIGURES/2022-Enseignement-TPNumPython-Iris/IA-petales.png"
+       inkscape:export-xdpi="300.20752"
+       inkscape:export-ydpi="300.20752" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:8.46667px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="371.47461"
+       y="208.95276"
+       id="text43256-2-4-6"
+       inkscape:export-filename="/home/romuald/VanitetinaV/FIGURES/2022-Enseignement-TPNumPython-Iris/IA-petales.png"
+       inkscape:export-xdpi="300.20752"
+       inkscape:export-ydpi="300.20752"><tspan
+         sodipodi:role="line"
+         id="tspan43254-2-7-1"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke-width:0.264583px"
+         x="371.47461"
+         y="208.95276"><tspan
+   style="font-style:italic"
+   id="tspan56085-5">P</tspan>(virginica)</tspan></text>
+    <path
+       style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send-3)"
+       d="m 264.05991,184.19977 8.13798,1.77216"
+       id="path1094-9"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-9"
+       inkscape:export-filename="/home/romuald/VanitetinaV/FIGURES/2022-Enseignement-TPNumPython-Iris/IA-petales.png"
+       inkscape:export-xdpi="300.20752"
+       inkscape:export-ydpi="300.20752" />
+    <path
+       style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send-3)"
+       d="m 264.05991,200.33695 8.13798,-1.77218"
+       id="path1096-4"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-4-0"
+       inkscape:export-filename="/home/romuald/VanitetinaV/FIGURES/2022-Enseignement-TPNumPython-Iris/IA-petales.png"
+       inkscape:export-xdpi="300.20752"
+       inkscape:export-ydpi="300.20752" />
+    <path
+       style="fill:#4c72b0;fill-opacity:1;fill-rule:evenodd;stroke:#4c72b0;stroke-width:0.705556;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send-3);filter:url(#filter15576-7)"
+       d="m 339.29686,180.86964 7.93748,-3.0049"
+       id="path1098-90"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/VanitetinaV/FIGURES/2022-Enseignement-TPNumPython-Iris/IA-petales.png"
+       inkscape:export-xdpi="300.20752"
+       inkscape:export-ydpi="300.20752" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#dd8452;stroke-width:0.705556;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send-3);filter:url(#filter15564-9)"
+       d="m 339.29686,192.33517 7.93748,0.0176"
+       id="path1100-9"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/VanitetinaV/FIGURES/2022-Enseignement-TPNumPython-Iris/IA-petales.png"
+       inkscape:export-xdpi="300.20752"
+       inkscape:export-ydpi="300.20752" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#55a868;stroke-width:0.705556;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send-3);filter:url(#filter15552-3)"
+       d="m 339.29686,203.68306 7.93748,3.00911"
+       id="path1102-1"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/VanitetinaV/FIGURES/2022-Enseignement-TPNumPython-Iris/IA-petales.png"
+       inkscape:export-xdpi="300.20752"
+       inkscape:export-ydpi="300.20752" />
+    <g
+       id="g231224-7"
+       transform="matrix(0.6424526,0,0,0.642053,194.35906,128.55386)"
+       inkscape:export-filename="/home/romuald/VanitetinaV/FIGURES/2022-Enseignement-TPNumPython-Iris/IA-petales.png"
+       inkscape:export-xdpi="300.20752"
+       inkscape:export-ydpi="300.20752"
+       style="stroke-width:1.55702;filter:url(#filter105918-8)">
+      <path
+         style="fill:#04063f;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:3.11404;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter13121-9-7)"
+         d="m 138.23732,72.022249 4.6119,0.131792 4.15189,-4.236181 -0.23153,-2.874872 2.86176,-2.834071 10.6497,0.146449 3.12079,-2.974418 11.20676,0.162803 1.99371,1.771729 h 9.54434 l 2.73759,2.737593 h 5.43376 l 4.5426,4.457941 h 4.31608 l 4.24172,4.399955 2.02359,-0.542222 6.79824,6.798236 v 2.91405 l 3.94226,3.942257 v 8.130198 l -1.98389,1.98388 v 6.341302 l -2.54356,2.54356 v 5.09283 l 1.24459,0.71856 v 5.71282 l -4.90803,4.90803 0.28013,1.04546 -4.26155,4.26155 h -3.92723 l -4.20773,4.20772 v 1.07728 l 2.50748,2.50748 -0.44128,1.64687 2.31545,2.31545 v 1.78341 l -2.52004,1.45494 h -4.04098 l -4.63503,-4.63502 0.51701,-1.92947 -10.17093,-9.65843 v -1.53384 l -1.94823,-1.94823 h -4.64406 l -2.40629,-2.40629 -1.42191,0.381 -2.10411,2.10411 h -9.46744 l -3.77917,-3.77917 v -1.47376 l -1.79426,-2.17832 h -2.89729 l -2.04722,-2.04722 v -4.0564 l 0.9712,-1.68216 h -8.2057 l -1.96575,1.96574 h -7.23888 l -2.39698,-2.39698 h -2.63554 l -2.84757,-2.84756 v -8.490282 l 2.35788,-2.35787 v -6.394515 l 2.47233,-2.472323 v -5.545986 z"
+         id="path869-6-7" />
+      <g
+         id="g226262-11"
+         clip-path="url(#clipPath227876-92)"
+         style="stroke-width:1.55702">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.39171px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;filter:url(#filter222499-8);stop-color:#000000"
+           x="490.16382"
+           y="398.91827"
+           id="text14667-4-5"
+           transform="matrix(1.324633,0,0,1.324633,-503.10752,-454.14486)"><tspan
+             sodipodi:role="line"
+             id="tspan14665-0-9"
+             x="490.16382"
+             y="398.91827"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.39171px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">0100010</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+           x="490.16382"
+           y="398.91827"
+           id="text14667-4-9-7"
+           transform="matrix(1.324633,0,0,1.324633,-468.07024,-455.26493)"><tspan
+             sodipodi:role="line"
+             id="tspan14665-0-6-7"
+             x="490.16382"
+             y="398.91827"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">010010100</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+           x="490.16382"
+           y="398.91827"
+           id="text14667-4-2-6"
+           transform="matrix(1.324633,0,0,1.324633,-442.7439,-455.26493)"><tspan
+             sodipodi:role="line"
+             id="tspan14665-0-5-7"
+             x="490.16382"
+             y="398.91827"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">01000</tspan></text>
+        <g
+           id="g187406-3"
+           transform="translate(0,-1.0497663)"
+           style="stroke-width:1.55702">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-4-1-65"
+             transform="matrix(1.324633,0,0,1.324633,-493.92287,-434.03399)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-4-7-6"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">0001001101100101100</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-4-1-8-3"
+             transform="matrix(1.324633,0,0,1.324633,-447.92549,-434.03399)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-4-7-9-9"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">01011001001</tspan></text>
+        </g>
+        <g
+           id="g82818-4"
+           style="fill:#00a1e8;fill-opacity:1;stroke-width:1.55702"
+           transform="translate(0,-0.59854228)">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-99-6-81"
+             transform="matrix(1.324633,0,0,1.324633,-511.54381,-441.21227)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-3-9-2"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">0010110</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-2-2-93"
+             transform="matrix(1.324633,0,0,1.324633,-488.65951,-441.21227)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-5-9-9"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">11010</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-99-0"
+             transform="matrix(1.324633,0,0,1.324633,-454.12277,-441.21227)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-3-8"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">0100001101001</tspan></text>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+           x="490.16382"
+           y="398.91827"
+           id="text14667-4-2-2-9-9-8"
+           transform="matrix(1.324633,0,0,1.324633,-456.4093,-387.99434)"><tspan
+             sodipodi:role="line"
+             id="tspan14665-0-5-9-0-6-5"
+             x="490.16382"
+             y="398.91827"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">10100010</tspan></text>
+        <g
+           id="g188446-0"
+           transform="translate(0,-0.42106603)"
+           style="stroke-width:1.55702">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-2-2-9-96"
+             transform="matrix(1.324633,0,0,1.324633,-490.22069,-414.48152)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-5-9-0-3"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">10010010</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-99-3-8"
+             transform="matrix(1.324633,0,0,1.324633,-470.76516,-414.48152)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-3-33-56"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">0100</tspan></text>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+           x="490.16382"
+           y="398.91827"
+           id="text14667-4-99-6-8-2-1"
+           transform="matrix(1.324633,0,0,1.324633,-455.59627,-394.72141)"><tspan
+             sodipodi:role="line"
+             id="tspan14665-0-3-9-7-6-1"
+             x="490.16382"
+             y="398.91827"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">0010110</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.39171px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:#04063f;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;filter:url(#filter210937-8);stop-color:#000000"
+           x="490.16382"
+           y="398.91827"
+           id="text14667-4-99-6-8-2-4-5"
+           transform="matrix(1.324633,0,0,1.324633,-446.81926,-413.81781)"><tspan
+             sodipodi:role="line"
+             id="tspan14665-0-3-9-7-6-9-9"
+             x="490.16382"
+             y="398.91827"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.39171px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke:#04063f;stroke-width:0.310998px;stroke-opacity:1">0010110</tspan></text>
+        <g
+           id="g188458-8"
+           transform="translate(0,-2.0389905)"
+           style="stroke-width:1.55702">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;filter:url(#filter224623-5);stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-99-6-8-2-0-4"
+             transform="matrix(1.324633,0,0,1.324633,-455.21385,-399.40947)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-3-9-7-6-4-8"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">011100101010001</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-99-6-8-2-0-1-1"
+             transform="matrix(1.324633,0,0,1.324633,-485.10042,-399.40947)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-3-9-7-6-4-0-0"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">0111</tspan></text>
+        </g>
+        <g
+           id="g188432-3"
+           transform="translate(0,0.23389238)"
+           style="stroke-width:1.55702">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-4-1-6-0"
+             transform="matrix(1.324633,0,0,1.324633,-461.56029,-421.82794)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-4-7-8-4"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">0101010110010001100</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-2-2-9-5-4"
+             transform="matrix(1.324633,0,0,1.324633,-507.33221,-421.89912)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-5-9-0-2-4"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">1010010110</tspan></text>
+        </g>
+        <g
+           id="g188452-4"
+           transform="translate(0,-1.0527054)"
+           style="stroke-width:1.55702">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-99-6-8-7"
+             transform="matrix(1.324633,0,0,1.324633,-496.21632,-407.27715)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-3-9-7-63"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">0010110</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-99-3-6-1"
+             transform="matrix(1.324633,0,0,1.324633,-459.5162,-406.96849)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-3-33-5-7"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">1110100001101001</tspan></text>
+        </g>
+        <g
+           id="g188426-5"
+           transform="translate(0,0.11932411)"
+           style="stroke-width:1.55702">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-99-9-9"
+             transform="matrix(1.324633,0,0,1.324633,-457.33644,-428.47602)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-3-0-6"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">0110110100001001</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-99-4-1-2"
+             transform="matrix(1.324633,0,0,1.324633,-505.5741,-428.47602)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-3-3-28-1"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">001011100101</tspan></text>
+        </g>
+        <g
+           id="g82796-7"
+           style="fill:#00a1e8;fill-opacity:1;stroke-width:1.55702">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-9-2-8"
+             transform="matrix(1.324633,0,0,1.324633,-510.00892,-461.99199)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-6-6-5"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">010010100</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-2-2-4-7"
+             transform="matrix(1.324633,0,0,1.324633,-486.94929,-461.99199)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-5-9-3-4"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">11010</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-4-1-1-1"
+             transform="matrix(1.324633,0,0,1.324633,-454.42878,-461.99199)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-4-7-4-85"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">0010000111100</tspan></text>
+        </g>
+        <g
+           id="g82828-9"
+           style="fill:#00a1e8;fill-opacity:1;stroke-width:1.55702"
+           transform="translate(0,-1.2859761)">
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-4-75"
+             transform="matrix(1.324633,0,0,1.324633,-504.34718,-447.25189)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-4-3"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">1010001000100</tspan></text>
+          <text
+             xml:space="preserve"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00a1e8;fill-opacity:1;stroke:none;stroke-width:0.310998px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+             x="490.16382"
+             y="398.91827"
+             id="text14667-4-99-4-4-8"
+             transform="matrix(1.324633,0,0,1.324633,-448.91184,-447.25189)"><tspan
+               sodipodi:role="line"
+               id="tspan14665-0-3-3-2-83"
+               x="490.16382"
+               y="398.91827"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.7285px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#00a1e8;fill-opacity:1;stroke-width:0.310998px">0010010000101</tspan></text>
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.914px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;opacity:1;fill:#009cea;fill-opacity:1;stroke:#04063f;stroke-width:1.17543;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter190944-9);stop-color:#000000;stop-opacity:1"
+           x="490.16382"
+           y="398.91827"
+           id="text14667-1"
+           transform="matrix(1.324633,0,0,1.324633,-478.07112,-428.14274)"><tspan
+             sodipodi:role="line"
+             id="tspan14665-8"
+             x="490.16382"
+             y="398.91827"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.914px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#009cea;fill-opacity:1;stroke:#04063f;stroke-width:1.17543;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">100 10</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.914px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;fill:#009cea;fill-opacity:1;stroke:#04063f;stroke-width:1.17543;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter190944-6-0);stop-color:#000000"
+           x="490.16382"
+           y="398.91827"
+           id="text14667-9-9"
+           transform="matrix(1.324633,0,0,1.324633,-474.87802,-445.36983)"><tspan
+             sodipodi:role="line"
+             id="tspan14665-2-6"
+             x="490.16382"
+             y="398.91827"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.914px;font-family:'Source Code Pro';-inkscape-font-specification:'Source Code Pro Bold';fill:#009cea;fill-opacity:1;stroke:#04063f;stroke-width:1.17543;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">1</tspan></text>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:8.46667px;line-height:8.46667px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="272.59866"
+       y="209.13165"
+       id="text3110-4"
+       inkscape:export-filename="/home/romuald/VanitetinaV/FIGURES/2022-Enseignement-TPNumPython-Iris/IA-petales.png"
+       inkscape:export-xdpi="300.20752"
+       inkscape:export-ydpi="300.20752"><tspan
+         sodipodi:role="line"
+         id="tspan3108-3"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:'Calibri Light';text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.264583px"
+         x="272.59866"
+         y="209.13165">     AI</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:'Calibri Light';text-align:start;text-anchor:start;fill:#000000;stroke:none;stroke-width:0.264583px"
+         x="272.59866"
+         y="217.59833"
+         id="tspan3112-3">(black box)</tspan></text>
+    <circle
+       style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path870-6"
        cx="265.50342"
        cy="79.415131"
@@ -2418,11 +3620,11 @@
        inkscape:export-ydpi="300.20752"><tspan
          x="41.942547"
          y="227.66731"
-         id="tspan4660"><tspan
+         id="tspan5772"><tspan
            style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan4656">ℓ</tspan><tspan
+           id="tspan5768">ℓ</tspan><tspan
            style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-           id="tspan4658">P</tspan></tspan></text>
+           id="tspan5770">P</tspan></tspan></text>
     <circle
        style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path870-4-5"
@@ -2444,11 +3646,11 @@
        inkscape:export-ydpi="300.20752"><tspan
          x="41.942547"
          y="227.66731"
-         id="tspan4666"><tspan
+         id="tspan5778"><tspan
            style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan4662">L</tspan><tspan
+           id="tspan5774">L</tspan><tspan
            style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-           id="tspan4664">P</tspan></tspan></text>
+           id="tspan5776">P</tspan></tspan></text>
     <rect
        style="fill:none;fill-opacity:1;stroke:#4c72b0;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect42223-4"
@@ -2581,11 +3783,11 @@
        inkscape:export-ydpi="300.20752"><tspan
          x="41.942547"
          y="227.66731"
-         id="tspan4672"><tspan
+         id="tspan5784"><tspan
            style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan4668">ℓ</tspan><tspan
+           id="tspan5780">ℓ</tspan><tspan
            style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-           id="tspan4670">S</tspan></tspan></text>
+           id="tspan5782">S</tspan></tspan></text>
     <circle
        style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path870-4-5-6"
@@ -2607,11 +3809,11 @@
        inkscape:export-ydpi="300.20752"><tspan
          x="41.942547"
          y="227.66731"
-         id="tspan4678"><tspan
+         id="tspan5790"><tspan
            style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan4674">L</tspan><tspan
+           id="tspan5786">L</tspan><tspan
            style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-           id="tspan4676">S</tspan></tspan></text>
+           id="tspan5788">S</tspan></tspan></text>
     <path
        style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send-6-3)"
        d="m 270.09533,116.04846 7.11374,-4.3316"
@@ -3066,7 +4268,7 @@
          id="tspan3112-8">(boîte noire)</tspan></text>
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="M 50.968134,221.86834 65.788298,200.7235"
+       d="M 23.422349,207.37056 38.242514,186.22571"
        id="path1120"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -3077,7 +4279,7 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="M 52.188417,223.11322 64.568014,214.7999"
+       d="m 24.642632,208.61544 12.379599,-8.31332"
        id="path1124"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -3088,12 +4290,573 @@
        inkscape:export-ydpi="300.022" />
     <path
        style="font-variation-settings:normal;opacity:1;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
-       d="M 50.968141,211.50431 65.78829,232.64905"
+       d="m 23.422357,197.00653 14.820149,21.14473"
        id="path1126"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
        inkscape:connection-start="#g66301"
        inkscape:connection-end="#path870-8-7-4"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <g
+       id="g66301-3"
+       inkscape:export-filename="ANN-petals.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022"
+       transform="translate(78.768545,60.08323)">
+      <circle
+         style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="path870-8-8"
+         cx="48.234726"
+         cy="175.8544"
+         r="4.7625017" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:8.46667px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:9.75723;display:inline;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         x="41.942547"
+         y="227.66731"
+         id="text5134-8-6"
+         transform="translate(6.1322511,-49.773756)"><tspan
+           x="41.942547"
+           y="227.66731"
+           id="tspan5796"><tspan
+             style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
+             id="tspan5792">ℓ</tspan><tspan
+             style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
+             id="tspan5794">P</tspan></tspan></text>
+    </g>
+    <g
+       id="g66308-0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022"
+       transform="translate(78.768545,60.08323)">
+      <circle
+         style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+         id="path870-4-8-4"
+         cx="48.234726"
+         cy="194.01826"
+         r="4.7625017" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:8.46667px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:9.75723;display:inline;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         x="41.942547"
+         y="227.66731"
+         id="text5134-4-9-8"
+         transform="translate(6.0832321,-31.816586)"><tspan
+           x="41.942547"
+           y="227.66731"
+           id="tspan5802"><tspan
+             style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
+             id="tspan5798">L</tspan><tspan
+             style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
+             id="tspan5800">P</tspan></tspan></text>
+    </g>
+    <circle
+       style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="path870-8-7-8"
+       cx="147.29025"
+       cy="225.1568"
+       r="4.7625017"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <circle
+       style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="path870-8-7-6-8"
+       cx="147.29025"
+       cy="240.47809"
+       r="4.7625017"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <circle
+       style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="path870-8-7-4-9"
+       cx="147.29025"
+       cy="264.8822"
+       r="4.7625017"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:7.05556px;line-height:3.52777px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="147.29025"
+       y="249.459"
+       id="text1471-7"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022"><tspan
+         sodipodi:role="line"
+         id="tspan1469-7"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.05556px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#4d4d4d;stroke-width:0.264583px"
+         x="147.29025"
+         y="249.459">.</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.05556px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#4d4d4d;stroke-width:0.264583px"
+         x="147.29025"
+         y="252.98677"
+         id="tspan1473-6">.</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.05556px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#4d4d4d;stroke-width:0.264583px"
+         x="147.29025"
+         y="256.51456"
+         id="tspan1475-43">.</tspan></text>
+    <circle
+       style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="path870-8-7-2-0"
+       cx="167.57724"
+       cy="225.1568"
+       r="4.7625017"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <circle
+       style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="path870-8-7-6-5-3"
+       cx="167.57724"
+       cy="240.47809"
+       r="4.7625017"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <circle
+       style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="path870-8-7-4-4-0"
+       cx="167.57724"
+       cy="264.8822"
+       r="4.7625017"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:7.05556px;line-height:3.52777px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="167.57724"
+       y="249.459"
+       id="text1471-0-9"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022"><tspan
+         sodipodi:role="line"
+         id="tspan1469-5-2"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.05556px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#4d4d4d;stroke-width:0.264583px"
+         x="167.57724"
+         y="249.459">.</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.05556px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#4d4d4d;stroke-width:0.264583px"
+         x="167.57724"
+         y="252.98677"
+         id="tspan1473-9-5">.</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.05556px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#4d4d4d;stroke-width:0.264583px"
+         x="167.57724"
+         y="256.51456"
+         id="tspan1475-4-4">.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.93889px;line-height:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="127.00327"
+       y="210.09004"
+       id="text61955-0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke-width:0.264583px"
+         x="127.00327"
+         y="210.09004"
+         id="tspan61957-9">input</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke-width:0.264583px"
+         x="127.00327"
+         y="215.02893"
+         id="tspan4040">layer</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.93889px;line-height:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="187.86421"
+       y="210.09004"
+       id="text61955-5-4"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke-width:0.264583px"
+         x="187.86421"
+         y="210.09004"
+         id="tspan61957-08-9">output</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke-width:0.264583px"
+         x="187.86421"
+         y="215.02893"
+         id="tspan4048">layer</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:4.93889px;line-height:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="157.42531"
+       y="210.09004"
+       id="text61955-2-2"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022"><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke-width:0.264583px"
+         x="157.42531"
+         y="210.09004"
+         id="tspan61957-0-4">hidden</tspan><tspan
+         sodipodi:role="line"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:4.93889px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke-width:0.264583px"
+         x="157.42531"
+         y="215.02893"
+         id="tspan4044">layers</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 131.20877,233.70276 11.87598,-6.31109"
+       id="path66380-7"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g66301-3"
+       inkscape:connection-end="#path870-8-7-8"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 131.65078,236.9778 10.99197,2.46012"
+       id="path66898-7"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g66301-3"
+       inkscape:connection-end="#path870-8-7-6-8"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 131.20878,256.33635 11.87596,6.311"
+       id="path68072-5"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g66308-0"
+       inkscape:connection-end="#path870-8-7-4-9"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 152.05275,225.1568 10.76199,0"
+       id="path68074-4"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-8-7-8"
+       inkscape:connection-end="#path870-8-7-2-0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 152.05275,240.47809 h 10.76199"
+       id="path68076-8"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-8-7-6-8"
+       inkscape:connection-end="#path870-8-7-6-5-3"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 152.05275,264.8822 h 10.76199"
+       id="path68078-1"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-8-7-4-9"
+       inkscape:connection-end="#path870-8-7-4-4-0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 149.45623,260.64085 15.95503,-31.24269"
+       id="path68080-2"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-8-7-4-9"
+       inkscape:connection-end="#path870-8-7-2-0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 150.33466,261.21994 14.19817,-17.07959"
+       id="path68082-8"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-8-7-4-9"
+       inkscape:connection-end="#path870-8-7-6-5-3"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 150.33466,244.14035 14.19817,17.07959"
+       id="path68084-9"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-8-7-6-8"
+       inkscape:connection-end="#path870-8-7-4-4-0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 151.09064,237.60793 12.68621,-9.58098"
+       id="path68086-3"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-8-7-6-8"
+       inkscape:connection-end="#path870-8-7-2-0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 147.29025,225.1568 v 0"
+       id="path68088-6"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-8-7-8"
+       inkscape:connection-end="#path870-8-7-8"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 163.77685,237.60793 -12.68621,-9.58098"
+       id="path68090-8"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-8-7-6-5-3"
+       inkscape:connection-end="#path870-8-7-8"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 149.45623,229.39816 15.95503,31.24269"
+       id="path68494-0"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-8-7-8"
+       inkscape:connection-end="#path870-8-7-4-4-0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 172.25107,226.07116 10.93931,2.1401"
+       id="path68630-2"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-8-7-2-0"
+       inkscape:connection-end="#g61255-5"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 172.22469,241.51848 10.99207,2.46071"
+       id="path68632-1"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-8-7-6-5-3"
+       inkscape:connection-end="#g61262-5"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 172.25108,263.96787 10.9393,-2.14002"
+       id="path68634-0"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-8-7-4-4-0"
+       inkscape:connection-end="#g61269-7"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 171.73319,238.15244 11.97507,-6.70117"
+       id="path68919-5"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-8-7-6-5-3"
+       inkscape:connection-end="#g61255-5"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 170.9802,228.4886 13.48106,13.19918"
+       id="path68921-1"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-8-7-2-0"
+       inkscape:connection-end="#g61262-5"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 169.92739,260.73997 15.58668,-27.47212"
+       id="path68923-1"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-8-7-4-4-0"
+       inkscape:connection-end="#g61255-5"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 170.98021,261.55041 13.48104,-13.19904"
+       id="path68925-0"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path870-8-7-4-4-0"
+       inkscape:connection-end="#g61262-5"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="M 184.50897,257.53372 170.93249,243.85789"
+       id="path68927-8"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g61269-7"
+       inkscape:connection-end="#path870-8-7-6-5-3"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <g
+       id="g61255-5"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022"
+       transform="translate(78.768545,60.08323)">
+      <circle
+         style="fill:none;stroke:#4c72b0;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         id="path870-8-7-2-9-0"
+         cx="109.09567"
+         cy="169.04239"
+         r="4.7625017" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:7.05556px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#4c72b0;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         x="109.10812"
+         y="170.56581"
+         id="text25832-6"><tspan
+           sodipodi:role="line"
+           id="tspan25830-4"
+           style="font-size:7.05556px;fill:#4c72b0;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           x="109.10812"
+           y="170.56581"><tspan
+             style="font-style:italic;font-size:7.05556px;fill:#4c72b0;fill-opacity:1;stroke:none"
+             id="tspan27162-6">P</tspan><tspan
+             style="font-size:65%;baseline-shift:sub"
+             id="tspan53458-2">1</tspan></tspan></text>
+    </g>
+    <g
+       id="g61262-5"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022"
+       transform="translate(78.768545,60.08323)">
+      <circle
+         style="fill:none;stroke:#dd8452;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         id="path870-8-7-6-5-2-8"
+         cx="109.09567"
+         cy="184.93636"
+         r="4.7625017" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:7.05556px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#dd8452;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         x="109.09468"
+         y="186.45978"
+         id="text25832-4-6"><tspan
+           sodipodi:role="line"
+           id="tspan25830-8-2"
+           style="font-size:7.05556px;fill:#dd8452;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           x="109.09468"
+           y="186.45978"><tspan
+             style="font-style:italic;font-size:7.05556px;fill:#dd8452;fill-opacity:1;stroke:none"
+             id="tspan27162-1-8">P</tspan><tspan
+             style="font-size:65%;baseline-shift:sub"
+             id="tspan57128-4">2</tspan></tspan></text>
+    </g>
+    <g
+       id="g61269-7"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022"
+       transform="translate(78.768545,60.08323)">
+      <circle
+         style="fill:none;stroke:#55a868;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+         id="path870-8-7-4-4-2-2"
+         cx="109.09567"
+         cy="200.83029"
+         r="4.7625017" />
+      <text
+         xml:space="preserve"
+         style="font-weight:bold;font-size:7.05556px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#55a868;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+         x="109.1014"
+         y="202.6275"
+         id="text25832-8-4"><tspan
+           sodipodi:role="line"
+           id="tspan25830-9-0"
+           style="font-size:7.05556px;fill:#55a868;fill-opacity:1;stroke:none;stroke-width:0.264583px"
+           x="109.1014"
+           y="202.6275"><tspan
+             style="font-style:italic;font-size:7.05556px;fill:#55a868;fill-opacity:1;stroke:none"
+             id="tspan27162-3-6">P</tspan><tspan
+             style="font-size:65%;baseline-shift:sub"
+             id="tspan60640-2">3</tspan></tspan></text>
+    </g>
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 129.73668,250.20157 14.82017,-21.14485"
+       id="path1120-9"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g66308-0"
+       inkscape:connection-end="#path870-8-7-8"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 130.95696,251.44646 12.3796,-8.31333"
+       id="path1124-9"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g66308-0"
+       inkscape:connection-end="#path870-8-7-6-8"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
+       inkscape:export-xdpi="300.022"
+       inkscape:export-ydpi="300.022" />
+    <path
+       style="font-variation-settings:normal;vector-effect:none;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#808080;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       d="m 129.73669,239.83755 14.82015,21.14474"
+       id="path1126-0"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g66301-3"
+       inkscape:connection-end="#path870-8-7-4-9"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
        inkscape:export-ydpi="300.022" />

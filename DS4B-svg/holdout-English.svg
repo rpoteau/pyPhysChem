@@ -2,13 +2,13 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="318.13495mm"
+   width="320.0528mm"
    height="140.05086mm"
-   viewBox="0 0 318.13495 140.05086"
+   viewBox="0 0 320.0528 140.05086"
    version="1.1"
    id="svg1203"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
-   sodipodi:docname="holdout.svg"
+   sodipodi:docname="holdout-English.svg"
    inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/holdout.png"
    inkscape:export-xdpi="300.20752"
    inkscape:export-ydpi="300.20752"
@@ -26,9 +26,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="1.2774943"
-     inkscape:cx="918.98647"
-     inkscape:cy="423.48525"
+     inkscape:zoom="0.9033249"
+     inkscape:cx="776.022"
+     inkscape:cy="185.9796"
      inkscape:window-width="3380"
      inkscape:window-height="1417"
      inkscape:window-x="60"
@@ -39,6 +39,12 @@
      inkscape:deskcolor="#d1d1d1" />
   <defs
      id="defs1200">
+    <rect
+       x="968.6731"
+       y="258.65509"
+       width="86.871811"
+       height="51.864403"
+       id="rect1332" />
     <marker
        style="overflow:visible"
        id="Arrow1Lstart"
@@ -2348,7 +2354,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-4.6634757,-13.836374)">
+     transform="translate(-2.7456351,-13.836374)">
     <rect
        style="fill:#aaccff;stroke:#d5d5ff;stroke-width:0.264999;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers;stop-color:#000000"
        id="rect35596"
@@ -2387,20 +2393,20 @@
        y="118.70407"
        id="text2546"><tspan
          sodipodi:role="line"
-         id="tspan2544"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.76111px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#800000;stroke:none;stroke-width:0.264583px"
          x="23.313713"
-         y="118.70407">échantillons</tspan><tspan
+         y="118.70407"
+         id="tspan6384">fully</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.76111px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#800000;stroke:none;stroke-width:0.264583px"
-         x="23.313715"
+         x="23.313713"
          y="125.60283"
-         id="tspan2548"> totalement</tspan><tspan
+         id="tspan1302">characterized</tspan><tspan
          sodipodi:role="line"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:7.76111px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';fill:#800000;stroke:none;stroke-width:0.264583px"
          x="23.313713"
          y="132.50159"
-         id="tspan6384">caractérisés</tspan></text>
+         id="tspan1304">samples</tspan></text>
     <g
        id="g8433"
        transform="translate(-76.130486,5.2521187)">
@@ -4383,7 +4389,7 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';fill:#0044aa;stroke:none;stroke-width:0.264583px"
          x="86.365692"
          y="25.715071"
-         id="tspan30111">(caractéristiques)</tspan></text>
+         id="tspan30111">(descriptors)</tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:bold;font-size:6.35px;line-height:6.35px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#0044aa;fill-opacity:1;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
@@ -4399,7 +4405,7 @@
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:6.35px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';fill:#0044aa;fill-opacity:1;stroke:none;stroke-width:0.264583px"
          x="206.1676"
          y="25.715071"
-         id="tspan30111-7">(propriétés)</tspan></text>
+         id="tspan30111-7">(properties)</tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:bold;font-size:6.35px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#0044aa;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
@@ -4410,7 +4416,7 @@
          id="tspan36846"
          style="font-size:6.35px;fill:#0044aa;stroke:none;stroke-width:0.264583px"
          x="141.32103"
-         y="93.713776">1. Apprentissage</tspan></text>
+         y="93.713776">1. Training</tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:bold;font-size:6.35px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#008033;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
@@ -4421,33 +4427,38 @@
          id="tspan36846-8"
          style="font-size:6.35px;fill:#008033;stroke:none;stroke-width:0.264583px"
          x="141.41403"
-         y="150.15971">2. Test de l'algorithme (l'IA) optimisé</tspan></text>
+         y="150.15971">2. Test of the optimized (trained) ML algorithm</tspan></text>
     <text
        xml:space="preserve"
-       style="font-weight:bold;font-size:6.35px;line-height:6.35px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#008033;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       style="font-weight:bold;font-size:6.35px;line-height:6.35px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:38.9343;fill:#008033;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
        x="270.71713"
        y="68.435829"
        id="text36848-7-8"><tspan
-         sodipodi:role="line"
-         id="tspan36846-8-3"
-         style="font-size:6.35px;fill:#008033;stroke:none;stroke-width:0.264583px"
          x="270.71713"
-         y="68.435829">algorithme</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;fill:#008033;stroke:none;stroke-width:0.264583px"
+         y="68.435829"
+         id="tspan5429"><tspan
+           style="stroke:none"
+           id="tspan5427">algorithm</tspan><tspan
+           y="68.435829"
+           id="tspan5431"> </tspan></tspan><tspan
          x="270.71713"
-         y="74.785828"
-         id="tspan42202">optimisé pour la</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;fill:#008033;stroke:none;stroke-width:0.264583px"
+         y="74.785831"
+         id="tspan5435"><tspan
+           style="stroke:none"
+           id="tspan5433">trained
+</tspan></tspan><tspan
          x="270.71713"
-         y="81.135826"
-         id="tspan43608">reconnaissance</tspan><tspan
-         sodipodi:role="line"
-         style="font-size:6.35px;fill:#008033;stroke:none;stroke-width:0.264583px"
+         y="81.135829"
+         id="tspan5439"><tspan
+           style="stroke:none"
+           id="tspan5437">for the iris</tspan><tspan
+           y="81.135829"
+           id="tspan5441"> </tspan></tspan><tspan
          x="270.71713"
-         y="87.485832"
-         id="tspan46794">des iris</tspan></text>
+         y="87.485828"
+         id="tspan5445"><tspan
+           style="stroke:none"
+           id="tspan5443">classification</tspan></tspan></text>
     <g
        id="g1290"
        transform="matrix(1.5067935,0,0,1.5067935,-229.63907,-35.451856)"
@@ -4479,54 +4490,46 @@
        transform="translate(125.45291,-44.18312)"><tspan
          x="74.625618"
          y="159.11717"
-         id="tspan2089"><tspan
-   style="font-weight:300;-inkscape-font-specification:'Calibri Light';fill:#ff0000;stroke:none"
-   id="tspan2077">prédiction (</tspan><tspan
-   style="font-style:italic;font-weight:normal;fill:#ff0000;stroke:none"
-   id="tspan2079">ŷ</tspan><tspan
-   style="font-weight:normal;font-size:65%;baseline-shift:sub;fill:#ff0000;stroke:none"
-   id="tspan2081">test</tspan><tspan
-   style="font-weight:300;-inkscape-font-specification:'Calibri Light';fill:#ff0000;stroke:none"
-   id="tspan2083">)</tspan><tspan
-   style="fill:#ff0000"
-   id="tspan2085"> </tspan><tspan
-   style="font-weight:300;-inkscape-font-specification:'Calibri Light';fill:#ff0000;stroke:none"
-   id="tspan2087">en</tspan><tspan
-   y="159.11717"
-   id="tspan2091"> </tspan></tspan><tspan
+         id="tspan5459"><tspan
+           style="font-weight:300;-inkscape-font-specification:'Calibri Light';fill:#ff0000;stroke:none"
+           id="tspan5447">prediction (</tspan><tspan
+           style="font-style:italic;font-weight:normal;fill:#ff0000;stroke:none"
+           id="tspan5449">ŷ</tspan><tspan
+           style="font-weight:normal;font-size:65%;baseline-shift:sub;fill:#ff0000;stroke:none"
+           id="tspan5451">test</tspan><tspan
+           style="font-weight:300;-inkscape-font-specification:'Calibri Light';fill:#ff0000;stroke:none"
+           id="tspan5453">)</tspan><tspan
+           style="fill:#ff0000"
+           id="tspan5455"> </tspan><tspan
+           style="font-weight:300;-inkscape-font-specification:'Calibri Light';fill:#ff0000;stroke:none"
+           id="tspan5457">in</tspan><tspan
+           y="159.11717"
+           id="tspan5461"> </tspan></tspan><tspan
          x="74.625618"
          y="166.69502"
-         id="tspan2103"><tspan
-   style="font-weight:300;-inkscape-font-specification:'Calibri Light';fill:#ff0000;stroke:none"
-   id="tspan2093">accord</tspan><tspan
-   style="fill:#ff0000"
-   id="tspan2095"> </tspan><tspan
-   style="font-weight:300;-inkscape-font-specification:'Calibri Light';fill:#ff0000;stroke:none"
-   id="tspan2097">avec</tspan><tspan
-   style="fill:#ff0000"
-   id="tspan2099"> </tspan><tspan
-   style="font-weight:300;-inkscape-font-specification:'Calibri Light';fill:#ff0000;stroke:none"
-   id="tspan2101">les</tspan><tspan
-   y="166.69502"
-   id="tspan2105"> </tspan></tspan><tspan
+         id="tspan5465"><tspan
+           style="font-weight:300;-inkscape-font-specification:'Calibri Light';fill:#ff0000;stroke:none"
+           id="tspan5463">agreement with</tspan><tspan
+           y="166.69502"
+           id="tspan5467"> </tspan></tspan><tspan
          x="74.625618"
          y="173.59377"
-         id="tspan2109"><tspan
-   style="font-weight:300;-inkscape-font-specification:'Calibri Light';fill:#ff0000;stroke:none"
-   id="tspan2107">propriétés</tspan><tspan
-   y="173.59377"
-   id="tspan2111"> </tspan></tspan><tspan
+         id="tspan5471"><tspan
+           style="font-weight:300;-inkscape-font-specification:'Calibri Light';fill:#ff0000;stroke:none"
+           id="tspan5469">the observed</tspan><tspan
+           y="173.59377"
+           id="tspan5473"> </tspan></tspan><tspan
          x="74.625618"
          y="180.49253"
-         id="tspan2121"><tspan
+         id="tspan5483"><tspan
            style="font-weight:300;-inkscape-font-specification:'Calibri Light';fill:#ff0000;stroke:none"
-           id="tspan2113">connues (</tspan><tspan
+           id="tspan5475">properties (</tspan><tspan
            style="font-style:italic;font-weight:normal;fill:#ff0000;stroke:none"
-           id="tspan2115">y</tspan><tspan
+           id="tspan5477">y</tspan><tspan
            style="font-weight:normal;font-size:65%;baseline-shift:sub;fill:#ff0000;stroke:none"
-           id="tspan2117">test</tspan><tspan
+           id="tspan5479">test</tspan><tspan
            style="font-weight:300;-inkscape-font-specification:'Calibri Light';fill:#ff0000;stroke:none"
-           id="tspan2119">) ?</tspan></tspan></text>
+           id="tspan5481">) ?</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:bold;font-size:6.35px;line-height:5.64444px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:76.0089;fill:#800000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
@@ -4536,31 +4539,29 @@
        transform="translate(70.270624,-137.83481)"><tspan
          x="74.625618"
          y="159.11717"
-         id="tspan2125"><tspan
+         id="tspan5487"><tspan
            style="font-weight:300;-inkscape-font-specification:'Calibri Light';stroke:none"
-           id="tspan2123">optimisation de l'IA
+           id="tspan5485">optimization of the AI
 </tspan></tspan><tspan
          x="74.625618"
          y="164.76162"
-         id="tspan2129"><tspan
-   style="font-weight:300;-inkscape-font-specification:'Calibri Light';stroke:none"
-   id="tspan2127">= minimisation de l'écart</tspan><tspan
-   y="164.76162"
-   id="tspan2131"> </tspan></tspan><tspan
+         id="tspan5491"><tspan
+           style="font-weight:300;-inkscape-font-specification:'Calibri Light';stroke:none"
+           id="tspan5489">= minimization of the</tspan><tspan
+           y="164.76162"
+           id="tspan5493"> </tspan></tspan><tspan
          x="74.625618"
          y="170.40606"
-         id="tspan2137"><tspan
-   style="font-weight:300;-inkscape-font-specification:'Calibri Light';stroke:none"
-   id="tspan2133">entre propriété prédite</tspan> <tspan
-   style="font-weight:300;-inkscape-font-specification:'Calibri Light';stroke:none"
-   id="tspan2135">et</tspan><tspan
-   y="170.40606"
-   id="tspan2139"> </tspan></tspan><tspan
+         id="tspan5497"><tspan
+           style="font-weight:300;-inkscape-font-specification:'Calibri Light';stroke:none"
+           id="tspan5495">difference between predicted</tspan><tspan
+           y="170.40606"
+           id="tspan5499"> </tspan></tspan><tspan
          x="74.625618"
          y="176.0505"
-         id="tspan2143"><tspan
+         id="tspan5503"><tspan
            style="font-weight:300;-inkscape-font-specification:'Calibri Light';stroke:none"
-           id="tspan2141">propriété connue</tspan></tspan></text>
+           id="tspan5501">and known properties</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:bold;font-size:9.87778px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
@@ -4953,26 +4954,19 @@
        x="207.61339"
        y="164.20732"
        id="text59849"
-       transform="translate(74.654114,-57.515393)"><tspan
+       transform="translate(74.654114,-56.721644)"><tspan
          x="207.61339"
          y="164.20732"
-         id="tspan2147"><tspan
-   style="font-weight:300;-inkscape-font-specification:'Calibri Light';stroke:none"
-   id="tspan2145">peut être utilisé comme prédicteur</tspan><tspan
-   y="164.20732"
-   id="tspan2149"> </tspan></tspan><tspan
+         id="tspan5507"><tspan
+           style="font-weight:300;-inkscape-font-specification:'Calibri Light';stroke:none"
+           id="tspan5505">can be applied as a predictor that</tspan><tspan
+           y="164.20732"
+           id="tspan5509"> </tspan></tspan><tspan
          x="207.61339"
          y="169.85175"
-         id="tspan2153"><tspan
-   style="font-weight:300;-inkscape-font-specification:'Calibri Light';stroke:none"
-   id="tspan2151">applicable à des échantillons</tspan><tspan
-   y="169.85175"
-   id="tspan2155"> </tspan></tspan><tspan
-         x="207.61339"
-         y="175.49619"
-         id="tspan2159"><tspan
+         id="tspan5513"><tspan
            style="font-weight:300;-inkscape-font-specification:'Calibri Light';stroke:none"
-           id="tspan2157">nouveaux</tspan></tspan></text>
+           id="tspan5511">can be applied to new samples</tspan></tspan></text>
     <text
        xml:space="preserve"
        style="font-weight:bold;font-size:5.64444px;line-height:5.64444px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:103.796;fill:#000000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
@@ -4982,33 +4976,37 @@
        transform="translate(74.308627,-34.295284)"><tspan
          x="207.61339"
          y="164.20732"
-         id="tspan2163"><tspan
+         id="tspan5517"><tspan
            style="font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan2161">- ajouter des échantillons ?
+           id="tspan5515">- add new samples?
 </tspan></tspan><tspan
          x="207.61339"
          y="169.85175"
-         id="tspan2167"><tspan
+         id="tspan5521"><tspan
            style="font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan2165">- changer d'algorithme ?
+           id="tspan5519">- change the algorithm?
 </tspan></tspan><tspan
          x="207.61339"
          y="175.49619"
-         id="tspan2171"><tspan
-   style="font-weight:300;-inkscape-font-specification:'Calibri Light'"
-   id="tspan2169">- changer les (hyper)paramètres de</tspan><tspan
-   y="175.49619"
-   id="tspan2173"> </tspan></tspan><tspan
+         id="tspan5525"><tspan
+           style="font-weight:300;-inkscape-font-specification:'Calibri Light'"
+           id="tspan5523">- optimize the (hyper)parameters
+</tspan></tspan><tspan
          x="207.61339"
          y="181.14063"
-         id="tspan2177"><tspan
+         id="tspan5529"><tspan
            style="font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan2175">l'algorithme ?
+           id="tspan5527">of the algorithm
 </tspan></tspan><tspan
          x="207.61339"
          y="186.78507"
-         id="tspan2181"><tspan
+         id="tspan5533"><tspan
            style="font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan2179">- ajouter des caractéristiques ?</tspan></tspan></text>
+           id="tspan5531">- add new descriptors?</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text1330"
+       style="font-weight:bold;font-size:16px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1332);fill:#000000;stroke:#000000;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000" />
   </g>
 </svg>
