@@ -27,6 +27,7 @@ of Jupyter Notebooks*
     - [Extensions JupyterLab / *JupyterLab extensions*](#ext)
 -   [Liste des changements /
     *List of changes*](#changes)
+-   [Comment citer ce travail ? / *How to cite this work?*](#cite)
     
 ## <a name="main"></a> Document principal et pré-requis / *Main document and prerequisites*
 
@@ -214,6 +215,7 @@ Vous devez installer les bibliothèques suivantes dans votre environnement Pytho
 -   ```scipy``` ✅
 -   ```sympy``` ✅
 -   ```pandas``` ✅
+-   ```dataframe-image``` ❌
 -   ```seaborn``` ✅
 -   ```scikit learn``` ✅
 -   ```tensorflow``` ❌
@@ -248,5 +250,14 @@ Les installer via l'onglet "extension manager" de JupterLab ; vous pouvez faire 
 ## <a name="changes"></a>Liste des changements / *List of changes*
 
 [🔄 Liste des changements / *List of changes* 🔄](./CHANGE.md)
+
+## <a name="cite"></a> Comment citer ce travail ? / *How to cite this work?*
+ 
+Si vous utilisez des parties significatives des codes publiés dans ce dépôt github, ou bien s'il a été utile pour votre auto-formation, veuillez le citer comme suit :<br>
+*If you use pieces of code of this github repository that turned out to be decisive to your work, or that have been useful for your self-learning, please cite it as follows*:
+
+ S. Christodoulou and R. Poteau, *Python in the [Physical] chemistry lab (PytChem) github repository*, release v. 1.6.0 (2023), doi: 10.5072/zenodo.1214027 (https://github.com/rpoteau/PytChem)
+    
+[![DOI](https://sandbox.zenodo.org/badge/495332887.svg)](https://dx.doi.org/10.5072/zenodo.1214027)
 
 [&#x1F51D; top &#x1F51D;](#top)
