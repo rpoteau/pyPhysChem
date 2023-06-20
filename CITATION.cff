@@ -1,13 +1,40 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
 cff-version: 1.2.0
-message: "If you use significant pieces of code of this repository, or if was useful for your training, please cite it as below."
+title: PytChem
+message: >-
+  If you use this software, please cite it using the  
+  metadata from this file
+type: software
 authors:
-- family-names: "Christodoulou"
-  given-names: "Stella"
-- family-names: "Poteau"
-  given-names: "Romuald"
-  orcid: "https://orcid.org/0000-0003-4338-174X"
-title: "Python in the [Physical] chemistry lab (PytChem) github repository"
+  - given-names: Stella
+    family-names: Christodoulou
+    email: stella.christodoulou@univ-tlse3.fr
+    affiliation: Université de Toulouse
+  - given-names: Romuald
+    family-names: Poteau
+    email: romuald.poteau@univ-tlse3.fr
+    affiliation: >-
+      LPCNO (INSA, CNRS UMR 5215, UT3, Université de
+      Toulouse)
+    orcid: 'https://orcid.org/0000-0003-4338-174X'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.1234
+    description: archived repository on GitHub.com
+repository-code: 'https://github.com/rpoteau/PytChem'
+abstract: >-
+  PytChem proposes a series of Jupyter notebooks intended to
+  introduce chemistry students to the Python computer
+  language. These Jupyter notebooks were designed to cover a
+  wide variety of topics, including data analysis and
+  machine learning.
+keywords:
+  - Physical Chemistry
+  - Computer Algebra Systems
+  - Machine Learning
+  - Data Analysis
+license: CC-BY-NC-SA-4.0
 version: 1.6.0
-doi: 10.5281/zenodo.1234
-date-released: 2023-06-20
-url: "https://github.com/rpoteau/PytChem"
+date-released: '2023-06-20'
