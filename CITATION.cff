@@ -21,7 +21,7 @@ authors:
     orcid: 'https://orcid.org/0000-0003-4338-174X'
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.1234
+    value: 10.5281/zenodo.8069824
     description: archived repository on GitHub.com
 repository-code: 'https://github.com/rpoteau/PytChem'
 abstract: >-
@@ -36,5 +36,5 @@ keywords:
   - Machine Learning
   - Data Analysis
 license: CC-BY-NC-SA-4.0
-version: 1.6.0
-date-released: '2023-06-20'
+version: 1.6.1
+date-released: '2023-06-22'

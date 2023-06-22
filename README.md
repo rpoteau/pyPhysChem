@@ -258,6 +258,5 @@ Si vous utilisez des parties significatives des codes publiés dans ce dépôt g
 
  S. Christodoulou and R. Poteau, *Python in the [Physical] chemistry lab (PytChem) github repository*, release v. 1.6.0 (2023), doi: 10.5072/zenodo.1214027 (https://github.com/rpoteau/PytChem)
     
-[![DOI](https://sandbox.zenodo.org/badge/495332887.svg)](https://dx.doi.org/10.5072/zenodo.1214027)
-
+[![DOI](https://zenodo.org/badge/495332887.svg)](https://zenodo.org/badge/latestdoi/495332887)
 [&#x1F51D; top &#x1F51D;](#top)
