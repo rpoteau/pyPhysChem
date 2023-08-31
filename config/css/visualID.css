@@ -151,4 +151,21 @@ h5 {
     color : #117996;
     display: block;
     }
+.sol {    
+    background-color: #bbeab880;
+    padding: 0.5em;
+    padding-top: 0em;
+    font-weight: 200;
+    position:relative;
+    }
+.sol::before {
+    background-color: #bbeab8;
+    content:"Answer";
+    margin-left:-0.5em;
+    margin-right:-0.5em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    font-weight: 600;
+    display: block;
+    }
 </style>
