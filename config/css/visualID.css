@@ -3,9 +3,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
   font-weight: bold;
 }
-body, ex, exE {
+body, intro, introE, rq, rqE, ex, exE, app, appE, sol  {
   font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
-  font-weight: 200;
+  font-weight: 400;
+  font-size: 12px;
 }
 h1 {
   border: 0 solid #333;
@@ -42,50 +43,87 @@ h5 {
   background: #ffffff;
   text-align: left;
 }
+.introT::before {    
+    content: attr(title);
+    background-color: #cecece;
+    margin-left:-0.5em;
+    margin-right:-0.5em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    font-weight: 600;
+    display: block;
+}
+.introT {    
+    background-color: #cecece80;
+    border-color: #969696;
+    border-left: 5px solid #969696;
+    padding: 0.5em;
+}
 .intro {    
-    background-color: #f1f1f1;
+    background-color: #cecece80;
     border-color: #969696;
     border-left: 5px solid #969696;
     padding: 0.5em;
-    font-weight: 200;
-    }
+}
 .introE {    
-    background-color: #f1f1f1;
+    background-color: #cecece80;
     border-color: #969696;
     border-left: 5px solid #969696;
     padding: 0.5em;
-    font-weight: 200;
     color : #117996;
-    }
+}
 .rq {    
     background-color: #fcf2f2;
     border-color: #dFb5b4;
     border-left: 5px solid #dfb5b4;
     padding: 0.5em;
-    font-weight: 200;
-    }
+}
+.rqE::before {    
+    background-color: #fcd3d3;
+    color: #ff0000;
+    content:"Warning";
+    margin-left:-0.5em;
+    margin-right:-0.5em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    font-weight: 600;
+    display: block;
+}
 .rqE {    
-    background-color: #fcf2f2;
+    background-color: #fcd3d380;
     border-color: #dFb5b4;
     border-left: 5px solid #dfb5b4;
     padding: 0.5em;
-    font-weight: 200;
-    color : #117996;
-    }
+}
+.rqT::before {    
+    background-color: #fcd3d3;
+    color: #ff0000;
+    content: attr(title);
+    margin-left:-0.5em;
+    margin-right:-0.5em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    font-weight: 600;
+    display: block;
+}
+.rqT {    
+    background-color: #fcd3d380;
+    border-color: #dFb5b4;
+    border-left: 5px solid #dfb5b4;
+    padding: 0.5em;
+}
 .exold {    
     background-color: #b2dbea80;
     border-color: #0055ff;
     border-left: 10px solid #0055ff;
     padding: 0.5em;
-    font-weight: 200;
-    }
+}
 .ex {    
     background-color: #b2dbea80;
     padding: 0.5em;
     padding-top: 0em;
-    font-weight: 200;
     position:relative;
-    }
+}
 .ex::before {
     background-color: #b2dbea;
     content:"Exercice";
@@ -95,15 +133,14 @@ h5 {
     padding-right:0.5em;
     font-weight: 600;
     display: block;
-    }
+}
 .exE {    
     background-color: #b2dbea80;
     padding: 0.5em;
     padding-top: 0em;
-    font-weight: 200;
     position:relative;
     color : #117996;
-    }
+}
 .exE::before {
     background-color: #b2dbea;
     content:"Exercise";
@@ -114,14 +151,13 @@ h5 {
     font-weight: 600;
     display: block;
     color : #117996;
-    }
+}
 .app {    
     background-color: #b2dbea80;
     padding: 0.5em;
     padding-top: 0em;
-    font-weight: 200;
     position:relative;
-    }
+}
 .app::before {
     background-color: #b2dbea;
     content:"Application";
@@ -131,15 +167,14 @@ h5 {
     padding-right:0.5em;
     font-weight: 600;
     display: block;
-    }
+}
 .appE {    
     background-color: #b2dbea80;
     padding: 0.5em;
     padding-top: 0em;
-    font-weight: 200;
     color : #117996;
     position:relative;
-    }
+}
 .appE::before {
     background-color: #b2dbea;
     content:"Application";
@@ -150,14 +185,13 @@ h5 {
     font-weight: 600;
     color : #117996;
     display: block;
-    }
+}
 .sol {    
     background-color: #bbeab880;
     padding: 0.5em;
     padding-top: 0em;
-    font-weight: 200;
     position:relative;
-    }
+}
 .sol::before {
     background-color: #bbeab8;
     content:"Answer";
@@ -167,5 +201,5 @@ h5 {
     padding-right:0.5em;
     font-weight: 600;
     display: block;
-    }
+}
 </style>

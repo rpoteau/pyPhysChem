@@ -1,11 +1,10 @@
 __pycache__/
-.gitignore
 .ipynb_checkpoints/
 .directory
 */.directory
 *.swp
 Thumbs.db
 */Thumbs.db
-Corrections-Exercises-Private/
 MiscUnshared/
 MiscUnshared/*
+*private.ipynb
