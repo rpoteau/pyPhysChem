@@ -1,3 +1,12 @@
+__author__ = "Romuald POTEAU"
+__maintainer__ =  "Romuald POTEAU"
+__email__ = "romuald.poteau@univ-tlse3.fr"
+__status__ = "Development"
+
+####################################################################################################################################
+#                    F O N C T I O N S    M A I S O N
+####################################################################################################################################
+
 def y2c(mc2i,y):
     import tensorflow as tf
     from tensorflow import keras
@@ -50,3 +59,57 @@ def PrintLatexStyleSymPyEquation(spe):
     import sympy as sym
     display(Math(sym.latex(spe)))
     return
+
+def centerTitle(content=None):
+    '''
+    centers and renders as HTML a text in the notebook
+    font size = 16px, background color = dark grey, foreground color = white
+    '''
+    from IPython.display import display, HTML
+    display(HTML(f"<div style='text-align:center; font-weight: bold; font-size:16px;background-color: #343132;color: #ffffff'>{content}</div>"))
+    
+    
+def centertxt(content=None,font='sans', size=12,weight="normal",bgc="#000000",fgc="#ffffff"):
+    '''
+    centers and renders as HTML a text in the notebook
+    input: 
+        - content = the text to render (default: None)
+        - font = font family (default: 'sans', values allowed =  'sans-serif' | 'serif' | 'monospace' | 'cursive' | 'fantasy' | ...)
+        - size = font size (default: 12)
+        - weight = font weight (default: 'normal', values allowed = 'normal' | 'bold' | 'bolder' | 'lighter' | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900 )
+        - bgc = background color (name or hex code, default = '#ffffff')
+        - fgc = foreground color (name or hex code, default = '#000000')
+    '''
+    from IPython.display import display, HTML
+    display(HTML(f"<div style='text-align:center; font-family: {font}; font-weight: {weight}; font-size:{size}px;background-color: {bgc};color: {fgc}'>{content}</div>"))
+
+def e2Lists(eigenvectors, sort=False):
+    '''
+    returns two separate lists from the list of tuples returned by the eigenvects() function of SymPy
+    input
+        - the list of tuples returned by eigenvects
+        - sort (default: False): returns sorted eigenvalues and corresponding eigenvectors if True
+    output
+        - list of sorted eigenvalues
+        - list of corresponding eigenvectors
+    '''
+    eps = list()
+    MOs = list()
+    for mo in eigenvectors:
+        eps.extend(mo[0] for i in range(mo[1]))
+        for eigvc in mo[2]:
+            MOs.append(eigvc.normalized())
+    if (sort):
+        sortindex=[]
+        for i,j in sorted(enumerate(eps), key=lambda j: j[1]):
+            sortindex.append(i)
+        eps = sorted(eps)
+    
+        MOs_sorted=[]
+        for i, mo in enumerate(MOs):
+            MOs_sorted.append(MOs[sortindex[i]])
+        return eps,MOs_sorted
+    else:
+        return eps, MOs
+
+
