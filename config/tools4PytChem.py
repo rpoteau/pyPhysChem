@@ -10,7 +10,7 @@ __status__ = "Development"
 def y2c(mc2i,y):
     import tensorflow as tf
     from tensorflow import keras
-    from keras.utils import np_utils
+    #from keras.utils import np_utils
     from keras.utils import to_categorical
     y_array = y.copy()
     y_array = y_array.to_numpy() # transformation au format numpy
