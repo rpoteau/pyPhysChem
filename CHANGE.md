@@ -2,9 +2,32 @@
 
 [<img width="700px" src="./config/svg/PytChemBanner.svg"/>](#top)
 
+##### **2023.09.29. v1.7.0** [10.5281/zenodo.8396813](https://doi.org/10.5281/zenodo.8396813)
+- "talktorial" transformation of the ML part
+    - pdf support splitted into a couple of pdf files
+    - some slides are inserted in notebooks as jpeg images
+    - MLChem.pdf updated with new cited studies
+- copy of part of the [DS4B-appendix.ipynb](./DS4B-appendix.ipynb) as [DS4B-BasicsOfANN.ipynb](./DS4B-BasicsOfANN.ipynb)
+
+##### **2023.09.16. Unreleased version**
+- new [python-Computer Algebra System, pCAS, in a nutshell notebook](./pCAS.ipynb)
+- H atom notebook converted into a [Schrödinger model of the Hydrogen atom exercise notebook](HydrogenAtom.ipynb)
+ 
+##### **2023.09.01. Unreleased version**
+- [Unsupervised ML applied to the Iris dataset notebook](./DS4B-IrisUML.ipynb) now includes K-means in addition to PCA
+- [Molecules notebook renamed MolecularRepresentations.ipynb](./MolecularRepresentations.ipynb)
+    - better contextualization of the scripts
+    - similarities calculated and plotted
+    - fingerprint plots
+    - selection of molecules that match a pattern
+
+##### **2023.06.22. v1.6.1** [10.5281/zenodo.8069824](https://doi.org/10.5281/zenodo.8069824)
+- various bug fix
+
 ##### **2023.05.22. v1.6.0**
 - "Iris3" = [Régression logistique](./DS4B-Iris3.ipynb) is now also available in English (*Supervised Machine Learning applied to classification*)
 - "Iris1" Exercise and Solution to exercise is now available in English
+- new [Easter Egg notebook](./EasterEgg.ipynb)
 
 ##### **2023.05.20. v1.5.9**
 - "Iris1" = [Lecture et analyse de la base de données par la librairie pandas](./Exercices-DS4B/DS4B-Iris1-Exercice.ipynb) is now also available in English (*Reading and analyzis of the "iris" database with the pandas library*)
