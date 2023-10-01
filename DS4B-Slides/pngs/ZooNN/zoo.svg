@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="705.5556mm"
+   height="1199.4445mm"
+   viewBox="0 0 705.55561 1199.4445"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="zoo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.30703232"
+     inkscape:cx="1332.1073"
+     inkscape:cy="1485.1857"
+     inkscape:window-width="1860"
+     inkscape:window-height="1178"
+     inkscape:window-x="60"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" /><defs
+     id="defs1" /><g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(384.823,490.71576)"><image
+       width="705.5556"
+       height="1199.4445"
+       preserveAspectRatio="none"
+       style="image-rendering:optimizeQuality"
+       xlink:href="NeuralNetworkZoo20042019-translucent.png"
+       id="image1"
+       x="-384.823"
+       y="-490.71576" /><rect
+       style="fill:none;stroke:#000000;stroke-width:1.32292;stroke-linecap:round;stroke-linejoin:round"
+       id="rect1"
+       width="93.976654"
+       height="79.613464"
+       x="-68.219994"
+       y="-380.41318"
+       rx="1.4169919"
+       ry="1.1023451" /></g></svg>
