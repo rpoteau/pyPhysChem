@@ -2,6 +2,10 @@
 
 [<img width="700px" src="./config/svg/PytChemBanner.svg"/>](#top)
 
+##### **2023.10.05. v1.7.1** 
+- new [Velocity Verlet project](MD_VVERLET_Student.ipynb)
+- new author: F. Jolibois, @LPCNO (CNRS-UT3-INSA lab)
+
 ##### **2023.09.29. v1.7.0** [10.5281/zenodo.8396813](https://doi.org/10.5281/zenodo.8396813)
 - "talktorial" transformation of the ML part
     - pdf support splitted into a couple of pdf files
