@@ -12,6 +12,13 @@ authors:
     family-names: Christodoulou
     email: stella.christodoulou@univ-tlse3.fr
     affiliation: Université de Toulouse
+  - given-names: Franck
+    family-names: Jolibois
+    email:franck.jolibois@univ-tlse3.fr 
+    affiliation: >-
+      LPCNO (INSA, CNRS UMR 5215, UT3, Université de
+      Toulouse)
+    orcid: 'https://orcid.org/0000-0002-2174-4039'
   - given-names: Romuald
     family-names: Poteau
     email: romuald.poteau@univ-tlse3.fr
@@ -36,5 +43,5 @@ keywords:
   - Machine Learning
   - Data Analysis
 license: CC-BY-NC-SA-4.0
-version: 1.6.1
+version: 1.7.1
 date-released: '2023-06-22'
