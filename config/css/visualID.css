@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
   font-weight: bold;
 }
-body, intro, introE, rq, rqE, ex, exE, app, appE, sol  {
+body, intro, introE, introT, rq, rqE, rqT, ex, exE, app, appE, sol  {
   font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
   font-weight: 400;
   font-size: 12px;

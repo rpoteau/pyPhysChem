@@ -3,40 +3,36 @@
 
 cff-version: 1.2.0
 title: PytChem
-message: >-
-  If you use this software, please cite it using the  
-  metadata from this file
+message: If you use this software, please cite it using the metadata from this file
 type: software
 authors:
   - given-names: Stella
     family-names: Christodoulou
     email: stella.christodoulou@univ-tlse3.fr
-    affiliation: Université de Toulouse
+    affiliation: "LPCNO (INSA, CNRS UMR 5215, UT3, Université de Toulouse)"
+    role: contributor
   - given-names: Franck
     family-names: Jolibois
-    email:franck.jolibois@univ-tlse3.fr 
-    affiliation: >-
-      LPCNO (INSA, CNRS UMR 5215, UT3, Université de
-      Toulouse)
+    email: franck.jolibois@univ-tlse3.fr 
+    affiliation: "LPCNO (INSA, CNRS UMR 5215, UT3, Université de Toulouse)"
     orcid: 'https://orcid.org/0000-0002-2174-4039'
+    role: contributor
   - given-names: Romuald
     family-names: Poteau
     email: romuald.poteau@univ-tlse3.fr
-    affiliation: >-
-      LPCNO (INSA, CNRS UMR 5215, UT3, Université de
-      Toulouse)
+    affiliation: "LPCNO (INSA, CNRS UMR 5215, UT3, Université de Toulouse)"
     orcid: 'https://orcid.org/0000-0003-4338-174X'
+    role: main author
 identifiers:
   - type: doi
     value: 10.5281/zenodo.8069824
     description: archived repository on GitHub.com
 repository-code: 'https://github.com/rpoteau/PytChem'
-abstract: >-
-  PytChem proposes a series of Jupyter notebooks intended to
+abstract: "PytChem proposes a series of Jupyter notebooks intended to
   introduce chemistry students to the Python computer
   language. These Jupyter notebooks were designed to cover a
   wide variety of topics, including data analysis and
-  machine learning.
+  machine learning."
 keywords:
   - Physical Chemistry
   - Computer Algebra Systems
@@ -44,4 +40,4 @@ keywords:
   - Data Analysis
 license: CC-BY-NC-SA-4.0
 version: 1.7.1
-date-released: '2023-06-22'
+date-released: '2023-10-06'
