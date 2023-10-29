@@ -1,6 +1,6 @@
 <a name="top"></a>
 
-[<img width="700px" src="./config/svg/PytChemBanner.svg"/>](#top)
+[<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
 ##### **2023.10.12. Unreleased version** 
 - new [Recurrent Neural Network notebook](DS4B-RNN.ipynb)

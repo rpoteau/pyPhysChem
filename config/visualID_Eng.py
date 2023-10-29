@@ -121,7 +121,7 @@ def init(pwy):
     #print('Run time             :', _start_time.strftime("%A %d %B %Y, %H:%M:%S"))
     #print('Hostname             :', f'{h[1]} ({h[0]})')
     path2svg=pwy + 'svg/'
-    md = '<p style="text-align: center"><img width="800px" src="' + path2svg + 'PytChemBanner.svg" style="margin-left:auto; margin-right:auto"/></p>'
+    md = '<p style="text-align: center"><img width="800px" src="' + path2svg + 'pyPhysChemBanner.svg" style="margin-left:auto; margin-right:auto"/></p>'
     display_md(md)
     
 def end(pwy):
