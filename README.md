@@ -13,8 +13,8 @@ of Jupyter Notebooks*
     -   [**1.** Installer Jupyter ainsi qu'une distribution Python /
         *Install Jupyter as well as a Python
         distribution*](#howto1)
-    -   [**2.** Cloner ou Télécharger le dépôt (repository) PytChem /
-        *Clone or Download the PytChem repository*](#howto2)
+    -   [**2.** Cloner ou Télécharger le dépôt (repository) pyPhysChem /
+        *Clone or Download the pyPhysChem repository*](#howto2)
         - [Linux](#cloneL)
         - [Windows](#cloneW)
     -   [**3.** Exécuter ces notebooks à l'aide de JupyterLab /
@@ -89,7 +89,7 @@ distribution of the Python programming language:*
 
 [&#x1F51D; top &#x1F51D;](#top)
 
-### <a name="howto2"></a>**2.** Cloner ou Télécharger le dépôt (repository) PytChem / *Clone or Download the PytChem repository*
+### <a name="howto2"></a>**2.** Cloner ou Télécharger le dépôt (repository) pyPhysChem / *Clone or Download the PytChem repository*
 
 #### Télécharger / *Download*
 
@@ -116,21 +116,21 @@ notebooks, tapez la commande : / *Open a terminal. Go into the folder in
 which the notebooks will be installed, and type:*
 
 ```bash
-git clone https://github.com/rpoteau/PytChem.git
+git clone https://github.com/rpoteau/pyPhysChem.git
 ```
 
-Vous avez maintenant un répertoire `PytChem` dans le répertoire depuis
-lequel vous avez lancé la commande `git` / *You now have a `PytChem`
+Vous avez maintenant un répertoire `pyPhysChem` dans le répertoire depuis
+lequel vous avez lancé la commande `git` / *You now have a `pyPhysChem`
 folder installed in the folder from which the `git` command was ran*
 
-PytChem étant un projet en évolution, il faut régulièrement vérifier
+pyPhysChem étant un projet en évolution, il faut régulièrement vérifier
 qu'il n'y a pas de mise à jour. La commande suivante met si nécessaire à
 jour le contenu du répertoire `Pytchem` / *Pytchem being a
 work-in-progress project, it is necessary to regularly check for a
-possible update. The content of the `PytChem` folder is updated by using
+possible update. The content of the `pyPhysChem` folder is updated by using
 the following command*:
 
-allez d'abord dans le répertoire PytChem / *first go into the `PytChem`
+allez d'abord dans le répertoire pyPhysChem / *first go into the `PytChem`
 folder*
 
 puis tapez / *and then enter*
@@ -153,12 +153,12 @@ Exécutez ensuite l'application Git GUI. Ça devrait ressembler à ça : /
 <img width="400px" src="./MiscImages/GitGUI-Windows-0.png"/>
 
 Cliquez sur "Clone existing repository". Collez l'adresse
-https://github.com/rpoteau/PytChem.git dans le champ "Source location".
-Choisissez un emplacement où cloner PytChem dans "Target Directory",
-ajoutez PytChem au chemin. Ce répertoire va être créé par Git GUI /
+https://github.com/rpoteau/pyPhysChem.git dans le champ "Source location".
+Choisissez un emplacement où cloner pyPhysChem dans "Target Directory",
+ajoutez pyPhysChem au chemin. Ce répertoire va être créé par Git GUI /
 *Click on "Clone existing repository". Paste the
-https://github.com/rpoteau/PytChem.git in the "Source location" field.
-Choose the local target folder. Add PytChem to the pathway. This folder
+https://github.com/rpoteau/pyPhysChem.git in the "Source location" field.
+Choose the local target folder. Add pyPhysChem to the pathway. This folder
 will be created by Git GUI*
 
 <img width="550px" src="./MiscImages/GitGUI-Windows-1.png"/>
@@ -179,7 +179,7 @@ Vous pouvez fermer cette application / *You can close this application*
 
 -   Ouvrez un terminal / *Open a terminal*
 -   Allez (commande `cd chemin d'accès`) dans le répertoire qui contient
-    PytChem / *Navigate to the folder that contains PytChem
+    pyPhysChem / *Navigate to the folder that contains PytChem
     (`cd pathway`)*
 -   tapez la commande / *enter the command*
 
@@ -195,9 +195,9 @@ Anaconda Navigator*
 
 <img width="700px" src="./MiscImages/Anaconda.png"/>
 
-Il ne reste plus qu'à naviguer jusqu'au répertoire qui contient PytChem,
+Il ne reste plus qu'à naviguer jusqu'au répertoire qui contient pyPhysChem,
 et à charger la table des matières intitulée `TOC.ipynb` / *All that
-remains is to navigate to the directory that contains PytChem, and load
+remains is to navigate to the directory that contains pyPhysChem, and load
 the table of contents entitled `TOC.ipynb`.*
 
 <img width="650px" src="./MiscImages/JupyterLab.png"/>
@@ -256,7 +256,7 @@ Les installer via l'onglet "extension manager" de JupterLab ; vous pouvez faire 
 Si vous utilisez des parties significatives des codes publiés dans ce dépôt github, ou bien s'il a été utile pour votre auto-formation, veuillez le citer comme suit :<br>
 *If you use pieces of code of this github repository that turned out to be decisive to your work, or that have been useful for your self-learning, please cite it as follows*:
 
- S. Christodoulou, F. Jolibois and R. Poteau, *Python in the [Physical] chemistry lab (PytChem) github repository*, release v. 1.7.1 (2023), doi: [10.5281/zenodo.8396813](https://doi.org/10.5281/zenodo.8396813)
+ S. Christodoulou, F. Jolibois and R. Poteau, *Python in the [Physical] chemistry lab (pyPhysChem) github repository*, release v. 1.7.1 (2023), doi: [10.5281/zenodo.8396813](https://doi.org/10.5281/zenodo.8396813)
     
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8396813.svg)](https://doi.org/10.5281/zenodo.8396813)
 
