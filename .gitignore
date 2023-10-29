@@ -8,6 +8,7 @@ Thumbs.db
 MiscUnshared/
 MiscUnshared/*
 *private.ipynb
+*-dev.ipynb
 Feedback/
 Feedback/*
 Conv1D_functions.csv

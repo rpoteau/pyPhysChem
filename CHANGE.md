@@ -2,8 +2,15 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+##### **2023.10.29. Unreleased version** 
+- project renamed "pyPhysChem" instead of "pytChem"
+
+##### **2023.10.26. Unreleased version** 
+- new [Convolutional Neural Network notebook](ML-CNN-dev.ipynb)
+- new [Neural Network notebook: combining regression and classification with Keras](ML-CombineRegressionAndClassification-dev.ipynb)
+
 ##### **2023.10.12. Unreleased version** 
-- new [Recurrent Neural Network notebook](DS4B-RNN.ipynb)
+- new [Recurrent Neural Network notebook](ML-RNN-dev.ipynb)
 
 ##### **2023.10.05. v1.7.1** 
 - new [Velocity Verlet project](MD_VVERLET_Student.ipynb)
