@@ -89,7 +89,7 @@ distribution of the Python programming language:*
 
 [&#x1F51D; top &#x1F51D;](#top)
 
-### <a name="howto2"></a>**2.** Cloner ou Télécharger le dépôt (repository) pyPhysChem / *Clone or Download the PytChem repository*
+### <a name="howto2"></a>**2.** Cloner ou Télécharger le dépôt (repository) pyPhysChem / *Clone or Download the pyPhysChem repository*
 
 #### Télécharger / *Download*
 
@@ -130,7 +130,7 @@ work-in-progress project, it is necessary to regularly check for a
 possible update. The content of the `pyPhysChem` folder is updated by using
 the following command*:
 
-allez d'abord dans le répertoire pyPhysChem / *first go into the `PytChem`
+allez d'abord dans le répertoire pyPhysChem / *first go into the `pyPhysChem`
 folder*
 
 puis tapez / *and then enter*
@@ -179,7 +179,7 @@ Vous pouvez fermer cette application / *You can close this application*
 
 -   Ouvrez un terminal / *Open a terminal*
 -   Allez (commande `cd chemin d'accès`) dans le répertoire qui contient
-    pyPhysChem / *Navigate to the folder that contains PytChem
+    pyPhysChem / *Navigate to the folder that contains pyPhysChem
     (`cd pathway`)*
 -   tapez la commande / *enter the command*
 
