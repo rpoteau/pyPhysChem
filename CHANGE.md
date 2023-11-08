@@ -2,15 +2,24 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+##### **2023.11.08. v1.7.3.** 
+- new 1.7.3 version released after a careful check that new pyPhysChem rebranding did not introduce major bugs
+- [ML-CNN-dev.ipynb notebook renamed as ML-1DCNN-dev.ipynb](ML-1DCNN-dev.ipynb). dev version not uploaded
+- new [2D Convolutional Neural Network notebook](ML-2DCNN-dev.ipynb). dev version not uploaded
+- new [Autoencoders notebook](ML-Autoencoders-dev). dev version not uploaded
+- TOC updated
+- new [AdvancedPython notebook](AdvancedPython.ipynb). First topic: reshaping NumPy arrays
+- new BrainHalfHalf style added to the css file
+
 ##### **2023.10.29. Unreleased version** 
 - project renamed "pyPhysChem" instead of "pytChem"
 
 ##### **2023.10.26. Unreleased version** 
-- new [Convolutional Neural Network notebook](ML-CNN-dev.ipynb)
-- new [Neural Network notebook: combining regression and classification with Keras](ML-CombineRegressionAndClassification-dev.ipynb)
+- new [Convolutional Neural Network notebook](ML-CNN-dev.ipynb). dev version not uploaded
+- new [Neural Network notebook: combining regression and classification with Keras](ML-CombineRegressionAndClassification-dev.ipynb). dev version not uploaded
 
 ##### **2023.10.12. Unreleased version** 
-- new [Recurrent Neural Network notebook](ML-RNN-dev.ipynb)
+- new [Recurrent Neural Network notebook](ML-RNN-dev.ipynb). dev version not uploaded
 
 ##### **2023.10.05. v1.7.1** 
 - new [Velocity Verlet project](MD_VVERLET_Student.ipynb)

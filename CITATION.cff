@@ -2,7 +2,7 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: PytChem
+title: pyPhysChem (python in the Physical Chemistry lab)
 message: If you use this software, please cite it using the metadata from this file
 type: software
 authors:
@@ -28,8 +28,8 @@ identifiers:
     value: 10.5281/zenodo.8069824
     description: archived repository on GitHub.com
 repository-code: 'https://github.com/rpoteau/PytChem'
-abstract: "PytChem proposes a series of Jupyter notebooks intended to
-  introduce chemistry students to the Python computer
+abstract: "pyPhysChem proposes a series of Jupyter notebooks intended to
+  introduce physical chemistry students to the Python computer
   language. These Jupyter notebooks were designed to cover a
   wide variety of topics, including data analysis and
   machine learning."
@@ -39,5 +39,5 @@ keywords:
   - Machine Learning
   - Data Analysis
 license: CC-BY-NC-SA-4.0
-version: 1.7.1
-date-released: '2023-10-06'
+version: 1.7.3
+date-released: '2023-11-08'
