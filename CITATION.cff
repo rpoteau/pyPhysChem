@@ -2,7 +2,7 @@
 # Visit https://bit.ly/cffinit to generate yours today!
 
 cff-version: 1.2.0
-title: pyPhysChem (python in the Physical Chemistry lab)
+title: python in the Physical Chemistry lab [pyPhysChem]
 message: If you use this software, please cite it using the metadata from this file
 type: software
 authors:
