@@ -2,6 +2,12 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+##### **2023.11.12. v1.7.4.** 
+- new contributor: I. Gerber, @LPCNO (CNRS-UT3-INSA lab)
+- ML notebooks dev versions still under heavy development and not made available
+- [Basics of Artificial Neural Networks (ANNs) for supervised learning notebook](./DS4B-BasicsOfANN.ipynb) is now richly commented, and adapted to self-learning and talktorial format
+- TOC updated
+
 ##### **2023.11.08. v1.7.3.** 
 - new 1.7.3 version released after a careful check that new pyPhysChem rebranding did not introduce major bugs
 - [ML-CNN-dev.ipynb notebook renamed as ML-1DCNN-dev.ipynb](ML-1DCNN-dev.ipynb). dev version not uploaded
@@ -22,8 +28,8 @@
 - new [Recurrent Neural Network notebook](ML-RNN-dev.ipynb). dev version not uploaded
 
 ##### **2023.10.05. v1.7.1** 
-- new [Velocity Verlet project](MD_VVERLET_Student.ipynb)
-- new author: F. Jolibois, @LPCNO (CNRS-UT3-INSA lab)
+- new contributor: F. Jolibois, @LPCNO (CNRS-UT3-INSA lab)
+- new [Velocity Verlet project](MD_VVERLET_Student.ipynb) (**author: *Franck Jolibois***)
 
 ##### **2023.09.29. v1.7.0** [10.5281/zenodo.8396813](https://doi.org/10.5281/zenodo.8396813)
 - "talktorial" transformation of the ML part
@@ -59,6 +65,7 @@
 - "Iris2" = [Statistiques et régression](./DS4B-Iris2.ipynb) is now also available in English (*Statistics and regression*)
 
 ##### **2023.05.18. Unreleased version**
+- new contributor: S. Christodoulou, @LPCNO (CNRS-UT3-INSA lab)
 - New [Molecules notebook](./Molecules.ipynb) (in English), mainly based on the ```RDKit``` library and on the ```jupyter_jsmol``` extension
 - New [ML-SVR notebook](./DS4B-CO2_solubility-SVR.ipynb) (in English): Prediction of the solubility of CO<sub>2</sub> in ionic liquids with the Support Vector Regression (SVR) method. Illustration of an optimal hyperparameters search (**author: *Stella Christodoulou***)
 - New [ML-SVR exercise](./DS4B-Exercices/DS4B-CO2_solubility-SVR-Exercise.ipynb), with the [solution](/DS4B-Exercices/DS4B-CO2_solubility-SVR-ExerciseWithAnswer.ipynb) (**author: *Stella Christodoulou***)

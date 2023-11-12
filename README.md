@@ -256,7 +256,7 @@ Les installer via l'onglet "extension manager" de JupterLab ; vous pouvez faire 
 Si vous utilisez des parties significatives des codes publiés dans ce dépôt github, ou bien s'il a été utile pour votre auto-formation, veuillez le citer comme suit :<br>
 *If you use pieces of code of this github repository that turned out to be decisive to your work, or that have been useful for your self-learning, please cite it as follows*:
 
- S. Christodoulou, F. Jolibois and R. Poteau, *Python in the Physical chemistry lab (pyPhysChem) github repository*, release v. 1.7.3 (2023), doi: [10.5281/zenodo.8396813](https://doi.org/10.5281/zenodo.8396813)
+ S. Christodoulou, Iann C. Gerber, F. Jolibois and R. Poteau, *Python in the Physical Chemistry lab (pyPhysChem) github repository*, release v. 1.7.4 (2023), doi: [10.5281/zenodo.8396813](https://doi.org/10.5281/zenodo.8396813)
     
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8396813.svg)](https://doi.org/10.5281/zenodo.8396813)
 

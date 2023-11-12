@@ -11,6 +11,11 @@ authors:
     email: stella.christodoulou@univ-tlse3.fr
     affiliation: "LPCNO (INSA, CNRS UMR 5215, UT3, Université de Toulouse)"
     role: contributor
+  - given-names: Iann C.
+    family-names: Gerber
+    email: iann.gerber@insa-toulouse.fr
+    affiliation: "LPCNO (INSA, CNRS UMR 5215, UT3, Université de Toulouse)"
+    role: contributor
   - given-names: Franck
     family-names: Jolibois
     email: franck.jolibois@univ-tlse3.fr 
@@ -39,5 +44,5 @@ keywords:
   - Machine Learning
   - Data Analysis
 license: CC-BY-NC-SA-4.0
-version: 1.7.3
-date-released: '2023-11-08'
+version: 1.7.4
+date-released: '2023-11-12'

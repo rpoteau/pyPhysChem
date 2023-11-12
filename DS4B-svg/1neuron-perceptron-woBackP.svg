@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="78.692642mm"
+   height="26.063139mm"
+   viewBox="0 0 78.692642 26.063139"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.3 (0e150ed6c4, 2023-07-21)"
+   sodipodi:docname="1neuron-woBackP.svg"
+   inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/DessinsCoursML/1neuron-woBackP.png"
+   inkscape:export-xdpi="300.008"
+   inkscape:export-ydpi="300.008"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:ns11="http://www.iki.fi/pav/software/textext/">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.7379557"
+     inkscape:cx="633.50291"
+     inkscape:cy="781.95319"
+     inkscape:window-width="2500"
+     inkscape:window-height="1208"
+     inkscape:window-x="60"
+     inkscape:window-y="157"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg5"
+     inkscape:showpageshadow="2"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid19923"
+       originx="-431.31792"
+       originy="-824.6566"
+       spacingy="1"
+       spacingx="1"
+       units="mm"
+       visible="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="marker21703"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path21701" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path21128" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path21128-3" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker21703-8"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path21701-0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend-3-0"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path21128-3-8" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker21703-8-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path21701-0-2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend-3-0-0"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path21128-3-8-5" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker21703-8-6-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path21701-0-2-2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Mend-3-0-0-36"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path21128-3-8-5-75" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="marker21703-8-6-5-3"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Mend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.4,0,0,-0.4,-4,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path21701-0-2-2-56" />
+    </marker>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-114.11953,-218.19039)">
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 23.728123,63.371697 46.847841,85.640495"
+       id="path20214"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/DessinsCoursML/1neuron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 24.872117,78.333864 20.83173,9.023678"
+       id="path20216"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/DessinsCoursML/1neuron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="M 25.322696,92.150545 45.253268,90.220129"
+       id="path20220"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/DessinsCoursML/1neuron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker21703)"
+       d="m 56.818465,89.661354 h 3.988654"
+       id="path20222"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/DessinsCoursML/1neuron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker21703)"
+       d="M 23.755556,110.67454 46.431437,93.199341"
+       id="path3970"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/DessinsCoursML/1neuron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-3)"
+       d="m 116.33228,63.371697 23.11971,22.268797"
+       id="path20214-2"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/DessinsCoursML/1neuron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-3)"
+       d="M 117.47628,78.333865 138.308,87.357541"
+       id="path20216-6"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/DessinsCoursML/1neuron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-3)"
+       d="M 117.92686,92.150545 137.85742,90.22013"
+       id="path20220-7"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/DessinsCoursML/1neuron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker21703-8)"
+       d="m 149.42262,89.661354 h 3.98866"
+       id="path20222-5"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/DessinsCoursML/1neuron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker21703-8)"
+       d="M 116.35971,110.67454 139.03559,93.199342"
+       id="path3970-2"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/DessinsCoursML/1neuron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-3-0)"
+       d="m 24.030824,154.24956 23.119707,22.2688"
+       id="path20214-2-8"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/DessinsCoursML/1neuron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-3-0)"
+       d="m 25.174819,169.21173 20.831717,9.02367"
+       id="path20216-6-3"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/DessinsCoursML/1neuron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-3-0)"
+       d="m 25.625398,183.0284 19.930559,-1.93041"
+       id="path20220-7-0"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/DessinsCoursML/1neuron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker21703-8-6)"
+       d="m 57.121153,180.53921 24.890379,0"
+       id="path20222-5-1"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/DessinsCoursML/1neuron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#marker21703-8-6)"
+       d="M 24.058242,201.55239 46.734125,184.0772"
+       id="path3970-2-2"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/DessinsCoursML/1neuron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-3-0-0)"
+       d="m 127.80293,167.37174 19.87703,-0.15803"
+       id="path20214-2-8-3"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/2021-Figures-CoursML/1neuron-perceptron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker21703-8-6-5)"
+       d="m 159.27192,167.16763 24.89038,-2e-5"
+       id="path20222-5-1-4"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/2021-Figures-CoursML/1neuron-perceptron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#ff0000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="120.04854"
+       y="221.77328"
+       id="text781-0-9-9-1"
+       inkscape:export-filename="../../../ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/2021-Figures-CoursML/1neuron-perceptron-wBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008"><tspan
+         sodipodi:role="line"
+         id="tspan779-0-3-0-2"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:5.64444px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff0000;stroke:none;stroke-width:0.264583px"
+         x="120.04854"
+         y="221.77328">Input</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:21.3333px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00d400;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="430.72714"
+       y="251.16521"
+       id="text18109-4-9-2-7"
+       transform="matrix(0.26458333,0,0,0.26458333,70.941783,173.98143)"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/2021-Figures-CoursML/1neuron-perceptron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008"><tspan
+         sodipodi:role="line"
+         id="tspan18107-6-2-8-0"
+         x="430.72714"
+         y="251.16521">Output</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend-3-0-0-36)"
+       d="m 125.9615,231.36745 19.87704,-0.15803"
+       id="path20214-2-8-3-9"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path19735-8-9-0-6"
+       inkscape:connection-end="#path19735-7-4-6-1-2"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/2021-Figures-CoursML/1neuron-perceptron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker-end:url(#marker21703-8-6-5-3)"
+       d="m 157.43051,231.16334 24.89037,-2e-5"
+       id="path20222-5-1-4-3"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path19735-7-4-6-1-2"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/2021-Figures-CoursML/1neuron-perceptron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008"
+       sodipodi:nodetypes="cc" />
+    <circle
+       style="fill:#ffd5d5;stroke:#000000;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:bevel"
+       id="path19735-8-9-0-6"
+       cx="120.16566"
+       cy="231.41353"
+       r="5.7961221"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/2021-Figures-CoursML/1neuron-perceptron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:21.3333px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="90.360039"
+       y="348.79227"
+       id="text7544-7-1-9-0"
+       transform="matrix(0.26458333,0,0,0.26458333,96.270313,140.43113)"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/2021-Figures-CoursML/1neuron-perceptron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008"><tspan
+         sodipodi:role="line"
+         id="tspan7542-2-5-1-6"
+         x="90.360039"
+         y="348.79227"><tspan
+           style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:21.3333px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#ff0000"
+           id="tspan10404-82-4-9-2">x</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:65%;font-family:Calibri;-inkscape-font-specification:'Calibri, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;baseline-shift:sub;fill:#ff0000"
+           id="tspan8282-99-9-6-6" /></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:21.3333px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="90.360039"
+       y="348.79227"
+       id="text7544-40-0-1-3-1"
+       transform="matrix(0.26458333,0,0,0.26458333,110.13399,137.40739)"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/2021-Figures-CoursML/1neuron-perceptron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008"><tspan
+         sodipodi:role="line"
+         id="tspan7542-62-7-9-5-8"
+         x="90.360039"
+         y="348.79227"><tspan
+           style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-size:21.3333px;font-family:Calibri;-inkscape-font-specification:'Calibri, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000ff"
+           id="tspan10404-9-5-9-1-7">w</tspan><tspan
+           style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:65%;font-family:Calibri;-inkscape-font-specification:'Calibri, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;baseline-shift:sub;fill:#0000ff"
+           id="tspan8282-9-8-7-7-9" /></tspan></text>
+    <circle
+       style="fill:#afdde9;stroke:none;stroke-width:0.499999;stroke-linecap:round;stroke-linejoin:bevel"
+       id="path19735-7-4-6-1-2"
+       cx="151.63438"
+       cy="231.16335"
+       r="5.7961221"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/2021-Figures-CoursML/1neuron-perceptron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <circle
+       style="fill:#00ffff;stroke:#2c89a0;stroke-width:1;stroke-linecap:round;stroke-linejoin:bevel"
+       id="path1027-2-1-8-0"
+       cx="154.82367"
+       cy="231.11478"
+       r="1.3831747"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/2021-Figures-CoursML/1neuron-perceptron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:29.3333px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="116.03186"
+       y="407.71982"
+       id="text15931-9-9-0-2-8-2"
+       transform="matrix(0.26458333,0,0,0.26458333,118.73528,125.72803)"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/2021-Figures-CoursML/1neuron-perceptron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008"><tspan
+         sodipodi:role="line"
+         id="tspan15929-2-08-5-0-9-3"
+         x="116.03186"
+         y="407.71982"
+         style="font-size:29.3333px;fill:#ff0000">Σ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00d400;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="653.82574"
+       y="422.04715"
+       id="text66444-3-5-7-2-7"
+       transform="matrix(0.26458333,0,0,0.26458333,12.048138,121.77909)"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/2021-Figures-CoursML/1neuron-perceptron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008"><tspan
+         sodipodi:role="line"
+         id="tspan66442-5-2-3-8-5"
+         x="653.82574"
+         y="422.04715"
+         style="font-style:italic;fill:#00d400;fill-opacity:1">y</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:center;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;text-anchor:middle;white-space:normal;shape-padding:0;shape-margin:0;inline-size:0;vector-effect:none;fill:#00d400;fill-opacity:1;stroke:none;stroke-width:0.999999px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="750.44983"
+       y="385.21786"
+       id="text4851-9-2-9-8-9"
+       transform="matrix(0.26458333,0,0,0.26458333,-13.592188,129.68235)"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/2021-Figures-CoursML/1neuron-perceptron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008"><tspan
+         sodipodi:role="line"
+         id="tspan4849-1-8-0-8-2"
+         x="750.44983"
+         y="385.21786">^</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers;stop-color:#000000"
+       id="rect11185-3-5-6-2"
+       width="32.532356"
+       height="14.579237"
+       x="142.57932"
+       y="223.8737"
+       ry="3.3614504"
+       rx="3.0562744"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/2021-Figures-CoursML/1neuron-perceptron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008" />
+    <g
+       transform="matrix(0.423334,0,0,0.423334,146.77258,240.45671)"
+       ns11:version="1.8.1"
+       ns11:texconverter="pdflatex"
+       ns11:pdfconverter="inkscape"
+       ns11:text="$${\\color{MathsG}\\hat{y}}={\\color{blue}w}\\cdot{\\color{red}x}+{\\color{teal}b}$$"
+       ns11:preamble="/home/romuald/.config/inkscape/extensions/textext/RP_packages.tex"
+       ns11:scale="1.2"
+       ns11:alignment="middle center"
+       ns11:stroke-to-path="0"
+       ns11:inkscapeversion="1.1.2"
+       ns11:jacobian_sqrt="0.423334"
+       id="g15256-8-6"
+       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Cours-Présentations/M2-MachineLearning/2021-Figures-CoursML/1neuron-perceptron-woBackP.png"
+       inkscape:export-xdpi="300.008"
+       inkscape:export-ydpi="300.008">
+      <defs
+         id="id-805f1071-caf8-437e-9c63-73d693222952-1" />
+      <g
+         id="id-489137e1-a889-400f-af5c-a4bf99c1049a-6"
+         transform="translate(-277.049,-139.798)">
+        <g
+           style="fill:#00d100;fill-opacity:1"
+           id="id-65929661-5410-4ea3-a71b-554ab59c2f5b-9">
+          <g
+             transform="translate(276.984,146.72)"
+             id="g53653-3">
+            <path
+               style="stroke:none"
+               d="M 3.875,-6.484375 4.71875,-5.25 h 0.609375 l -1.0625,-1.671875 H 3.65625 L 1.890625,-5.25 H 2.5 Z m 0,0"
+               id="id-633d9a4e-a70b-4f54-9f4a-0fd2a0e5ed26-7" />
+          </g>
+        </g>
+        <g
+           style="fill:#00d100;fill-opacity:1"
+           id="id-163c6449-bea0-4662-8c68-629b0d3a4443-4">
+          <g
+             transform="translate(277.034,146.72)"
+             id="g53657-5">
+            <path
+               style="stroke:none"
+               d="m 5.390625,-4.421875 h -0.75 L 3.28125,-2.1875 C 2.96875,-1.640625 2.578125,-0.921875 2.5,-0.578125 H 2.484375 C 2.5,-0.640625 2.5,-0.71875 2.5,-0.828125 2.5,-1.34375 2.3125,-2.34375 2.203125,-2.859375 l -0.34375,-1.5625 h -0.78125 l 0.96875,4.28125 c 0,0.015625 0.03125,0.109375 0.03125,0.125 0,0.0625 -0.46875,0.765625 -0.546875,0.890625 -0.28125,0.4375 -0.4375,0.59375 -0.6875,0.59375 -0.171875,0 -0.5,-0.03125 -0.75,-0.15625 L 0.015625,1.96875 c 0.265625,0.0625 0.53125,0.078125 0.6875,0.078125 C 1,2.046875 1.40625,2 2.109375,0.875 Z m 0,0"
+               id="id-a2871dc0-5dfa-4496-bb52-03b812907679-2" />
+          </g>
+        </g>
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="id-bce542e0-406c-4f47-aa0f-180d949e7db6-5">
+          <g
+             transform="translate(285.477,146.72)"
+             id="g53661-4">
+            <path
+               style="stroke:none"
+               d="m 6.84375,-3.296875 c 0.15625,0 0.34375,0 0.34375,-0.1875 C 7.1875,-3.6875 7,-3.6875 6.859375,-3.6875 h -5.96875 c -0.140625,0 -0.328125,0 -0.328125,0.203125 0,0.1875 0.1875,0.1875 0.328125,0.1875 z m 0.015625,2 C 7,-1.296875 7.1875,-1.296875 7.1875,-1.5 7.1875,-1.6875 7,-1.6875 6.84375,-1.6875 H 0.890625 c -0.140625,0 -0.328125,0 -0.328125,0.1875 0,0.203125 0.1875,0.203125 0.328125,0.203125 z m 0,0"
+               id="id-744e931f-1327-42f2-b58f-8ff37d153951-7" />
+          </g>
+        </g>
+        <g
+           style="fill:#0000ff;fill-opacity:1"
+           id="id-85377040-c499-4409-a49d-af290da40859-4">
+          <g
+             transform="translate(295.993,146.72)"
+             id="g53665-4">
+            <path
+               style="stroke:none"
+               d="M 7.59375,-4.421875 H 6.875 l -1.1875,2.28125 C 5.421875,-1.609375 5.078125,-0.9375 4.953125,-0.546875 H 4.9375 v -0.28125 c 0,-0.5625 -0.03125,-1 -0.078125,-1.53125 l -0.1875,-2.0625 h -0.71875 l -1.125,2.203125 c -0.296875,0.5625 -0.578125,1.125 -0.75,1.65625 v -0.015625 c 0,-0.0625 0,-0.25 0,-0.453125 0,-0.09375 0,-0.609375 -0.078125,-1.5 L 1.828125,-4.421875 h -0.75 L 1.5,0 H 2.296875 C 2.34375,-0.09375 3,-1.359375 3.203125,-1.78125 3.65625,-2.65625 4.0625,-3.5 4.171875,-3.875 H 4.1875 c 0,0.03125 -0.015625,0.21875 -0.015625,0.421875 0,0.46875 0.03125,1.015625 0.078125,1.484375 L 4.421875,0 h 0.875 z m 0,0"
+               id="id-3c187d91-e87f-4e82-897b-598fb1b6f783-3" />
+          </g>
+        </g>
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="id-4302d410-9f2a-4968-9903-3a2f0f4d9ed8-0">
+          <g
+             transform="translate(306.094,146.72)"
+             id="g53669-7">
+            <path
+               style="stroke:none"
+               d="m 1.90625,-2.5 c 0,-0.28125 -0.234375,-0.515625 -0.515625,-0.515625 -0.296875,0 -0.53125,0.234375 -0.53125,0.515625 0,0.296875 0.234375,0.53125 0.53125,0.53125 0.28125,0 0.515625,-0.234375 0.515625,-0.53125 z m 0,0"
+               id="id-30316243-df27-41a9-852b-992be851494c-8" />
+          </g>
+        </g>
+        <g
+           style="fill:#ff0000;fill-opacity:1"
+           id="id-f89cd2ac-317f-4c67-9ada-bda7d7835050-6">
+          <g
+             transform="translate(311.076,146.72)"
+             id="g53673-8">
+            <path
+               style="stroke:none"
+               d="m 3.078125,-2.28125 2.28125,-2.140625 H 4.53125 L 2.859375,-2.78125 1.828125,-4.421875 H 1 L 2.421875,-2.28125 0,0 H 0.8125 L 2.65625,-1.875 3.765625,0 h 0.8125 z m 0,0"
+               id="id-cade2f36-b50d-4203-97d2-180bfe5f1203-8" />
+          </g>
+        </g>
+        <g
+           style="fill:#000000;fill-opacity:1"
+           id="id-c02bc8a1-25d3-4249-a0bc-8a93e9961b89-4">
+          <g
+             transform="translate(318.797,146.72)"
+             id="g53677-3">
+            <path
+               style="stroke:none"
+               d="m 4.078125,-2.296875 h 2.78125 C 7,-2.296875 7.1875,-2.296875 7.1875,-2.5 7.1875,-2.6875 7,-2.6875 6.859375,-2.6875 h -2.78125 v -2.796875 c 0,-0.140625 0,-0.328125 -0.203125,-0.328125 -0.203125,0 -0.203125,0.1875 -0.203125,0.328125 V -2.6875 h -2.78125 c -0.140625,0 -0.328125,0 -0.328125,0.1875 0,0.203125 0.1875,0.203125 0.328125,0.203125 h 2.78125 V 0.5 c 0,0.140625 0,0.328125 0.203125,0.328125 0.203125,0 0.203125,-0.1875 0.203125,-0.328125 z m 0,0"
+               id="id-a1b1b0fa-2867-45dc-a21b-81a538eb7cfb-1" />
+          </g>
+        </g>
+        <g
+           style="fill:#007f7f;fill-opacity:1"
+           id="id-ccaf8e60-e721-4bfd-993b-c70ee50b1ff7-4">
+          <g
+             transform="translate(328.76,146.72)"
+             id="g53681-9">
+            <path
+               style="stroke:none"
+               d="m 3.046875,-6.921875 h -0.75 L 0.8125,0 H 1.59375 L 1.6875,-0.453125 c 0.28125,0.328125 0.671875,0.5625 1.21875,0.5625 1.1875,0 2.421875,-1.390625 2.421875,-3.015625 0,-0.8125 -0.359375,-1.625 -1.203125,-1.625 -0.578125,0 -1.234375,0.21875 -1.71875,0.578125 z M 2.3125,-3.34375 c 0.09375,-0.109375 0.546875,-0.578125 1.171875,-0.578125 0.59375,0 1.0625,0.390625 1.0625,1.15625 0,1.125 -0.765625,2.265625 -1.890625,2.265625 -0.421875,0 -0.6875,-0.234375 -0.8125,-0.640625 z m 0,0"
+               id="id-f88a352c-af75-4640-b127-06e215e7d371-2" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
