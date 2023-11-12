@@ -15,6 +15,7 @@ authors:
     family-names: Gerber
     email: iann.gerber@insa-toulouse.fr
     affiliation: "LPCNO (INSA, CNRS UMR 5215, UT3, Université de Toulouse)"
+    orcid: 'https://orcid.org/0000-0001-5091-2655'
     role: contributor
   - given-names: Franck
     family-names: Jolibois
@@ -30,7 +31,7 @@ authors:
     role: main author
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.8069824
+    value: 10.5281/zenodo.10116267
     description: archived repository on GitHub.com
 repository-code: 'https://github.com/rpoteau/PytChem'
 abstract: "pyPhysChem proposes a series of Jupyter notebooks intended to
