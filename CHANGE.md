@@ -2,6 +2,9 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+##### **2023.11.13. Unreleased version** 
+- new [harmonic oscillator project](Harmonic_Oscillator.ipynb), by Th. Leininger, @LCPQ (CNRS-UT3 lab)
+
 ##### **2023.11.12. v1.7.4.** 
 - new contributor: I. Gerber, @LPCNO (CNRS-UT3-INSA lab)
 - ML notebooks dev versions still under heavy development and not made available
