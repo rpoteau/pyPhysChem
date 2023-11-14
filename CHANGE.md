@@ -2,16 +2,24 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+##### **2023.11.14. release 1.7.5** 
+- [Tight binding (TB) notebook ](./TB.ipynb) completed with:
+    - Peierls distortion of the linear chain of hydrogen atoms
+    - 2&times;2 square lattice
+    - 2&times;2 rectangular lattice
+    - illustrations taken from R. Hoffmann (1991), Solids And Surfaces. A Chemist's View of Bonding in Extended Structures, Wiley-VCH, with &copy; Wiley 1991
+ 
 ##### **2023.11.13. Unreleased version** 
 - new [harmonic oscillator project](Harmonic_Oscillator.ipynb), by Th. Leininger, @LCPQ (CNRS-UT3 lab)
 
-##### **2023.11.12. v1.7.4.** 
-- new contributor: I. Gerber, @LPCNO (CNRS-UT3-INSA lab)
+##### **2023.11.12. release 1.7.4.** 
+- new contributor: I. C. Gerber, @LPCNO (CNRS-UT3-INSA lab)
+- new [Tight binding (TB) theme ](./TB.ipynb), adapted from **IC Gerber**'s notebook
 - ML notebooks dev versions still under heavy development and not made available
 - [Basics of Artificial Neural Networks (ANNs) for supervised learning notebook](./DS4B-BasicsOfANN.ipynb) is now richly commented, and adapted to self-learning and talktorial format
 - TOC updated
 
-##### **2023.11.08. v1.7.3.** 
+##### **2023.11.08. release 1.7.3.** 
 - new 1.7.3 version released after a careful check that new pyPhysChem rebranding did not introduce major bugs
 - [ML-CNN-dev.ipynb notebook renamed as ML-1DCNN-dev.ipynb](ML-1DCNN-dev.ipynb). dev version not uploaded
 - new [2D Convolutional Neural Network notebook](ML-2DCNN-dev.ipynb). dev version not uploaded
@@ -30,11 +38,11 @@
 ##### **2023.10.12. Unreleased version** 
 - new [Recurrent Neural Network notebook](ML-RNN-dev.ipynb). dev version not uploaded
 
-##### **2023.10.05. v1.7.1** 
+##### **2023.10.05. release 1.7.1** 
 - new contributor: F. Jolibois, @LPCNO (CNRS-UT3-INSA lab)
 - new [Velocity Verlet project](MD_VVERLET_Student.ipynb) (**author: *Franck Jolibois***)
 
-##### **2023.09.29. v1.7.0** [10.5281/zenodo.8396813](https://doi.org/10.5281/zenodo.8396813)
+##### **2023.09.29. release 1.7.0** [10.5281/zenodo.8396813](https://doi.org/10.5281/zenodo.8396813)
 - "talktorial" transformation of the ML part
     - pdf support splitted into a couple of pdf files
     - some slides are inserted in notebooks as jpeg images
