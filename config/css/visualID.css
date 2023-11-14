@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
   font-weight: bold;
 }
-body, intro, introE, introT, rq, rqE, rqT, ex, exE, app, appE, sol, todo  {
+body, intro, introE, introT, rq, rqE, rqT, ex, exE, app, appE, sol, todo, figure  {
   font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -222,6 +222,22 @@ div.todo li{
     margin-left:60px;
     margin-top:0;
     margin-bottom:0;
+}
+
+figure {
+    display: inline-block;
+    border: 0px;
+    margin: 5px; /* adjust as needed */
+    text-align: center;
+}
+figure img {
+    vertical-align: top;
+    text-align: center;
+}
+figure figcaption {
+    border: 0px;
+    text-align: center;
+    font-size: 11px;
 }
 
 </style>
