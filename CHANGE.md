@@ -2,6 +2,9 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+##### **2023.11.15. Unreleased version**
+- [Tight binding (TB) notebook ](./TB.ipynb) completed with graphene
+
 ##### **2023.11.14. release 1.7.5** 
 - [Tight binding (TB) notebook ](./TB.ipynb) completed with:
     - Peierls distortion of the linear chain of hydrogen atoms
