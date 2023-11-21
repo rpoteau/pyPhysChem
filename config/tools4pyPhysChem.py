@@ -90,9 +90,10 @@ def e2Lists(eigenvectors, sort=False):
         - the list of tuples returned by eigenvects
         - sort (default: False): returns sorted eigenvalues and corresponding eigenvectors if True
     output
-        - list of sorted eigenvalues
+        - list of eigenvalues, sorted or not
         - list of corresponding eigenvectors
     '''
+    import numpy as np
     eps = list()
     MOs = list()
     for mo in eigenvectors:
@@ -110,6 +111,6 @@ def e2Lists(eigenvectors, sort=False):
             MOs_sorted.append(MOs[sortindex[i]])
         return eps,MOs_sorted
     else:
-        return eps, MOs
+        return eps,MOs
 
 
