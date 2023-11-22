@@ -2,6 +2,9 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+##### **2023.11.22. release 1.8.0** 
+- [NMR notebook finalized under the form of a student project](./NMR.ipynb)
+
 ##### **2023.11.15. Unreleased version**
 - [Tight binding (TB) notebook ](./TB.ipynb) completed with graphene
 
