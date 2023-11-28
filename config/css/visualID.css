@@ -241,21 +241,23 @@ div.todo li{
 }
 
 figure {
-    display: inline-block;
     border: 0px;
-    margin: 5px; /* adjust as needed */
     text-align: center;
+    margin: 5px; /* adjust as needed */
     display: block;
+    margin: auto;
 }
-figure > img {
+figure img {
     vertical-align: top;
     text-align: center;
     display: block;
+    margin: auto;
 }
 figure figcaption {
     border: 0px;
     text-align: center;
     font-size: 11px;
+    margin: auto;
 }
 
 </style>
