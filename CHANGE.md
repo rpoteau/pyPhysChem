@@ -2,6 +2,9 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+##### **2023.11.28. unreleased version** 
+- [development version of an ML-autoencoder notebook (so far, very close to be a copy/paste of one of Aurelien Géron's tutorials)](./ML-Autoencoders.ipynb)
+
 ##### **2023.11.22. release 1.8.0** 
 - [NMR notebook finalized under the form of a student project](./NMR.ipynb)
 
