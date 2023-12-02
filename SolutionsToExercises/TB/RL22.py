@@ -74,4 +74,8 @@ t4pPC.centerTitle("Answer to question 2b")
 RL22bands.plot(point_labels=kpoints_labels)
 plt.show()
 
+###########################################
+t4pPC.centerTitle("Answer to question 3")
+###########################################
+plot_kdosMP(solverRL22, RL22, HWHM=0.15)
 

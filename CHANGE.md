@@ -2,6 +2,9 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+##### **2023.12.02. unreleased version** 
+- [Tight binding (TB) notebook](./TB.ipynb) updated with DOS plots (implementation of useful functions to enhance the capabilities of pybinding, including a Monkhorst-Pack mesh to plot DOS)
+
 ##### **2023.11.28. unreleased version** 
 - [development version of an ML-autoencoder notebook (so far, very close to be a copy/paste of one of Aurelien Géron's tutorials)](./ML-Autoencoders.ipynb)
 
@@ -9,7 +12,7 @@
 - [NMR notebook finalized under the form of a student project](./NMR.ipynb)
 
 ##### **2023.11.15. Unreleased version**
-- [Tight binding (TB) notebook ](./TB.ipynb) completed with graphene
+- [Tight binding (TB) notebook](./TB.ipynb) completed with graphene
 
 ##### **2023.11.14. release 1.7.5** 
 - [Tight binding (TB) notebook ](./TB.ipynb) completed with:
@@ -23,7 +26,7 @@
 
 ##### **2023.11.12. release 1.7.4.** 
 - new contributor: I. C. Gerber, @LPCNO (CNRS-UT3-INSA lab)
-- new [Tight binding (TB) theme ](./TB.ipynb), adapted from **IC Gerber**'s notebook
+- new [Tight binding (TB) theme ](./TB.ipynb), adapted from **IC Gerber**'s notebook on this topic
 - ML notebooks dev versions still under heavy development and not made available
 - [Basics of Artificial Neural Networks (ANNs) for supervised learning notebook](./DS4B-BasicsOfANN.ipynb) is now richly commented, and adapted to self-learning and talktorial format
 - TOC updated
