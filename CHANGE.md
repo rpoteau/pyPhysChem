@@ -2,6 +2,14 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+##### **2023.12.02. release 1.8.1**
+- short exercises and new comments added to the [iris1 notebook](DS4B-Iris1.ipynb)
+- modification of the [CO2 solubility with ANN notebook](DS4B-CO2_solubility-ANN.ipynb)
+   - one model removed (with full standardization, GC descriptors included)
+   - some comments are added to facilitate the self-learning
+   - rdkit is now used to display the cations and anions
+   - the last part was commented on because of a persistent bug (unimportant part - will be solved later) 
+
 ##### **2023.12.02. unreleased version** 
 - [Tight binding (TB) notebook](./TB.ipynb) updated with DOS plots (implementation of useful functions to enhance the capabilities of pybinding, including a Monkhorst-Pack mesh to plot DOS)
 

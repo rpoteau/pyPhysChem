@@ -72,6 +72,17 @@ h5 {
     padding: 0.5em;
     color : #117996;
 }
+.rq::before {    
+    background-color: #fcd3d3;
+    color: #ff0000;
+    content:"Remarque";
+    margin-left:-0.5em;
+    margin-right:-0.5em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    font-weight: 600;
+    display: block;
+}
 .rq {    
     background-color: #fcf2f2;
     border-color: #dFb5b4;
@@ -81,7 +92,7 @@ h5 {
 .rqE::before {    
     background-color: #fcd3d3;
     color: #ff0000;
-    content:"Warning";
+    content:"Pay attention";
     margin-left:-0.5em;
     margin-right:-0.5em;
     padding-left:0.5em;
