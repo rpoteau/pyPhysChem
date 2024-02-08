@@ -2,6 +2,10 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+##### **2024.02.02. unreleased version**
+- new explainability topic introduced in a new [iris4 notebook](DS4B-Iris4.ipynb)
+- TOC changed accordingly
+
 ##### **2023.12.02. release 1.8.1**
 - short exercises and new comments added to the [iris1 notebook](DS4B-Iris1.ipynb)
 - modification of the [CO2 solubility with ANN notebook](DS4B-CO2_solubility-ANN.ipynb)
