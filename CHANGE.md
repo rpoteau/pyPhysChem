@@ -2,13 +2,17 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+##### **2024.12.02. unreleased version**
+- new [Physical Chemistry Problems and Solutions notebook](./PhysChem_ProblemsAndSolutions.ipynb)
+  <br>first topic: rotational spectroscopy
+
 ##### **2024.02.02. unreleased version**
-- new explainability topic introduced in a new [iris4 notebook](DS4B-Iris4.ipynb)
+- new explainability topic introduced in a new [iris4 notebook](./DS4B-Iris4.ipynb)
 - TOC changed accordingly
 
 ##### **2023.12.02. release 1.8.1**
-- short exercises and new comments added to the [iris1 notebook](DS4B-Iris1.ipynb)
-- modification of the [CO2 solubility with ANN notebook](DS4B-CO2_solubility-ANN.ipynb)
+- short exercises and new comments added to the [iris1 notebook](./DS4B-Iris1.ipynb)
+- modification of the [CO2 solubility with ANN notebook](./DS4B-CO2_solubility-ANN.ipynb)
    - one model removed (with full standardization, GC descriptors included)
    - some comments are added to facilitate the self-learning
    - rdkit is now used to display the cations and anions
