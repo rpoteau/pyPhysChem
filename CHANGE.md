@@ -2,6 +2,9 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+##### **2024.02.22. unreleased version**
+- discussion about decision boundaries introduced in the [XAI iris4 notebook](./DS4B-Iris4.ipynb)
+
 ##### **2024.12.02. unreleased version**
 - new [Physical Chemistry Problems and Solutions notebook](./PhysChem_ProblemsAndSolutions.ipynb)
   <br>first topic: rotational spectroscopy

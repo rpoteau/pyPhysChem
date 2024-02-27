@@ -7,7 +7,7 @@
    viewBox="0 0 210 297"
    version="1.1"
    id="svg5"
-   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25)"
    sodipodi:docname="IA-petales.svg"
    inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/IA-petales.png"
    inkscape:export-xdpi="300.022"
@@ -32,8 +32,8 @@
      inkscape:snap-object-midpoints="false"
      inkscape:snap-center="false"
      inkscape:zoom="1.2774943"
-     inkscape:cx="575.73642"
-     inkscape:cy="796.48105"
+     inkscape:cx="450.88264"
+     inkscape:cy="796.08966"
      inkscape:window-width="2295"
      inkscape:window-height="1236"
      inkscape:window-x="257"
@@ -49,7 +49,9 @@
        y="0"
        width="210"
        height="297"
-       id="page719" />
+       id="page719"
+       margin="0"
+       bleed="0" />
     <inkscape:page
        x="220"
        y="0"
@@ -1894,11 +1896,11 @@
        inkscape:export-ydpi="300.20752"><tspan
          x="41.942547"
          y="227.66731"
-         id="tspan5736"><tspan
+         id="tspan6"><tspan
            style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan5732">ℓ</tspan><tspan
+           id="tspan2">ℓ</tspan><tspan
            style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-           id="tspan5734">P</tspan></tspan></text>
+           id="tspan5">P</tspan></tspan></text>
     <circle
        style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path870-4"
@@ -1920,11 +1922,11 @@
        inkscape:export-ydpi="300.20752"><tspan
          x="41.942547"
          y="227.66731"
-         id="tspan5742"><tspan
+         id="tspan9"><tspan
            style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan5738">L</tspan><tspan
+           id="tspan7">L</tspan><tspan
            style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-           id="tspan5740">P</tspan></tspan></text>
+           id="tspan8">P</tspan></tspan></text>
     <g
        id="g66301"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
@@ -1946,11 +1948,11 @@
          transform="translate(6.1322511,-49.773756)"><tspan
            x="41.942547"
            y="227.66731"
-           id="tspan5748"><tspan
+           id="tspan12"><tspan
              style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-             id="tspan5744">ℓ</tspan><tspan
+             id="tspan10">ℓ</tspan><tspan
              style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-             id="tspan5746">P</tspan></tspan></text>
+             id="tspan11">P</tspan></tspan></text>
     </g>
     <g
        id="g66308"
@@ -1973,11 +1975,11 @@
          transform="translate(6.0832321,-31.816586)"><tspan
            x="41.942547"
            y="227.66731"
-           id="tspan5754"><tspan
+           id="tspan15"><tspan
              style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-             id="tspan5750">L</tspan><tspan
+             id="tspan13">L</tspan><tspan
              style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-             id="tspan5752">P</tspan></tspan></text>
+             id="tspan14">P</tspan></tspan></text>
     </g>
     <rect
        style="fill:none;fill-opacity:1;stroke:#4c72b0;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
@@ -3021,11 +3023,11 @@
        inkscape:export-ydpi="300.20752"><tspan
          x="41.942547"
          y="227.66731"
-         id="tspan5760"><tspan
+         id="tspan18"><tspan
            style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan5756">ℓ</tspan><tspan
+           id="tspan16">ℓ</tspan><tspan
            style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-           id="tspan5758">P</tspan></tspan></text>
+           id="tspan17">P</tspan></tspan></text>
     <circle
        style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path870-4-0"
@@ -3047,11 +3049,11 @@
        inkscape:export-ydpi="300.20752"><tspan
          x="41.942547"
          y="227.66731"
-         id="tspan5766"><tspan
+         id="tspan21"><tspan
            style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan5762">L</tspan><tspan
+           id="tspan19">L</tspan><tspan
            style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-           id="tspan5764">P</tspan></tspan></text>
+           id="tspan20">P</tspan></tspan></text>
     <rect
        style="fill:none;fill-opacity:1;stroke:#4c72b0;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect42223-8"
@@ -3620,11 +3622,11 @@
        inkscape:export-ydpi="300.20752"><tspan
          x="41.942547"
          y="227.66731"
-         id="tspan5772"><tspan
+         id="tspan24"><tspan
            style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan5768">ℓ</tspan><tspan
+           id="tspan22">ℓ</tspan><tspan
            style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-           id="tspan5770">P</tspan></tspan></text>
+           id="tspan23">P</tspan></tspan></text>
     <circle
        style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path870-4-5"
@@ -3646,11 +3648,11 @@
        inkscape:export-ydpi="300.20752"><tspan
          x="41.942547"
          y="227.66731"
-         id="tspan5778"><tspan
+         id="tspan27"><tspan
            style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan5774">L</tspan><tspan
+           id="tspan25">L</tspan><tspan
            style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-           id="tspan5776">P</tspan></tspan></text>
+           id="tspan26">P</tspan></tspan></text>
     <rect
        style="fill:none;fill-opacity:1;stroke:#4c72b0;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
        id="rect42223-4"
@@ -3783,11 +3785,11 @@
        inkscape:export-ydpi="300.20752"><tspan
          x="41.942547"
          y="227.66731"
-         id="tspan5784"><tspan
+         id="tspan30"><tspan
            style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan5780">ℓ</tspan><tspan
+           id="tspan28">ℓ</tspan><tspan
            style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-           id="tspan5782">S</tspan></tspan></text>
+           id="tspan29">S</tspan></tspan></text>
     <circle
        style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path870-4-5-6"
@@ -3809,11 +3811,11 @@
        inkscape:export-ydpi="300.20752"><tspan
          x="41.942547"
          y="227.66731"
-         id="tspan5790"><tspan
+         id="tspan33"><tspan
            style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-           id="tspan5786">L</tspan><tspan
+           id="tspan31">L</tspan><tspan
            style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-           id="tspan5788">S</tspan></tspan></text>
+           id="tspan32">S</tspan></tspan></text>
     <path
        style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:1.05833;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-end:url(#Arrow1Send-6-3)"
        d="m 270.09533,116.04846 7.11374,-4.3316"
@@ -4311,48 +4313,13 @@
          cx="48.234726"
          cy="175.8544"
          r="4.7625017" />
-      <text
-         xml:space="preserve"
-         style="font-weight:bold;font-size:8.46667px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:9.75723;display:inline;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
-         x="41.942547"
-         y="227.66731"
-         id="text5134-8-6"
-         transform="translate(6.1322511,-49.773756)"><tspan
-           x="41.942547"
-           y="227.66731"
-           id="tspan5796"><tspan
-             style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-             id="tspan5792">ℓ</tspan><tspan
-             style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-             id="tspan5794">P</tspan></tspan></text>
     </g>
-    <g
-       id="g66308-0"
-       inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
-       inkscape:export-xdpi="300.022"
-       inkscape:export-ydpi="300.022"
-       transform="translate(78.768545,60.08323)">
-      <circle
-         style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
-         id="path870-4-8-4"
-         cx="48.234726"
-         cy="194.01826"
-         r="4.7625017" />
-      <text
-         xml:space="preserve"
-         style="font-weight:bold;font-size:8.46667px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-anchor:middle;white-space:pre;inline-size:9.75723;display:inline;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
-         x="41.942547"
-         y="227.66731"
-         id="text5134-4-9-8"
-         transform="translate(6.0832321,-31.816586)"><tspan
-           x="41.942547"
-           y="227.66731"
-           id="tspan5802"><tspan
-             style="font-style:italic;font-weight:300;-inkscape-font-specification:'Calibri Light'"
-             id="tspan5798">L</tspan><tspan
-             style="font-weight:300;font-size:65%;-inkscape-font-specification:'Calibri Light';baseline-shift:sub"
-             id="tspan5800">P</tspan></tspan></text>
-    </g>
+    <circle
+       style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
+       id="path870-4-8-4"
+       cx="127.00327"
+       cy="254.1015"
+       r="4.7625017" />
     <circle
        style="fill:none;stroke:#808080;stroke-width:1.05833;stroke-linecap:square;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke fill markers"
        id="path870-8-7-8"
@@ -4540,7 +4507,6 @@
        id="path68072-5"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
-       inkscape:connection-start="#g66308-0"
        inkscape:connection-end="#path870-8-7-4-9"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
@@ -4833,7 +4799,6 @@
        id="path1120-9"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
-       inkscape:connection-start="#g66308-0"
        inkscape:connection-end="#path870-8-7-8"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
@@ -4844,7 +4809,6 @@
        id="path1124-9"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
-       inkscape:connection-start="#g66308-0"
        inkscape:connection-end="#path870-8-7-6-8"
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
@@ -4860,5 +4824,35 @@
        inkscape:export-filename="/home/romuald/ENSEIGNEMENT/0-Documents_enseignement-TD-TP/L2-CHIM2-ON1/Tutos-Vidéo/Pandas-Stats-Iris/svg/ANN-petales.png"
        inkscape:export-xdpi="300.022"
        inkscape:export-ydpi="300.022" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:6.35px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="123.03203"
+       y="237.45598"
+       id="text1"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.35px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke:none;stroke-width:0.264583px"
+         x="123.03203"
+         y="237.45598"><tspan
+           style="font-style:italic;font-weight:bold;font-size:6.35px"
+           id="tspan3">W</tspan><tspan
+           style="font-size:65%;baseline-shift:sub"
+           id="tspan4">P</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:6.35px;line-height:0px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
+       x="124.58306"
+       y="255.53473"
+       id="text1-5"><tspan
+         sodipodi:role="line"
+         id="tspan1-3"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:6.35px;font-family:Calibri;-inkscape-font-specification:'Calibri Light';stroke:none;stroke-width:0.264583px"
+         x="124.58306"
+         y="255.53473"><tspan
+           style="font-style:italic;font-weight:bold;font-size:6.35px"
+           id="tspan3-5">L</tspan><tspan
+           style="font-size:65%;baseline-shift:sub"
+           id="tspan4-6">P</tspan></tspan></text>
   </g>
 </svg>
