@@ -249,7 +249,7 @@ Les installer via l'onglet "extension manager" de JupterLab ; vous pouvez faire 
 
 ## <a name="changes"></a>Liste des changements / *List of changes*
 
-[🔄 Liste des changements / *List of changes* 🔄](./CHANGE.md)
+[🔄 Liste des changements / *List of changes* 🔄](./ChangeLog.md)
 
 ## <a name="cite"></a> Comment citer ce travail ? / *How to cite this work?*
  
