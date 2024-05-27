@@ -4,6 +4,9 @@
 
 ## **2024.05.26. unreleased version**
 
+### added
+- in-house `pipManagement.py` tool
+
 ### changed
 - `ML-1DCNN.ipynb`, `ML-2DCNN.ipynb`, `ML-RNN.ipynb` made available, prior to new updates
 - `CHANGE.md` renamed as `ChangeLog.md`, and new structuring with added/changed/fixed subsections
