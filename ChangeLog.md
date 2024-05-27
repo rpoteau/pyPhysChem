@@ -6,6 +6,7 @@
 
 ### added
 - in-house `pipManagement.py` tool
+- last `requirements.txt` files. Such files containing a list of libraries to be installed using pip install, or - even better - using `pipManagement.py`. See also the [pip documentation](https://pip.pypa.io/en/latest/user_guide/#requirements-files) 
 
 ### changed
 - `ML-1DCNN.ipynb`, `ML-2DCNN.ipynb`, `ML-RNN.ipynb` made available, prior to new updates

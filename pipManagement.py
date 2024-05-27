@@ -15,7 +15,7 @@ PHomePython = os.path.expanduser('~') + "/" + PythonFolder + "/"
 
 #adapt "venv" to your case. These are virtual environments created with the virtualenv command (https://virtualenv.pypa.io/en/latest/index.html)
 # in the present case, 3 virtual environments were created: base, ML and ai4Chem. They will be addressed with the a, b and c characters
-venv = {"a":"base","b":"ML","c":"ai4Chem","d":"ML3","e":"nmr","f":"ML2024"}
+venv = {"a":"base","b":"ML","c":"nmr"}
 #venv = {"a":"base","b":"ML"} #VM
 
 string = "\n\033[91m\033[1mWhich command?\033[0m\n\
