@@ -2,8 +2,11 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
-## **2024.05.26. unreleased version**
+## **2024.06.16 release 1.9.0**
+### added
+- new *Autoencoders applied to SMILES * section in the [ML-autoencoder notebook](./ML-Autoencoders.ipynb) (**author: *Nans Bernard***)
 
+## **2024.05.26. unreleased version**
 ### added
 - in-house `pipManagement.py` tool
 - last `requirements.txt` files. Such files containing a list of libraries to be installed using pip install, or - even better - using `pipManagement.py`. See also the [pip documentation](https://pip.pypa.io/en/latest/user_guide/#requirements-files) 

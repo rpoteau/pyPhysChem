@@ -15,3 +15,5 @@ Feedback/
 Feedback/*
 *dev/
 *dev/*
+# Files over 50mb
+ML-data/Conv1D_functions.csv
