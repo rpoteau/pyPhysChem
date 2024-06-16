@@ -2,9 +2,11 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
-## **2024.06.16 release 1.9.0**
+## **2024.06.16 1.9.0alpha**
 ### added
-- new *Autoencoders applied to SMILES * section in the [ML-autoencoder notebook](./ML-Autoencoders.ipynb) (**author: *Nans Bernard***)
+- new *Autoencoders applied to SMILES* section in the [ML-autoencoder notebook](./ML-Autoencoders.ipynb) (**main author: *Nans Bernard***)
+- new *meaning of Morgan fingerprints bits* sub-subsection in `MolecularRepresentations.ipynb`
+- `ignoreLargeFiles.sh`, to be run before a `git add --all ` command
 
 ## **2024.05.26. unreleased version**
 ### added

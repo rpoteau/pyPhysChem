@@ -17,3 +17,6 @@ Feedback/*
 *dev/*
 # Files over 50mb
 ML-data/Conv1D_functions.csv
+ML-SavedModels/autoencoders/10000SMILES_df_train.pickle
+ML-SavedModels/autoencoders/10000SMILES_df_valid.pickle
+ML-SavedModels/autoencoders/10000SMILES_df_tokenized.pickle
