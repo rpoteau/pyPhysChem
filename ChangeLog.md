@@ -2,6 +2,10 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2024.06.17**
+### changed
+- MNIST fashioon dataset: latent space reduced to 28 instead of 30 (because imgs are 28x28)
+
 ## **2024.06.16 1.9.0alpha**
 ### added
 - new *Autoencoders applied to SMILES* section in the [ML-autoencoder notebook](./ML-Autoencoders.ipynb) (**main author: *Nans Bernard***)
