@@ -2,6 +2,10 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2024.06.28**
+### added
+- `ML-2DCNN-v1.ipynb` updated by **I. C. Gerber**, with the classification of squares/triangles/circles, in relation with the shape of nanoparticles
+
 ## **2024.06.17**
 ### changed
 - MNIST fashioon dataset: latent space reduced to 28 instead of 30 (because imgs are 28x28)
