@@ -6,6 +6,17 @@
 ### added
 - `ML-2DCNN-v1.ipynb` updated by **I. C. Gerber**, with the classification of squares/triangles/circles, in relation with the shape of nanoparticles
 
+## **2024.06.19**
+### added
+- `QCpy-1(FR)-Modele_d-Ising.ipynb` first Jupyter Notebook of the "Quantum Computing with python"
+- `QCpy-1(FR)appendix-Modele_d-Ising.ipynb` appendix to this first Jupyter Notebook
+- `QCpy-1(FR)correction-Modele_d-Ising.ipynb` correction to this first Jupyter Notebook
+- `QCpy-additionalFiles/available_gates.ipynb` list of available quantum gates by default in the myQLM library for python
+- `QCpy-additionalFiles/theoryReminderSheets(FR)/Transformation_de_Bogoliubov.pdf` quick course on the Bogoliubov transformation
+- `QCpy-additionalFiles/theoryReminderSheets(FR)/Transformation_de_Jordan-Wigner.pdf` quick course on the Jordan-Wigner transformation
+- `QCpy-additionalFiles/theoryReminderSheets(FR)/Transformees_de_Fourier_Quantiques.pdf` quick course on different variations of the Quantum Fourier Transform
+(*all written and added by **Matthieu Charnay***)
+
 ## **2024.06.17**
 ### changed
 - MNIST fashioon dataset: latent space reduced to 28 instead of 30 (because imgs are 28x28)
