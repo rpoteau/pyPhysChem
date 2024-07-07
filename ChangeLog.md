@@ -2,7 +2,7 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
-## **2024.07.07 <span style='color:red'>1.9.0</span>**
+## **2024.07.07 <span style='color:red'>release 1.9.0</span>**
 - `ML-1DCNN.ipynb` finalized
 
 ## **2024.07.04 unreleased version**
@@ -11,9 +11,6 @@
 - new variant for the recurrent neural network (RNN) theme: `RNN-RNN_2.ipynb`
 
 ## **2024.06.30 unreleased version**
-### added
-- *QCpy* notebooks, `QCpy-1(FR)-*.ipynb`, developped by a new co-author, **Matthieu Charnay**, with **I.C. Gerber**
-
 ### changed
 - previous `ML-1DCNN.ipynb` version renamed as `ML-1DCNN-v0-dev.ipynb` (private version only)
 
@@ -23,6 +20,18 @@
 
 ### changed
 - previous `ML-2DCNN.ipynb` version renamed as `ML-2DCNN-v0-dev.ipynb` (private version only)
+
+## **2024.06.19**
+### added
+- `QCpy-1(FR)-Modele_d-Ising.ipynb` first Jupyter Notebook of the "Quantum Computing with python"
+- `QCpy-1(FR)appendix-Modele_d-Ising.ipynb` appendix to this first Jupyter Notebook
+- `QCpy-1(FR)correction-Modele_d-Ising.ipynb` correction to this first Jupyter Notebook
+- `QCpy-additionalFiles/available_gates.ipynb` list of available quantum gates by default in the myQLM library for python
+- `QCpy-additionalFiles/theoryReminderSheets(FR)/Transformation_de_Bogoliubov.pdf` quick course on the Bogoliubov transformation
+- `QCpy-additionalFiles/theoryReminderSheets(FR)/Transformation_de_Jordan-Wigner.pdf` quick course on the Jordan-Wigner transformation
+- `QCpy-additionalFiles/theoryReminderSheets(FR)/Transformees_de_Fourier_Quantiques.pdf` quick course on different variations of the Quantum Fourier Transform
+
+all notebooks developped by a new co-author, **Matthieu Charnay**, with **I.C. Gerber**
 
 ## **2024.06.17**
 ### changed
