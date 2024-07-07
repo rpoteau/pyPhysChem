@@ -6,14 +6,19 @@ title: python in the Physical Chemistry lab [pyPhysChem]
 message: If you use this software, please cite it using the metadata from this file
 type: software
 authors:
-  - given-names: Stella
-    family-names: Christodoulou
-    email: stella.christodoulou@univ-tlse3.fr
-    affiliation: "LPCNO (INSA, CNRS UMR 5215, UT3, Université de Toulouse)"
-    role: contributor
   - given-names: Nans
     family-names: Bernard
     email: nans.bernard@univ-tlse3.fr
+    affiliation: "UT3, Université de Toulouse)"
+    role: contributor
+  - given-names: Matthieu
+    family-names: Charnay
+    email: charna@insa-toulouse.fr
+    affiliation: "INSA, Université de Toulouse)"
+    role: contributor
+  - given-names: Stella
+    family-names: Christodoulou
+    email: stella.christodoulou@univ-tlse3.fr
     affiliation: "LPCNO (INSA, CNRS UMR 5215, UT3, Université de Toulouse)"
     role: contributor
   - given-names: Iann C.
