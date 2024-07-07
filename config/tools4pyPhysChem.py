@@ -113,4 +113,11 @@ def e2Lists(eigenvectors, sort=False):
     else:
         return eps,MOs
 
-
+def displayModel(fig,width):
+    import PIL, io
+    pfig = PIL.Image.open(io.BytesIO(fig.data))
+    width0, height0 = pfig.size
+    scale = width/width0
+    pfig = pfig.resize((width, int(height0*scale)), PIL.Image.Resampling.LANCZOS)
+    display(pfig)
+    
