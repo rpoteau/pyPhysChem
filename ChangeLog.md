@@ -2,7 +2,12 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2024.07.09 unreleased version**
+### added
+- inpainting of an image added to `ML-2DCNN.ipynb`
+
 ## **2024.07.07 <span style='color:red'>release 1.9.0</span>**
+### changed
 - `ML-1DCNN.ipynb` finalized
 
 ## **2024.07.04 unreleased version**
