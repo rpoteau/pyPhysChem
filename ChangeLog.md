@@ -2,6 +2,16 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2024.07.18**
+### added
+- `QCpy-0(FR)concepts_informatique_quantique.ipynb` preliminary Jupyter Notebook for the "Quantum Computing with python" section
+- `QCpy-additionalFiles/illustrations/Bloch_sphere.png` HD Bloch sphere illustration (original by Smite-Meister : CC BY-SA 3.0)
+- `QCpy-additionalFiles/illustrations/BlochSphere.png` Lower definition Bloch sphere illustration (original by Smite-Meister : CC BY-SA 3.0)
+- `QCpy-additionalFiles/illustrations/circ_paire_bell.png` illustration of a basic quantum circuit for creating bell pairs
+- `QCpy-additionalFiles/theoryReminderSheets(FR)/Concepts_cles_mecanique-quantique.pdf` quick course on the basics of quantum mechanics
+
+(co-author : **Matthieu Charnay**, with **I.C. Gerber**)
+
 ## **2024.07.09 unreleased version**
 ### added
 - inpainting of an image added to `ML-2DCNN.ipynb`
