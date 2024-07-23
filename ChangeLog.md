@@ -2,17 +2,22 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2024.07.23 unreleased version**
+### added
+- new application to RDF profiles in the [`ML-autoencoder` notebook](./ML-Autoencoders.ipynb) (see also [`ML-1DCNN.ipynb` notebook](./ML-1DCNN.ipynb) for a 1D CNN classification of RDF profiles)
+
+
 ## **2024.07.09 unreleased version**
 ### added
-- inpainting of an image added to `ML-2DCNN.ipynb`
+- inpainting of an image added to the [`ML-2DCNN.ipynb`  notebook](./ML-2DCNN.ipynb)
 
 ## **2024.07.07 <span style='color:red'>release 1.9.0</span>**
 ### changed
-- `ML-1DCNN.ipynb` finalized
+- [`ML-1DCNN.ipynb` notebook](./ML-1DCNN.ipynb) finalized
 
 ## **2024.07.04 unreleased version**
 ### added
-- RDF classification introduced in `ML-1DCNN.ipynb` (RDF profiles created with a in-house `pyNanoMatBuilder` library, still under developmment and not publicly available)
+- RDF classification introduced in the [`ML-1DCNN.ipynb` notebook](./ML-1DCNN.ipynb) (RDF profiles created with a in-house `pyNanoMatBuilder` library, still under developmment and not publicly available)
 - new variant for the recurrent neural network (RNN) theme: `RNN-RNN_2.ipynb`
 
 ## **2024.06.30 unreleased version**
@@ -40,7 +45,7 @@ all notebooks developped by a new co-author, **Matthieu Charnay**, with **I.C. G
 
 ## **2024.06.17**
 ### changed
-- MNIST fashion dataset: latent space reduced to 28 instead of 30 (because imgs are 28x28)
+- [ML-autoencoder notebook](./ML-Autoencoders.ipynb). MNIST fashion dataset: latent space reduced to 28 instead of 30 (because imgs are 28x28)
 
 ## **2024.06.16 <span style='color:red'>release 1.9.0alpha</span>**
 ### added
