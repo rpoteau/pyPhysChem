@@ -15,7 +15,7 @@ PHomePython = os.path.expanduser('~') + "/" + PythonFolder + "/"
 
 #adapt "venv" to your case. These are virtual environments created with the virtualenv command (https://virtualenv.pypa.io/en/latest/index.html)
 # in the present case, 3 virtual environments were created: base, ML and ai4Chem. They will be addressed with the a, b and c characters
-venv = {"a":"base","b":"ML","c":"nmr","d":"ai4chem"}
+venv = {"a":"base","b":"ML","c":"nmr","d":"ai4chem","e":"spektral"}
 #venv = {"a":"base","b":"ML"} #VM
 
 string = "\n\033[91m\033[1mWhich command?\033[0m\n\
@@ -50,6 +50,8 @@ string = "\n\033[91m\033[1mWhich command?\033[0m\n\
 30. ls -d */ " + PHome + "\n\
 \033[1m# Clone one virtual environment into a new one, using a previously saved requirements.txt file\033[0m\n\
 40. virtualenv New_Env_Name; activate New_Env_Name; pip install -r requirements.txt \n\
+\033[1m# Make a new empty virtual environment\033[0m\n\
+41. virtualenv New_Env_Name \n\
 \n\033[91m\033[1mx. Exit\033[0m"
 
 
@@ -71,7 +73,7 @@ while choice != "x":
     choice = input("enter a number (or x to terminate): ")
     if choice == "x":
         sys.exit()
-    while envNN not in venv and choice not in ["30","40"]:
+    while envNN not in venv and choice not in ["30","40","41"]:
         strinput = "Which virtualenv environment? " + listenv
         envNN = input(strinput)
         if envNN in venv:
@@ -170,6 +172,10 @@ while choice != "x":
         ReqTxt = input(f"\033[33mcopy/paste from the previous list the reference requirements.txt file, i.e. the environment you want to clone: \033[0m")
         pyAct = "source " + PHome + NewEnvTxt + "/bin/activate;\n"
         pipCom = pyAct + " pip install -r " + PHome + ReqTxt + ";\n"
+    if choice == "41":
+        NewEnvTxt = input("Name of the new environment: ")
+        systemCom = "cd " + PHome + ";\nvirtualenv " + NewEnvTxt
+        os.system(systemCom)
     print(f"\033[94m\033[1m{pipCom}\033[0m")
     if choice in ["6","7","8","9","10","11"]:
        print(f"\033[31mWait...\033[0m")

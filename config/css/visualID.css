@@ -3,7 +3,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
   font-weight: bold;
 }
-body, intro, introE, introT, rq, rqE, rqT, ex, exE, app, appE, sol, todo, figure  {
+body, intro, introE, introT, rq, rqE, rqT, ex, exE, app, appE, sol, todo, hint, hintE, figure  {
   font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
   font-weight: 400;
   font-size: 12px;
@@ -162,6 +162,42 @@ h5 {
     font-weight: 600;
     display: block;
     color : #117996;
+}
+.hint {    
+    background-color: #dede6f80;
+    padding: 0.5em;
+    padding-top: 0em;
+    position:relative;
+    color : ##37665f;
+}
+.hint::before {
+    background-color: #dede6f;
+    content:"Indice(s). " attr(title);
+    margin-left:-0.5em;
+    margin-right:-0.5em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    font-weight: 600;
+    display: block;
+    color : ##37665f;
+}
+.hintE {    
+    background-color: #dede6f80;
+    padding: 0.5em;
+    padding-top: 0em;
+    position:relative;
+    color : ##37665f;
+}
+.hintE::before {
+    background-color: #dede6f;
+    content:"Hint(s). " attr(title);
+    margin-left:-0.5em;
+    margin-right:-0.5em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    font-weight: 600;
+    display: block;
+    color : ##37665f;
 }
 .app {    
     background-color: #b2dbea80;
