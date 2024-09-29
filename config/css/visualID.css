@@ -233,7 +233,22 @@ h5 {
     color : #117996;
     display: block;
 }
-.sol {    
+.solFr {    
+    background-color: #bbeab880;
+    padding: 0.5em;
+    padding-top: 0em;
+    position:relative;
+}
+.solFr::before {
+    background-color: #bbeab8;
+    content:"Solution";
+    margin-left:-0.5em;
+    margin-right:-0.5em;
+    padding-left:0.5em;
+    padding-right:0.5em;
+    font-weight: 600;
+    display: block;
+}.sol {    
     background-color: #bbeab880;
     padding: 0.5em;
     padding-top: 0em;
