@@ -2,6 +2,10 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2024.10.01 unreleased version**
+### added
+- new [Chimie Théorique et Modélisation : modèles simples. Feuilles de calcul Python notebook](./ChimieTheoEtModelisation1-v0.ipynb)
+
 ## **2024.07.23 unreleased version**
 ### added
 - new application to RDF profiles in the [`ML-autoencoder` notebook](./ML-Autoencoders.ipynb) (see also [`ML-1DCNN.ipynb` notebook](./ML-1DCNN.ipynb) for a 1D CNN classification of RDF profiles)
