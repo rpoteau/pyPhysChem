@@ -44,6 +44,7 @@ string = "\n\033[91m\033[1mWhich command?\033[0m\n\
 \033[32m20. pip install -r requirements.txt --upgrade\033[0m\n\
 21. pip install --upgrade package_name(s)\n\
 22. pip-review --local --interactive\n\
+\n\
 \033[1m# restore an environment\033[0m\n\
 \033[32m23. pip uninstall $(pip freeze); pip install -r requirements.txt\033[0m\n\
 \033[1m# list current environments\033[0m\n\
@@ -52,7 +53,13 @@ string = "\n\033[91m\033[1mWhich command?\033[0m\n\
 40. virtualenv New_Env_Name; activate New_Env_Name; pip install -r requirements.txt \n\
 \033[1m# Make a new empty virtual environment\033[0m\n\
 41. virtualenv New_Env_Name \n\
-\n\033[91m\033[1mx. Exit\033[0m"
+\n\
+\033[1m# list pip cache contents\033[0m\n\
+50. pip cache list \n\
+\033[1m# purge the pip cache\033[0m\n\
+51. pip cache purge \n\
+\n\
+\033[91m\033[1mx. Exit\033[0m"
 
 
 choice = ""
@@ -73,7 +80,7 @@ while choice != "x":
     choice = input("enter a number (or x to terminate): ")
     if choice == "x":
         sys.exit()
-    while envNN not in venv and choice not in ["30","40","41"]:
+    while envNN not in venv and choice not in ["30","40","41","50","51"]:
         strinput = "Which virtualenv environment? " + listenv
         envNN = input(strinput)
         if envNN in venv:
@@ -176,6 +183,10 @@ while choice != "x":
         NewEnvTxt = input("Name of the new environment: ")
         systemCom = "cd " + PHome + ";\nvirtualenv " + NewEnvTxt
         os.system(systemCom)
+    if choice == "50":
+        pipCom = "pip cache list"
+    if choice == "51":
+        pipCom = "pip cache purge"
     print(f"\033[94m\033[1m{pipCom}\033[0m")
     if choice in ["6","7","8","9","10","11"]:
        print(f"\033[31mWait...\033[0m")

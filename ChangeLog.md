@@ -2,6 +2,19 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2024.10.31 unreleased version**
+
+### changed
+- in the [tight-binding notebook](TB.ipynb), the deprecated `scipy.integrate.simps` is now replaced with `scipy.integrate.simpson`. Involves to change `simps(y,x)` with `simpson(y,x=x)`
+
+## **2024.10.31 unreleased version**
+
+### changed
+- [Molecular representations notebook](./MolecularRepresentations.ipynb):
+    - the `jsmol` widget is now replaced with the `py3Dmol` widget
+    - a `molView` class has been created to simplify the use of `py3Dmol`
+    - the deprecated `AllChem.GetMorganFingerprintAsBitVect`is now replaced with `MorganGenerator`
+
 ## **2024.10.01 unreleased version**
 ### added
 - new [Chimie Théorique et Modélisation : modèles simples. Feuilles de calcul Python notebook](./ChimieTheoEtModelisation1-v0.ipynb)

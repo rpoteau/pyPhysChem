@@ -1,0 +1,24 @@
+Linux
+-----
+All commands should be typed in a Linux terminal (or a console or an xterm)
+1. Download the miniconda installer, available at https://docs.anaconda.com/miniconda/
+2. Make it executable (e.g.: chmod +x Miniconda3-latest-Linux-x86_64.sh)
+3. Run it and choose carefully the answers (validation the license agreement, default directory etc)
+4. If you choose not to initialize the default PATH variable, run the following command to activate the "base" environment: eval "$(/home/romuald/miniconda3/bin/conda shell.bash hook)"
+5. Install Jupyter Lab as well as git and pip with the conda installer: conda install jupyter git pip
+6. Check that they are part of the conda environment with: conda list
+7. The Jupyter Lab command is: jupyter-lab
+
+--------------------------------------------------------------------------------------------------
+Windows
+-------
+All commands should be typed in a Windows PowerShell terminal
+1. Download the miniconda installer, available at https://docs.anaconda.com/miniconda/
+2. Run it and choose carefully the answers (validation the license agreement, default directory etc)
+3. Open a Windows PowerShell terminal
+4. Run the command: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser, followed with: conda init
+6. Close the Windows PowerShell terminal and open it again
+7. If needed, the activation command is: conda activate base
+8. Install Jupyter Lab as well as git and pip with the conda installer: conda install jupyter git pip
+9. Check that they are part of the conda environment with: conda list
+10. The Jupyter Lab command is: jupyter-lab
