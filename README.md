@@ -144,7 +144,7 @@ distribution of the Python programming language:
 - to deactivate the "base" python environment of conda, type:
 
     ```bash
-    conda deactivate`
+    conda deactivate
     ```
 </div>
 
