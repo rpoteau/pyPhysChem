@@ -133,9 +133,19 @@ distribution of the Python programming language:
 <div style="color:blue">
 
 - open a terminal
-- type the command: `eval "$(/home/<your-username>/miniconda3/bin/conda shell.bash hook)"`. The prompt should now start with `(base)`:
+- type the command:
+
+    ```bash
+    eval "$(/home/<your-username>/miniconda3/bin/conda shell.bash hook)"
+    ```
+
+    The prompt should now start with `(base)`:
      <div style="text-align:center"><img width="600px" src="./MiscImages/PythonInstall/Linux-activationOfConda.png"/></div>
-- to deactivate the "base" python environment of conda, type: `conda deactivate`
+- to deactivate the "base" python environment of conda, type:
+
+    ```bash
+    conda deactivate`
+    ```
 </div>
 
 ### Installation des bibliothèques Python et des outils additionnels nécessaires / <span style="color:blue">Installation of the required Python libraries and additional tools</span>
@@ -236,9 +246,14 @@ Comme pour les autres installations, toutes les commandes s'exécutent à partir
 - allez d'abord dans le répertoire pyPhysChem
     <br><span style="color:blue">first go into the `pyPhysChem` folder</span>
 - il y a un fichier nommé `requirements4pyPhysChem-LastVersion.txt`, qui contient la liste de toutes les bibliothèques nécessaires pour exécuter tous les codes Python des notebooks Jupyter de pyPhysChem
-    <br>Exécutez la commande `pip install -r requirements4pyPhysChem-LastVersion.txt`, puis soyez patient(e)s
+    <br>Exécutez la commande ci-dessous, puis soyez patient(e)s
     <br><span style="color:blue">There is a file named `requirements4pyPhysChem-LastVersion.txt`, which contains the list of all the libraries required to run all the Python codes from the Jupyter notebooks of pyPhysChem
-  <br>Run the command `pip install -r requirements4pyPhysChem-LastVersion.txt`, then be patient
+  <br>Run the command below, then be patient:
+
+  ```bash
+  pip install -r requirements4pyPhysChem-LastVersion.txt
+  ```
+
     </span>
 - **Dépannage**: si une erreur d'installation se produit car une bibliothèque est indisponible pour votre OS, éditez le fichier `requirements4pyPhysChem-LastVersion.txt`, effacez la ligne correspondante, et relancez la commande d'installation
     <br><span style="color:blue">**Troubleshooting**: If an installation error occurs because a library is unavailable for your OS, edit the `requirements4pyPhysChem-LastVersion.txt` file, delete the corresponding line, and rerun the installation command</span>
