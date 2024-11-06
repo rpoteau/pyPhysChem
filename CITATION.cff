@@ -9,19 +9,19 @@ authors:
   - given-names: Nans
     family-names: Bernard
     email: nans.bernard@univ-tlse3.fr
-    affiliation: "UT3, Université de Toulouse)"
+    affiliation: "UT3 (Université de Toulouse)"
     role: contributor
   - given-names: Matthieu
     family-names: Charnay
     email: charna@insa-toulouse.fr
-    affiliation: "INSA, Université de Toulouse)"
+    affiliation: "INSA (Université de Toulouse)"
     role: contributor
   - given-names: Stella
     family-names: Christodoulou
     email: stella.christodoulou@univ-tlse3.fr
     affiliation: "LPCNO (INSA, CNRS UMR 5215, UT3, Université de Toulouse)"
     role: contributor
-  - given-names: Iann C.
+  - given-names: "Iann C."
     family-names: Gerber
     email: iann.gerber@insa-toulouse.fr
     affiliation: "LPCNO (INSA, CNRS UMR 5215, UT3, Université de Toulouse)"
@@ -43,7 +43,7 @@ identifiers:
   - type: doi
     value: 10.5281/zenodo.10116267
     description: archived repository on GitHub.com
-repository-code: 'https://github.com/rpoteau/PytChem'
+repository-code: 'https://github.com/rpoteau/pyPhysChem'
 abstract: "pyPhysChem proposes a series of Jupyter notebooks intended to
   introduce physical chemistry students to the Python computer
   language. These Jupyter notebooks were designed to cover a
@@ -55,5 +55,5 @@ keywords:
   - Machine Learning
   - Data Analysis
 license: CC-BY-NC-SA-4.0
-version: 2.0.0
+version: 2.0.1
 date-released: '2024-11-06'
