@@ -2,10 +2,16 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
-## **2024.10.31 unreleased version**
+## **2024.11.06 release 2.0.0**
 
 ### changed
-- in the [tight-binding notebook](TB.ipynb), the deprecated `scipy.integrate.simps` is now replaced with `scipy.integrate.simpson`. Involves to change `simps(y,x)` with `simpson(y,x=x)`
+- `README.md` thoroughly updated: now includes an installation process for a Python distribution based on  `miniconda`
+- new `requirements4pyPhysChem-LastVersion.txt`, aka `requirements4pyPhysChem-20241105.txt`, useful to install with `pip` all the Python libraries required by pyPhysChem (``pip install -r requirements4pyPhysChem-LastVersion.txt`)
+
+## **2024.11.05 unreleased version**
+
+### fixed
+- in the [tight-binding notebook](TB.ipynb), the deprecated `scipy.integrate.simps` is now replaced with `scipy.integrate.simpson`. Involved to change `simps(y,x)` with `simpson(y,x=x)`
 
 ## **2024.10.31 unreleased version**
 

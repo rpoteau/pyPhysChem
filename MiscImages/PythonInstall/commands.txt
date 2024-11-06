@@ -1,0 +1,15 @@
+Linux
+----------------------------------------------------------------
+Activation of the "base" python environment of conda: eval "$(/home/your_user_name/miniconda3/bin/conda shell.bash hook)"
+Deactivation of the "base" python environment of conda: conda deactivate
+
+
+
+Windows
+----------------------------------------------------------------
+
+
+
+all OS
+----------------------------------------------------------------
+conda install git jupyter
