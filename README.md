@@ -167,8 +167,14 @@ You must install additional libraries in your Python environment, as well as a t
 <div style="color:blue">
 
 - On **Windows**, open an Anaconda PowerShell Prompt. On **Linux**, open a terminal and activate conda (`eval "$(/home/<your-username>/miniconda3/bin/conda shell.bash hook)"`)
-- type the command: `conda install git jupyter`. You should see something similar to:
-     <div style="text-align:center"><img width="600px" src="./MiscImages/PythonInstall/allOS-conda_install_git_jupyter.png"/></div>
+- type the command below:
+
+    ```bash
+    conda install git jupyter
+    ```
+
+    <br>You should see something similar to:
+    <div style="text-align:center"><img width="600px" src="./MiscImages/PythonInstall/allOS-conda_install_git_jupyter.png"/></div>
 
 </div>
 
