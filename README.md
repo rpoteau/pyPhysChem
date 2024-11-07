@@ -123,6 +123,7 @@ distribution of the Python programming language:
 - cherchez l'application **Anaconda Powershell Prompt** dans le champ de recherche:
 <br><span style="color:blue; font-style: italic;">search for the **Anaconda Powershell Prompt** application in the search field:</span>
 - exécutez-là. Vous devriez voir apparaître un terminal, avec une invite de commande (prompt) `(base) PS C:\Users\<first-letters-of-your-username>>`
+
 <br><span style="color:blue; font-style: italic;">execute it. You should see a terminal, with a `(base) PS C:\Users\<first-letters-of-your-username>>` prompt:</span>
     <div style="text-align:center"><img width="500px" src="./MiscImages/PythonInstall/Windows-AnacondaPowerShellPrompt.png"/></div>
 
@@ -130,6 +131,7 @@ distribution of the Python programming language:
 
 - ouvez un terminal
 <br><span style="color:blue; font-style: italic;">open a terminal</span>
+
 - tapez la commande:
 <br><span style="color:blue; font-style: italic;">type the command:</span>
 
@@ -140,6 +142,7 @@ distribution of the Python programming language:
     L'invite de commande (prompt) devrait débuter avec `(base)`:
     <br><span style="color:blue; font-style: italic;">The prompt should now start with `(base)`:</span>
      <div style="text-align:center"><img width="600px" src="./MiscImages/PythonInstall/Linux-activationOfConda.png"/></div>
+
 - pour désactiver l'environnement de "base" de conda, tapez:
 <br><span style="color:blue; font-style: italic;">to deactivate the "base" python environment of conda, type:</span>
 
