@@ -2,6 +2,11 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2024.11.06 release 2.0.5**
+
+### changed
+- `CITATION.cff` rewritten, owing to an unsolved synchronization issue with Zenodo due to its previous version
+
 ## **2024.11.06 release 2.0.0**
 
 ### changed
