@@ -1,0 +1,64 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: 'python in the Physical Chemistry lab [pyPhysChem]'
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Nans
+    family-names: Bernard
+    email: nans.bernard@univ-tlse3.fr
+    affiliation: UT3 (Université de Toulouse)
+  - given-names: Matthieu
+    family-names: Charnay
+    email: charna@insa-toulouse.fr
+    affiliation: INSA (Université de Toulouse)
+  - given-names: Stella
+    family-names: Christodoulou
+    email: stella.christodoulou@univ-tlse3.fr
+    affiliation: >-
+      LPCNO (INSA, CNRS UMR 5215, UT3, Université de
+      Toulouse)
+  - given-names: Iann C.
+    family-names: Gerber
+    email: iann.gerber@insa-toulouse.fr
+    affiliation: >-
+      LPCNO (INSA, CNRS UMR 5215, UT3, Université de
+      Toulouse)
+    orcid: 'https://orcid.org/0000-0001-5091-2655'
+  - given-names: Franck
+    family-names: Jolibois
+    email: franck.jolibois@univ-tlse3.fr
+    affiliation: >-
+      LPCNO (INSA, CNRS UMR 5215, UT3, Université de
+      Toulouse)
+    orcid: 'https://orcid.org/0000-0002-2174-4039'
+  - given-names: Romuald
+    family-names: Poteau
+    email: romuald.poteau@univ-tlse3.fr
+    affiliation: >-
+      LPCNO (INSA, CNRS UMR 5215, UT3, Université de
+      Toulouse)
+    orcid: 'https://orcid.org/0000-0003-4338-174X'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.10116267
+    description: The archived version of the repository
+repository-code: 'https://github.com/rpoteau/pyPhysChem'
+abstract: >-
+  pyPhysChem proposes a series of Jupyter notebooks intended
+  to introduce physical chemistry students to the Python
+  computer language. These Jupyter notebooks were designed
+  to cover a wide variety of topics, including data analysis
+  and machine learning
+keywords:
+  - Physical Chemistry
+  - Computer Algebra System
+  - Machine Learning
+  - Data analyzis
+license: CC-BY-NC-SA-4.0
+version: 2.0.1
+date-released: '2024-11-06'
