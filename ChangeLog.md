@@ -5,7 +5,7 @@
 ## **2024.11.06 release 2.0.5**
 
 ### changed
-- `CITATION.cff` rewritten, owing to an unsolved synchronization issue with Zenodo related to its previous version
+- the `CITATION.cff` file has been rewritten due to an unresolved synchronization issue with Zenodo caused by the previous version
 
 ## **2024.11.06 release 2.0.0**
 
