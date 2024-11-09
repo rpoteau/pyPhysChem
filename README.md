@@ -2,11 +2,9 @@
 
 </a><img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>
 
-Des exemples commentés et généralement illustrés sont disponibles sous
-forme de Jupyter Notebooks
+**Ce dépôt GitHub propose une collection de notebooks Jupyter conçus pour intégrer la programmation en Python dans l'enseignement de la chimie physique. Ces notebooks fournissent des exemples commentés et illustrés, couvrant des sujets tels que les dérivées et les intégrales, l'atome d'hydrogène et les représentations moléculaires. Ce dépôt inclut également des ressources pour des applications d'apprentissage automatique en chimie, comme les réseaux de neurones artificiels et les autoencodeurs. Pour utiliser ces outils, les utilisateurs sont invités à installer Jupyter ainsi qu'une distribution Python, Anaconda étant recommandée. Des instructions détaillées pour cloner le dépôt et exécuter les notebooks sont disponibles dans ce fichier README.md**
 
-<span style="color:blue; font-style: italic;">Commented and generally illustrated examples are available in the form
-of Jupyter Notebooks</span>
+&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">**This GitHub repository offers a collection of Jupyter Notebooks designed to integrate Python programming into physical chemistry education. These notebooks provide commented and illustrated examples, covering topics such as derivatives and integrals, the hydrogen atom, and molecular representations. The repository also includes resources for machine learning applications in chemistry, like artificial neural networks and autoencoders. To utilize these materials, users are advised to install Jupyter and a Python distribution, with Anaconda being a recommended option. Detailed instructions for cloning the repository and running the notebooks are provided in the present README.md document**</span>
 
 -   [Document principal et pré-requis / &#x1f1ec;&#x1f1e7; *Main document and prerequisites*](#main)
 -   [Installation et activation d'une distribution python / &#x1f1ec;&#x1f1e7; *Installation and activation of a Python distribution*](#howto)
