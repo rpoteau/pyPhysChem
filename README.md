@@ -6,16 +6,31 @@
 
 &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">**This GitHub repository offers a collection of Jupyter Notebooks designed to integrate Python programming into physical chemistry education. These notebooks provide commented and illustrated examples, covering topics such as derivatives and integrals, the hydrogen atom, and molecular representations. The repository also includes resources for machine learning applications in chemistry, like artificial neural networks and autoencoders. To utilize these materials, users are advised to install Jupyter and a Python distribution, with Anaconda being a recommended option. Detailed instructions for cloning the repository and running the notebooks are provided in the present README.md document**</span>
 
--   [Document principal et pré-requis / &#x1f1ec;&#x1f1e7; *Main document and prerequisites*](#main)
--   [Installation et activation d'une distribution python / &#x1f1ec;&#x1f1e7; *Installation and activation of a Python distribution*](#howto)
+<u>**Table des Matières**</u>
+
+-   [Document principal et pré-requis](#main)
+-   [Installation et activation d'une distribution python](#howto)
     - [Introduction](#intro)
-    - [Installation de miniconda / &#x1f1ec;&#x1f1e7; *Installing miniconda*](#miniconda)
-    - [Activation d'un environnement conda / &#x1f1ec;&#x1f1e7; *Activation of a conda environment*](#activation)
-    - [Installation des bibliothèques Python et des outils additionnels nécessaires / &#x1f1ec;&#x1f1e7; *Installation of the required Python libraries and additional tools*](#lib)
--   [Clonage du dépôt (repository) pyPhysChem et installation des bibliothèques Python nécessaires / &#x1f1ec;&#x1f1e7; *Cloning of the pyPhysChem repository and installation of the required libraries*](#clone)
--   [Utiliser ces notebooks à l'aide de JupyterLab / &#x1f1ec;&#x1f1e7; *Use these notebooks with JupyterLab*](#jupyterlab)
--   [Liste des changements / &#x1f1ec;&#x1f1e7; *List of changes*](#changes)
--   [Comment citer ce travail ? / &#x1f1ec;&#x1f1e7; *How to cite this work?*](#cite)
+    - [Installation de miniconda](#miniconda)
+    - [Activation d'un environnement conda](#activation)
+    - [Installation des bibliothèques Python et des outils additionnels nécessaire](#lib)
+-   [Clonage du dépôt (repository) pyPhysChem et installation des bibliothèques Python nécessaires](#clone)
+-   [Utiliser ces notebooks à l'aide de JupyterLab](#jupyterlab)
+-   [Liste des changements](#changes)
+-   [Comment citer ce travail ?](#cite)
+
+&#x1f1ec;&#x1f1e7; <u>**Table of Contents**</u>
+
+-   [*Main document and prerequisites*](#main)
+-   [*Installation and activation of a Python distribution*](#howto)
+    - [*Introduction*](#intro)
+    - [*Installing miniconda*](#miniconda)
+    - [*Activation of a conda environment*](#activation)
+    - [*Installation of the required Python libraries and additional tools*](#lib)
+-   [*Cloning of the pyPhysChem repository and installation of the required libraries*](#clone)
+-   [&#x1f1ec;&#x1f1e7; *Use these notebooks with JupyterLab*](#jupyterlab)
+-   [L*List of changes*](#changes)
+-   [*How to cite this work?*](#cite)
     
 ## Document principal et pré-requis / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Main document and prerequisites</span>
 
