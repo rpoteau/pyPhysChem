@@ -8,18 +8,18 @@ forme de Jupyter Notebooks
 <span style="color:blue; font-style: italic;">Commented and generally illustrated examples are available in the form
 of Jupyter Notebooks</span>
 
--   [Document principal et pré-requis / *Main document and prerequisites*](#main)
--   [Installation et activation d'une distribution python / *Installation and activation of a Python distribution*](#howto)
+-   [Document principal et pré-requis / &#x1f1ec;&#x1f1e7; *Main document and prerequisites*](#main)
+-   [Installation et activation d'une distribution python / &#x1f1ec;&#x1f1e7; *Installation and activation of a Python distribution*](#howto)
     - [Introduction](#intro)
-    - [Installation de miniconda / *Installing miniconda*](#miniconda)
-    - [Activation d'un environnement conda / *Activation of a conda environment*](#activation)
-    - [Installation des bibliothèques Python et des outils additionnels nécessaires / *Installation of the required Python libraries and additional tools*](#lib)
--   [Clonage du dépôt (repository) pyPhysChem et installation des bibliothèques Python nécessaires/*Cloning of the pyPhysChem repository and installation of the required libraries*](#clone)
--   [Utiliser ces notebooks à l'aide de JupyterLab / *Use these notebooks with JupyterLab*](#jupyterlab)
--   [Liste des changements / *List of changes*](#changes)
--   [Comment citer ce travail ? / *How to cite this work?*](#cite)
+    - [Installation de miniconda / &#x1f1ec;&#x1f1e7; *Installing miniconda*](#miniconda)
+    - [Activation d'un environnement conda / &#x1f1ec;&#x1f1e7; *Activation of a conda environment*](#activation)
+    - [Installation des bibliothèques Python et des outils additionnels nécessaires / &#x1f1ec;&#x1f1e7; *Installation of the required Python libraries and additional tools*](#lib)
+-   [Clonage du dépôt (repository) pyPhysChem et installation des bibliothèques Python nécessaires / &#x1f1ec;&#x1f1e7; *Cloning of the pyPhysChem repository and installation of the required libraries*](#clone)
+-   [Utiliser ces notebooks à l'aide de JupyterLab / &#x1f1ec;&#x1f1e7; *Use these notebooks with JupyterLab*](#jupyterlab)
+-   [Liste des changements / &#x1f1ec;&#x1f1e7; *List of changes*](#changes)
+-   [Comment citer ce travail ? / &#x1f1ec;&#x1f1e7; *How to cite this work?*](#cite)
     
-## Document principal et pré-requis / <span>Main document and prerequisites</span>
+## Document principal et pré-requis / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Main document and prerequisites</span>
 
 <a name="main"></a> 
 
@@ -39,7 +39,7 @@ Il faut lire le fichier [TOC.ipynb](./TOC.ipynb), qui renvoie vers des sous-thè
 **This is what the [PPCL.ipynb](./PPCL.ipynb) notebook is for. It's a bit long, but it's worth the effort** &#x1F60A;. You may even be able to get started without any basic algorithmic knowledge. It's up to you to see if that's enough for you.&#x1F4AA;&#x1F4AA;&#x1F3FC;&#x1F4AA;&#x1F3FF;</div>
 
 
-## Installation et activation d'une distribution Python / <span style="color:blue; font-style: italic;">Installation and activation of a Python distribution</span>
+## Installation et activation d'une distribution Python / &#x1f1ec;&#x1f1e7; <span>Installation and activation of a Python distribution</span>
 
 <a name="howto"></a> 
 
@@ -85,7 +85,7 @@ distribution of the Python programming language:
 &#x1f1ec;&#x1f1e7; **We're next going to learn how to install `miniconda`, which will require us to run command lines**
 </div>
 
-### Installation de `miniconda` / <span style="color:blue; font-style: italic;">Installing `miniconda`</span>
+### Installation de `miniconda` / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Installing `miniconda`</span>
 
 <a name="miniconda"></a> 
 
@@ -134,7 +134,7 @@ distribution of the Python programming language:
 &#x1f1ec;&#x1f1e7; **Whatever the OS of your computer is, you end up with a "base" python distribution, provided and manageable with conda. Given the PATH environment selection chosen during the installation, you might have to activate the python environment**
 </div>
 
-### Activation d'un environnement conda / <span style="color:blue; font-style: italic;">activation of a conda environment</span>
+### Activation d'un environnement conda / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">activation of a conda environment</span>
 
 <a name="activation"></a> 
 
@@ -168,7 +168,7 @@ distribution of the Python programming language:
     ```bash
     conda deactivate
     ```
-### Installation des bibliothèques Python et des outils additionnels nécessaires / <span style="color:blue; font-style: italic;">Installation of the required Python libraries and additional tools</span>
+### Installation des bibliothèques Python et des outils additionnels nécessaires / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Installation of the required Python libraries and additional tools</span>
 
 <a name="lib"></a>
 
@@ -182,7 +182,7 @@ Vous devez installer dans votre environnement Python des bibliothèques addition
 
 </div>
 
-#### Installation de `git` et des outils Jupyter / <span style="color:blue; font-style: italic;">Installation of `git` and of the Jupyter tools</span>
+#### Installation de `git` et des outils Jupyter / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Installation of `git` and of the Jupyter tools</span>
 
 - Sous **Windows**, ouvrez l'application Anaconda PowerShell Prompt.
 <br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">On **Windows**, open an Anaconda PowerShell Prompt</span>
@@ -207,7 +207,7 @@ Vous devez installer dans votre environnement Python des bibliothèques addition
 
 </div>
 
-#### Installation de bibliothèques Python additionnelles / <span style="color:blue; font-style: italic;">Installation of additional Python libraries</span>
+#### Installation de bibliothèques Python additionnelles / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Installation of additional Python libraries</span>
 
 Cela doit être fait avec des lignes de commande, à l'aide Anaconda PowerShell Prompt (**Windows**) ou dans un terminal où conda a été activé (**Linux**). Vous pouvez utiliser :
 
@@ -253,11 +253,11 @@ pip install <name-of-the-python-library>
 
 [&#x1F51D; top &#x1F51D;](#top)
 
-## Clonage du dépôt (repository) pyPhysChem et installation des bibliothèques Python nécessaires/<span style="color:blue; font-style: italic;">Cloning of the pyPhysChem repository and installation of the required libraries</span>
+## Clonage du dépôt (repository) pyPhysChem et installation des bibliothèques Python nécessaires / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Cloning of the pyPhysChem repository and installation of the required libraries</span>
 
 <a name="clone"></a> 
 
-### Clonage / <span style="color:blue; font-style: italic;">Cloning</span>
+### Clonage / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Cloning</span>
 
 **C'est la méthode recommandée**, car elle facilite la mise à jour des notebooks. Vous devez saisir des lignes de commandes depuis l'application Anaconda PowerShell Prompt (**Windows**) ou bien depuis un terminal où conda a été activé (**Linux**)
 <br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">**This is the recommended way**, given the ease of updating notebooks. You need to enter command lines from the Anaconda PowerShell Prompt application (**Windows**) or from a terminal where conda has been activated (**Linux**).</span>
@@ -274,7 +274,7 @@ lequel vous avez lancé la commande `git`
 <br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">You now have a `pyPhysChem`
 folder installed in the folder from which the `git` command was ran</span>
 
-### Mise à jour / <span style="color:blue; font-style: italic;">Update</span>
+### Mise à jour / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Update</span>
 
 <a name="update"></a> 
 
@@ -290,7 +290,7 @@ pyPhysChem étant un projet en évolution, il faut régulièrement vérifier qu'
     git pull origin main
     ```
 
-### Installation des bibliothèques requises / <span style="color:blue; font-style: italic;">Installation of the necessary libraries
+### Installation des bibliothèques requises / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Installation of the necessary libraries
 
 Comme pour les autres installations, toutes les commandes s'exécutent à partir d'un terminal **Linux** avec l'environnement de base activé, ou bien depuis l'application Anaconda PowerShell Prompt sous **Windows**
 
@@ -315,7 +315,7 @@ Comme pour les autres installations, toutes les commandes s'exécutent à partir
 
 [&#x1F51D; top &#x1F51D;](#top)
 
-## Utiliser ces notebooks à l'aide de JupyterLab / <span style="color:blue; font-style: italic;">Use these notebooks with JupyterLab</span>
+## Utiliser ces notebooks à l'aide de JupyterLab / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Use these notebooks with JupyterLab</span>
 
 <a name="jupyterlab"></a> 
 
@@ -337,13 +337,13 @@ Comme pour les autres installations, toutes les commandes s'exécutent à partir
 
 [&#x1F51D; top &#x1F51D;](#top)
 
-## Liste des changements / <span style="color:blue; font-style: italic;">List of changes</span>
+## Liste des changements / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">List of changes</span>
 
 <a name="changes"></a>
 
 [🔄 Liste des changements / <span style="color:blue; font-style: italic;">List of changes</span> 🔄](./ChangeLog.md)
 
-## Comment citer ce travail ? / <span style="color:blue; font-style: italic;">How to cite this work?</span>
+## Comment citer ce travail ? / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">How to cite this work?</span>
 
 <a name="cite"></a> 
 
