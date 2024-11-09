@@ -32,9 +32,9 @@ Il faut lire le fichier [TOC.ipynb](./TOC.ipynb), qui renvoie vers des sous-thè
 
 <div style="color:blue; font-style: italic;">
     
-Read the [TOC.ipynb](./TOC.ipynb) file, which points to subtopics. Each subtopic is introduced by the goals of the course, as well as a table of contents that allows access to the courses/tutorials and exercises.</span>
+&#x1f1ec;&#x1f1e7; Read the [TOC.ipynb](./TOC.ipynb) file, which points to subtopics. Each subtopic is introduced by the goals of the course, as well as a table of contents that allows access to the courses/tutorials and exercises.</span>
 
-**Prerequisite** : very basic notions of algorithmic (variables, conditional tests, loops).
+&#x1f1ec;&#x1f1e7; **Prerequisite** : very basic notions of algorithmic (variables, conditional tests, loops).
 <span style="color:red">&#x1F914; Do you want to refresh your knowledge and reinforce your skills?</span>
 **This is what the [PPCL.ipynb](./PPCL.ipynb) notebook is for. It's a bit long, but it's worth the effort** &#x1F60A;. You may even be able to get started without any basic algorithmic knowledge. It's up to you to see if that's enough for you.&#x1F4AA;&#x1F4AA;&#x1F3FC;&#x1F4AA;&#x1F3FF;</div>
 
@@ -66,9 +66,9 @@ La solution la plus simple est d'installer et utiliser [Anaconda](https://www.an
 
 <div style="color:blue; font-style: italic;">
 
-First install [Jupyter](https://jupyter.org/) as well as a Python distribution on your PC.
+&#x1f1ec;&#x1f1e7; First install [Jupyter](https://jupyter.org/) as well as a Python distribution on your PC.
 
-A simple and easy possibility is to install [Anaconda](https://www.anaconda.com/), a free and opensource
+&#x1f1ec;&#x1f1e7; A simple and easy possibility is to install [Anaconda](https://www.anaconda.com/), a free and opensource
 distribution of the Python programming language:
 
 -   Package versions are managed by the package management system
@@ -82,28 +82,48 @@ distribution of the Python programming language:
 -   Anaconda runs under MacOS, Windows, Linux
 -   There is a lighter version, called [miniconda](https://docs.anaconda.com/miniconda/)
 
-**We're next going to learn how to install `miniconda`, which will require us to run command lines**
+&#x1f1ec;&#x1f1e7; **We're next going to learn how to install `miniconda`, which will require us to run command lines**
 </div>
 
 ### Installation de `miniconda` / <span style="color:blue; font-style: italic;">Installing `miniconda`</span>
 
 <a name="miniconda"></a> 
 
+- téléchargez le [programme d'installation pour votre OS](https://docs.anaconda.com/miniconda/) (Windows/macOS/linux)
+
+- exécutez-le :
+    - **Windows** : allez dans le répertoire Téléchargement, cliquez deux fois sur l'icone `Miniconda3-latest-Linux-x86_64.exe`
+    - **Linux** : ouvez un terminal, `cd` vers le répertoire Téléchargement, tapez `bash Miniconda3-latest-Linux-x86_64.sh`
+
+- pendant l'installation :
+    - validez l'accord de licence
+    - choisissez le répertoire d'installation - ou sinon validez la proposition de répertoire par défaut
+        - **Windows**: `C:\Users\<premières-lettres-de-votre-username>\miniconda3`
+        - **Linux** : `/home/<votre-username>/miniconda3`)
+    - finalisez l'installation :
+        - **Windows** : selectionnez les Options Avancées de Configuration. Ne cochez pas "*Ajoutez Miniconda3 à la variable d'environnement PATH*" si vous craignez un conflit avec une autre distribution Python que vous pourriez avoir dans votre compte local
+
+        <div style="text-align:center"><img width="500px" src="./MiscImages/PythonInstall/Anaconda-Miniconda-AdvancedInstallation.png"/></div>
+
+        - **Linux**: vous devez répondre à une question concernant la variable d'environnement PYTHONPATH. Répondez "non" si vous craignez un conflit avec une autre distribution Python que vous pourriez avoir dans votre compte local
+        
+        <div style="text-align:center"><img width="700px" src="./MiscImages/PythonInstall/Linux-endOfMinicondaInstall.png"/></div>
+
 <div style="color:blue; font-style: italic;">
 
-- download the [installer for your OS](https://docs.anaconda.com/miniconda/) (Windows/macOS/linux)
+- &#x1f1ec;&#x1f1e7; download the [installer for your OS](https://docs.anaconda.com/miniconda/) (Windows/macOS/linux)
 
-- execute it:
+- &#x1f1ec;&#x1f1e7; execute it:
     - **Windows**: go to the download directory, double click on the `Miniconda3-latest-Linux-x86_64.exe` icon
     - **Linux**: open a terminal, `cd` to the download directory, type `bash Miniconda3-latest-Linux-x86_64.sh` 
 
-- during the installation process:
+- &#x1f1ec;&#x1f1e7; during the installation process:
     - validate the license agreement
     - choose the installation folder - or accept the folder defined by default:
-        - **windows**: `C:\Users\<first-letters-of-your-username>\miniconda3`
+        - **Windows**: `C:\Users\<first-letters-of-your-username>\miniconda3`
         - **Linux** : `/home/<your-username>/miniconda3`)
     - finalize the installation
-        - **windows**: select the Advanced Configuration Options. Do not select the "*Add Miniconda3 to my PATH environment variable*" checkbox if you fear a conflict with another python distribution that would you have in your local account.
+        - **Windows**: select the Advanced Configuration Options. Do not select the "*Add Miniconda3 to my PATH environment variable*" checkbox if you fear a conflict with another python distribution that would you have in your local account.
 
         <div style="text-align:center"><img width="500px" src="./MiscImages/PythonInstall/Anaconda-Miniconda-AdvancedInstallation.png"/></div>
 
@@ -111,7 +131,7 @@ distribution of the Python programming language:
         
         <div style="text-align:center"><img width="700px" src="./MiscImages/PythonInstall/Linux-endOfMinicondaInstall.png"/></div>
 
-**Whatever the OS of your computer is, you end up with a "base" python distribution, provided and manageable with conda. Given the PATH environment selection chosen during the installation, you might have to activate the python environment**
+&#x1f1ec;&#x1f1e7; **Whatever the OS of your computer is, you end up with a "base" python distribution, provided and manageable with conda. Given the PATH environment selection chosen during the installation, you might have to activate the python environment**
 </div>
 
 ### Activation d'un environnement conda / <span style="color:blue; font-style: italic;">activation of a conda environment</span>
@@ -121,30 +141,29 @@ distribution of the Python programming language:
 #### Windows
 
 - cherchez l'application **Anaconda Powershell Prompt** dans le champ de recherche:
-<br><span style="color:blue; font-style: italic;">search for the **Anaconda Powershell Prompt** application in the search field:</span>
+<br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">search for the **Anaconda Powershell Prompt** application in the search field:</span>
 - exécutez-là. Vous devriez voir apparaître un terminal, avec une invite de commande (prompt) `(base) PS C:\Users\<first-letters-of-your-username>>`
-
-<br><span style="color:blue; font-style: italic;">execute it. You should see a terminal, with a `(base) PS C:\Users\<first-letters-of-your-username>>` prompt:</span>
+<br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">execute it. You should see a terminal, with a `(base) PS C:\Users\<first-letters-of-your-username>>` prompt:</span>
     <div style="text-align:center"><img width="500px" src="./MiscImages/PythonInstall/Windows-AnacondaPowerShellPrompt.png"/></div>
 
 #### Linux
 
 - ouvez un terminal
-<br><span style="color:blue; font-style: italic;">open a terminal</span>
+<br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">open a terminal</span>
 
 - tapez la commande:
-<br><span style="color:blue; font-style: italic;">type the command:</span>
+<br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">type the command:</span>
 
     ```bash
     eval "$(/home/<your-username>/miniconda3/bin/conda shell.bash hook)"
     ```
 
     L'invite de commande (prompt) devrait débuter avec `(base)`:
-    <br><span style="color:blue; font-style: italic;">The prompt should now start with `(base)`:</span>
+    <br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">The prompt should now start with `(base)`:</span>
      <div style="text-align:center"><img width="600px" src="./MiscImages/PythonInstall/Linux-activationOfConda.png"/></div>
 
 - pour désactiver l'environnement de "base" de conda, tapez:
-<br><span style="color:blue; font-style: italic;">to deactivate the "base" python environment of conda, type:</span>
+<br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">to deactivate the "base" python environment of conda, type:</span>
 
     ```bash
     conda deactivate
@@ -159,16 +178,16 @@ Vous devez installer dans votre environnement Python des bibliothèques addition
 
 <div style="color:blue; font-style: italic;">
     
-You must install additional libraries in your Python environment, as well as a tool named `git`. `git` is used to manage and track changes in code or project files, enabling version control, collaboration, and efficient project management in software development. A very useful option is provided by the `git clone` command, used to create a local copy of a remote Git repository, such as one hosted on GitHub. This command downloads the entire project, including its history, branches, and files, allowing you to work on the code locally. You also need to install the Jupyter tools, which are not included in the miniconda distribution.
+&#x1f1ec;&#x1f1e7; You must install additional libraries in your Python environment, as well as a tool named `git`. `git` is used to manage and track changes in code or project files, enabling version control, collaboration, and efficient project management in software development. A very useful option is provided by the `git clone` command, used to create a local copy of a remote Git repository, such as one hosted on GitHub. This command downloads the entire project, including its history, branches, and files, allowing you to work on the code locally. You also need to install the Jupyter tools, which are not included in the miniconda distribution.
 
 </div>
 
 #### Installation de `git` et des outils Jupyter / <span style="color:blue; font-style: italic;">Installation of `git` and of the Jupyter tools</span>
 
 - Sous **Windows**, ouvrez l'application Anaconda PowerShell Prompt.
-<br><span style="color:blue; font-style: italic;">On **Windows**, open an Anaconda PowerShell Prompt</span>
+<br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">On **Windows**, open an Anaconda PowerShell Prompt</span>
 - Sous **Linux**, ouvez un terminal et activez conda:
-<br><span style="color:blue; font-style: italic;">On **Linux**, open a terminal and activate conda:</span>
+<br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">On **Linux**, open a terminal and activate conda:</span>
 
 
     ```bash
@@ -176,14 +195,14 @@ You must install additional libraries in your Python environment, as well as a t
     ```
 
 - tapez la commande ci-dessous:
-<br><span style="color:blue; font-style: italic;">type the command below:</span>
+<br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">type the command below:</span>
 
     ```bash
     conda install git jupyter
     ```
 
     <br>L'affichage devrait être simlaire à la capture d'écran ci-dessous:
-    <br><span style="color:blue; font-style: italic;">You should see something similar to:</span>
+    <br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">You should see something similar to:</span>
     <div style="text-align:center"><img width="600px" src="./MiscImages/PythonInstall/allOS-conda_install_git_jupyter.png"/></div>
 
 </div>
@@ -210,7 +229,7 @@ En résumé, `conda` est précieux pour les projets de data science nécessitant
 
 <div style="color:blue; font-style: italic;">
 
-It must be done with lines of command, in an Anaconda PowerShell Prompt (**Windows**) or in a terminal where conda has been activated (**Linux**). You can either use:
+&#x1f1ec;&#x1f1e7; It must be done with lines of command, in an Anaconda PowerShell Prompt (**Windows**) or in a terminal where conda has been activated (**Linux**). You can either use:
 
 ```bash
 conda install <name-of-the-python-library>
@@ -224,11 +243,11 @@ pip install <name-of-the-python-library>
 
 <br>
 
-`conda install` is a package manager that handles complex dependencies and non-Python libraries. That makes it ideal for scientific and data science environments. It has robust dependency resolution and is used to create isolated environments with specific versions of packages and Python itself. In contrast, `pip install` is specific to Python packages from PyPI. It is faster for simple installations, but doesn’t handle non-Python dependencies as well. Use `conda` for complex setups with external libraries, and `pip` for straightforward Python projects.
+&#x1f1ec;&#x1f1e7; `conda install` is a package manager that handles complex dependencies and non-Python libraries. That makes it ideal for scientific and data science environments. It has robust dependency resolution and is used to create isolated environments with specific versions of packages and Python itself. In contrast, `pip install` is specific to Python packages from PyPI. It is faster for simple installations, but doesn’t handle non-Python dependencies as well. Use `conda` for complex setups with external libraries, and `pip` for straightforward Python projects.
 
-In short, `conda` is valuable for data science projects that require complex dependencies or cross-language compatibility, while `pip` remains a great choice for more straightforward Python-based workflows.
+&#x1f1ec;&#x1f1e7; In short, `conda` is valuable for data science projects that require complex dependencies or cross-language compatibility, while `pip` remains a great choice for more straightforward Python-based workflows.
 
-**In the next section, it will be recommended to install the Python libraries used by pyPhysChem with `pip`**
+&#x1f1ec;&#x1f1e7; **In the next section, it will be recommended to install the Python libraries used by pyPhysChem with `pip`**
 
 </div>
 
@@ -241,10 +260,10 @@ In short, `conda` is valuable for data science projects that require complex dep
 ### Clonage / <span style="color:blue; font-style: italic;">Cloning</span>
 
 **C'est la méthode recommandée**, car elle facilite la mise à jour des notebooks. Vous devez saisir des lignes de commandes depuis l'application Anaconda PowerShell Prompt (**Windows**) ou bien depuis un terminal où conda a été activé (**Linux**)
-<br><span style="color:blue; font-style: italic;">**This is the recommended way**, given the ease of updating notebooks. You need to enter command lines from the Anaconda PowerShell Prompt application (**Windows**) or from a terminal where conda has been activated (**Linux**).</span>
+<br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">**This is the recommended way**, given the ease of updating notebooks. You need to enter command lines from the Anaconda PowerShell Prompt application (**Windows**) or from a terminal where conda has been activated (**Linux**).</span>
 
 Depuis le répertoire où vous voulez installer les notebooks, tapez la commande :
-<br><span style="color:blue; font-style: italic;">Go into the folder in which the notebooks will be installed, and type:</span>
+<br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Go into the folder in which the notebooks will be installed, and type:</span>
 
 ```bash
 git clone https://github.com/rpoteau/pyPhysChem.git
@@ -252,7 +271,7 @@ git clone https://github.com/rpoteau/pyPhysChem.git
 
 Vous avez maintenant un répertoire `pyPhysChem` dans le répertoire depuis
 lequel vous avez lancé la commande `git`
-<br><span style="color:blue; font-style: italic;">You now have a `pyPhysChem`
+<br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">You now have a `pyPhysChem`
 folder installed in the folder from which the `git` command was ran</span>
 
 ### Mise à jour / <span style="color:blue; font-style: italic;">Update</span>
@@ -260,7 +279,7 @@ folder installed in the folder from which the `git` command was ran</span>
 <a name="update"></a> 
 
 pyPhysChem étant un projet en évolution, il faut régulièrement vérifier qu'il n'y a pas de mise à jour. La commande suivante met si nécessaire à jour le contenu du répertoire `pyPhysChem`
-<br><span style="color:blue; font-style: italic;">pyPhysChem being a work-in-progress project, it is necessary to regularly check for a possible update. The content of the `pyPhysChem` folder is updated by using the following process</span>:
+<br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">pyPhysChem being a work-in-progress project, it is necessary to regularly check for a possible update. The content of the `pyPhysChem` folder is updated by using the following process</span>:
 
 - allez d'abord dans le répertoire pyPhysChem
     <br><span style="color:blue; font-style: italic;">first go into the `pyPhysChem` folder</span>
@@ -275,13 +294,13 @@ pyPhysChem étant un projet en évolution, il faut régulièrement vérifier qu'
 
 Comme pour les autres installations, toutes les commandes s'exécutent à partir d'un terminal **Linux** avec l'environnement de base activé, ou bien depuis l'application Anaconda PowerShell Prompt sous **Windows**
 
-<span style="color:blue; font-style: italic;">As with other installations, all commands are run from a **Linux** terminal with the base environment activated, or from the Anaconda PowerShell Prompt application on **Windows**</span>
+&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">As with other installations, all commands are run from a **Linux** terminal with the base environment activated, or from the Anaconda PowerShell Prompt application on **Windows**</span>
 
 - allez d'abord dans le répertoire pyPhysChem
-    <br><span style="color:blue; font-style: italic;">first go into the `pyPhysChem` folder</span>
+    <br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">first go into the `pyPhysChem` folder</span>
 - il y a un fichier nommé `requirements4pyPhysChem-LastVersion.txt`, qui contient la liste de toutes les bibliothèques nécessaires pour exécuter tous les codes Python des notebooks Jupyter de pyPhysChem
     <br>Exécutez la commande ci-dessous, puis soyez patient(e)s
-    <br><span style="color:blue; font-style: italic;">There is a file named `requirements4pyPhysChem-LastVersion.txt`, which contains the list of all the libraries required to run all the Python codes from the Jupyter notebooks of pyPhysChem
+    <br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">There is a file named `requirements4pyPhysChem-LastVersion.txt`, which contains the list of all the libraries required to run all the Python codes from the Jupyter notebooks of pyPhysChem
   <br>Run the command below, then be patient:
 
   ```bash
@@ -290,9 +309,9 @@ Comme pour les autres installations, toutes les commandes s'exécutent à partir
 
     </span>
 - **Dépannage**: si une erreur d'installation se produit car une bibliothèque est indisponible pour votre OS, éditez le fichier `requirements4pyPhysChem-LastVersion.txt`, effacez la ligne correspondante, et relancez la commande d'installation
-    <br><span style="color:blue; font-style: italic;">**Troubleshooting**: If an installation error occurs because a library is unavailable for your OS, edit the `requirements4pyPhysChem-LastVersion.txt` file, delete the corresponding line, and rerun the installation command</span>
+    <br>&#x1f1ec;&#x1f1e7;<span style="color:blue; font-style: italic;">**Troubleshooting**: If an installation error occurs because a library is unavailable for your OS, edit the `requirements4pyPhysChem-LastVersion.txt` file, delete the corresponding line, and rerun the installation command</span>
 - il ne vous reste plus qu'à vérifier qu'il n'y a pas de problèmes. La commande `pip check` doit renvoyer `No broken requirements found`
-    <br><span style="color:blue; font-style: italic;">All that’s left is to check that there are no issues. The command `pip check` should return `No broken requirements found`</span>
+    <br>&#x1f1ec;&#x1f1e7;<span style="color:blue; font-style: italic;">All that’s left is to check that there are no issues. The command `pip check` should return `No broken requirements found`</span>
 
 [&#x1F51D; top &#x1F51D;](#top)
 
@@ -301,18 +320,18 @@ Comme pour les autres installations, toutes les commandes s'exécutent à partir
 <a name="jupyterlab"></a> 
 
 -   Ouvrez un terminal (**Linux** - et n'oubliez pas d'activer conda avec `eval "$(/home/<your-username>/miniconda3/bin/conda shell.bash hook)"`) ou bien l'application Anaconda PowerShell Prompt (**Windows**)
-    <br><span style="color:blue; font-style: italic;">Open a terminal (**Linux** - and don't forget to activate conda with `eval "$(/home/<your-username>/miniconda3/bin/conda shell.bash hook)"`) or the Anaconda PowerShell Prompt application (**Windows**)</span>
+    <br>&#x1f1ec;&#x1f1e7;<span style="color:blue; font-style: italic;">Open a terminal (**Linux** - and don't forget to activate conda with `eval "$(/home/<your-username>/miniconda3/bin/conda shell.bash hook)"`) or the Anaconda PowerShell Prompt application (**Windows**)</span>
 -   Allez dans le répertoire qui contient pyPhysChem (commande `cd <chemin_d_accès>`)
-    <br><span style="color:blue; font-style: italic;">Navigate to the folder that contains pyPhysChem (`cd <pathway>` command)</span>
+    <br>&#x1f1ec;&#x1f1e7;<span style="color:blue; font-style: italic;">Navigate to the folder that contains pyPhysChem (`cd <pathway>` command)</span>
 -   tapez la commande :
-    <br><span style="color:blue; font-style: italic;">enter the command:</span>
+    <br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">enter the command:</span>
     
     ```bash
     jupyter-lab TOC.ipynb
     ```
 
 - jupyter-lab devrait s'ouvrir dans votre navigateur:
-    <br><span style="color:blue; font-style: italic;">Jupyter-lab should open in your browser:</span>
+    <br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Jupyter-lab should open in your browser:</span>
 
      <div style="text-align:center"><img width="600px" src="./MiscImages/PythonInstall/JupyterLab.png"/></div>
 
@@ -330,7 +349,7 @@ Comme pour les autres installations, toutes les commandes s'exécutent à partir
 
 Si vous utilisez des parties significatives des codes publiés dans ce dépôt github, ou bien s'il a été utile pour votre auto-formation, veuillez le citer comme suit :<br>
 
-<span style="color:blue; font-style: italic;">If you use pieces of code of this github repository that turned out to be decisive to your work, or that have been useful for your self-learning, please cite it as follows:</span>
+&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">If you use pieces of code of this github repository that turned out to be decisive to your work, or that have been useful for your self-learning, please cite it as follows:</span>
 
 N. Bernard, M. Charnay, S. Christodoulou, I. C. Gerber*, F. Jolibois* and R. Poteau*, *Python in the Physical Chemistry lab (pyPhysChem) github repository*, release v. 2.0.5 (2024), doi: [10.5281/zenodo.14050542](https://doi.org/10.5281/zenodo.14050542)
     
