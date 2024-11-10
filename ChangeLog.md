@@ -2,6 +2,13 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2024.11.10 unreleased version**
+
+### added
+- Great Britain flags added to better identify the English parts in `README.md`
+- ChatGPT image added in the introduction of the [Chimie Théorique et Modélisation : modèles simples](./ChimieTheoEtModelisation1-v0.ipynb) notebook
+- new *getting started with Jupyter notebooks and Jupyter-lab* section in the ["Python in the Physical Chemistry Lab (PPCL) in a nutshell"](./PPCL.ipynb) notebook
+
 ## **2024.11.06 release 2.0.5**
 
 ### changed
@@ -12,6 +19,7 @@
 ### changed
 - `README.md` thoroughly updated: now includes an installation process for a Python distribution based on  `miniconda`
 - new `requirements4pyPhysChem-LastVersion.txt`, aka `requirements4pyPhysChem-20241105.txt`, useful to install with `pip` all the Python libraries required by pyPhysChem (``pip install -r requirements4pyPhysChem-LastVersion.txt`)
+- new 'getting started with Jupyter-lab'
 
 ## **2024.11.05 unreleased version**
 
