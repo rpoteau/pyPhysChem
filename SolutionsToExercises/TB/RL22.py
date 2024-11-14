@@ -78,4 +78,4 @@ plt.show()
 t4pPC.centerTitle("Answer to question 3")
 ###########################################
 plot_kdosMP(solverRL22, RL22, HWHM=0.15)
-
+plt.show()
