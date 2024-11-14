@@ -6,7 +6,7 @@ from datetime import datetime
 
 #today = date.today()
 #date = today.strftime("%Y%m%d")
-pMversion = "20231102"
+pMversion = "20241026"
 
 #adapt "PythonFolder" to your case
 PythonFolder = "Python3"
