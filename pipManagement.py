@@ -4,9 +4,7 @@ import os
 import sys
 from datetime import datetime
 
-#today = date.today()
-#date = today.strftime("%Y%m%d")
-pMversion = "20241026"
+pMversion = "20250225"
 
 #adapt "PythonFolder" to your case
 PythonFolder = "Python3"
@@ -69,7 +67,13 @@ for i in venv:
     catenvNN = catenvNN + i + " ,"
     listenv = listenv + i + ": " + venv[i] + ". "
 
+print("-------------------------------------------------------------------------------------------")
 print(f"\033[34;1mpipManagement v.{pMversion}\033[0m")
+print()
+print(f"The python distribution is supposed to be in {PHomePython}")
+print("(if it is not the case, adapt the PythonFolder variable of pipManagement.py to your case)")
+print("-------------------------------------------------------------------------------------------")
+
 while choice != "x":
     print(f'{string}')
     print()

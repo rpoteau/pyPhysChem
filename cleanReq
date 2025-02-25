@@ -1,0 +1,12 @@
+#!/bin/bash
+LastReqFile=`ls -rt *requirements_ML.txt|tail -1`
+NameOfLastVersion="requirements4pyPhysChem-LastVersion.txt"
+if [ -e $NameOfLastVersion ]
+then
+   rm -f $NameOfLastVersion
+fi
+cp $LastReqFile $NameOfLastVersion
+sed -i 's/==.*$//' $NameOfLastVersion
+sed -i '/.*nvidia.*/d' $NameOfLastVersion
+echo $LastReqFile "has been copied as" $NameOfLastVersion
+echo "all version numbers and all *nvidia* libraries were removed in" $NameOfLastVersion
