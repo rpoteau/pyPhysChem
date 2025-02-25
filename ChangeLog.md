@@ -2,8 +2,17 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
-## **2024.11.10 unreleased version**
+## **2025.02.24 release 2.1.0**
+### fixed
+- [XAI iris4 notebook](./DS4B-Iris4.ipynb) adapted to run with the 0.46.0 version (2024-06-27), that added compatibility with recent version of numpy and tensorflow. (NB. big changes needed after v. 0.45.0 -2024-03-08- a fairly significant release containing a number of breaking changes)
+- new illustration made by ChatGPT, after [The Thinker, by Auguste Rodin](https://en.wikipedia.org/wiki/The_Thinker)
 
+### changed
+- [iris3 notebook](./DS4B-Iris3.ipynb)
+    - the `data_train` is now sampled with a fixed value of the `random_state` variable
+    - the ANN model has been saved again
+
+## **2024.11.10 unreleased version**
 ### added
 - Great Britain flags added to better identify the English parts in `README.md`
 - ChatGPT image added in the introduction of the [Chimie Théorique et Modélisation : modèles simples](./ChimieTheoEtModelisation1-v0.ipynb) notebook

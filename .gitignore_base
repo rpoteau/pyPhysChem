@@ -1,0 +1,20 @@
+__pycache__/
+.ipynb_checkpoints/
+.directory
+*/.directory
+*.swp
+Thumbs.db
+*/Thumbs.db
+MiscUnshared/
+MiscUnshared/*
+*private.ipynb
+*corrige.ipynb
+*Corrige.ipynb
+*solution.ipynb
+*Solution.ipynb
+*dev.ipynb
+Feedback/
+Feedback/*
+*dev/
+*dev/*
+# Files over 50mb
