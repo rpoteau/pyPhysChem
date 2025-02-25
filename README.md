@@ -366,8 +366,8 @@ Si vous utilisez des parties significatives des codes publiés dans ce dépôt g
 
 &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">If you use pieces of code of this github repository that turned out to be decisive to your work, or that have been useful for your self-learning, please cite it as follows:</span>
 
-N. Bernard, M. Charnay, S. Christodoulou, I. C. Gerber, F. Jolibois and R. Poteau*, *Python in the Physical Chemistry lab (pyPhysChem) github repository*, release v. 2.1.0 (2025), doi: [10.5281/zenodo.14050542](https://doi.org/10.5281/zenodo.14050542)
+N. Bernard, M. Charnay, S. Christodoulou, I. C. Gerber, F. Jolibois and R. Poteau*, *Python in the Physical Chemistry lab (pyPhysChem) github repository*, release v. 2.1.0 (2025), doi: [10.5281/zenodo.14925148](https://doi.org/10.5281/zenodo.14925148)
     
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14050542.svg)](https://doi.org/10.5281/zenodo.14050542)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14925148.svg)](https://doi.org/10.5281/zenodo.14925148)
 
 [&#x1F51D; top &#x1F51D;](#top)
