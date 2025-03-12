@@ -1,20 +1,22 @@
-__pycache__/
-.ipynb_checkpoints/
+/**/.*  # ignore all dotted files
+/**/.*/ # ignore all dotted folders
+!/.gitignore  # except `gitignore` :)
+!/.gitignore_base  # except `gitignore_base`
+__pycache__
+.ipynb_checkpoints
 .directory
 */.directory
 *.swp
 Thumbs.db
 */Thumbs.db
-MiscUnshared/
-MiscUnshared/*
+MiscUnshared/**
 *private.ipynb
 *corrige.ipynb
 *Corrige.ipynb
 *solution.ipynb
 *Solution.ipynb
 *dev.ipynb
-Feedback/
-Feedback/*
-*dev/
-*dev/*
+Feedback/**
+*dev/**
 # Files over 50mb
+
