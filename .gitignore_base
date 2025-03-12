@@ -4,6 +4,7 @@
 !/.gitignore_base  # except `gitignore_base`
 __pycache__
 .ipynb_checkpoints
+.virtual_documents
 .directory
 */.directory
 *.swp

@@ -2,6 +2,15 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2025.03.12 unreleased version**
+### changed
+- [Easter Egg notebook](./EasterEgg.ipynb), aka TDDFT notebook:
+    - minor modification of the functions
+    - short introductory lecture to TDDFT calculations and to the simulation of UV-visible spectra (thank you ChatGPT...)
+    - new application to ZnTPP (2024-2025 project of M1 students)
+    - introduction of calls to `rdkit` and `py3Dmol` in the ZnTPP case
+- update of the .gitignore_base file
+
 ## **2025.02.25 release 2.1.0**
 
 ### added
