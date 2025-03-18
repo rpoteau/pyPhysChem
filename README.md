@@ -106,7 +106,7 @@ distribution of the Python programming language:
   <!-- Video Thumbnail -->
   <a href="https://www.youtube.com/embed/EUd2KdtQI7o?si=aYlyXEqxLaLb9mZy" target="_blank" style="display: inline-block;">
     <img src="./MiscImages/YT-MiniconcaInstall.png" style="width: 500px; display: block;">
-<i>Instructions Vidéo sur YT (in English)</i>
+<br><i>Instructions Vidéo sur YT (in English)</i>
   </a>
 </div>
 
@@ -344,9 +344,9 @@ Comme pour les autres installations, toutes les commandes s'exécutent à partir
 
 <div style="text-align:center">
   <!-- Video Thumbnail -->
-  <a href="https://www.youtube.com/embed/EUd2KdtQI7o?si=aYlyXEqxLaLb9mZy" target="_blank" style="display: inline-block;">
+  <a href="https://youtu.be/VyBb717GqWU?si=hQwfiseySFA9WMlo" target="_blank" style="display: inline-block;">
     <img src="./MiscImages/YT-JupyterLab.png" style="width: 500px; display: block;">
-<i>Instructions Vidéo sur YT (in English)</i>
+<br><i>Instructions Vidéo sur YT (in English)</i>
   </a>
 </div>
 

@@ -2,6 +2,11 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2025.03.18 unreleased version**
+### added
+- link toward two installation videos now given in README.md
+- linkl toward a video associated to PPCL in a nutshell now given in the introduction of ["Python in the Physical Chemistry Lab (PPCL) in a nutshell"](./PPCL.ipynb) notebook
+
 ## **2025.03.12 unreleased version**
 ### changed
 - [Easter Egg notebook](./EasterEgg.ipynb), aka TDDFT notebook:
@@ -23,10 +28,10 @@
     - the `data_train` is now sampled with a fixed value of the `random_state` variable
     - the ANN model has been saved again
 - `requirements4pyPhysChem-LastVersion.txt` made from `20250225T134429requirements_ML.txt`, using `cleanReq`
+- new illustration in the [XAI iris4 notebook](./DS4B-Iris4.ipynb) notebook made by ChatGPT, after [The Thinker, by Auguste Rodin](https://en.wikipedia.org/wiki/The_Thinker)
 
 ### fixed
 - [XAI iris4 notebook](./DS4B-Iris4.ipynb) adapted to run with the 0.46.0 version of the shap library (2024-06-27), that added compatibility with recent version of numpy and tensorflow. (NB. big changes needed after shap 0.45.0 -2024-03-08- a fairly significant release containing a number of breaking changes)
-- new illustration made by ChatGPT, after [The Thinker, by Auguste Rodin](https://en.wikipedia.org/wiki/The_Thinker)
 
 ## **2024.11.10 unreleased version**
 ### added
