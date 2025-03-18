@@ -102,6 +102,8 @@ distribution of the Python programming language:
 
 ### Installation de `miniconda` / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Installing `miniconda`</span>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EUd2KdtQI7o?si=aYlyXEqxLaLb9mZy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <a name="miniconda"></a> 
 
 - téléchargez le [programme d'installation pour votre OS](https://docs.anaconda.com/miniconda/) (Windows/macOS/linux)
