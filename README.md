@@ -102,7 +102,13 @@ distribution of the Python programming language:
 
 ### Installation de `miniconda` / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Installing `miniconda`</span>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/EUd2KdtQI7o?si=aYlyXEqxLaLb9mZy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<div style="text-align:center">
+  <!-- Video Thumbnail -->
+  <a href="https://www.youtube.com/embed/EUd2KdtQI7o?si=aYlyXEqxLaLb9mZy" target="_blank" style="display: inline-block;">
+    <img src="./MiscImages/YT-MiniconcaInstall.png" style="width: 500px; display: block;">
+<i>Instructions Vidéo sur YT (in English)</i>
+  </a>
+</div>
 
 <a name="miniconda"></a> 
 
@@ -335,6 +341,14 @@ Comme pour les autres installations, toutes les commandes s'exécutent à partir
 ## Utiliser ces notebooks à l'aide de JupyterLab / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Use these notebooks with JupyterLab</span>
 
 <a name="jupyterlab"></a> 
+
+<div style="text-align:center">
+  <!-- Video Thumbnail -->
+  <a href="https://www.youtube.com/embed/EUd2KdtQI7o?si=aYlyXEqxLaLb9mZy" target="_blank" style="display: inline-block;">
+    <img src="./MiscImages/YT-JupyterLab.png" style="width: 500px; display: block;">
+<i>Instructions Vidéo sur YT (in English)</i>
+  </a>
+</div>
 
 -   Ouvrez un terminal (**Linux** - et n'oubliez pas d'activer conda avec `eval "$(/home/<your-username>/miniconda3/bin/conda shell.bash hook)"`) ou bien l'application Anaconda PowerShell Prompt (**Windows**)
     <br>&#x1f1ec;&#x1f1e7;<span style="color:blue; font-style: italic;">Open a terminal (**Linux** - and don't forget to activate conda with `eval "$(/home/<your-username>/miniconda3/bin/conda shell.bash hook)"`) or the Anaconda PowerShell Prompt application (**Windows**)</span>
