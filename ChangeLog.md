@@ -2,7 +2,7 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
-## **2025.07.23**
+## **2025.07.23 unreleased version**
 ### added
 - Jupyter [notebook on Bayesian probabilities](./Bayesian_DoE.ipynb). Basic introduction and illustration of Bayesian inference with dice: hypothesis comparison (fair vs. loaded toward 6), posterior updates with sequential data, and interpretation of model selection when the truth is not among proposed hypotheses.
 _Now included in the [table of contents](./TOC.ipynb)._
@@ -10,6 +10,10 @@ _Now included in the [table of contents](./TOC.ipynb)._
 ### changed
 - The layout of the [table of contents](./TOC.ipynb) has been slightly improved
 - In ["Python in the Physical Chemistry Lab (PPCL) in a nutshell"](./PPCL.ipynb) notebook, the sentence "Want to see a possible answer? Uncomment the # %load ./SolutionsToExercises/... command below" has been completed with "and then run the content of the cell"
+
+## **2025.06.16 unreleased version**
+### changed
+- banner updated with the new logo of the "Université de Toulouse"
 
 ## **2025.03.18 unreleased version**
 ### added
