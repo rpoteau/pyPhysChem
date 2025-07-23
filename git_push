@@ -1,28 +1,44 @@
 #!/bin/bash
+
+set -e  # exit on any error
+
 if [ -n "$1" ]; then
    echo "---------------------------------------------------------------"
-   echo "commit message = "$1
+   echo "✅ commit message = "$1
 else
-   echo "commit message must be given as a parameter of this git_push command"
+   echo "❌ commit message must be given as a parameter of this git_push command"
    echo "exit"
    exit 1
 fi
 echo "---------------------------------------------------------------"
 echo "First finding if there are large files in [sub]folders"
 find . -size +49M -printf '%P\n' > .LargeFiles
+cp .gitignore .gitignore.bak
 cat .gitignore_base .LargeFiles > .gitignore
 echo "Content of the .gitignore file"
 cat .gitignore
 echo "---------------------------------------------------------------"
-echo "now processing git add/commit/status"
-git add --all
-git commit -m "$1"
+echo "now processing git status"
 git status
+echo "---------------------------------------------------------------"
 while true; do
-    read -p "Do you wish to push?" yn
+    read -p "Do you wish to add > commit > push? (y/n) " yn
     case $yn in
-        [Yy]* ) git push; break;;
-        [Nn]* ) exit;;
-	* ) echo "Please answer yes (y) or no (n).";;
+        [Yy]* )
+            echo "---------------------------------------------------------------"
+            echo "Now processing git add > commit > push"
+            git add --all
+            git status
+            git commit -m "$1"
+	    git push
+	    break
+            ;;
+        [Nn]* )
+            exit
+            ;;
+        * )
+            echo "Please answer yes (y) or no (n)."
+            ;;
     esac
 done
+
