@@ -9,7 +9,9 @@ __pycache__
 */.directory
 *.swp
 Thumbs.db
+Thumbs.db:encryptable
 */Thumbs.db
+*/Thumbs.db:encryptable
 MiscUnshared/**
 *private.ipynb
 *corrige.ipynb

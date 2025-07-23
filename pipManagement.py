@@ -2,9 +2,9 @@
 # coding: utf-8
 import os
 import sys
-from datetime import datetime
+from datetime import datetime, timezone
 
-pMversion = "20250225"
+pMversion = "20250701"
 
 #adapt "PythonFolder" to your case
 PythonFolder = "Python3"
@@ -13,7 +13,7 @@ PHomePython = os.path.expanduser('~') + "/" + PythonFolder + "/"
 
 #adapt "venv" to your case. These are virtual environments created with the virtualenv command (https://virtualenv.pypa.io/en/latest/index.html)
 # in the present case, 3 virtual environments were created: base, ML and ai4Chem. They will be addressed with the a, b and c characters
-venv = {"a":"base","b":"ML","c":"nmr","d":"ai4chem","e":"spektral","f":"DC"}
+venv = {"a":"base","b":"ML","c":"nmr","d":"ai4chem","e":"spektral","f":"DC","g":"base2"}
 #venv = {"a":"base","b":"ML"} #VM
 
 string = "\n\033[91m\033[1mWhich command?\033[0m\n\
@@ -26,6 +26,7 @@ string = "\n\033[91m\033[1mWhich command?\033[0m\n\
 4. pip list --not-required\n\
 \033[1m# display the installed python packages in form of a dependency tree\033[0m\n\
 5. pipdeptree\n\
+\033[32m55. pipdeptree --reverse --packages package-name\033[0m\n\
 \033[1m# pip-review is a convenience wrapper around pip. It can list available updates by deferring to pip list --outdated. It can also automatically or interactively install available updates for you by deferring to pip install\033[0m\n\
 6. pip list --outdated\n\
 7. pip list --outdated --not-required\n\
@@ -77,7 +78,7 @@ print("-------------------------------------------------------------------------
 while choice != "x":
     print(f'{string}')
     print()
-    now = datetime.utcnow().strftime("%Y%m%dT%H%M%S")
+    now = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S")
 
     envNN = ""
     env = ""
@@ -105,6 +106,9 @@ while choice != "x":
         pipCom = pyAct + "pip list --not-required"
     if choice == "5":
         pipCom = pyAct + "pipdeptree"
+    if choice == "55":
+        package_name = input("copy/paste the name of the package that other packages depend on: ")
+        pipCom = pyAct + "pipdeptree --reverse --packages " + package_name
     if choice == "6":
         pipCom = pyAct + "pip list --outdated"
     if choice == "7":
@@ -187,6 +191,8 @@ while choice != "x":
         NewEnvTxt = input("Name of the new environment: ")
         systemCom = "cd " + PHome + ";\nvirtualenv " + NewEnvTxt
         os.system(systemCom)
+        print()
+        print(f"\033[33mActivate the environment with: source {PHome}{NewEnvTxt}/bin/activate\033[0m")
     if choice == "50":
         pipCom = "pip cache list"
     if choice == "51":

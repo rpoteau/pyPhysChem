@@ -2,6 +2,15 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2025.07.23**
+### added
+- Jupyter [notebook on Bayesian probabilities](./Bayesian_DoE.ipynb). Basic introduction and illustration of Bayesian inference with dice: hypothesis comparison (fair vs. loaded toward 6), posterior updates with sequential data, and interpretation of model selection when the truth is not among proposed hypotheses.
+_Now included in the [table of contents](./TOC.ipynb)._
+
+### changed
+- The layout of the [table of contents](./TOC.ipynb) has been slightly improved
+- In ["Python in the Physical Chemistry Lab (PPCL) in a nutshell"](./PPCL.ipynb) notebook, the sentence "Want to see a possible answer? Uncomment the # %load ./SolutionsToExercises/... command below" has been completed with "and then run the content of the cell"
+
 ## **2025.03.18 unreleased version**
 ### added
 - link toward two installation videos now given in README.md
@@ -14,7 +23,7 @@
     - short introductory lecture to TDDFT calculations and to the simulation of UV-visible spectra (thank you ChatGPT...)
     - new application to ZnTPP (2024-2025 project of M1 students)
     - introduction of calls to `rdkit` and `py3Dmol` in the ZnTPP case
-- update of the .gitignore_base file
+- update of the `.gitignore_base` file
 
 ## **2025.02.25 release 2.1.0**
 
