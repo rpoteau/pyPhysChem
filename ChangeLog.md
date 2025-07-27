@@ -2,6 +2,17 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2025.07.27 unreleased version**
+
+### added
+
+In a [Top 10 Machine Learning Algorithms For Beginners: Supervised, and More](./ML-10algorithms.ipynb) notebook, that was previously unreleased:
+
+- Visualization of linear regression coefficients as a horizontal bar chart (`Feature vs Coefficient`)  
+- Caption and commentary explaining that interpretability assumes a valid linear model, which may not hold in this case  
+- Associated illustration of the coefficients' magnitudes and signs
+- Sci-fi themed 42 illustration (Deep Thought) to enrich the notebook visually
+
 ## **2025.07.23 unreleased version**
 ### added
 - Jupyter [notebook on Bayesian probabilities](./Bayesian_DoE.ipynb). Basic introduction and illustration of Bayesian inference with dice: hypothesis comparison (fair vs. loaded toward 6), posterior updates with sequential data, and interpretation of model selection when the truth is not among proposed hypotheses.
