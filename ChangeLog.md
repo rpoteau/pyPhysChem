@@ -8,10 +8,17 @@
 
 In a [Top 10 Machine Learning Algorithms For Beginners: Supervised, and More](./ML-10algorithms.ipynb) notebook, that was previously unreleased:
 
-- Visualization of linear regression coefficients as a horizontal bar chart (`Feature vs Coefficient`)  
-- Caption and commentary explaining that interpretability assumes a valid linear model, which may not hold in this case  
-- Associated illustration of the coefficients' magnitudes and signs
+- Linear regression completed with:
+    - Visualization of linear regression coefficients as a horizontal bar chart (`Feature vs Coefficient`)  
+    - Caption and commentary explaining that interpretability assumes a valid linear model, which may not hold in this case  
+    - Associated illustration of the coefficients' magnitudes and signs
 - Sci-fi themed 42 illustration (Deep Thought) to enrich the notebook visually
+- Logistic regression completed with:
+    - an introduction
+    - logistic regression principles
+    - sigmoid function
+    - 2D plots of decision surface and boundary using synthetic data
+    - confusion matrix and ROC curve
 
 ## **2025.07.23 unreleased version**
 ### added
