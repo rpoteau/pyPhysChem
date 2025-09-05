@@ -19,6 +19,8 @@ venv = {"a":"base","b":"ML","c":"nmr","d":"ai4chem","e":"spektral","f":"DC","g":
 string = "\n\033[91m\033[1mWhich command?\033[0m\n\
 \033[1m# Output installed packages in requirements format\033[0m\n\
 1. pip freeze > requirements.txt\n\
+\033[1m# Output installed packages in requirements format, but with no version number\033[0m\n\
+101. pip freeze | sed 's/==.*$/''/' > requirements.txt\n\
 \033[1m# verify installed packages have compatible dependencies\033[0m\n\
 2. pip check\n\
 \033[0m# List installed packages, including editables; possibility to list only packages that are not dependencies of installed packages\033[0m\n\
@@ -57,6 +59,9 @@ string = "\n\033[91m\033[1mWhich command?\033[0m\n\
 50. pip cache list \n\
 \033[1m# purge the pip cache\033[0m\n\
 51. pip cache purge \n\
+\n\
+\033[1m# Delete a virtual environment\033[0m\n\
+\033[91m\033[1mD. rm -Rf Env_Name\033[0m\n\
 \n\
 \033[91m\033[1mx. Exit\033[0m"
 
@@ -98,6 +103,9 @@ while choice != "x":
     if choice == "1":
         pipCom = pyAct + "cd " + PHome + ";\n"
         pipCom = pipCom + "pip freeze > " + str(now) + "requirements_" + env + ".txt"
+    if choice == "101":
+        pipCom = pyAct + "cd " + PHome + ";\n"
+        pipCom = pipCom + "pip freeze | sed 's/==.*$/''/' > " + str(now) + "requirements_" + env + "_noVersionNumber.txt"
     if choice == "2":
         pipCom = pyAct + "pip check"
     if choice == "3":
@@ -197,6 +205,11 @@ while choice != "x":
         pipCom = "pip cache list"
     if choice == "51":
         pipCom = "pip cache purge"
+    if choice == "D":
+        YorN = input(f"\033[91m\033[1mAre you sure that you want to delete {env} (Y/N)?\033[0m ")
+        if YorN == "Y":
+            systemCom = "rm -Rf " + PHome + env
+            os.system(systemCom)
     print(f"\033[94m\033[1m{pipCom}\033[0m")
     if choice in ["6","7","8","9","10","11"]:
        print(f"\033[31mWait...\033[0m")
