@@ -2,6 +2,16 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2025.09.12 unreleased version**
+
+### changed
+- `requirements4pyPhysChem-LastVersion.txt` updated
+- `ChimieTheoEtModelisation1.ipynb`:
+    - in `mendeleev`, ionization energies are uploaded with `fetch_ionization_energies(degree = 1)` instead of `fetch_table()`. Appropriate call is done in `TableauPeriodique.patch_elements()`
+    - `easy_rdkit` class.
+        - `atom.GetImplicitValence()` is deprecated in new versions of `rdkit`. Must be replaced with `atom.GetValence(rdkit.Chem.rdchem.ValenceType.IMPLICIT)`
+        - new `show_Lewis` option (calls )
+
 ## **2025.07.27 unreleased version**
 
 ### added
