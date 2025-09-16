@@ -2,6 +2,11 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2025.09.16 unreleased version** 
+
+### added
+how to save an svg file with rdkit in `MolecularRepresentations.ipynb`
+
 ## **2025.09.12 unreleased version**
 
 ### changed
