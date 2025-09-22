@@ -2,16 +2,21 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2025.09.21 unreleased version** 
+
+### added
+- new `MolecularRepresentations-Nano.ipynb` notebook
+
 ## **2025.09.16 unreleased version** 
 
 ### added
-how to save an svg file with rdkit in `MolecularRepresentations.ipynb`
+- how to save an svg file with rdkit in `MolecularRepresentations.ipynb`
 
 ## **2025.09.12 unreleased version**
 
 ### changed
 - `requirements4pyPhysChem-LastVersion.txt` updated
-- `ChimieTheoEtModelisation1.ipynb`:
+- `ChimieTheoEtModelisation.ipynb`:
     - in `mendeleev`, ionization energies are uploaded with `fetch_ionization_energies(degree = 1)` instead of `fetch_table()`. Appropriate call is done in `TableauPeriodique.patch_elements()`
     - `easy_rdkit` class.
         - `atom.GetImplicitValence()` is deprecated in new versions of `rdkit`. Must be replaced with `atom.GetValence(rdkit.Chem.rdchem.ValenceType.IMPLICIT)`

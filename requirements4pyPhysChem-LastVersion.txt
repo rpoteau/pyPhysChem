@@ -129,6 +129,7 @@ ml_dtypes
 molmass
 monty
 more-itertools
+mp-api
 mpmath
 multidict
 namex
