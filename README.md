@@ -304,8 +304,8 @@ folder installed in the folder from which the `git` command was ran</span>
 pyPhysChem étant un projet en évolution, il faut régulièrement vérifier qu'il n'y a pas de mise à jour. La commande suivante met si nécessaire à jour le contenu du répertoire `pyPhysChem`
 <br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">pyPhysChem being a work-in-progress project, it is necessary to regularly check for a possible update. The content of the `pyPhysChem` folder is updated by using the following process</span>:
 
-- allez d'abord dans le répertoire pyPhysChem
-    <br><span style="color:blue; font-style: italic;">first go into the `pyPhysChem` folder</span>
+- allez d'abord dans le répertoire pyPhysChem (commande `cd <chemin_d_accès>`, *a priori* `cd pyPhysChem`)
+    <br><span style="color:blue; font-style: italic;">first go into the `pyPhysChem` folder (`cd <pathway>` command, *a priori* `cd pyPhysChem`)</span>
 - puis tapez
     <br><span style="color:blue; font-style: italic;">and then enter:</span>
 
@@ -319,8 +319,8 @@ Comme pour les autres installations, toutes les commandes s'exécutent à partir
 
 &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">As with other installations, all commands are run from a **Linux** terminal with the base environment activated, or from the Anaconda PowerShell Prompt application on **Windows**</span>
 
-- allez d'abord dans le répertoire pyPhysChem
-    <br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">first go into the `pyPhysChem` folder</span>
+- allez d'abord dans le répertoire pyPhysChem (commande `cd <chemin_d_accès>`, *a priori* `cd pyPhysChem`)
+    <br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">first go into the `pyPhysChem` folder (`cd <pathway>` command, *a priori* `cd pyPhysChem`)</span>
 - il y a un fichier nommé `requirements4pyPhysChem-LastVersion.txt`, qui contient la liste de toutes les bibliothèques nécessaires pour exécuter tous les codes Python des notebooks Jupyter de pyPhysChem
     <br>Exécutez la commande ci-dessous, puis soyez patient(e)s
     <br>&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">There is a file named `requirements4pyPhysChem-LastVersion.txt`, which contains the list of all the libraries required to run all the Python codes from the Jupyter notebooks of pyPhysChem

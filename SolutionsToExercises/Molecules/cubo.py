@@ -3,8 +3,7 @@
 from ase.cluster import Octahedron
 cutoff = 5
 cubo = Octahedron('Au', cutoff=cutoff, length=2*cutoff+1)
-v = view(cubo, viewer='ngl')
-display(v)
+v = molView(cubo,'ase')
 
 # Calculate coordination numbers (CNs)
 cn = coordination_numbers(cubo, cutoff=3.2)

@@ -1,0 +1,49 @@
+# generated using pymatgen
+data_La6Si2NiS14
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   10.31536017
+_cell_length_b   10.31536017
+_cell_length_c   5.78470900
+_cell_angle_alpha   90.00000000
+_cell_angle_beta   90.00000000
+_cell_angle_gamma   120.00000106
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   La6Si2NiS14
+_chemical_formula_sum   'La6 Si2 Ni1 S14'
+_cell_volume   533.06594201
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  La  La0  1  0.31218000  0.09984400  0.74730500  1
+  La  La1  1  0.78766400  0.68782000  0.74730500  1
+  La  La2  1  0.90015600  0.21233600  0.74730500  1
+  La  La3  1  0.02058200  0.56470600  0.24984500  1
+  La  La4  1  0.54412500  0.97941800  0.24984500  1
+  La  La5  1  0.43529400  0.45587500  0.24984500  1
+  Si  Si6  1  0.00000000  0.00000000  0.16562600  1
+  Si  Si7  1  0.33333300  0.66666700  0.66201000  1
+  Ni  Ni8  1  0.66666700  0.33333300  0.51242600  1
+  S  S9  1  0.00000000  0.00000000  0.52836600  1
+  S  S10  1  0.33333300  0.66666700  0.02712100  1
+  S  S11  1  0.43011300  0.17862000  0.27755900  1
+  S  S12  1  0.74850700  0.56988700  0.27755900  1
+  S  S13  1  0.82138000  0.25149300  0.27755900  1
+  S  S14  1  0.90274900  0.49039700  0.74067200  1
+  S  S15  1  0.58764800  0.09725100  0.74067200  1
+  S  S16  1  0.50960300  0.41235200  0.74067200  1
+  S  S17  1  0.14374500  0.21852200  0.02488600  1
+  S  S18  1  0.07477700  0.85625500  0.02488600  1
+  S  S19  1  0.78147800  0.92522300  0.02488600  1
+  S  S20  1  0.19210200  0.44820700  0.52273700  1
+  S  S21  1  0.25610400  0.80789800  0.52273700  1
+  S  S22  1  0.55179300  0.74389600  0.52273700  1

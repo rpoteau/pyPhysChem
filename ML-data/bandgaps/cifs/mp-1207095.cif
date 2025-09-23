@@ -1,0 +1,29 @@
+# generated using pymatgen
+data_SiPAu
+_symmetry_space_group_name_H-M   'P 1'
+_cell_length_a   6.08272143
+_cell_length_b   6.08272143
+_cell_length_c   6.08272124
+_cell_angle_alpha   33.43747653
+_cell_angle_beta   33.43747653
+_cell_angle_gamma   33.43747174
+_symmetry_Int_Tables_number   1
+_chemical_formula_structural   SiPAu
+_chemical_formula_sum   'Si1 P1 Au1'
+_cell_volume   60.85503043
+_cell_formula_units_Z   1
+loop_
+ _symmetry_equiv_pos_site_id
+ _symmetry_equiv_pos_as_xyz
+  1  'x, y, z'
+loop_
+ _atom_site_type_symbol
+ _atom_site_label
+ _atom_site_symmetry_multiplicity
+ _atom_site_fract_x
+ _atom_site_fract_y
+ _atom_site_fract_z
+ _atom_site_occupancy
+  Si  Si0  1  0.27214465  0.27214465  0.27214465  1
+  P  P1  1  0.99866415  0.99866415  0.99866415  1
+  Au  Au2  1  0.13649020  0.13649020  0.13649020  1
