@@ -2,7 +2,9 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
-## **2025.09.21 unreleased version** 
+## **2025.09.23 unreleased version** 
+### changed
+- `README.md`: clarification of how to move to a subfolder within a Linux terminal of windows powershell (*i.e.* with the `cd` command)
 
 ### added
 - new `MolecularRepresentations-Nano.ipynb` notebook

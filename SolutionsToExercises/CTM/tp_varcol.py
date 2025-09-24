@@ -1,2 +1,2 @@
-Z = tp.elements["symbol"]
-print(Z)
+S = tp.elements["symbol"]
+print(S)

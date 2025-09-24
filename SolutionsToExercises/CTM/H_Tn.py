@@ -1,4 +1,5 @@
 print("## Question 1")
+import numpy as np
 import scipy.constants as sc
 
 # affichages

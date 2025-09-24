@@ -12,4 +12,4 @@ NA = sc.physical_constants["Avogadro constant"][0]
 print()
 print("## Question 3")
 NA_unite = sc.physical_constants["Avogadro constant"][1]
-print("Nombre d'avogadro = ",NA,NA_unite)
+print("Nombre d'Avogadro = ",NA,NA_unite)
