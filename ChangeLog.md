@@ -7,7 +7,8 @@
 - `README.md`: clarification of how to move to a subfolder within a Linux terminal of windows powershell (*i.e.* with the `cd` command)
 
 ### added
-- new `MolecularRepresentations-Nano.ipynb` notebook
+- new [`MolecularRepresentations-Nano.ipynb` notebook](./MolecularRepresentations-Nano.ipynb)
+- basic exercices in [`MolecularRepresentations.ipynb`](./MolecularRepresentations.ipynb)
 
 ## **2025.09.16 unreleased version** 
 
@@ -22,7 +23,7 @@
     - in `mendeleev`, ionization energies are uploaded with `fetch_ionization_energies(degree = 1)` instead of `fetch_table()`. Appropriate call is done in `TableauPeriodique.patch_elements()`
     - `easy_rdkit` class.
         - `atom.GetImplicitValence()` is deprecated in new versions of `rdkit`. Must be replaced with `atom.GetValence(rdkit.Chem.rdchem.ValenceType.IMPLICIT)`
-        - new `show_Lewis` option (calls )
+        - new `show_Lewis` option: Analyzis of the Lewis structure and addition of LP (lone pairs) or [] (electron vacancy) symbols, if relevant. 
 
 ## **2025.07.27 unreleased version**
 
