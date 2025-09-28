@@ -2,6 +2,13 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2025.09.29 unreleased version** 
+### changed
+- significant improvement of the [2D Convolutional Neural Networks (CNN)](ML-2DCNN.ipynb) notebook: new comments and self-learning text everywhere, with the exception of the *Building a fashion image classifier using the Keras sequential API* section
+- [1D Convolutional Neural Networks (CNN)](ML-2DCNN.ipynb) notebook
+    - self-learning improved as well, with new figures.
+    - experimental g(r) changed as a kind of RDF profile, in line with the *in silico* RDF profiles, see Appendix
+
 ## **2025.09.23 unreleased version** 
 ### changed
 - `README.md`: clarification of how to move to a subfolder within a Linux terminal of windows powershell (*i.e.* with the `cd` command)
