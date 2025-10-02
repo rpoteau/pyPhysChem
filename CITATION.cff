@@ -12,6 +12,12 @@ authors:
     family-names: Bernard
     email: nans.bernard@univ-tlse3.fr
     affiliation: UT3 (Université de Toulouse)
+  - given-names: Simon
+    family-names: Cayez
+    email: cayez@insa-toulouse.fr
+    affiliation: >-
+      LPCNO (INSA, CNRS UMR 5215, Université de
+      Toulouse)
   - given-names: Matthieu
     family-names: Charnay
     email: charna@insa-toulouse.fr
@@ -27,21 +33,21 @@ authors:
     family-names: Gerber
     email: iann.gerber@insa-toulouse.fr
     affiliation: >-
-      LPCNO (INSA, CNRS UMR 5215, UT3, Université de
+      LPCNO (INSA, CNRS UMR 5215, Université de
       Toulouse)
     orcid: 'https://orcid.org/0000-0001-5091-2655'
   - given-names: Franck
     family-names: Jolibois
-    email: franck.jolibois@univ-tlse3.fr
+    email: franck.jolibois@utoulouse.fr
     affiliation: >-
-      LPCNO (INSA, CNRS UMR 5215, UT3, Université de
+      LPCNO (INSA, CNRS UMR 5215, Université de
       Toulouse)
     orcid: 'https://orcid.org/0000-0002-2174-4039'
   - given-names: Romuald
     family-names: Poteau
-    email: romuald.poteau@univ-tlse3.fr
+    email: romuald.poteau@utoulouse.fr
     affiliation: >-
-      LPCNO (INSA, CNRS UMR 5215, UT3, Université de
+      LPCNO (INSA, CNRS UMR 5215, Université de
       Toulouse)
     orcid: 'https://orcid.org/0000-0003-4338-174X'
 identifiers:
@@ -60,6 +66,7 @@ keywords:
   - Computer Algebra System
   - Machine Learning
   - Data analyzis
+  - XAI
 license: CC-BY-NC-SA-4.0
 version: 2.1.0
 date-released: '2025-02-25'

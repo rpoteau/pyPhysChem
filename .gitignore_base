@@ -1,5 +1,5 @@
-/**/.*  # ignore all dotted files
-/**/.*/ # ignore all dotted folders
+**/.*    # ignore all dotted files, at any depth
+**/.*/   # ignore all dotted folders, at any depth
 !/.gitignore  # except `gitignore` :)
 !/.gitignore_base  # except `gitignore_base`
 

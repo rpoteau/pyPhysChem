@@ -12,8 +12,8 @@ else
 fi
 echo "---------------------------------------------------------------"
 echo "First finding if there are large files in [sub]folders"
-find . -size +49M -printf '%P\n' > .LargeFiles
-cp .gitignore .gitignore.bak
+find . -size +49M -print | sed 's|^\./||' > .LargeFiles
+/bin/cp .gitignore .gitignore.bak
 cat .gitignore_base .LargeFiles > .gitignore
 echo "Content of the .gitignore file"
 cat .gitignore

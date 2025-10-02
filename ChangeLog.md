@@ -2,6 +2,19 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2025.10.02 unreleased version** 
+### added
+- new notebooks in the `ImageProcessing` folder. Author: S. Cayez, LPCNO, Toulouse, France.
+- new co-author of pyPhysChem: S. Cayez
+- new XAI analyzis with SHAP, in the [2D Convolutional Neural Networks (CNN) notebook](ML-2DCNN.ipynb)
+
+### changed
+- *Building a fashion image classifier using the Keras sequential API* section of the [2D Convolutional Neural Networks (CNN) notebook](ML-2DCNN.ipynb) has been deleted (still available in the v1 development version)
+ 
+## **2025.10.01 unreleased version** 
+### added
+- new algorithms are illustrated in [Top 10 Machine Learning Algorithms For Beginners, Applied to Physics and Chemistry Problems: Supervised, and More](ML-10algorithms-AppliedToChemistry.ipynb): Decision Trees, Random Forrests, XGBoost, SVM, KRR, Ridge Regression (author: S. Christodoulou)
+
 ## **2025.09.29 unreleased version** 
 ### changed
 - significant improvement of the [2D Convolutional Neural Networks (CNN)](ML-2DCNN.ipynb) notebook: new comments and self-learning text everywhere, with the exception of the *Building a fashion image classifier using the Keras sequential API* section

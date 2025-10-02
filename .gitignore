@@ -1,5 +1,5 @@
-/**/.*  # ignore all dotted files
-/**/.*/ # ignore all dotted folders
+**/.*    # ignore all dotted files, at any depth
+**/.*/   # ignore all dotted folders, at any depth
 !/.gitignore  # except `gitignore` :)
 !/.gitignore_base  # except `gitignore_base`
 
@@ -38,3 +38,5 @@ ML-SavedModels/autoencoders/10000SMILES_df_tokenized.pickle
 ML-data/Conv1D_functions.csv
 .git/lfs/objects/40/7a/407aebc7d374185e78932cee30fa582cfe347145f3afc9fb297b3d0842b1a8c8
 .git/objects/pack/pack-9a157027d9f8c2be3d9b19138a137bef74035805.pack
+ImageProcessing/data/square_data_preprocess.npy
+ImageProcessing/data/square_video.mp4
