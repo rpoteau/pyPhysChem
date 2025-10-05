@@ -2,6 +2,10 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2025.10.03 unreleased version** 
+### added
+- new [ML glossary notebook](ML-Glossary.ipynb) 
+
 ## **2025.10.02 unreleased version** 
 ### added
 - new notebooks in the `ImageProcessing` folder. Author: S. Cayez, LPCNO, Toulouse, France.
