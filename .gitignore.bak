@@ -31,6 +31,9 @@ Feedback/**
 
 Bibliography/*
 
+# Ignore all local anonymous survey ID files
+**/.survey_id
+
 # Files over 50mb
 
 ML-SavedModels/autoencoders/10000SMILES_df_train.pickle

@@ -14,7 +14,8 @@ blocks:
     questions:
       B1: "I can explain the differences between supervised, unsupervised, and explainable AI. (1 = not sure; 5 = absolutely)"
       B2: "I perceive the role of AI in chemical research positively. (1 = very negative; 5 = very positive)"
-      B3: "How would I describe what I learned about AI during this week?"
+      B3: "How would I describe what I learned about AI during this week? (you can use a list of keywords)."
+      B4: "In a few words, how would I explain AI to a fellow chemist? (you can use a bullet point list)"
 
   C:
     title: "Block C. Learning Experience and Pedagogical Balance"
@@ -33,9 +34,8 @@ blocks:
     subtitle: "(evaluates teamwork, mentoring, and synthesis of knowledge)"
     questions:
       D1: "The mentored project helped me synthesize and apply the week’s concepts. (1 = not at all; 5 = very much)"
-      D2: "The mentoring sessions helped me progress in understanding and applying the concepts introduced during the week. (1 = not at all; 5 = very much)"
-      D3: "The environment encouraged open discussions and exchange of ideas with other participants. (1 = strongly disagree; 5 = strongly agree)"
-      D4: "I could contribute actively to the mentored project. (1 = not at all; 5 = fully)"
+      D2: "The environment encouraged open discussions and exchange of ideas with other participants. (1 = strongly disagree; 5 = strongly agree)"
+      D3: "I could contribute actively to the mentored project. (1 = not at all; 5 = fully)"
       D5: "Briefly describe what my mentored project focused on."
 
   E:
@@ -61,3 +61,8 @@ blocks:
       F7: "The notebooks and datasets were well documented and can be re-used independently. (1 = strongly disagree; 5 = strongly agree)"
       F8: "How do I plan to reuse what I learned in my lab or teaching?"
 
+  G:
+    title: "Block G. Free Comments"
+    subtitle: "Please feel free to share any additional feedback, suggestions, or remarks about this week."
+    questions:
+      G1: "Any other comments, suggestions, or messages for the organizers?"
