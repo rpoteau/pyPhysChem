@@ -269,3 +269,143 @@ def PrintLatexStyleSymPyEquation(spe):
     import sympy as sym
     display(Math(sym.latex(spe)))
     return
+
+
+############################################################
+#                       Survey
+############################################################
+
+import os, json, yaml, pandas as pd
+from datetime import datetime
+from IPython.display import display
+from ipywidgets import VBox, HTML, Button, IntSlider, Text, Textarea, Layout, HBox, Dropdown
+
+class SurveyApp:
+    def __init__(self, mode="participant", base_dir="ML-survey"):
+        self.mode = mode
+        self.base_dir = base_dir
+        self.responses_dir = os.path.join(base_dir, "responses")
+        self.summary_dir = os.path.join(base_dir, "summary")
+        os.makedirs(self.responses_dir, exist_ok=True)
+        os.makedirs(self.summary_dir, exist_ok=True)
+        self.questions, self.blocks = self.load_questions()
+
+    def load_questions(self):
+        yaml_path = os.path.join(self.base_dir, "survey_questions.yaml")
+        with open(yaml_path, "r") as f:
+            data = yaml.safe_load(f)
+        questions, blocks = {}, {}
+        for b, v in data["blocks"].items():
+            blocks[b] = (v["title"], v["subtitle"])
+            for qid, qtext in v["questions"].items():
+                questions[qid] = qtext
+        return questions, blocks
+
+    # === UI Builder ===
+    def run(self):
+        if self.mode == "participant":
+            self.build_participant_form()
+        elif self.mode == "admin":
+            self.build_admin_dashboard()
+
+    # === Participant Mode ===
+    def build_participant_form(self):
+        colors = ["#f7f9fc", "#f0f0f0"]
+        base_styles = {
+            "title": "font-size:18px;font-weight:bold;margin-top:5px;",
+            "subtitle": "color:#444;font-style:italic;font-size:13px;margin-bottom:8px;",
+            "warn": "color:#CC0000;font-size:12px;font-style:italic;",
+        }
+
+        self.name_box = Text(description="Name (optional):", placeholder="Anonymous")
+        self.full_form = [self.name_box]
+        self.input_controls, self.warn_labels = [], []
+
+        block_index = 0
+        for block in self.blocks.keys():
+            color = colors[block_index % len(colors)]
+            title, subtitle = self.blocks[block]
+            header_html = f"""
+            <div style='background-color:{color};border:1px solid #ccc;border-radius:8px;padding:15px 20px;margin:12px 0'>
+            <div style='{base_styles['title']}color:#1E90FF'>{title}</div>
+            <div style='{base_styles['subtitle']}'>{subtitle}</div><div style='margin-left:15px;'>
+            """
+            footer_html = "</div></div>"
+            block_widgets = [HTML(header_html)]
+            for q, txt in self.questions.items():
+                if q.startswith(block):
+                    block_widgets.append(HTML(f"<b>{txt}</b>"))
+                    if "(1 =" in txt:
+                        w = IntSlider(value=0, min=0, max=5, step=1,
+                                      description='', layout=Layout(width="35%"))
+                    else:
+                        w = Textarea(placeholder="Write your answer here...",
+                                     layout=Layout(width="85%", height="60px"))
+                    warn = HTML("")
+                    self.input_controls.append(w)
+                    self.warn_labels.append(warn)
+                    block_widgets.extend([w, warn])
+            block_widgets.append(HTML(footer_html))
+            self.full_form.extend(block_widgets)
+            block_index += 1
+
+        # === Buttons ===
+        btn_layout = Layout(width="220px", height="40px", margin="3px 6px 3px 0")
+        self.save_button = Button(description="💾 Save draft", button_style="info", layout=btn_layout)
+        self.load_button = Button(description="📂 Load draft", button_style="warning", layout=btn_layout)
+        self.submit_button = Button(description="✅ Submit", button_style="success", layout=btn_layout)
+        self.status_label = HTML(value="", layout=Layout(margin="10px 0px"))
+
+        self.save_button.on_click(self.save_draft)
+        self.load_button.on_click(self.load_draft)
+        self.submit_button.on_click(self.submit_form)
+
+        self.full_form.append(VBox([self.save_button, self.load_button, self.submit_button, self.status_label]))
+        display(VBox(self.full_form))
+
+    # === Actions ===
+    def save_draft(self, b):
+        data = self._collect_data()
+        name = data["name"]
+        base_name = f"Draft_{name.replace(' ', '_')}"
+        existing = [f for f in os.listdir(self.responses_dir) if f.startswith(base_name)]
+        filename = os.path.join(self.responses_dir, f"{base_name}_v{len(existing)+1}.json")
+        with open(filename, "w") as f: json.dump(data, f, indent=2)
+        self.status_label.value = f"<div style='background:#fff4e5;color:#b35900;padding:6px;border:1px solid #b35900;border-radius:6px'>💾 Draft saved as <code>{os.path.basename(filename)}</code></div>"
+
+    def load_draft(self, b):
+        files = [f for f in os.listdir(self.responses_dir) if f.endswith(".json")]
+        if not files:
+            self.status_label.value = "<div style='color:#a00'>⚠ No draft found.</div>"
+            return
+        filename = os.path.join(self.responses_dir, files[-1])
+        with open(filename, "r") as f:
+            data = json.load(f)
+        for i, (q, _) in enumerate(self.questions.items()):
+            if q in data:
+                w = self.input_controls[i]
+                val = data[q]
+                if isinstance(w, IntSlider): w.value = int(val)
+                else: w.value = str(val)
+        self.status_label.value = f"<div style='background:#fff4e5;color:#b35900;padding:6px;border:1px solid #b35900;border-radius:6px'>📂 Loaded {os.path.basename(filename)}</div>"
+
+    def submit_form(self, b):
+        data = self._collect_data()
+        filename = os.path.join(self.responses_dir, f"Response_{data['name'].replace(' ', '_')}_{datetime.now().strftime('%Y%m%d_%H%M')}.csv")
+        pd.DataFrame([data]).to_csv(filename, index=False)
+        self.status_label.value = f"<div style='background:#e6ffe6;color:#060;padding:6px;border:1px solid #060;border-radius:6px'>✅ Response saved to <code>{filename}</code></div>"
+
+    def _collect_data(self):
+        data = {q: w.value for q, w in zip(self.questions.keys(), self.input_controls)}
+        data["name"] = self.name_box.value or "Anonymous"
+        return data
+
+    # === Admin mode ===
+    def build_admin_dashboard(self):
+        files = [f for f in os.listdir(self.responses_dir) if f.endswith(".csv")]
+        if not files:
+            print("No responses yet.")
+            return
+        df = pd.concat([pd.read_csv(os.path.join(self.responses_dir, f)) for f in files], ignore_index=True)
+        display(df.describe())
+
