@@ -279,6 +279,9 @@ import os, json, yaml, pandas as pd
 from datetime import datetime
 from IPython.display import display
 from ipywidgets import VBox, HTML, Button, IntSlider, Text, Textarea, Layout, HBox, Dropdown
+from textwrap import wrap
+import numpy as np
+import matplotlib.pyplot as plt
 
 class SurveyApp:
     def __init__(self, mode="participant", base_dir="ML-survey"):
@@ -290,6 +293,24 @@ class SurveyApp:
         os.makedirs(self.summary_dir, exist_ok=True)
         self.questions, self.blocks = self.load_questions()
 
+    def get_or_create_user_id(self):
+        """Return a persistent anonymous ID (stored in .survey_id)."""
+        id_path = os.path.join(self.base_dir, ".survey_id")
+    
+        # If ID file already exists, read it
+        if os.path.exists(id_path):
+            with open(id_path, "r") as f:
+                user_id = f.read().strip()
+            if user_id:
+                return user_id
+    
+        # Otherwise, create a new one
+        import secrets
+        user_id = f"UID_{datetime.now().strftime('%Y%m%d')}_{secrets.token_hex(3).upper()}"
+        with open(id_path, "w") as f:
+            f.write(user_id)
+        return user_id
+
     def load_questions(self):
         yaml_path = os.path.join(self.base_dir, "survey_questions.yaml")
         with open(yaml_path, "r") as f:
@@ -300,7 +321,7 @@ class SurveyApp:
             for qid, qtext in v["questions"].items():
                 questions[qid] = qtext
         return questions, blocks
-
+    
     # === UI Builder ===
     def run(self):
         if self.mode == "participant":
@@ -316,9 +337,12 @@ class SurveyApp:
             "subtitle": "color:#444;font-style:italic;font-size:13px;margin-bottom:8px;",
             "warn": "color:#CC0000;font-size:12px;font-style:italic;",
         }
-
-        self.name_box = Text(description="Name (optional):", placeholder="Anonymous")
-        self.full_form = [self.name_box]
+        
+        self.user_id = self.get_or_create_user_id()
+        self.full_form = [
+            HTML(f"<b>🆔 Your anonymous ID:</b> <code>{self.user_id}</code><br>"
+                 f"<span style='color:#777;font-size:12px'>(This ID is stored locally in a hidden file .survey_id)</span>")
+        ]
         self.input_controls, self.warn_labels = [], []
 
         block_index = 0
@@ -352,60 +376,250 @@ class SurveyApp:
         # === Buttons ===
         btn_layout = Layout(width="220px", height="40px", margin="3px 6px 3px 0")
         self.save_button = Button(description="💾 Save draft", button_style="info", layout=btn_layout)
-        self.load_button = Button(description="📂 Load draft", button_style="warning", layout=btn_layout)
+        self.load_button = Button(description="📂 Load selected draft", button_style="warning", layout=btn_layout)
         self.submit_button = Button(description="✅ Submit", button_style="success", layout=btn_layout)
         self.status_label = HTML(value="", layout=Layout(margin="10px 0px"))
+        self.draft_status_label = HTML(value="", layout=Layout(margin="5px 0px"))
+
+        # === Dropdown to select which draft to load ===
+        self.draft_dropdown = Dropdown(
+            options=self.list_drafts(),
+            description="Drafts:",
+            layout=Layout(width="70%")
+        )
 
         self.save_button.on_click(self.save_draft)
         self.load_button.on_click(self.load_draft)
         self.submit_button.on_click(self.submit_form)
 
-        self.full_form.append(VBox([self.save_button, self.load_button, self.submit_button, self.status_label]))
+        self.full_form.append(
+            VBox([
+                self.save_button,
+                HBox([self.load_button, self.draft_dropdown]),           # ✅ ici à la place de self.load_button
+                self.draft_status_label,
+                self.submit_button,
+                self.status_label
+            ])
+        )
         display(VBox(self.full_form))
 
+
+    # === Helper: list available drafts ===
+    def list_drafts(self):
+        if not os.path.exists(self.responses_dir):
+            return ["No drafts found"]
+        drafts = sorted([f for f in os.listdir(self.responses_dir) if f.endswith(".json")])
+        return ["Select a draft to load and then click on the Load Selected Draft button"] + drafts if drafts else ["No drafts found"]
+    
     # === Actions ===
     def save_draft(self, b):
         data = self._collect_data()
-        name = data["name"]
-        base_name = f"Draft_{name.replace(' ', '_')}"
+        base_name = f"FallSchool_Draft_{self.user_id}"
         existing = [f for f in os.listdir(self.responses_dir) if f.startswith(base_name)]
         filename = os.path.join(self.responses_dir, f"{base_name}_v{len(existing)+1}.json")
         with open(filename, "w") as f: json.dump(data, f, indent=2)
         self.status_label.value = f"<div style='background:#fff4e5;color:#b35900;padding:6px;border:1px solid #b35900;border-radius:6px'>💾 Draft saved as <code>{os.path.basename(filename)}</code></div>"
+        self.draft_dropdown.options = self.list_drafts()
 
     def load_draft(self, b):
-        files = [f for f in os.listdir(self.responses_dir) if f.endswith(".json")]
-        if not files:
-            self.status_label.value = "<div style='color:#a00'>⚠ No draft found.</div>"
+        selected = self.draft_dropdown.value
+        # --- Sécurité : rien sélectionné ou placeholder ---
+        if not selected or selected.startswith("Select") or selected.startswith("No drafts"):
+            self.status_label.value = (
+                "<div style='color:#a00'>⚠ Please select a valid draft from the dropdown.</div>"
+            )
             return
-        filename = os.path.join(self.responses_dir, files[-1])
+        filename = os.path.join(self.responses_dir, selected)
+
         with open(filename, "r") as f:
             data = json.load(f)
+
+        if "id" in data:
+            self.user_id = data["id"]
+    
         for i, (q, _) in enumerate(self.questions.items()):
             if q in data:
                 w = self.input_controls[i]
                 val = data[q]
                 if isinstance(w, IntSlider): w.value = int(val)
                 else: w.value = str(val)
-        self.status_label.value = f"<div style='background:#fff4e5;color:#b35900;padding:6px;border:1px solid #b35900;border-radius:6px'>📂 Loaded {os.path.basename(filename)}</div>"
+        self.status_label.value = (f"<div style='background:#fff4e5;color:#b35900;padding:6px;"
+                                   f"border:1px solid #b35900;border-radius:6px'>📂 Loaded "
+                                   f"{os.path.basename(filename)}</div>")
 
     def submit_form(self, b):
-        data = self._collect_data()
-        filename = os.path.join(self.responses_dir, f"Response_{data['name'].replace(' ', '_')}_{datetime.now().strftime('%Y%m%d_%H%M')}.csv")
+        incomplete = False
+        data = {}
+    
+        for i, (q, _) in enumerate(self.questions.items()):
+            w = self.input_controls[i]
+            val = w.value
+            warn_label = self.warn_labels[i]  # 🔴 label d’avertissement sous chaque question
+    
+            # --- Vérification des sliders ---
+            if isinstance(w, IntSlider):
+                if val == 0:
+                    warn_label.value = (
+                        "<span style='color:#a00;font-size:12px;font-style:italic;'>⚠ Please answer this question.</span>"
+                    )
+                    w.style.handle_color = "red"
+                    incomplete = True
+                else:
+                    warn_label.value = ""
+                    w.style.handle_color = None
+                data[q] = int(val)
+    
+            # --- Vérification des champs texte ---
+            else:
+                if not str(val).strip():
+                    warn_label.value = (
+                        "<span style='color:#a00;font-size:12px;font-style:italic;'>⚠ Please provide an answer.</span>"
+                    )
+                    incomplete = True
+                else:
+                    warn_label.value = ""
+                data[q] = val
+    
+        data["id"] = getattr(self, "user_id", "Anonymous")
+    
+        # === Si des réponses manquent ===
+        if incomplete:
+            self.status_label.value = (
+                "<div style='background:#ffe6e6;color:#a00;border:1px solid #a00;"
+                "padding:8px;border-radius:6px;'>❌ Some questions are missing. "
+                "Please check the red warnings above.</div>"
+            )
+            return
+    
+        # === Si tout est rempli ===
+        filename = os.path.join(
+            self.responses_dir,
+            f"Response_{data['id']}_{datetime.now().strftime('%Y%m%d_%H%M')}.csv"
+        )
         pd.DataFrame([data]).to_csv(filename, index=False)
-        self.status_label.value = f"<div style='background:#e6ffe6;color:#060;padding:6px;border:1px solid #060;border-radius:6px'>✅ Response saved to <code>{filename}</code></div>"
+        self.status_label.value = (
+            f"<div style='background:#e6ffe6;color:#060;border:1px solid #060;"
+            f"padding:8px;border-radius:6px;'>✅ Response saved to "
+            f"<code>{os.path.basename(filename)}</code></div>"
+        )
+
 
     def _collect_data(self):
         data = {q: w.value for q, w in zip(self.questions.keys(), self.input_controls)}
-        data["name"] = self.name_box.value or "Anonymous"
+        data["id"] = self.user_id
         return data
 
-    # === Admin mode ===
+    # === Admin mode ===================================================================================
+
+    #=== Helper
+    def plot_spider_multi(self, df, title="Participant and Mean Scores per Block", savepath=None, figsize=(12,8)):
+        """
+        Draw radar (spider) chart with per-participant transparency
+        and block names instead of A–F.
+        """
+    
+        # --- Compute averages ---
+        avg = df.mean(axis=0)
+        labels = avg.index.tolist()
+        N = len(labels)
+        angles = np.linspace(0, 2 * np.pi, N, endpoint=False).tolist()
+        angles += [angles[0]]
+    
+        # === Replace A–F with block titles ===
+        # → only use the first sentence (shortened title)
+        label_map = {b: self.blocks[b][0].replace(f"Block {b}. ", "") for b in self.blocks.keys()}
+        display_labels = [label_map.get(lbl, lbl) for lbl in labels]
+        
+        # === Auto linebreak: split labels into two roughly equal parts ===
+        def split_label(text):
+            words = text.split()
+            if len(words) <= 2:
+                return text
+            mid = len(words) // 2
+            return " ".join(words[:mid]) + "\n" + " ".join(words[mid:])    
+            
+        display_labels = [split_label(lbl) for lbl in display_labels]
+
+        # --- Create figure ---
+        fig, ax = plt.subplots(figsize=figsize, subplot_kw=dict(polar=True))
+    
+        # --- Plot all participants ---
+        for i in range(len(df)):
+            values = df.iloc[i].values.tolist()
+            values += [values[0]]
+            ax.plot(angles, values, linewidth=1, alpha=0.25, color="gray")
+            ax.fill(angles, values, alpha=0.05, color="gray")
+    
+        # --- Mean polygon ---
+        mean_values = avg.values.tolist() + [avg.values[0]]
+        ax.plot(angles, mean_values, color='navy', linewidth=2.5)
+        ax.fill(angles, mean_values, color='navy', alpha=0.25)
+    
+        # --- Axis style ---
+        ax.set_xticks(angles[:-1])
+        ax.set_xticklabels(display_labels, fontsize=11, fontweight='bold', wrap=True)
+        ax.set_yticks([1,2,3,4,5])
+        ax.set_yticklabels(["1","2","3","4","5"], fontsize=10, fontweight='bold', color="gray")
+        ax.set_ylim(0,5)
+        ax.set_title(title, size=14, weight='bold', pad=25)
+
+        # --- Grid and outer circle ---
+        ax.grid(True, linestyle='--', color='gray', alpha=0.4, linewidth=0.8)
+        ax.spines['polar'].set_visible(False)  # remove the black frame
+        outer_circle = plt.Circle((0,0), 5, transform=ax.transData._b, fill=False, lw=5, color="red", alpha=0.4)
+        ax.add_artist(outer_circle)
+        
+        plt.tight_layout()
+    
+        # --- Save plot if requested ---
+        if savepath:
+            plt.savefig(savepath, dpi=300, bbox_inches='tight')
+            print(f"💾 Saved radar plot to {savepath}")
+    
+        plt.show()
+
+    def summarize_by_block(self, df):
+        """Compute average score per block (A–F) for numeric questions."""
+        import re
+        num_df = df.select_dtypes(include=["number"])
+        block_means = {}
+        for col in num_df.columns:
+            match = re.match(r"([A-F])\d+", col)
+            if match:
+                block = match.group(1)
+                block_means.setdefault(block, []).append(num_df[col])
+        # Mean per block (ignores missing NaN)
+        block_avg = {b: pd.concat(cols, axis=1).mean(axis=1) for b, cols in block_means.items()}
+        return pd.DataFrame(block_avg)
+    
+
+    #===
     def build_admin_dashboard(self):
         files = [f for f in os.listdir(self.responses_dir) if f.endswith(".csv")]
         if not files:
             print("No responses yet.")
             return
         df = pd.concat([pd.read_csv(os.path.join(self.responses_dir, f)) for f in files], ignore_index=True)
+        display(HTML("<h4>📊 All collected responses</h3>"))
+        display(df)
+        display(HTML("<h4>📈 Summary statistics</h4>"))
         display(df.describe())
+        html_summary = "<h4>🕳 Missing values per column:</h4><div style='font-family:monospace;font-size:14px;'>"
+        missing = df.isna().sum()
+        for col, val in missing.items():
+            if val > 0:
+                html_summary += f"<span style='color:red;font-weight:bold;'>{col}={val}</span> | "
+            else:
+                html_summary += f"{col}=0 | "
+        html_summary = html_summary.rstrip(" | ") + "</div>"
+    
+        display(HTML(html_summary))
+
+        # 🕸 Radar plot
+        block_avg_df = self.summarize_by_block(df)
+        self.plot_spider_multi(
+            block_avg_df,
+            title="",
+            savepath=os.path.join(self.summary_dir, "Radar_BlockScores.png")
+        )
 
