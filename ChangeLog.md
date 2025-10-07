@@ -2,6 +2,18 @@
 
 [<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2025.10.07 unreleased version**
+### added
+- new [Evaluation Survey](ML-AssessmentFallSchool.ipynb) notebook, created at the occasion of the Nino Fall School on AI (GDR CNRS)
+
+## **2025.10.06 unreleased version** 
+### added
+- new `Books_HG` folders, by Prof. H. Gérard (Sorbonne Université, LCT) for the Nino Fall School, that contains notebooks aiming at introducing the basics of ML
+
+## **2025.10.04 unreleased version** 
+### changed
+- Few details of the new notebooks in the `ImageProcessing` folder
+
 ## **2025.10.03 unreleased version** 
 ### added
 - new [ML glossary notebook](ML-Glossary.ipynb) 
