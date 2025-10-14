@@ -271,9 +271,9 @@ def PrintLatexStyleSymPyEquation(spe):
     return
 
 
-############################################################
+######################################################################
 #                       Survey
-############################################################
+######################################################################
 
 import os, json, yaml, pandas as pd
 from datetime import datetime
@@ -510,8 +510,9 @@ class SurveyApp:
         return data
 
     # === Admin mode ===================================================================================
-
     #=== Helper
+    # === Admin mode ===================================================================================
+
     def plot_spider_multi(self, df, title="Participant and Mean Scores per Block", savepath=None, figsize=(12,8)):
         """
         Draw radar (spider) chart with per-participant transparency
@@ -593,17 +594,140 @@ class SurveyApp:
         return pd.DataFrame(block_avg)
     
 
-    #===
-    def build_admin_dashboard(self):
+    ############################################################
+    # 🔍 TEXTUAL & SEMANTIC ANALYSIS METHODS
+    ############################################################
+
+    def load_all_responses(self):
+        """Load and merge all .csv survey responses into a DataFrame."""
+        import pandas as pd, os
         files = [f for f in os.listdir(self.responses_dir) if f.endswith(".csv")]
         if not files:
-            print("No responses yet.")
-            return
+            print("⚠ No responses found.")
+            return None
         df = pd.concat([pd.read_csv(os.path.join(self.responses_dir, f)) for f in files], ignore_index=True)
+        df.reset_index(drop=True, inplace=True)
+        print(f"✅ Loaded {len(df)} responses ({len(df.columns)} columns)")
+        return df
+
+
+    def analyze_text_columns(self, df=None, columns=None, top_n=20):
+        """
+        Basic textual analysis: show frequent words, word clouds, and per-question summary.
+        """
+        import matplotlib.pyplot as plt
+        from sklearn.feature_extraction.text import CountVectorizer
+        from wordcloud import WordCloud
+        import pandas as pd
+        import os
+
+        if df is None:
+            df = self.load_all_responses()
+        if df is None:
+            return
+
+        # auto-detect textual columns if not provided
+        if columns is None:
+            columns = [c for c in df.columns if df[c].dtype == 'object']
+        if not columns:
+            print("⚠ No text columns found.")
+            return
+
+        os.makedirs(self.summary_dir, exist_ok=True)
+        print(f"🧩 Textual questions detected: {columns}")
+
+        for col in columns:
+            texts = df[col].dropna().astype(str)
+            if len(texts) == 0:
+                continue
+
+            # vectorize text
+            vectorizer = CountVectorizer(stop_words='english')
+            X = vectorizer.fit_transform(texts)
+            word_freq = pd.DataFrame(X.toarray(), columns=vectorizer.get_feature_names_out()).sum().sort_values(ascending=False)
+
+            # show top words
+            print(f"\n📝 Top {top_n} words for '{col}':")
+            display(word_freq.head(top_n))
+
+            # wordcloud
+            wc = WordCloud(width=800, height=400, background_color='white').generate(" ".join(texts))
+            plt.figure(figsize=(8, 4))
+            plt.imshow(wc, interpolation="bilinear")
+            plt.axis("off")
+            plt.title(f"Word Cloud: {col}")
+            savepath = os.path.join(self.summary_dir, f"WordCloud_{col}.png")
+            plt.savefig(savepath, dpi=300, bbox_inches="tight")
+            print(f"💾 Saved {savepath}")
+            plt.show()
+
+
+    def semantic_analysis(self, df=None, columns=None, n_clusters=3):
+        """
+        Perform semantic clustering on open-ended responses using sentence-transformers.
+        """
+        from sentence_transformers import SentenceTransformer
+        from sklearn.cluster import KMeans
+        import matplotlib.pyplot as plt
+        import umap
+        import numpy as np
+        import os
+
+        if df is None:
+            df = self.load_all_responses()
+        if df is None:
+            return
+
+        if columns is None:
+            columns = [c for c in df.columns if df[c].dtype == 'object']
+        texts = []
+        meta = []
+        for col in columns:
+            for t in df[col].dropna():
+                texts.append(str(t))
+                meta.append(col)
+
+        if len(texts) < 2:
+            print("⚠ Not enough text to perform semantic analysis.")
+            return
+
+        print(f"🧠 Encoding {len(texts)} responses from {len(columns)} text questions...")
+        model = SentenceTransformer('all-MiniLM-L6-v2')
+        embeddings = model.encode(texts)
+
+        reducer = umap.UMAP(random_state=0)
+        emb_2d = reducer.fit_transform(embeddings)
+
+        kmeans = KMeans(n_clusters=n_clusters, random_state=0)
+        labels = kmeans.fit_predict(embeddings)
+
+        plt.figure(figsize=(8, 6))
+        plt.scatter(emb_2d[:, 0], emb_2d[:, 1], c=labels, cmap='tab10', alpha=0.7)
+        plt.title("Semantic Clusters of Open Responses", fontsize=14, weight='bold')
+        for i, (x, y) in enumerate(emb_2d):
+            plt.text(x, y, meta[i], fontsize=8, alpha=0.6)
+        plt.tight_layout()
+
+        savepath = os.path.join(self.summary_dir, "SemanticClusters.png")
+        plt.savefig(savepath, dpi=300, bbox_inches="tight")
+        print(f"💾 Saved semantic clustering plot to {savepath}")
+        plt.show()
+
+
+    def build_admin_dashboard(self):
+
+        # === Load all responses ===
+        df = self.load_all_responses()
+        if df is None:
+            return
         display(HTML("<h4>📊 All collected responses</h3>"))
         display(df)
+
+        # === Summary statistics ===
         display(HTML("<h4>📈 Summary statistics</h4>"))
         display(df.describe())
+
+        # === Missing values report ===
         html_summary = "<h4>🕳 Missing values per column:</h4><div style='font-family:monospace;font-size:14px;'>"
         missing = df.isna().sum()
         for col, val in missing.items():
@@ -612,8 +736,15 @@ class SurveyApp:
             else:
                 html_summary += f"{col}=0 | "
         html_summary = html_summary.rstrip(" | ") + "</div>"
-    
         display(HTML(html_summary))
+
+        # === 🧩 Textual analysis ===
+        text_cols = [c for c in df.columns if df[c].dtype == 'object' and c not in ['id']]
+        if text_cols:
+            display(HTML("<h4>🧠 Textual Analysis</h4>"))
+            self.analyze_text_columns(df=df, columns=text_cols, top_n=15)
+        else:
+            print("ℹ️ No open-ended text columns found for analysis.")
 
         # 🕸 Radar plot
         block_avg_df = self.summarize_by_block(df)
@@ -623,3 +754,14 @@ class SurveyApp:
             savepath=os.path.join(self.summary_dir, "Radar_BlockScores.png")
         )
 
+        # === 🧭 Semantic map of text answers ===
+        display(HTML("<h4>🧭 Semantic Clustering Map</h4>"))
+        try:
+            self.semantic_analysis(df=df, columns=text_cols, n_clusters=4)
+        except Exception as e:
+            print(f"⚠️ Skipped semantic clustering (reason: {e})")
+
+        display(HTML(
+            "<h4>✅ Dashboard summary saved in:</h4>"
+            f"<code>{os.path.abspath(self.summary_dir)}</code>"
+        ))

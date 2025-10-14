@@ -102,7 +102,6 @@ jupyter_core
 jupyter_server
 jupyter_server_terminals
 jupyterlab
-jupyterlab-vim
 jupyterlab_git
 jupyterlab_pygments
 jupyterlab_server
