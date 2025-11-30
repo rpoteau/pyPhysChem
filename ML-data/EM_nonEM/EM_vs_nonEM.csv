@@ -1,0 +1,483 @@
+Mol1,Mol2,Mol1_fraction,EM?
+Citric acid,DL glucose,0.50,YES
+Lactic acid,DL glucose,0.50,YES
+Urea,Choline chloride,0.50,YES
+Lactic acid,Sorbitol,0.50,YES
+Lactic acid,Choline chloride,0.50,YES
+Malonic acid,Choline chloride,0.50,YES
+Citric acid,Choline chloride,0.50,YES
+Urea,Choline chloride,0.67,YES
+Ethylene glycol,Choline chloride,0.67,YES
+Citric acid,DL glucose,0.33,YES
+Lactic acid,DL glucose,0.67,YES
+Citric acid,DL glucose,0.67,YES
+Citric acid,Trehalose,0.50,YES
+Citric acid,Sorbitol,0.50,YES
+Citric acid,Isomalt,0.50,YES
+Pyroglutamic acid,Glycerol,0.50,YES
+Menthol,Acetic acid,0.50,YES
+Menthol,Octanoic acid,0.50,YES
+Decanoic acid,Menthol,0.50,YES
+Decanoic acid,Thymol,0.50,YES
+Menthol,Lactic acid,0.50,YES
+Menthol,Levulinic acid,0.50,YES
+Thymol,Lactic acid,0.50,YES
+Thymol,Octanoic acid,0.50,YES
+Menthol,Pyruvic acid,0.50,YES
+Pentylene glycol,Lactic acid,0.50,YES
+Decanoic acid,Pentylene glycol,0.50,YES
+1 3 butylene glycol,Lactic acid,0.50,YES
+Decanoic acid,1 3 butylene glycol,0.50,YES
+Decanol,Lactic acid,0.50,YES
+2 methyl 1 3 propanediol,Lactic acid,0.50,YES
+Propanediol,Lactic acid,0.50,YES
+Tetradecanol,Lactic acid,0.50,YES
+Dodecan 1 ol,Lactic acid,0.50,YES
+Acetic acid,L proline,0.50,YES
+Lactic acid,Mannose,0.50,YES
+Urea,Glycerol,0.50,YES
+Saccharose,Trehalose,0.50,NO
+Tetradecanol,Lactic acid,0.33,YES
+Decanol,Lactic acid,0.33,YES
+beta D galactofuranoside octyle,Choline chloride,0.50,YES
+Citric acid,Betaine,0.60,YES
+Betaine,Glycerol,0.40,YES
+Ethylene glycol,Choline chloride,0.75,YES
+Ethylene glycol,Choline chloride,0.67,YES
+Tetradecanol,Dodecanoic acid,0.50,YES
+Dodecanoic acid,Panthenol,0.50,YES
+Hexadecanol,Dodecanoic acid,0.50,NO
+Dodecanoic acid,Decanol,0.50,YES
+2 octyl 1 dodecanol,Dodecanoic acid,0.50,YES
+Hexadecanol,Panthenol,0.50,NO
+Octadecanol,Panthenol,0.50,NO
+Hexanol,Panthenol,0.50,YES
+Decanol,Panthenol,0.50,YES
+2 octyl 1 dodecanol,Panthenol,0.50,NO
+Glycine,Saccharose,0.50,NO
+Valine,L alanine,0.50,NO
+Valine,L arginine,0.50,NO
+Valine,Aspartic acid,0.50,NO
+Aspartic acid,L arginine,0.50,NO
+Valine,L proline,0.50,NO
+Aspartic acid,Glutamine,0.50,NO
+Valine,Glutamine,0.50,NO
+Glutamic acid,Glutamine,0.50,NO
+Glutamine,L arginine,0.50,NO
+Glutamic acid,L arginine,0.50,NO
+Valine,Glutamic acid,0.50,NO
+Glutamic acid,Aspartic acid,0.50,NO
+Glutamine,L arginine,0.20,NO
+Glutamine,L arginine,0.25,NO
+Glutamine,L arginine,0.33,NO
+Glutamine,L arginine,0.67,YES
+Glutamine,L arginine,0.75,YES
+Glutamine,L arginine,0.80,NO
+Glycine,Citrulline,0.50,NO
+Glycine,Serine,0.50,NO
+Valine,Glycine,0.50,NO
+Glycine,L arginine,0.50,NO
+Tyrosine,Glycine,0.50,NO
+Tyrosine,L arginine,0.50,NO
+Citrulline,L arginine,0.50,NO
+Tyrosine,Citrulline,0.50,NO
+Tyrosine,Serine,0.50,NO
+Tyrosine,L alanine,0.50,NO
+Tyrosine,Valine,0.50,NO
+Citrulline,Serine,0.50,NO
+Valine,Citrulline,0.50,NO
+Valine,Serine,0.50,NO
+Hexadecanol,Tetradecanol,0.50,NO
+Octadecanol,Hexadecanol,0.50,NO
+Hexadecanol,Hexanol,0.50,NO
+Hexadecanol,Decanol,0.50,NO
+2 octyl 1 dodecanol,Hexadecanol,0.50,NO
+Octadecanol,Hexanol,0.50,NO
+Octadecanol,Decanol,0.50,NO
+2 octyl 1 dodecanol,Octadecanol,0.50,NO
+Octadecanol,Tetradecanol,0.50,NO
+Tetradecanol,Hexanol,0.50,NO
+Tetradecanol,Decanol,0.50,NO
+2 octyl 1 dodecanol,Tetradecanol,0.50,NO
+Glycine,Trehalose,0.50,NO
+Glycine,Saccharose,0.50,NO
+Trehalose,Isomalt,0.50,NO
+Glutamine,D mannitol,0.50,NO
+Glutamic acid,D mannitol,0.50,NO
+Aspartic acid,D mannitol,0.50,NO
+Valine,D mannitol,0.50,NO
+Glutamine,Arabitol,0.50,NO
+Glutamic acid,Arabitol,0.50,NO
+Aspartic acid,Arabitol,0.50,NO
+Valine,Arabitol,0.50,NO
+Arabitol,D mannitol,0.50,NO
+Usnic acid,L arginine,0.50,NO
+Usnic acid,L proline,0.50,NO
+Usnic acid,Glutamine,0.50,NO
+Usnic acid,Glutamic acid,0.50,NO
+Usnic acid,Aspartic acid,0.50,NO
+Usnic acid,Valine,0.50,NO
+Usnic acid,L alanine,0.50,NO
+Usnic acid,D mannitol,0.50,NO
+Usnic acid,Arabitol,0.50,NO
+Lactic acid,Urea,0.25,YES
+Pyroglutamic acid,Glycerol,0.25,YES
+Dodecanoic acid,Hexanol,0.25,YES
+Dodecanoic acid,Hexanol,0.33,YES
+Dodecanoic acid,Decanol,0.33,YES
+Dodecan 1 ol,Panthenol,0.50,NO
+Phenylethanol,Lactic acid,0.50,YES
+Octanoic acid,Phenylethanol,0.50,YES
+Decanoic acid,Phenylethanol,0.50,YES
+Dodecan 1 ol,Phenylethanol,0.50,YES
+Phenoxyethanol,Lactic acid,0.50,YES
+Octanoic acid,Phenoxyethanol,0.50,YES
+Dodecan 1 ol,Phenoxyethanol,0.50,YES
+Palmitic acid,Phenylethanol,0.50,NO
+Phenylethanol,Citric acid,0.50,NO
+Phenylethanol,L alanine,0.50,NO
+Phenylethanol,Aspartic acid,0.50,NO
+Phenylethanol,Valine,0.50,NO
+Phenylethanol,Tyrosine,0.50,NO
+Phenylethanol,Glutamic acid,0.50,NO
+Decanoic acid,Phenoxyethanol,0.50,NO
+Palmitic acid,Phenoxyethanol,0.50,NO
+Phenoxyethanol,Citric acid,0.50,NO
+Dodecan 1 ol,Panthenol,0.67,NO
+Dodecan 1 ol,Panthenol,0.75,NO
+Dodecan 1 ol,Panthenol,0.80,NO
+Dodecan 1 ol,Panthenol,0.33,NO
+Dodecan 1 ol,Panthenol,0.25,NO
+Dodecan 1 ol,Panthenol,0.20,NO
+Dodecan 1 ol,Panthenol,0.17,NO
+Dodecan 1 ol,Panthenol,0.14,NO
+Phenylethanol,Carnitine,0.50,NO
+Lactic acid,Carnitine,0.50,YES
+Octanoic acid,Carnitine,0.50,NO
+Decanoic acid,Carnitine,0.50,NO
+Dodecan 1 ol,Carnitine,0.50,NO
+Palmitic acid,Carnitine,0.50,NO
+Citric acid,Carnitine,0.50,NO
+Phenoxyethanol,Carnitine,0.50,NO
+Lactic acid,Carnitine,0.67,YES
+Lactic acid,Carnitine,0.67,YES
+Lactic acid,Carnitine,0.33,NO
+Phenoxyethanol,Carnitine,0.67,NO
+Phenoxyethanol,Carnitine,0.75,NO
+Phenoxyethanol,Carnitine,0.80,NO
+Phenoxyethanol,Carnitine,0.33,NO
+Phenoxyethanol,Carnitine,0.25,NO
+Phenoxyethanol,Carnitine,0.20,NO
+Dodecanoic acid,Carnitine,0.50,NO
+Tetradecanol,Carnitine,0.50,NO
+Lactic acid,Carnitine,0.25,NO
+Caffeine,L arginine,0.50,NO
+Caffeine,Citrulline,0.50,NO
+Caffeine,DL glucose,0.50,NO
+Urea,Caffeine,0.50,NO
+Caffeine,Betaine,0.50,NO
+Caffeine,Sorbitol,0.50,NO
+Caffeine,Glycerol,0.50,NO
+Caffeine,DL glucose,0.67,NO
+Caffeine,DL glucose,0.75,NO
+Urea,Caffeine,0.33,NO
+Urea,Caffeine,0.25,NO
+Caffeine,Sorbitol,0.67,NO
+Caffeine,Sorbitol,0.75,NO
+Caffeine,DL glucose,0.33,NO
+Caffeine,DL glucose,0.40,NO
+Caffeine,DL glucose,0.60,NO
+Urea,Caffeine,0.67,NO
+Urea,Caffeine,0.60,NO
+Urea,Caffeine,0.40,NO
+Caffeine,Sorbitol,0.33,NO
+Caffeine,Sorbitol,0.40,NO
+Caffeine,Sorbitol,0.60,NO
+Caffeine,L arginine,0.67,NO
+Caffeine,L arginine,0.75,NO
+Caffeine,Citrulline,0.67,NO
+Caffeine,Citrulline,0.75,NO
+Caffeine,Sorbitol,0.36,NO
+Caffeine,Sorbitol,0.31,NO
+Caffeine,Sorbitol,0.29,NO
+Caffeine,Glycerol,0.67,NO
+Caffeine,Glycerol,0.75,NO
+Caffeine,Betaine,0.67,NO
+Caffeine,Betaine,0.75,NO
+Lactic acid,Caffeine,0.50,NO
+Glycine,Caffeine,0.50,NO
+Caffeine,Inositol,0.50,NO
+Tyrosine,Caffeine,0.50,NO
+Lactic acid,Caffeine,0.33,NO
+Lactic acid,Caffeine,0.25,NO
+Lactic acid,Caffeine,0.67,NO
+Lactic acid,Caffeine,0.60,NO
+Lactic acid,Caffeine,0.40,NO
+Caffeine,Trehalose,0.50,NO
+1 3 butylene glycol,Caffeine,0.50,NO
+1 2 pentanediol,Caffeine,0.50,NO
+Glycerol,Choline chloride,0.33,YES
+Menthol,Butanoic acid,0.50,YES
+Decanoic acid,Menthol,0.50,YES
+Thymol,Menthol,0.50,YES
+Thymol,Menthol,0.50,YES
+Decanoic acid,Menthol,0.33,YES
+Menthol,Butanoic acid,0.50,YES
+Menthol,Butanoic acid,0.67,YES
+Monoethanolamine,Choline chloride,0.86,YES
+Glycerol,Calcium carbonate,0.83,YES
+Glycine,Caffeine,0.33,NO
+Caffeine,Trehalose,0.67,NO
+Tyrosine,Caffeine,0.33,NO
+Caffeine,Citric acid,0.67,NO
+Urea,Betaine,0.60,NO
+Urea,Betaine,0.64,NO
+Urea,Betaine,0.75,NO
+Glutamic acid,Trehalose,0.50,NO
+Usnic acid,DL glucose,0.50,NO
+Formic acid,DL glucose,0.60,YES
+Thiourea,Choline chloride,0.50,YES
+Thiourea,Choline chloride,0.67,NO
+Betaine,Trehalose,0.50,YES
+Glycerol,Potassium carbonate,0.86,YES
+Ethylene glycol,Potassium carbonate,0.86,YES
+Glutamic acid,DL glucose,0.50,NO
+Arabitol,DL glucose,0.50,YES
+Betaine,DL glucose,0.50,YES
+D galactose,DL glucose,0.50,NO
+Glutamine,DL glucose,0.50,NO
+DL glucose,D mannitol,0.50,NO
+Serine,DL glucose,0.50,NO
+Tryptophane,DL glucose,0.50,NO
+Tyrosine,DL glucose,0.50,NO
+Usnic acid,Betaine,0.50,NO
+Formic acid,Betaine,0.50,YES
+Glutamic acid,Betaine,0.50,NO
+Betaine,Arabitol,0.50,YES
+Betaine,D galactose,0.50,NO
+Glutamine,Betaine,0.50,NO
+Betaine,D mannitol,0.50,NO
+Betaine,Serine,0.50,NO
+Betaine,Sorbitol,0.50,YES
+Tryptophane,Betaine,0.50,NO
+Usnic acid,DL malic acid,0.50,NO
+Formic acid,DL malic acid,0.50,YES
+Glutamic acid,DL malic acid,0.50,NO
+Ethylene glycol,Choline chloride,0.50,YES
+DL malic acid,Arabitol,0.50,YES
+DL malic acid,L arginine,0.50,YES
+DL malic acid,Betaine,0.50,YES
+DL malic acid,D galactose,0.50,NO
+DL malic acid,DL glucose,0.50,YES
+DL malic acid,Glutamine,0.50,NO
+DL malic acid,D mannitol,0.50,NO
+Glutamic acid,DL malic acid,0.90,NO
+Glutamic acid,DL malic acid,0.40,NO
+Glutamic acid,DL malic acid,0.30,NO
+Glutamic acid,DL malic acid,0.20,NO
+Glutamic acid,DL malic acid,0.10,NO
+Tryptophane,Valine,0.50,NO
+Valine,Sorbitol,0.50,NO
+Tryptophane,Sorbitol,0.50,NO
+Arabitol,Sorbitol,0.50,YES
+Tryptophane,L alanine,0.50,NO
+Tryptophane,D mannitol,0.50,NO
+Sorbitol,D mannitol,0.50,NO
+Tryptophane,Arabitol,0.50,NO
+Valine,Adonitol,0.50,NO
+Tryptophane,Adonitol,0.50,NO
+Adonitol,Sorbitol,0.50,NO
+Adonitol,D mannitol,0.50,NO
+DL malic acid,Serine,0.50,YES
+DL malic acid,Sorbitol,0.50,YES
+DL malic acid,Trehalose,0.50,NO
+Tryptophane,DL malic acid,0.50,NO
+Acetic acid,Glutamic acid,0.90,NO
+Acetic acid,Glutamic acid,0.80,NO
+Acetic acid,Glutamic acid,0.70,NO
+Acetic acid,Glutamic acid,0.60,NO
+Acetic acid,Glutamic acid,0.50,NO
+Acetic acid,Glutamic acid,0.40,NO
+Acetic acid,Glutamic acid,0.30,NO
+Acetic acid,Glutamic acid,0.20,NO
+Acetic acid,Glutamic acid,0.10,NO
+Tryptophane,DL malic acid,0.90,NO
+Tryptophane,DL malic acid,0.70,NO
+Tryptophane,DL malic acid,0.30,NO
+Tryptophane,DL malic acid,0.10,NO
+Formic acid,Citric acid,0.50,YES
+DL malic acid,Citric acid,0.50,YES
+Glutamic acid,Citric acid,0.50,NO
+Citric acid,Adonitol,0.53,YES
+Citric acid,Arabitol,0.50,YES
+Citric acid,D mannitol,0.50,NO
+Tryptophane,Citric acid,0.50,NO
+Valine,Citric acid,0.50,NO
+Formic acid,Glutamic acid,0.50,NO
+Formic acid,Adonitol,0.50,YES
+Formic acid,L alanine,0.50,NO
+Formic acid,Arabitol,0.50,YES
+Formic acid,D mannitol,0.50,NO
+Formic acid,Sorbitol,0.50,YES
+Pyroglutamic acid,DL malic acid,0.10,YES
+Pyroglutamic acid,DL malic acid,0.30,NO
+Pyroglutamic acid,DL malic acid,0.55,NO
+Pyroglutamic acid,DL malic acid,0.50,NO
+Pyroglutamic acid,DL malic acid,0.70,NO
+Pyroglutamic acid,DL malic acid,0.90,YES
+Tryptophane,Formic acid,0.50,NO
+Valine,Formic acid,0.50,NO
+Glutamic acid,Adonitol,0.50,NO
+Glutamic acid,Sorbitol,0.50,NO
+Tryptophane,Glutamic acid,0.50,NO
+Valine,DL malic acid,0.50,NO
+Arabitol,Adonitol,0.50,NO
+DL malic acid,Adonitol,0.50,YES
+Citric acid,Adonitol,0.50,YES
+DL malic acid,Citric acid,0.10,NO
+DL malic acid,Citric acid,0.20,NO
+DL malic acid,Citric acid,0.30,NO
+DL malic acid,Citric acid,0.40,NO
+DL malic acid,Citric acid,0.60,YES
+DL malic acid,Citric acid,0.70,NO
+DL malic acid,Citric acid,0.80,NO
+DL malic acid,Citric acid,0.90,NO
+Citric acid,Adonitol,0.90,NO
+Citric acid,Adonitol,0.80,NO
+Citric acid,Adonitol,0.70,YES
+Citric acid,Adonitol,0.60,YES
+Citric acid,Adonitol,0.40,YES
+Citric acid,Adonitol,0.30,YES
+Citric acid,Adonitol,0.20,YES
+Citric acid,Adonitol,0.10,YES
+Citric acid,Arabitol,0.90,NO
+Citric acid,Arabitol,0.80,NO
+Citric acid,Arabitol,0.70,YES
+Citric acid,Arabitol,0.60,YES
+Citric acid,Arabitol,0.40,YES
+Citric acid,Arabitol,0.30,YES
+Citric acid,Arabitol,0.20,YES
+Citric acid,Arabitol,0.10,YES
+Citric acid,Sorbitol,0.90,NO
+Citric acid,Sorbitol,0.80,NO
+Citric acid,Sorbitol,0.70,YES
+Citric acid,Sorbitol,0.60,YES
+Citric acid,Sorbitol,0.40,YES
+Citric acid,Sorbitol,0.30,YES
+Citric acid,Sorbitol,0.20,YES
+Citric acid,Sorbitol,0.10,YES
+Formic acid,Arabitol,0.90,YES
+Formic acid,Arabitol,0.80,YES
+Formic acid,Arabitol,0.70,YES
+Formic acid,Arabitol,0.60,YES
+Formic acid,Arabitol,0.40,NO
+Formic acid,Arabitol,0.30,NO
+Formic acid,Arabitol,0.20,NO
+Formic acid,Arabitol,0.10,NO
+Formic acid,Sorbitol,0.90,YES
+Formic acid,Sorbitol,0.80,YES
+Formic acid,Sorbitol,0.70,YES
+Formic acid,Sorbitol,0.60,YES
+Formic acid,Sorbitol,0.40,NO
+Formic acid,Sorbitol,0.30,NO
+Formic acid,Sorbitol,0.20,NO
+Formic acid,Sorbitol,0.10,NO
+DL malic acid,Adonitol,0.90,NO
+DL malic acid,Adonitol,0.80,NO
+DL malic acid,Adonitol,0.70,YES
+DL malic acid,Adonitol,0.60,YES
+DL malic acid,Adonitol,0.40,YES
+DL malic acid,Adonitol,0.30,YES
+DL malic acid,Adonitol,0.20,YES
+DL malic acid,Adonitol,0.10,YES
+DL malic acid,Arabitol,0.90,NO
+DL malic acid,Arabitol,0.80,NO
+DL malic acid,Arabitol,0.70,NO
+DL malic acid,Arabitol,0.60,YES
+DL malic acid,Arabitol,0.40,YES
+DL malic acid,Arabitol,0.30,NO
+DL malic acid,Arabitol,0.20,NO
+DL malic acid,Arabitol,0.10,NO
+DL malic acid,Sorbitol,0.90,NO
+DL malic acid,Sorbitol,0.80,YES
+DL malic acid,Sorbitol,0.70,YES
+DL malic acid,Sorbitol,0.60,YES
+DL malic acid,Sorbitol,0.40,YES
+DL malic acid,Sorbitol,0.30,YES
+DL malic acid,Sorbitol,0.20,YES
+DL malic acid,Sorbitol,0.10,YES
+Arabitol,Sorbitol,0.90,NO
+Arabitol,Sorbitol,0.80,YES
+Arabitol,Sorbitol,0.70,YES
+Arabitol,Sorbitol,0.60,YES
+Arabitol,Sorbitol,0.40,YES
+Arabitol,Sorbitol,0.30,YES
+Arabitol,Sorbitol,0.20,YES
+Arabitol,Sorbitol,0.10,YES
+Citric acid,D mannitol,0.80,NO
+Citric acid,D mannitol,0.75,NO
+Citric acid,D mannitol,0.67,NO
+Citric acid,D mannitol,0.33,NO
+Citric acid,D mannitol,0.25,YES
+Citric acid,D mannitol,0.20,YES
+Sorbitol,D mannitol,0.20,NO
+Sorbitol,D mannitol,0.25,NO
+Sorbitol,D mannitol,0.33,NO
+Sorbitol,D mannitol,0.67,NO
+Sorbitol,D mannitol,0.75,NO
+Sorbitol,D mannitol,0.80,NO
+DL malic acid,D mannitol,0.20,NO
+DL malic acid,D mannitol,0.25,NO
+DL malic acid,D mannitol,0.33,NO
+DL malic acid,D mannitol,0.67,NO
+DL malic acid,D mannitol,0.75,YES
+DL malic acid,D mannitol,0.80,YES
+Arabitol,D mannitol,0.20,NO
+Arabitol,D mannitol,0.25,NO
+Arabitol,D mannitol,0.33,NO
+Arabitol,D mannitol,0.67,NO
+Arabitol,D mannitol,0.75,NO
+Arabitol,D mannitol,0.80,NO
+Glutamic acid,Citric acid,0.80,NO
+Glutamic acid,Citric acid,0.75,NO
+Glutamic acid,Citric acid,0.67,NO
+Glutamic acid,Citric acid,0.33,NO
+Glutamic acid,Citric acid,0.25,NO
+Glutamic acid,Citric acid,0.20,NO
+Glutamic acid,Arabitol,0.80,NO
+Glutamic acid,Arabitol,0.75,NO
+Glutamic acid,Arabitol,0.67,NO
+Glutamic acid,Arabitol,0.33,NO
+Glutamic acid,Arabitol,0.25,NO
+Glutamic acid,Arabitol,0.20,NO
+Glutamic acid,Sorbitol,0.80,NO
+Glutamic acid,Sorbitol,0.75,NO
+Glutamic acid,Sorbitol,0.67,NO
+Glutamic acid,Sorbitol,0.33,NO
+Glutamic acid,Sorbitol,0.25,NO
+Glutamic acid,Sorbitol,0.20,NO
+Tryptophane,Citric acid,0.80,NO
+Tryptophane,Citric acid,0.75,NO
+Tryptophane,Citric acid,0.67,NO
+Tryptophane,Citric acid,0.33,NO
+Tryptophane,Citric acid,0.25,NO
+Tryptophane,Citric acid,0.20,YES
+Tryptophane,L proline,0.50,NO
+Tryptophane,Arabitol,0.80,NO
+Tryptophane,Arabitol,0.75,NO
+Tryptophane,Arabitol,0.67,NO
+Tryptophane,Arabitol,0.33,NO
+Tryptophane,Arabitol,0.25,NO
+Tryptophane,Arabitol,0.20,NO
+DL malic acid,Choline chloride,0.50,YES
+Lactic acid,Ethylene glycol,0.50,YES
+Acetic acid,Glycerol,0.50,YES
+Tetradecanol,Menthol,0.67,NO
+Monoethanolamine,Choline chloride,0.88,YES
+Dodecan 1 ol,Decanol,0.50,YES
+Sorbitol,DL glucose,0.50,YES
+Adonitol,D fructose,0.50,YES
+D fructose,D glucose monohydrate,0.50,YES
+D fructose,Sorbitol,0.50,YES
+Adonitol,Sorbitol,0.75,YES
+Adonitol,Sorbitol,0.25,YES
