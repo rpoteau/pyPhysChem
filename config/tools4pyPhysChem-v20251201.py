@@ -340,18 +340,11 @@ class SurveyApp:
         yaml_path = os.path.join(self.base_dir, "survey_questions.yaml")
         with open(yaml_path, "r") as f:
             data = yaml.safe_load(f)
-    
         questions, blocks = {}, {}
-        
         for b, v in data["blocks"].items():
             blocks[b] = (v["title"], v["subtitle"])
-            
-            for qid, qinfo in v["questions"].items():
-                questions[qid] = {
-                    "text": qinfo["text"],
-                    "required": qinfo.get("required", True)  # default = required
-                }
-                
+            for qid, qtext in v["questions"].items():
+                questions[qid] = qtext
         return questions, blocks
     
     # === UI Builder ===
@@ -389,35 +382,19 @@ class SurveyApp:
             """
             footer_html = "</div></div>"
             block_widgets = [HTML(header_html)]
-            for q, qinfo in self.questions.items():
-                if q.startswith(block):      # ← IMPORTANT, à garder absolument
-                    txt = qinfo["text"]
-                    required = qinfo["required"]
-                    
-                    # Affichage + astérisque
-                    star = "<span style='color:#a00'>*</span>" if required else ""
-                    block_widgets.append(HTML(f"<b>{txt}</b> {star}"))
-            
-                    # Détection slider vs textarea (inchangée)
+            for q, txt in self.questions.items():
+                if q.startswith(block):
+                    block_widgets.append(HTML(f"<b>{txt}</b>"))
                     if "(1 =" in txt:
-                        w = IntSlider(
-                            value=0, min=0, max=5, step=1,
-                            description='', layout=Layout(width="35%")
-                        )
+                        w = IntSlider(value=0, min=0, max=5, step=1,
+                                      description='', layout=Layout(width="35%"))
                         w.slider_behavior = "drag-tap"
                     else:
-                        w = Textarea(
-                            placeholder="Write your answer here...",
-                            layout=Layout(width="85%", height="60px")
-                        )
-            
+                        w = Textarea(placeholder="Write your answer here...",
+                                     layout=Layout(width="85%", height="60px"))
                     warn = HTML("")
-            
-                    # Stockage widget + required
-                    self.input_controls.append((w, required))
+                    self.input_controls.append(w)
                     self.warn_labels.append(warn)
-            
-                    # Ajout dans le layout
                     block_widgets.extend([w, warn])
             block_widgets.append(HTML(footer_html))
             self.full_form.extend(block_widgets)
@@ -489,7 +466,7 @@ class SurveyApp:
     
         for i, (q, _) in enumerate(self.questions.items()):
             if q in data:
-                w, required = self.input_controls[i]
+                w = self.input_controls[i]
                 val = data[q]
                 if isinstance(w, IntSlider): w.value = int(val)
                 else: w.value = str(val)
@@ -502,13 +479,13 @@ class SurveyApp:
         data = {}
     
         for i, (q, _) in enumerate(self.questions.items()):
-            w, required = self.input_controls[i]
+            w = self.input_controls[i]
             val = w.value
             warn_label = self.warn_labels[i]  # 🔴 label d’avertissement sous chaque question
     
             # --- Vérification des sliders ---
             if isinstance(w, IntSlider):
-                if required and val == 0:
+                if val == 0:
                     warn_label.value = (
                         "<span style='color:#a00;font-size:12px;font-style:italic;'>⚠ Please answer this question.</span>"
                     )
@@ -521,7 +498,7 @@ class SurveyApp:
     
             # --- Vérification des champs texte ---
             else:
-                if required and not str(val).strip():
+                if not str(val).strip():
                     warn_label.value = (
                         "<span style='color:#a00;font-size:12px;font-style:italic;'>⚠ Please provide an answer.</span>"
                     )
@@ -555,9 +532,7 @@ class SurveyApp:
 
 
     def _collect_data(self):
-        data = {}
-        for q, (w, required) in zip(self.questions.keys(), self.input_controls):
-            data[q] = w.value
+        data = {q: w.value for q, w in zip(self.questions.keys(), self.input_controls)}
         data["id"] = self.user_id
         return data
 

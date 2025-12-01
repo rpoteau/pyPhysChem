@@ -1,0 +1,146 @@
+blocks:
+  A:
+    title: "Block A. Content of the Artificial Intelligence & Machine Learning in Chemistry lecture and tutorial"
+    subtitle: "(assesses perceived relevance, alignment with expectations, and possible redundancies with other workshop activities)"
+    questions:
+      A1:
+        text: "There were redundancies with other lectures or practical sessions in the workshop. (1 = strongly disagree; 5 = strongly agree)"
+        required: true
+      A2:
+        text: "The 4 hours of teaching were aligned with my expectations for the week. (1 = strongly disagree; 5 = strongly agree)"
+        required: true
+      A3:
+        text: "Please list any topics that you felt were unnecessary or could have been reduced, given the other sessions of the workshop. If possible, give a short justification."
+        required: false
+      A4:
+        text: "Which elements of this session did you find the most useful, and why?"
+        required: true
+      A5:
+        text: "Which elements were the least useful to you, and why?"
+        required: false
+      A6:
+        text: "Are there specific topics you would have liked to see added or developed further?"
+        required: false
+
+  B:
+    title: "Block B. Technical Skills and Digital Literacy"
+    subtitle: "(assesses confidence and baseline knowledge in Python and chemistry libraries)"
+    questions:
+      B1:
+        text: "I feel confident with Python. (1 = beginner; 5 = advanced)"
+        required: true
+      B2:
+        text: "I knew before the Fall School some chemistry-related Python libraries (RDKit, ASE, pymatgen, others...). (1 = not at all; 2 = not really; 3 = somewhat; 4 = yes; 5 = yes, precisely)"
+        required: true
+      B3:
+        text: "I have already used ChatGPT or another generative AI for coding. (1 = not at all; 2 = a few times; 3 = occasionally; 4 = often; 5 = a lot)"
+        required: true
+      B4:
+        text: "What do I find most challenging when working with Python?"
+        required: false
+
+  C:
+    title: "Block C. Conceptual Understanding of AI"
+    subtitle: "(assesses understanding of ML and AI concepts)"
+    questions:
+      C1:
+        text: "I can explain the differences between supervised, unsupervised, and explainable AI. (1 = not sure; 5 = absolutely)"
+        required: true
+      C2:
+        text: "Explainable AI (xAI) helped me understand why the model made its predictions. (1 = strongly disagree; 5 = strongly agree)"
+        required: true
+      C3:
+        text: "I perceive the role of AI in chemical research positively. (1 = very negative; 5 = very positive)"
+        required: true
+      C4:
+        text: "How would I describe what I learned about AI during this week? (you can use a list of keywords)."
+        required: true
+      C5:
+        text: "In a few words, how would I explain AI to a fellow chemist? (you can use a bullet point list)"
+        required: false
+
+  D:
+    title: "Block D. Learning Experience and Pedagogical Balance"
+    subtitle: "(assesses learning pace, materials, and clarity)"
+    questions:
+      D1:
+        text: "What was my favorite activity during the lectures?"
+        required: true
+      D2:
+        text: "Which topics would I like to explore further?"
+        required: true
+      D3:
+        text: "The learning pace of the training was appropriate. (1 = too fast; 5 = too slow)"
+        required: true
+      D4:
+        text: "What aspect of the learning pace or materials could be improved?"
+        required: false
+      D5:
+        text: "Given the amount of time (4h), the balance between lectures and the possibility to run data science and ML algorithms was appropriate. (1 = poor; 5 = excellent)"
+        required: true
+      D6:
+        text: "I felt confident following the notebooks during live sessions. (1 = not at all; 5 = completely)"
+        required: true
+      D7:
+        text: "The explanations given during exercises were clear and adapted to my level. (1 = not at all; 5 = completely)"
+        required: true
+
+  E:
+    title: "Block E. Impact and Ethical Awareness"
+    subtitle: "(measures attitudinal outcomes and perceived added value)"
+    questions:
+      E1:
+        text: "A generative AI (chatGPT, Gemini, ...) could help me understand my coding errors better. (1 = not at all; 5 = very much)"
+        required: true
+      E2:
+        text: "I would recommend this training to peers. (1 = not at all; 5 = absolutely)"
+        required: true
+      E3:
+        text: "I perceive the integration of an AI assistant into practical courses positively. (1 = very negative; 5 = very positive)"
+        required: true
+      E4:
+        text: "I perceive explainable AI (xAI) tools as a way to perform grounded, data-driven scientific analysis and research. (1 = strongly disagree; 5 = strongly agree)"
+        required: true
+      E5:
+        text: "I feel more aware of the ethical implications of AI in scientific research. (1 = not at all; 5 = very much)"
+        required: true
+      E6:
+        text: "In my view, what is the main ethical challenge of using AI in chemistry?"
+        required: false
+
+  F:
+    title: "Block F. Practical Transfer and Long-Term Usability"
+    subtitle: "(assesses whether participants feel capable of re-using the tools and environments)"
+    questions:
+      F1:
+        text: "I intend to use generative AI tools (chatGPT, Gemini, ...) more thoughtfully in my future research. (1 = not at all; 5 = definitely)"
+        required: true
+      F2:
+        text: "I feel capable of running and adapting the provided notebooks independently after the school. (1 = strongly disagree; 5 = strongly agree)"
+        required: true
+      F3:
+        text: "The instructions for installing Python and required libraries were clear and easy to follow. (1 = not at all; 5 = completely)"
+        required: true
+      F4:
+        text: "Installing the environment on my own computer increased my confidence in using these tools in the future. (1 = strongly disagree; 5 = strongly agree)"
+        required: true
+      F5:
+        text: "Having the material locally on my computer will help me integrate similar approaches in my own research or teaching. (1 = strongly disagree; 5 = strongly agree)"
+        required: true
+      F6:
+        text: "In retrospect, I would have preferred to access the notebooks through a remote server rather than installing them locally. (1 = strongly disagree; 5 = strongly agree)"
+        required: true
+      F7:
+        text: "The notebooks and datasets were well documented and can be re-used independently. (1 = strongly disagree; 5 = strongly agree)"
+        required: true
+      F8:
+        text: "How do I plan to reuse what I learned in my lab (or teaching?)"
+        required: false
+
+  G:
+    title: "Block G. Free Comments"
+    subtitle: "Please feel free to share any additional feedback, suggestions, or remarks about this week."
+    questions:
+      G1:
+        text: "Any other comments, suggestions, or messages?"
+        required: false
