@@ -108,27 +108,358 @@ def displayModel(fig,width):
     display(pfig)
     
 ############################################################
+#                       Periodic Table
+############################################################
+import mendeleev
+
+class TableauPeriodique:
+    nomsFr=['Hydrogène','Hélium','Lithium','Béryllium','Bore','Carbone','Azote','Oxygène',
+            'Fluor','Néon','Sodium','Magnésium','Aluminium','Silicium','Phosphore','Soufre',
+            'Chlore','Argon','Potassium','Calcium','Scandium','Titane','Vanadium','Chrome',
+            'Manganèse','Fer','Cobalt','Nickel','Cuivre','Zinc','Gallium','Germanium',
+            'Arsenic','Sélénium','Brome','Krypton','Rubidium','Strontium','Yttrium',
+            'Zirconium','Niobium','Molybdène','Technétium','Ruthénium','Rhodium',
+            'Palladium','Argent','Cadmium','Indium',
+            'Étain','Antimoine','Tellure','Iode','Xénon','Césium','Baryum','Lanthane','Cérium',
+            'Praséodyme','Néodyme','Prométhium','Samarium','Europium','Gadolinium','Terbium',
+            'Dysprosium','Holmium','Erbium','Thulium','Ytterbium','Lutetium','Hafnium','Tantale',
+            'Tungstène','Rhénium','Osmium','Iridium','Platine','Or','Mercure','Thallium','Plomb',
+            'Bismuth','Polonium','Astate','Radon','Francium','Radium','Actinium','Thorium','Protactinium',
+            'Uranium','Neptunium','Plutonium','Americium','Curium','Berkelium','Californium','Einsteinium',
+            'Fermium','Mendelevium','Nobelium','Lawrencium','Rutherfordium','Dubnium','Seaborgium','Bohrium',
+            'Hassium','Meitnerium','Darmstadtium','Roentgenium','Copernicium','Nihonium','Flerovium',
+            'Moscovium','Livermorium','Tennesse','Oganesson',
+            ]
+    trad = {'Nonmetals':'Non métal',
+            'Noble gases':'Gaz noble',
+            'Alkali metals':'Métal alcalin',
+            'Alkaline earth metals':'Métal alcalino-terreux',
+            'Metalloids':'Métalloïde',
+            'Halogens':'Halogène',
+            'Poor metals':'Métal pauvre',
+            'Transition metals':'Métal de transition',
+            'Lanthanides':'Lanthanide',
+            'Actinides':'Actinide',
+            'Metals':'Métal',
+           }
+
+    def __init__(self):
+        from mendeleev.vis import create_vis_dataframe
+        self.elements = create_vis_dataframe()
+        self.patch_elements()
+
+    def patch_elements(self):
+        '''
+        Ce patch, appliqué à self.elements, créé par l'appel à create_vis_dataframe(), va servir à :
+        - ajouter des informations en français : les noms des éléments et des séries (familles) auxquelles ils appartiennent
+        - retirer les éléments du groupe 12 de la famille des métaux de transition, qui est le choix CONTESTABLE par défaut de la bibliothèque mendeleev
+        input : elements est un dataframe pandas préalablement créé par la fonction create_vis_dataframe() de mendeleev.vis
+        output : elements avec deux nouvelles colonnes name_seriesFr et nom, qui contient dorénavant les noms des éléments en français
+                        + correction des données name_series et series_id pour les éléments Zn, Cd, Hg, Cn
+                        + de nouvelles colonnes qui contiennent l'énergie de première ionisation et les isotopes naturels
+        '''
+        def series_eng2fr(s):
+            '''Correspondance entre nom des séries (familles) en anglais et en français'''
+            s = TableauPeriodique.trad[s]
+            return s
+
+        def name_eng2fr():
+            self.elements["nom"] = TableauPeriodique.nomsFr
+            return
+
+        def ajouter_donnees():
+            import numpy as np
+            from mendeleev.fetch import fetch_table, fetch_ionization_energies
+            import pandas as pd
+            # dfElts = fetch_table("elements")
+            # display(dfElts)
+            dfEi1 = fetch_ionization_energies(degree = 1)
+            # display(dfEi1)
+            b = pd.DataFrame({'atomic_number':[x for x in range(1, 119)]})
+            dfEi1tot = pd.merge(left=dfEi1, right=b, on='atomic_number', how='outer').sort_values(by='atomic_number')
+            self.elements["Ei1"] = dfEi1tot["IE1"]
+        
+        # les éléments du groupe 12 ne sont pas des métaux de transition
+        self.elements.loc[29,"name_series"] = 'Metals'
+        self.elements.loc[47,"name_series"] = 'Metals'
+        self.elements.loc[79,"name_series"] = 'Metals'
+        self.elements.loc[111,"name_series"] = 'Metals'
+        self.elements.loc[29,"series_id"] = 11
+        self.elements.loc[47,"series_id"] = 11
+        self.elements.loc[79,"series_id"] = 11
+        self.elements.loc[111,"series_id"] = 11
+        self.elements.loc[29,"color"] = "#bbd3a5"
+        self.elements.loc[47,"color"] =  "#bbd3a5"
+        self.elements.loc[79,"color"] =  "#bbd3a5"
+        self.elements.loc[111,"color"] =  "#bbd3a5"
+        # english > français. Ajout d'une nouvelle colonne 
+        self.elements["name_seriesFr"] = self.elements["name_series"].apply(series_eng2fr)
+        # english > français. Noms des éléments en français changés dans la colonne name
+        name_eng2fr()
+        ajouter_donnees()
+        return
+
+    def prop(self,elt_id):
+        from mendeleev import element
+
+        elt = element(elt_id)
+        print(f"Nom de l'élement = {TableauPeriodique.nomsFr[elt.atomic_number-1]} ({elt.symbol}, Z = {elt.atomic_number})")
+        print(f"Nom en anglais = {elt.name}")
+        print(f"Origine du nom = {elt.name_origin}")
+        print()
+        print(f"CEF = {elt.ec} = {elt.econf}")
+        print(f"Nombre d'électrons célibataires = {elt.ec.unpaired_electrons()}")    
+        print(f"Groupe {elt.group_id}, Période {elt.period}, bloc {elt.block}")
+        print(f"Famille = {self.elements.loc[elt.atomic_number-1,'name_seriesFr']}")
+        print()
+        print(f"Masse molaire = {elt.atomic_weight} g/mol")
+        isotopes = ""
+        X = elt.symbol
+        for i in elt.isotopes:
+            if i.abundance is not None:
+                isotopes = isotopes + str(i.mass_number)+ "^" + X + f"({i.abundance}%) / "
+        print("Isotopes naturels = ",isotopes[:-2])
+        print()
+        if elt.electronegativity(scale='pauling') is None:
+            print(f"Électronégativité de Pauling = Non définie")
+        else:
+            print(f"Électronégativité de Pauling = {elt.electronegativity(scale='pauling')}")
+        print(f"Énergie de 1ère ionisation = {elt.ionenergies[1]:.2f} eV")
+        if elt.electron_affinity is None:
+            print(f"Affinité électronique = Non définie")
+        else:
+            print(f"Afinité électronique = {elt.electron_affinity:.2f} eV")
+        print(f"Rayon atomique = {elt.atomic_radius:.1f} pm")
+        print()
+        print("▶ Description : ",elt.description)
+        print("▶ Sources : ",elt.sources)
+        print("▶ Utilisation : ",elt.uses)
+        print("---------------------------------------------------------------------------------------")
+        print()
+
+    def afficher(self):
+        from bokeh.plotting import show, output_notebook
+        from mendeleev.vis import periodic_table_bokeh
+        
+        # Toute cette partie du code est une copie du module bokeh de mendeleev.vis
+        # La fonction periodic_table_bokeh étant faiblement configurable avec des args/kwargs,
+        # elle est adaptée ici pour un affichage personnalisé
+        
+        from collections import OrderedDict
+        
+        import pandas as pd
+        from pandas.api.types import is_float_dtype
+        
+        from bokeh.plotting import figure
+        from bokeh.models import HoverTool, ColumnDataSource, FixedTicker
+        
+        from mendeleev.vis.utils import colormap_column
+        
+        
+        def periodic_table_bokeh(
+            elements: pd.DataFrame,
+            attribute: str = "atomic_weight",
+            cmap: str = "RdBu_r",
+            colorby: str = "color",
+            decimals: int = 3,
+            height: int = 800,
+            missing: str = "#ffffff",
+            title: str = "Periodic Table",
+            wide_layout: bool = False,
+            width: int = 1200,
+        ):
+            """
+            Use Bokeh backend to plot the periodic table. Adaptation by Romuald Poteau (romuald.poteau@univ-tlse3.fr) of the orignal periodic_table_bokeh() function of the mendeleev library
+        
+            Args:
+                elements : Pandas DataFrame with the elements data. Needs to have `x` and `y`
+                    columns with coordianates for each tile.
+                attribute : Name of the attribute to be displayed
+                cmap : Colormap to use, see matplotlib colormaps
+                colorby : Name of the column containig the colors
+                decimals : Number of decimals to be displayed in the bottom row of each cell
+                height : Height of the figure in pixels
+                missing : Hex code of the color to be used for the missing values
+                title : Title to appear above the periodic table
+                wide_layout: wide layout variant of the periodic table
+                width : Width of the figure in pixels
+            """
+        
+            if any(col not in elements.columns for col in ["x", "y"]):
+                raise ValueError(
+                    "Coordinate columns named 'x' and 'y' are required "
+                    "in 'elements' DataFrame. Consider using "
+                    "'mendeleev.vis.utils.create_vis_dataframe' and try again."
+                )
+        
+            # additional columns for positioning of the text
+        
+            elements.loc[:, "y_anumber"] = elements["y"] - 0.3
+            elements.loc[:, "y_name"] = elements["y"] + 0.2
+        
+            if attribute:
+                elements.loc[elements[attribute].notnull(), "y_prop"] = (
+                    elements.loc[elements[attribute].notnull(), "y"] + 0.35
+                )
+            else:
+                elements.loc[:, "y_prop"] = elements["y"] + 0.35
+        
+            ac = "display_attribute"
+            if is_float_dtype(elements[attribute]):
+                elements[ac] = elements[attribute].round(decimals=decimals)
+            else:
+                elements[ac] = elements[attribute]
+        
+            if colorby == "attribute":
+                colored = colormap_column(elements, attribute, cmap=cmap, missing=missing)
+                elements.loc[:, "attribute_color"] = colored
+                colorby = "attribute_color"
+        
+            # bokeh configuration
+        
+            source = ColumnDataSource(data=elements)
+        
+            TOOLS = "hover,save,reset"
+        
+            fig = figure(
+                title=title,
+                tools=TOOLS,
+                x_axis_location="above",
+                x_range=(elements.x.min() - 0.5, elements.x.max() + 0.5),
+                y_range=(elements.y.max() + 0.5, elements.y.min() - 0.5),
+                width=width,
+                height=height,
+                toolbar_location="above",
+                toolbar_sticky=False,
+            )
+        
+            fig.rect("x", "y", 0.9, 0.9, source=source, color=colorby, fill_alpha=0.6)
+        
+            # adjust the ticks and axis bounds
+            fig.yaxis.bounds = (1, 7)
+            fig.axis[1].ticker.num_minor_ticks = 0
+            if wide_layout:
+                # Turn off tick labels
+                fig.axis[0].major_label_text_font_size = "0pt"
+                # Turn off tick marks
+                fig.axis[0].major_tick_line_color = None  # turn off major ticks
+                fig.axis[0].ticker.num_minor_ticks = 0  # turn off minor ticks
+            else:
+                fig.axis[0].ticker = FixedTicker(ticks=list(range(1, 19)))
+        
+            text_props = {
+                "source": source,
+                "angle": 0,
+                "color": "black",
+                "text_align": "center",
+                "text_baseline": "middle",
+            }
+        
+            fig.text(
+                x="x",
+                y="y",
+                text="symbol",
+                text_font_style="bold",
+                text_font_size="15pt",
+                **text_props,
+            )
+            fig.text(
+                x="x", y="y_anumber", text="atomic_number", text_font_size="9pt", **text_props
+            )
+            fig.text(x="x", y="y_name", text="name", text_font_size="6pt", **text_props)
+            fig.text(x="x", y="y_prop", text=ac, text_font_size="7pt", **text_props)
+        
+            fig.grid.grid_line_color = None
+        
+            hover = fig.select(dict(type=HoverTool))
+            hover.tooltips = OrderedDict(
+                [
+                    ("nom", "@nom"),
+                    ("name", "@name"),
+                    ("famille", "@name_seriesFr"),
+                    ("numéro atomique", "@atomic_number"),
+                    ("masse molaire", "@atomic_weight"),
+                    ("rayon atomique", "@atomic_radius"),
+                    ("énergie de première ionisation", "@Ei1"),
+                    ("affinité électronique", "@electron_affinity"),
+                    ("EN Pauling", "@en_pauling"),
+                    ("CEF", "@electronic_configuration"),
+                ]
+            )
+        
+            return fig
+
+        output_notebook()
+
+        fig = periodic_table_bokeh(self.elements, colorby="color")
+        show(fig)
+
+############################################################
 #                       Chemistry
 ############################################################
 
 import py3Dmol
-import io
+import io, os
 from ase import Atoms
+from ase.io import read, write
+import requests
+import numpy as np
+
+# ============================================================
+# Jmol-like element color palette
+# ============================================================
+JMOL_COLORS = {
+    'H':  '#FFFFFF',
+    'C':  '#909090',
+    'N':  '#3050F8',
+    'O':  '#FF0D0D',
+    'F':  '#90E050',
+    'Cl': '#1FF01F',
+    'Br': '#A62929',
+    'I':  '#940094',
+    'S':  '#FFFF30',
+    'P':  '#FF8000',
+    'B':  '#FFB5B5',
+    'Si': '#F0C8A0',
+
+    'Li': '#CC80FF',
+    'Na': '#AB5CF2',
+    'K':  '#8F40D4',
+    'Mg': '#8AFF00',
+    'Ca': '#3DFF00',
+
+    'Fe': '#E06633',
+    'Co': '#F090A0',
+    'Ni': '#50D050',
+    'Cu': '#C88033',
+    'Zn': '#7D80B0',
+
+    'Ru': '#248F8F',   # Ruthenium (Jmol faithful)
+    'Rh': '#E000E0',
+    'Pd': '#A0A0C0',
+    'Ag': '#C0C0C0',
+    'Pt': '#D0D0D0',
+    'Au': '#FFD123',
+    'Ir': '#175487',
+    'Os': '#266696',
+}
 
 class molView:
     """
-    Display molecular structures in py3Dmol from various sources:
-    - XYZ/PDB/etc. file
+    Display molecular and crystal structures in py3Dmol from various sources:
+    - XYZ/PDB/CIF local files
     - XYZ-format string
     - PubChem CID
     - ASE Atoms object
+    - COD ID
+    - RSCB PDB ID
 
-    Two visualization styles are available:
-      - 'bs'  : ball-and-stick (default)
-      - 'cpk' : CPK space-filling spheres (with adjustable size)
+    Three visualization styles are available:
+      - 'bs'     : ball-and-stick (default)
+      - 'cpk'    : CPK space-filling spheres (with adjustable size)
+      - 'cartoon': protein backbone representation
       
-    Upon creation, an interactive 3D viewer is shown directly
-    in a Jupyter notebook cell.
+    Upon creation, an interactive 3D viewer is shown directly in a Jupyter notebook cell.
 
     Parameters
     ----------
@@ -136,17 +467,24 @@ class molView:
         The molecular structure to visualize.
         - If `source='file'`, this should be a path to a structure file (XYZ, PDB, etc.)
         - If `source='mol'`, this should be a string containing the structure (XYZ, PDB...)
+        - If `source='cif'`, this should be a cif file (string)
         - If `source='cid'`, this should be a PubChem CID (string or int)
+        - If `source='rscb'`, this should be a RSCB PDB ID (string)
+        - If `source='cod'`, this should be a COD ID (string)
         - If `source='ase'`, this should be an `ase.Atoms` object
-    source : {'file', 'mol', 'cid', 'ase'}, optional
+    source : {'file', 'mol', 'cif', 'cid', 'rscb', 'ase'}, optional
         The type of the input `mol` (default: 'file').
-    style : {'bs', 'cpk'}, optional
+    style : {'bs', 'cpk', 'cartoon'}, optional
         Visualization style (default: 'bs').
         - 'bs'  → ball-and-stick
         - 'cpk' → CPK space-filling spheres
+        - 'cartoon' → draws a smooth tube or ribbon through the protein backbone
+                     (default for pdb structures)
     cpk_scale : float, optional
         Overall scaling factor for sphere size in CPK style (default: 0.5).
         Ignored when `style='bs'`.
+    supercell : tuple of int
+        Repetition of the unit cell (na, nb, nc). Default is (1, 1, 1).
     w : int, optional
         Width of the viewer in pixels (default: 600).
     h : int, optional
@@ -156,99 +494,488 @@ class molView:
     --------
     >>> molView("molecule.xyz", source="file")
     >>> molView(xyz_string, source="mol")
-    >>> molView("2244", source="cid")   # PubChem benzene
+    >>> molView(2244, source="cid")   # PubChem aspirin
     >>> from ase.build import molecule
     >>> molView(molecule("H2O"), source="ase")
     """
 
-    def __init__(self, mol, source='file', style='bs', cpk_scale=0.6, w=600, h=400):
+    def __init__(self, mol, source='file', style='bs', cpk_scale=0.6, w=600, h=400, supercell=(1, 1, 1)):
         self.mol = mol
         self.source = source
         self.style = style
         self.cpk_scale = cpk_scale
         self.w = w
         self.h = h
-        self.view()
+        self.supercell = supercell
+        self.v = py3Dmol.view(width=self.w, height=self.h) # Création du viewer une seule fois
+        self._load_and_display()
 
-    def view(self):
-        def ase2xyz(atoms: Atoms) -> str:
-            """
-            Convert an ASE Atoms object into an XYZ-format string.
-        
-            This is useful when you want to pass atomic structures directly
-            to visualization tools such as py3Dmol without creating a file on disk.
-        
-            Parameters
-            ----------
-            atoms : ase.Atoms
-                The atomic structure to export.
-        
-            Returns
-            -------
-            str
-                The XYZ-formatted structure as a string.
-            """
-            buf = io.StringIO()
-            write(buf, atoms, format="xyz")
-            xyz_string = buf.getvalue()
-            buf.close()
-            return xyz_string
+    def _get_ase_atoms(self, content, fmt):
+        """Helper to convert string content to ASE Atoms and apply supercell."""
+        # Use ASE to parse the structure (more robust for symmetry)
+        atoms = read(io.StringIO(content), format=fmt)
+        if self.supercell != (1, 1, 1):
+            atoms = atoms * self.supercell
+        return atoms
 
-        # Create viewer for all but CID
+    def _draw_cell_vectors(self, cell, origin=(0, 0, 0),
+                           radius=0.12, head_radius=0.25, head_length=0.6,
+                           label_offset=0.15):
+        """
+        Draw crystallographic vectors a, b, c as colored arrows
+        and add labels a, b, c at their tips.
+        
+        a = red, b = blue, c = green
+        """
+        a, b, c = np.array(cell, dtype=float)
+        o = np.array(origin, dtype=float)
+    
+        vectors = {
+            "a": (a, "red"),
+            "b": (b, "blue"),
+            "c": (c, "green")
+        }
+    
+        for name, (vec, color) in vectors.items():
+            end = o + vec
+    
+            # Arrow
+            self.v.addArrow({
+                "start": {
+                    "x": float(o[0]), "y": float(o[1]), "z": float(o[2])
+                },
+                "end": {
+                    "x": float(end[0]), "y": float(end[1]), "z": float(end[2])
+                },
+                "radius": float(radius),
+                "radiusRatio": head_radius / radius,
+                "mid": 0.85,
+                "color": color
+            })
+    
+            # Label slightly beyond the arrow tip
+            label_pos = end + label_offset * vec / np.linalg.norm(vec)
+    
+            self.v.addLabel(
+                name,
+                {
+                    "position": {
+                        "x": float(label_pos[0]),
+                        "y": float(label_pos[1]),
+                        "z": float(label_pos[2])
+                    },
+                    "fontColor": color,
+                    "backgroundColor": "white",
+                    "backgroundOpacity": 0.,
+                    "fontSize": 16,
+                    "borderThickness": 0
+                }
+            )
+    def _draw_lattice_wireframe(self, cell, reps, color="black", radius=0.05):
+        """
+        Draw all unit cells of a supercell lattice as wireframes.
+        
+        Parameters
+        ----------
+        cell : ase.Cell
+            Primitive cell.
+        reps : tuple(int,int,int)
+            Supercell repetitions (na, nb, nc).
+        """
+        a, b, c = np.array(cell, dtype=float)
+        na, nb, nc = reps
+    
+        for i in range(na):
+            for j in range(nb):
+                for k in range(nc):
+                    origin = i*a + j*b + k*c
+                    self._draw_cell_wireframe(
+                        cell,
+                        color=color,
+                        radius=radius,
+                        origin=origin
+                    )
+
+    def _draw_cell_wireframe(self, cell, color="black", radius=0.05, origin=(0, 0, 0)):
+        """
+        Draw a unit cell as a wireframe using py3Dmol lines.
+        Works with XYZ or CIF models.
+        """
+        a, b, c = np.array(cell)
+        o = np.array(origin)
+    
+        corners = [
+            o,
+            o + a,
+            o + b,
+            o + c,
+            o + a + b,
+            o + a + c,
+            o + b + c,
+            o + a + b + c
+        ]
+    
+        edges = [
+            (0,1), (0,2), (0,3),
+            (1,4), (1,5),
+            (2,4), (2,6),
+            (3,5), (3,6),
+            (4,7), (5,7), (6,7)
+        ]
+    
+        for i, j in edges:
+            self.v.addCylinder({
+                "start": {
+                    "x": float(corners[i][0]),
+                    "y": float(corners[i][1]),
+                    "z": float(corners[i][2]),
+                },
+                "end": {
+                    "x": float(corners[j][0]),
+                    "y": float(corners[j][1]),
+                    "z": float(corners[j][2]),
+                },
+                "color": color,
+                "radius": float(radius),
+                "fromCap": True,
+                "toCap": True
+                })
+
+    def _load_and_display(self):
+
+        # --- 1. Handle External API Sources ---
+        if self.source == 'cid':
+            self.v = py3Dmol.view(query=f'cid:{self.mol}', width=self.w, height=self.h)
+        
+        elif self.source == 'rscb':
+            self.v = py3Dmol.view(query=f'pdb:{self.mol}', width=self.w, height=self.h)
+
+        elif self.source == 'cod':
+            url = f"https://www.crystallography.net/cod/{self.mol}.cif"
+            response = requests.get(url)
+            if response.status_code == 200:
+                self.mol = response.text
+                self.source = 'cif'
+            else:
+                raise ValueError(f"Could not find COD ID: {self.mol}")
+
+        # --- 2. Handle Logic for Files and Data ---
+        content = ""
+        fmt = "xyz"
+
         if self.source == 'file':
-            v = py3Dmol.view(width=self.w, height=self.h)
-            with open(self.mol) as ifile:
-                moltxt = ifile.read()
-            v.addModel(moltxt)
-
-        elif self.source == 'mol':
-            v = py3Dmol.view(width=self.w, height=self.h)
-            v.addModel(self.mol, "xyz")
+            if not os.path.exists(self.mol):
+                raise FileNotFoundError(f"File not found: {self.mol}")
+            ext = os.path.splitext(self.mol)[1].lower().replace('.', '')
+            fmt = 'cif' if ext == 'cif' else ext
+            with open(self.mol, 'r') as f:
+                content = f.read()
         
         elif self.source == 'cif':
-            v = py3Dmol.view(width=self.w, height=self.h)
-            v.addModel(self.mol, "cif")  # <-- explicitly declare CIF
-            v.addUnitCell()
+            content = self.mol
+            fmt = 'cif'
+        
+        elif self.source == 'mol':
+            content = self.mol
+            fmt = 'xyz'
 
-        elif self.source == 'cid':
-            v = py3Dmol.view(query=f'cid:{self.mol}', width=self.w, height=self.h)
-            self._apply_style(v)
-            v.setHoverable({}, True, 
-                "function(atom,viewer,event,container) { viewer.addLabel(atom.elem+atom.serial,{position:atom, backgroundColor:'black'}); }",
-                "function(atom,viewer) { viewer.removeAllLabels(); }")
-            v.zoomTo()
-            v.zoom(0.9)
-            v.show()
-            return
-        
-        elif self.source == 'ase':
-            if not isinstance(self.mol, Atoms):
-                raise TypeError("Expected an ASE Atoms object for source='ase'")
-        
-            v = py3Dmol.view(width=self.w, height=self.h)
-            xyz_str = ase2xyz(self.mol)
-            v.addModel(xyz_str, "xyz")
-
-        # Apply chosen style
-        self._apply_style(v)
-        v.setHoverable({}, True, 
-            "function(atom,viewer,event,container) { viewer.addLabel(atom.elem+atom.serial,{position:atom, backgroundColor:'black'}); }",
-            "function(atom,viewer) { viewer.removeAllLabels(); }")
-        v.zoomTo()
-        v.zoom(0.9)
-        v.show()
-        
-    def _apply_style(self, v):
-        """Apply either ball-and-stick or CPK style."""
-        if self.style == 'bs':
-            v.setStyle({'sphere': {'scale': 0.25, 'colorscheme': 'element'},
-                        'stick': {'radius': 0.15}})
-        elif self.style == 'cpk':
-            v.setStyle({'sphere': {'scale': self.cpk_scale,
-                                   'colorscheme': 'element'}})
+        # --- 3. Rendering Logic ---
+        if fmt == 'cif' or self.supercell != (1, 1, 1) or self.source == 'ase':
+            # Create ASE atoms object
+            if self.source == 'ase':
+                atoms = self.mol
+            else:
+                atoms = read(io.StringIO(content), format=fmt)
+            
+            # --- CRYSTAL LOGIC (Jmol packed-like) ---
+            
+            # 1. Read primitive cell (before supercell)
+            atoms0 = atoms.copy()
+            
+            # 2. Apply supercell if requested
+            if self.supercell != (1, 1, 1):
+                atoms = atoms * self.supercell
+            
+            # 3. Send atoms to py3Dmol (XYZ, robust)
+            xyz_buf = io.StringIO()
+            write(xyz_buf, atoms, format="xyz")
+            self.v.addModel(xyz_buf.getvalue(), "xyz")
+            
+            # 4. Draw supercell (optional, thick & gray)
+            if self.supercell != (1, 1, 1):
+                self._draw_lattice_wireframe(
+                    atoms0.cell,
+                    self.supercell,
+                    color="gray",
+                    radius=0.015
+                )
+                self._draw_cell_wireframe(
+                    atoms.cell,
+                    color="gray",
+                    radius=0.015
+                )
+            
+            # 5. Draw primitive cell (Jmol packed equivalent)
+            self._draw_cell_wireframe(
+                atoms0.cell,
+                color="black",
+                radius=0.03
+            )
+            # Vecteurs a, b, c
+            self._draw_cell_vectors(
+                atoms0.cell,
+                radius=0.04
+            )
+ 
         else:
-            raise ValueError("style must be 'bs' or 'cpk'")
+            # Standard molecule (non-crystal)
+            self.v.addModel(content, fmt)
 
+        # Finalize
+        self._apply_style()
+        self._add_interactions()
+        self.v.zoomTo()
+        if self.source != 'cif': self.v.zoom(0.9)
+        self.v.show()
+
+    def _apply_element_colors(self, color_table):
+        """
+        Override element colors without breaking the current style (bs / cpk).
+        """
+        for elem, color in color_table.items():
+            if self.style == 'bs':
+                self.v.setStyle(
+                    {'elem': elem},
+                    {
+                        'sphere': {'color': color, 'scale': 0.25},
+                        'stick':  {'color': color, 'radius': 0.15}
+                    }
+                )
+    
+            elif self.style == 'cpk':
+                self.v.setStyle(
+                    {'elem': elem},
+                    {
+                        'sphere': {'color': color, 'scale': self.cpk_scale}
+                    }
+                )
+
+    def _apply_style(self):
+        """Apply either ball-and-stick, cartoon or CPK style."""
+
+        if self.style == 'bs':
+            self.v.setStyle({'sphere': {'scale': 0.25, 'colorscheme': 'element'},
+                        'stick': {'radius': 0.15}})
+            self._apply_element_colors(JMOL_COLORS)
+        elif self.style == 'cpk':
+            self.v.setStyle({'sphere': {'scale': self.cpk_scale,
+                                   'colorscheme': 'element'}})
+            self._apply_element_colors(JMOL_COLORS)
+        elif self.style == 'cartoon':
+            self.v.setStyle({'cartoon': {'color': 'spectrum', 'style': 'rectangle', 'arrows': True}})
+        else:
+            raise ValueError("style must be 'bs', 'cpk' or 'cartoon'")
+
+    def _add_interactions(self):
+        """Add basic JavaScript Hover labels for atom identification."""
+        label_js = "function(atom,viewer) { viewer.addLabel(atom.elem+atom.serial,{position:atom, backgroundColor:'black'}); }"
+        reset_js = "function(atom,viewer) { viewer.removeAllLabels(); }"
+        self.v.setHoverable({}, True, label_js, reset_js)
+
+
+############################################################
+#                       easy_rdkit
+############################################################
+import rdkit
+from rdkit import Chem
+from rdkit.Chem.rdchem import GetPeriodicTable
+import pandas as pd
+
+class easy_rdkit():
+
+    def __init__(self,smiles):
+        self.mol=Chem.MolFromSmiles(smiles)
+        self.smiles = smiles
+        
+    def analyze_lewis(self):
+        if self.mol is None:
+            raise ValueError(f"Molécule invalide pour {self.smiles} (SMILES incorrect ?)")
+        
+        pt = GetPeriodicTable()
+        rows = []
+    
+        for atom in self.mol.GetAtoms():
+            Z = atom.GetAtomicNum()
+            valence_e = pt.GetNOuterElecs(Z)
+            bonding_e = atom.GetTotalValence()
+            formal_charge = atom.GetFormalCharge()
+            num_bonds = int(sum(bond.GetBondTypeAsDouble() for bond in atom.GetBonds()))
+            # hybridization = atom.GetHybridization()
+            nonbonding = valence_e - bonding_e - formal_charge
+    
+            lone_pairs = max(0, nonbonding // 2)
+    
+            if Z==1 or Z==2:  # règle du duet
+                target = 2
+            else:       # règle de l’octet
+                target = 8
+    
+            missing_e = max(0, target/2 - (bonding_e + 2*lone_pairs))
+            vacancies = int(missing_e)
+            total_e = 2*(lone_pairs + bonding_e)
+    
+            if total_e > 8:
+                octet_msg = "❌ hypercoordiné"
+            elif total_e < 8 and Z > 2:
+                octet_msg = "❌ électron-déficient"
+            elif total_e == 8:
+                octet_msg = "✅ octet"    
+            elif total_e == 2 and (Z == 1 or Z == 2):
+                octet_msg = "✅ duet"
+            else:
+                octet_msg = "🤔"
+            rows.append({
+                "index atome": atom.GetIdx(),
+                "symbole": atom.GetSymbol(),
+                "e- valence": valence_e,
+                "e- liants": bonding_e,
+                "charge formelle": formal_charge,
+                "doublets non-liants (DNL)": lone_pairs,
+                "lacunes ([])": vacancies,
+                "nombre de liaisons": num_bonds,
+                "e- total (octet ?)": total_e,
+                "O/H/D ?": octet_msg
+            })
+        return pd.DataFrame(rows)    
+            
+    def show_mol(self,
+                 size: tuple=(400,400),
+                 show_Lewis: bool=False,
+                 plot_conjugation: bool=False,
+                 plot_aromatic: bool=False,
+                 show_n: bool=False,
+                 show_hybrid: bool=False,
+                 show_H: bool=False,
+                 rep3D: bool=False,
+                 highlightAtoms: list=[],
+                 legend: str=''
+                ):
+        '''
+        Exploite les outils d'affichage 2D de RDKit, et permet de superposer certaines propriétés
+        Ne peut afficher qu'une molécule à la fois
+        - size : dimension de la figure en pixels (défaut : 400x400)
+        - show_Lewis : analyse la structure de Lewis et ajout de labels sur chaque atome (défaut : False)
+        - plot_conjugation : surligne les liaisons conjuguées (défaut : False)
+        - plot_aromatic : surligne les atomes et liaisons des fragments moléculaires aromatiques (défaut : False)
+        - show_n : ajoute le numéro de chaque atome (défaut : False)
+        - show_hybrid : ajoute l'état d'hybridation des atomes non terminaux (défaut : False)
+        - show_H : ajoute les hydrogènes, considérés comme implicites par défaut (défaut : False)
+        - rep3D : pseudo dessin 3D qui prend en compte les conflits stériques entre atomes (défaut : False). Active show_H à True 
+        - highlightAtoms : liste des numéros des atomes qu'on souhaite surligner
+        - legend : ajoute le contenu de la variable comme légende du dessin
+        '''
+        from rdkit.Chem.Draw import rdMolDraw2D
+        from rdkit import Chem
+        from rdkit.Chem import GetPeriodicTable, Draw
+        from rdkit.Chem import AllChem
+        import pandas as pd
+        from IPython.display import SVG
+        from PIL import Image
+
+        def safe_add_hs():
+            try:
+                return Chem.AddHs(self.mol)
+            except Exception as e:
+                print(f"[Warning] Impossible d'ajouter les H pour {self.smiles} ({e}), on garde la version brute.")
+                return mol      
+        
+        if show_H and not show_Lewis:
+            mol = Chem.AddHs(self.mol)
+        else:
+            mol = self.mol
+        if show_Lewis:
+            mol = safe_add_hs()
+            self.mol = mol
+            df = self.analyze_lewis()
+            lewis_info = {row["index atome"]: (row["doublets non-liants (DNL)"], row["lacunes ([])"])
+                          for _, row in df.iterrows()}
+        else:
+            df = None
+            
+        if rep3D:
+            mol = Chem.AddHs(self.mol)
+            self.mol = mol
+            AllChem.EmbedMolecule(mol)
+                
+        d2d = rdMolDraw2D.MolDraw2DSVG(size[0],size[1])
+        
+        atoms = list(mol.GetAtoms())
+    
+        if plot_conjugation:
+            from collections import defaultdict
+            Chem.SetConjugation(mol)
+            colors = [(0.0, 0.0, 1.0, 0.4)]
+            athighlights = defaultdict(list)
+            arads = {}
+            bndhighlights = defaultdict(list)
+            for bond in mol.GetBonds():
+                aid1 = bond.GetBeginAtomIdx()
+                aid2 = bond.GetEndAtomIdx()
+            
+                if bond.GetIsConjugated():
+                    bid = mol.GetBondBetweenAtoms(aid1,aid2).GetIdx()
+                    bndhighlights[bid].append(colors[0])
+            
+        if plot_aromatic:
+            from collections import defaultdict
+            colors = [(1.0, 0.0, 0.0, 0.4)]
+            athighlights = defaultdict(list)
+            arads = {}
+            for a in atoms:
+                if a.GetIsAromatic():
+                    aid = a.GetIdx()
+                    athighlights[aid].append(colors[0])
+                    arads[aid] = 0.3
+                    
+            bndhighlights = defaultdict(list)
+            for bond in mol.GetBonds():
+                aid1 = bond.GetBeginAtomIdx()
+                aid2 = bond.GetEndAtomIdx()
+            
+                if bond.GetIsAromatic():
+                    bid = mol.GetBondBetweenAtoms(aid1,aid2).GetIdx()
+                    bndhighlights[bid].append(colors[0])
+            
+        if show_hybrid or show_Lewis:
+            for i,atom in enumerate(atoms):
+                # print(i,atom.GetDegree(),atom.GetImplicitValence())
+                note_parts = []
+                if show_hybrid and(atom.GetValence(rdkit.Chem.rdchem.ValenceType.IMPLICIT) > 0 or atom.GetDegree() > 1):
+                    note_parts.append(str(atom.GetHybridization()))
+                if show_Lewis and i in lewis_info:
+                    lp, vac = lewis_info[i]
+                    if lp > 0:
+                        note_parts.append(f" {lp}DNL")
+                    if vac > 0:
+                        note_parts.append(f" {vac}[]")
+                if note_parts:
+                    mol.GetAtomWithIdx(i).SetProp('atomNote',"".join(note_parts))
+                # print(f"Atom {i+1:3}: {atom.GetAtomicNum():3} {atom.GetSymbol():>2} {atom.GetHybridization()}")
+            if show_Lewis:
+                display(df)
+    
+        if show_n:
+            d2d.drawOptions().addAtomIndices=show_n
+    
+        if plot_aromatic or plot_conjugation:
+            d2d.DrawMoleculeWithHighlights(mol,legend,dict(athighlights),dict(bndhighlights),arads,{})
+        else:
+            d2d.DrawMolecule(mol,legend=legend, highlightAtoms=highlightAtoms)
+            
+        d2d.FinishDrawing()
+        display(SVG(d2d.GetDrawingText()))
+
+        return
 
 ############################################################
 #                       Sympy
@@ -353,6 +1080,46 @@ class SurveyApp:
                 }
                 
         return questions, blocks
+
+    # === Helper: Print Summary ===
+    def print_questions_summary(self):
+        """Affiche la liste des questions par bloc et leur type (Numérique/Texte)."""
+        print("\n#####################################################")
+        print("#         RÉPARTITION DES QUESTIONS PAR BLOC        #")
+        print("#####################################################")
+
+        num_total, text_total = 0, 0
+
+        for block_id, (title, subtitle) in self.blocks.items():
+            print(f"\n--- {block_id}. {title} ---")
+
+            num_in_block, text_in_block = 0, 0
+
+            # Filtre les questions appartenant à ce bloc
+            block_questions = {
+                qid: qinfo for qid, qinfo in self.questions.items() 
+                if qid.startswith(block_id)
+            }
+
+            for qid, qinfo in block_questions.items():
+                text = qinfo["text"]
+
+                # Reproduction de la logique de détection des types
+                if "(1 =" in text:
+                    q_type = "NUMÉ(Slider)"
+                    num_in_block += 1
+                else:
+                    q_type = "TEXTE(Libre)"
+                    text_in_block += 1
+
+                print(f"  [{qid:4}] {q_type:12} : {text.split('(1 =')[0].strip()}")
+
+            num_total += num_in_block
+            text_total += text_in_block
+
+        print("\n-----------------------------------------------------")
+        print(f"TOTAL : {num_total} questions numériques, {text_total} questions à champ libre.")
+        print("-----------------------------------------------------")
     
     # === UI Builder ===
     def run(self):
@@ -768,10 +1535,20 @@ class SurveyApp:
 
     def build_admin_dashboard(self):
 
+        # === APPEL AJOUTÉ ICI ! ===
+        self.print_questions_summary()
+
         # === Load all responses ===
         df = self.load_all_responses()
         if df is None:
             return
+
+        # --- CODE POUR SAUVEGARDER EN EXCEL ---
+        excel_path = os.path.join(self.summary_dir, f"All_Responses_{datetime.now().strftime('%Y%m%d_%H%M')}.xlsx")
+        df.to_excel(excel_path, index=False)
+        print(f"✅ Saved all responses to Excel: {excel_path}")
+        # ---------------------------------------------
+
         display(HTML("<h4>📊 All collected responses</h3>"))
         display(df)
 

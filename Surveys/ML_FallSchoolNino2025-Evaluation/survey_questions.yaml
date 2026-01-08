@@ -1,0 +1,101 @@
+blocks:
+  A:
+    title: "Block A. Technical Skills and Digital Literacy"
+    subtitle: "(assesses confidence and baseline knowledge in Python and chemistry libraries)"
+    questions:
+      A1:
+        text: "I feel confident with Python. (1 = beginner; 5 = advanced)"
+      A2:
+        text: "I knew before the Fall School some chemistry-related Python libraries (RDKit, ASE, pymatgen). (1 = not at all; 2 = not really; 3 = somewhat; 4 = yes; 5 = yes, precisely)"
+      A3:
+        text: "I have already used ChatGPT or another generative AI for coding. (1 = not at all; 2 = a few times; 3 = occasionally; 4 = often; 5 = a lot)"
+      A4:
+        text: "What did I find most challenging when working with Python?"
+
+  B:
+    title: "Block B. Conceptual Understanding of AI"
+    subtitle: "(assesses understanding of ML and AI concepts)"
+    questions:
+      B1:
+        text: "I can explain the differences between supervised, unsupervised, and explainable AI. (1 = not sure; 5 = absolutely)"
+      B2:
+        text: "I perceive the role of AI in chemical research positively. (1 = very negative; 5 = very positive)"
+      B3:
+        text: "How would I describe what I learned about AI during this week? (you can use a list of keywords)."
+      B4:
+        text: "In a few words, how would I explain AI to a fellow chemist? (you can use a bullet point list)"
+
+  C:
+    title: "Block C. Learning Experience and Pedagogical Balance"
+    subtitle: "(assesses learning pace, materials, and clarity)"
+    questions:
+      C1:
+        text: "What was my favorite activity during the training?"
+      C2:
+        text: "Which topics would I like to explore further?"
+      C3:
+        text: "The learning pace of the training was appropriate. (1 = too fast; 5 = too slow)"
+      C4:
+        text: "What aspect of the learning pace or materials could be improved?"
+      C5:
+        text: "The balance between lectures and hands-on activities was appropriate. (1 = poor; 5 = excellent)"
+      C6:
+        text: "I felt confident following the notebooks during live sessions. (1 = not at all; 5 = completely)"
+      C7:
+        text: "The explanations given during exercises were clear and adapted to my level. (1 = not at all; 5 = completely)"
+
+  D:
+    title: "Block D. Mentored Project Experience"
+    subtitle: "(evaluates teamwork, mentoring, and synthesis of knowledge)"
+    questions:
+      D1:
+        text: "The mentored project helped me synthesize and apply the week’s concepts. (1 = not at all; 5 = very much)"
+      D2:
+        text: "The environment encouraged open discussions and exchange of ideas with other participants. (1 = strongly disagree; 5 = strongly agree)"
+      D3:
+        text: "I could contribute actively to the mentored project. (1 = not at all; 5 = fully)"
+      D5:
+        text: "Briefly describe what my mentored project focused on."
+
+  E:
+    title: "Block E. Impact and Ethical Awareness"
+    subtitle: "(measures attitudinal outcomes and perceived added value)"
+    questions:
+      E1:
+        text: "A generative AI helped me understand my coding errors better. (1 = not at all; 5 = very much)"
+      E2:
+        text: "I would recommend this training to peers. (1 = not at all; 5 = absolutely)"
+      E3:
+        text: "I perceive the integration of an AI assistant into practical courses positively. (1 = very negative; 5 = very positive)"
+      E4:
+        text: "I feel more aware of the ethical implications of AI in scientific research. (1 = not at all; 5 = very much)"
+      E5:
+        text: "In my view, what is the main ethical challenge of using AI in chemistry?"
+
+  F:
+    title: "Block F. Practical Transfer and Long-Term Usability"
+    subtitle: "(assesses whether participants feel capable of re-using the tools and environments)"
+    questions:
+      F1:
+        text: "I intend to use generative AI tools more thoughtfully in my future research. (1 = not at all; 5 = definitely)"
+      F2:
+        text: "I feel capable of running and adapting the provided notebooks independently after the school. (1 = strongly disagree; 5 = strongly agree)"
+      F3:
+        text: "The instructions for installing Python and required libraries were clear and easy to follow. (1 = not at all; 5 = completely)"
+      F4:
+        text: "Installing the environment on my own computer increased my confidence in using these tools in the future. (1 = strongly disagree; 5 = strongly agree)"
+      F5:
+        text: "Having the material locally on my computer will help me integrate similar approaches in my own research or teaching. (1 = strongly disagree; 5 = strongly agree)"
+      F6:
+        text: "In retrospect, I would have preferred to access the notebooks through a remote server rather than installing them locally. (1 = strongly disagree; 5 = strongly agree)"
+      F7:
+        text: "The notebooks and datasets were well documented and can be re-used independently. (1 = strongly disagree; 5 = strongly agree)"
+      F8:
+        text: "How do I plan to reuse what I learned in my lab or teaching?"
+
+  G:
+    title: "Block G. Free Comments"
+    subtitle: "Please feel free to share any additional feedback, suggestions, or remarks about this week."
+    questions:
+      G1:
+        text: "Any other comments, suggestions, or messages for the organizers?"

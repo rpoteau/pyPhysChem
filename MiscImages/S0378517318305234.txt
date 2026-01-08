@@ -1,0 +1,11 @@
+Caroline Manto Chagas, Sara Moss, Laleh Alisaraie,
+Drug metabolites and their effects on the development of adverse reactions: Revisiting Lipinski’s Rule of Five,
+International Journal of Pharmaceutics,
+Volume 549, Issues 1–2,
+2018,
+Pages 133-149,
+ISSN 0378-5173,
+https://doi.org/10.1016/j.ijpharm.2018.07.046.
+(https://www.sciencedirect.com/science/article/pii/S0378517318305234)
+Abstract: Many studies have shown that toxicities of anticancer drugs and their adverse effects are related to their chemical structure and high molecular weight that may result in a number of metabolites interacting with drug off-target networks. These factors require further attention for advancing cancer treatment and decreasing toxicities caused by the molecular complexity of antineoplastic agents. Providing more target-selective and tolerable cancer therapy with fewer side effects would not only improve patients’ compliance, but also would decrease cancer-remission rates. This review presents several antineoplastic agents and their metabolites with molecular weights greater than 500 g/mol, which reportedly cause more than fifteen types of adverse reactions during breast cancer therapy.
+Keywords: Anticancer drug; Metabolites; Adverse drug reactions; Toxicity; ADME

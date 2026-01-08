@@ -104,7 +104,7 @@ def chrono_stop(hdelay=False):
 def chrono_show():
     print('\nDuration : ', hdelay_ms(time.time() - _chrono_start))
 
-def init(pwy):
+def init(pwy,Research=False):
     global _start_time
     # Styling notebook
     #
@@ -121,7 +121,10 @@ def init(pwy):
     #print('Run time             :', _start_time.strftime("%A %d %B %Y, %H:%M:%S"))
     #print('Hostname             :', f'{h[1]} ({h[0]})')
     path2svg=pwy + 'svg/'
-    md = '<p style="text-align: center"><img width="800px" src="' + path2svg + 'pyPhysChemBanner.svg" style="margin-left:auto; margin-right:auto"/></p>'
+    if Research:
+        md = '<p style="text-align: center"><img width="800px" src="' + path2svg + 'pyPCBanner.svg" style="margin-left:auto; margin-right:auto"/></p>'
+    else:
+        md = '<p style="text-align: center"><img width="800px" src="' + path2svg + 'pyPhysChemBanner.svg" style="margin-left:auto; margin-right:auto"/></p>'
     display_md(md)
     
 def end(pwy):
