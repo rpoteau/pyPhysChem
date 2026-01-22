@@ -3,6 +3,8 @@ __maintainer__ =  "Romuald POTEAU"
 __email__ = "romuald.poteau@utoulouse.fr"
 __status__ = "Development"
 
+from visualID_Eng import color, fg, hl, bg 
+
 ############################################################
 #          I N   H O U S E   F U N C T I O N S 
 ############################################################
@@ -402,8 +404,11 @@ import py3Dmol
 import io, os
 from ase import Atoms
 from ase.io import read, write
+from ase.data import vdw_radii, atomic_numbers
 import requests
 import numpy as np
+from ipywidgets import GridspecLayout, VBox, Label, Layout
+import CageCavityCalc as CCC
 
 # ============================================================
 # Jmol-like element color palette
@@ -444,6 +449,118 @@ JMOL_COLORS = {
     'Os': '#266696',
 }
 
+class XYZData:
+    """
+    Object containing molecular coordinates and symbols extracted by molView.
+    Allows for geometric calculations without reloading data.
+    """
+    def __init__(self, symbols, positions):
+        self.symbols = np.array(symbols)
+        self.positions = np.array(positions, dtype=float)
+
+    def get_center_of_mass(self):
+        return np.mean(self.positions, axis=0)
+
+    def get_center_of_geometry(self):
+        """
+        Calculates the arithmetic mean of the atomic positions (Centroid).
+        """
+        return np.mean(self.positions, axis=0)
+        
+    def get_bounding_sphere(self, include_vdw=True, scale=1.0):
+        """
+        Calculates the center and radius of the bounding sphere using ASE.
+        scale: multiplication factor (e.g., 0.6 to match a reduced CPK style).
+        """
+        center = np.mean(self.positions, axis=0)
+        distances = np.linalg.norm(self.positions - center, axis=1)
+        
+        if include_vdw:
+            z_numbers = [atomic_numbers[s] for s in self.symbols]
+            radii = vdw_radii[z_numbers] * scale
+            radius = np.max(distances + radii)
+        else:
+            radius = np.max(distances)
+            
+        return center, radius
+
+    def get_cage_volume(self, grid_spacing=0.5, return_spheres=False):
+        """
+        Calculates the internal cavity volume of a molecular cage using CageCavityCalc.
+        
+        This method interfaces with the CageCavityCalc library by generating a 
+        temporary PDB file of the current structure. It can also retrieve the 
+        coordinates of the 'dummy atoms' (points) that fill the detected void.
+
+        Parameters
+        ----------
+        grid_spacing : float, optional
+            The resolution of the grid used for volume integration in Å. 
+            Smaller values provide higher precision (default: 0.5).
+        return_spheres : bool, optional
+            If True, returns both the volume and an ase.Atoms object 
+            containing the dummy atoms representing the cavity (default: False).
+
+        Returns
+        -------
+        volume : float or None
+            The calculated cavity volume in Å³. Returns None if the 
+            calculation fails.
+        cavity_atoms : ase.Atoms, optional
+            Returned only if return_spheres is True. An ASE Atoms object 
+            representing the internal void space.
+        """
+        import tempfile
+        import os
+        from ase import Atoms
+        from ase.io import read as ase_read, write as ase_write
+            
+        try:
+            from CageCavityCalc.CageCavityCalc import cavity
+            
+            # 1. Fichier temporaire pour la cage
+            with tempfile.NamedTemporaryFile(suffix=".pdb", delete=False) as tmp:
+                cage_tmp = tmp.name
+                temp_atoms = Atoms(symbols=self.symbols, positions=self.positions)
+                ase_write(cage_tmp, temp_atoms)
+
+            cav = cavity()
+            cav.read_file(cage_tmp)
+            cav.grid_spacing = float(grid_spacing)
+            cav.dummy_atom_radii = float(grid_spacing)
+            volume = cav.calculate_volume()
+            
+            cavity_atoms = None
+            if return_spheres:
+                with tempfile.NamedTemporaryFile(suffix=".pdb", delete=False) as tmp2:
+                    cav_tmp = tmp2.name
+                
+                cav.print_to_file(cav_tmp) 
+                
+                # --- NOUVEAU : Correction pour ASE (remplace ' D ' par ' H ') ---
+                with open(cav_tmp, 'r') as f:
+                    content = f.read().replace(' D ', ' H ') # On transforme les Dummy en Hydrogène
+                with open(cav_tmp, 'w') as f:
+                    f.write(content)
+                
+                # Maintenant ASE peut lire le fichier sans erreur
+                cavity_atoms = ase_read(cav_tmp)
+                
+                if os.path.exists(cav_tmp): 
+                    os.remove(cav_tmp)
+            
+            # ... (fin de la fonction) ...
+            if return_spheres:
+                return volume, cavity_atoms
+            return volume        
+            
+        except Exception as e:
+            print(f"Erreur CageCavityCalc : {e}")
+            return None
+        
+    def __repr__(self):
+        return f"<XYZData: {len(self.symbols)} atoms>"        
+        
 class molView:
     """
     Display molecular and crystal structures in py3Dmol from various sources:
@@ -489,6 +606,11 @@ class molView:
         Width of the viewer in pixels (default: 600).
     h : int, optional
         Height of the viewer in pixels (default: 400).
+    detect_BondOrders : bool, optional
+        If True (default) and input is XYZ, uses RDKit to perceive connectivity 
+        and bond orders (detects double/triple bonds). 
+        Requires the `rdkit` library. If False, fallback to standard 3Dmol 
+        distance-based single bonds.
 
     Examples
     --------
@@ -497,18 +619,111 @@ class molView:
     >>> molView(2244, source="cid")   # PubChem aspirin
     >>> from ase.build import molecule
     >>> molView(molecule("H2O"), source="ase")
+    >>> molView.view_grid([2244, 2519, 702], n_cols=3, source='cid', style='bs')
+    >>> molView.view_grid(xyzFiles, n_cols=3, source='file', style='bs', titles=titles, w=500, sync=True)
     """
 
-    def __init__(self, mol, source='file', style='bs', cpk_scale=0.6, w=600, h=400, supercell=(1, 1, 1)):
+    def __init__(self, mol, source='file', style='bs', cpk_scale=0.6, w=600, h=400,\
+                 supercell=(1, 1, 1), display_now=True, detect_BondOrders=True):
         self.mol = mol
         self.source = source
         self.style = style
         self.cpk_scale = cpk_scale
         self.w = w
         self.h = h
+        self.detect_bonds = detect_BondOrders # Store the option
         self.supercell = supercell
         self.v = py3Dmol.view(width=self.w, height=self.h) # Création du viewer une seule fois
-        self._load_and_display()
+        self._load_and_display(show=display_now)
+
+    @classmethod
+    def view_grid(cls, mol_list, n_cols=3, titles=None, **kwargs):
+        """
+        Displays a list of molecular structures in an interactive n_rows x n_cols grid.
+        
+        This method uses ipywidgets.GridspecLayout to organize multiple 3D viewers 
+        into a clean matrix. It automatically calculates the required number of rows 
+        based on the length of the input list.
+
+        Parameters
+        ----------
+        mol_list : list
+            A list containing the molecular data to visualize. Elements should 
+            match the expected 'mol' input for the class (paths, CIDs, strings, etc.).
+        n_cols : int, optional
+            Number of columns in the grid (default: 3).
+        titles : list of str, optional
+            Custom labels for each cell. If None, the string representation 
+            of the 'mol' input is used as the title.
+        **kwargs : dict
+            Additional arguments passed to the molView constructor:
+            - source : {'file', 'mol', 'cif', 'cid', 'rscb', 'ase'}
+            - style : {'bs', 'cpk', 'cartoon'}
+            - w : width of each individual viewer in pixels (default: 300)
+            - h : height of each individual viewer in pixels (default: 300)
+            - supercell : tuple (na, nb, nc) for crystal structures
+            - cpk_scale : scaling factor for space-filling spheres
+
+        Returns
+        -------
+        ipywidgets.GridspecLayout
+            A widget object containing the grid of molecular viewers.
+            
+        Examples
+        --------
+        >>> files = ["mol1.xyz", "mol2.xyz", "mol3.xyz", "mol4.xyz"]
+        >>> labels = ["Reactant", "TS", "Intermediate", "Product"]
+        >>> molView.view_grid(files, n_cols=2, titles=labels, source='file', w=400)
+        """
+        from ipywidgets import GridspecLayout, VBox, Label, Layout, Output
+        from IPython.display import display
+
+        # 1. Gestion des dimensions
+        w_cell = kwargs.get('w', 300)
+        h_cell = kwargs.get('h', 300)
+        
+        n_mol = len(mol_list)
+        n_rows = (n_mol + n_cols - 1) // n_cols # Calcul automatique du nombre de lignes
+        
+        # Largeur totale pour éviter le scroll horizontal
+        total_width = n_cols * (w_cell + 25) 
+        grid = GridspecLayout(n_rows, n_cols, layout=Layout(width=f'{total_width}px'))
+        
+        kwargs['w'] = w_cell
+        kwargs['h'] = h_cell
+        kwargs['display_now'] = False # Indispensable pour garder le contrôle
+
+        # 2. Remplissage de la grille
+        for i, mol in enumerate(mol_list):
+            row, col = i // n_cols, i % n_cols
+            t = titles[i] if titles and i < len(titles) else str(mol)
+
+            # Création de l'instance (charge les données et styles)
+            obj = cls(mol, **kwargs)
+            
+            # Widget de sortie pour capturer le rendu JS de py3Dmol
+            out = Output(layout=Layout(
+                width=f'{w_cell}px', 
+                height=f'{h_cell}px', 
+                overflow='hidden'
+            ))
+            
+            with out:
+                obj.v.zoomTo()
+                display(obj.v)
+            
+            # Assemblage Titre + Molécule dans la cellule
+            grid[row, col] = VBox([
+                Label(value=t, layout=Layout(display='flex', justify_content='center', width='100%')),
+                out
+            ], layout=Layout(
+                width=f'{w_cell + 15}px', 
+                align_items='center', 
+                overflow='hidden',
+                margin='5px'
+            ))
+            
+        return grid
 
     def _get_ase_atoms(self, content, fmt):
         """Helper to convert string content to ASE Atoms and apply supercell."""
@@ -641,7 +856,7 @@ class molView:
                 "toCap": True
                 })
 
-    def _load_and_display(self):
+    def _load_and_display(self, show):
 
         # --- 1. Handle External API Sources ---
         if self.source == 'cid':
@@ -679,6 +894,41 @@ class molView:
             content = self.mol
             fmt = 'xyz'
 
+        # --- EXTRACTION XYZData (Interne) ---
+        # On extrait les données ici avant toute modification (RDKit ou Supercell)
+        try:
+            if self.source == 'ase':
+                temp_atoms = self.mol
+            else:
+                temp_atoms = read(io.StringIO(content), format=fmt)
+            
+            self.data = XYZData(
+                symbols=temp_atoms.get_chemical_symbols(),
+                positions=temp_atoms.get_positions()
+            )
+        except Exception as e:
+            print(f"Note: Extraction des coordonnées impossible ({e})")
+            self.data = None            
+            
+        # --- Modern Bond Perception with RDKit ---
+        if self.detect_bonds and self.source in ['file', 'mol', 'xyz'] and fmt == 'xyz':
+            try:
+                from rdkit import Chem
+                from rdkit.Chem import rdDetermineBonds
+                
+                raw_mol = Chem.MolFromXYZBlock(content)
+                rdDetermineBonds.DetermineConnectivity(raw_mol)
+                rdDetermineBonds.DetermineBondOrders(raw_mol, charge=0)
+                
+                content = Chem.MolToMolBlock(raw_mol)
+                fmt = "sdf"
+            except ImportError:
+                # Silent skip if RDKit is missing
+                pass
+            except Exception as e:
+                # Small warning if the geometry is the problem
+                print(f"Note: Bond perception failed for {self.mol}. Falling back to standard XYZ.")
+                
         # --- 3. Rendering Logic ---
         if fmt == 'cif' or self.supercell != (1, 1, 1) or self.source == 'ase':
             # Create ASE atoms object
@@ -736,7 +986,7 @@ class molView:
         self._add_interactions()
         self.v.zoomTo()
         if self.source != 'cif': self.v.zoom(0.9)
-        self.v.show()
+        if show: self.v.show()
 
     def _apply_element_colors(self, color_table):
         """
@@ -765,7 +1015,7 @@ class molView:
 
         if self.style == 'bs':
             self.v.setStyle({'sphere': {'scale': 0.25, 'colorscheme': 'element'},
-                        'stick': {'radius': 0.15}})
+                        'stick': {'radius': 0.15, 'multibond': True}})
             self._apply_element_colors(JMOL_COLORS)
         elif self.style == 'cpk':
             self.v.setStyle({'sphere': {'scale': self.cpk_scale,
@@ -782,7 +1032,37 @@ class molView:
         reset_js = "function(atom,viewer) { viewer.removeAllLabels(); }"
         self.v.setHoverable({}, True, label_js, reset_js)
 
+    def show_bounding_sphere(self, color='gray', opacity=0.2, scale=1.0):
+        """Calculates and displays the VdW bounding sphere in one go."""
+        if self.data:
+            center, radius = self.data.get_bounding_sphere(include_vdw=True, scale=scale)
+            self.v.addSphere({
+                'center': {'x': float(center[0]), 'y': float(center[1]), 'z': float(center[2])},
+                'radius': float(radius),
+                'color': color,
+                'opacity': opacity
+            })
+            print(f"Bounding Sphere: Radius = {radius:.2f} Å | Volume = {(4/3)*np.pi*radius**3:.2f} Å³")
+        return self.v.show()
 
+    def show_cage_cavity(self, grid_spacing=0.5, color='cyan', opacity=0.5):
+        """Calculates cavity with CageCavityCalc and displays it as a single model."""
+        if self.data:
+            result = self.data.get_cage_volume(grid_spacing=grid_spacing, return_spheres=True)
+            if result:
+                volume, spheres = result
+                # Création du modèle optimisé pour éviter le gel du navigateur
+                xyz_cavity = f"{len(spheres)}\nCavity points\n"
+                for pos in spheres.get_positions():
+                    xyz_cavity += f"He {pos[0]:.3f} {pos[1]:.3f} {pos[2]:.3f}\n"
+                
+                self.v.addModel(xyz_cavity, "xyz")
+                # On applique le style au dernier modèle ajouté
+                self.v.setStyle({'model': -1}, {
+                    'sphere': {'radius': grid_spacing/2, 'color': color, 'opacity': opacity}
+                })
+                print(f"Cavity Volume (CageCavityCalc): {volume:.2f} Å³")
+        return self.v.show()
 ############################################################
 #                       easy_rdkit
 ############################################################
@@ -857,6 +1137,7 @@ class easy_rdkit():
                  show_hybrid: bool=False,
                  show_H: bool=False,
                  rep3D: bool=False,
+                 macrocycle: bool=False,
                  highlightAtoms: list=[],
                  legend: str=''
                 ):
@@ -871,6 +1152,7 @@ class easy_rdkit():
         - show_hybrid : ajoute l'état d'hybridation des atomes non terminaux (défaut : False)
         - show_H : ajoute les hydrogènes, considérés comme implicites par défaut (défaut : False)
         - rep3D : pseudo dessin 3D qui prend en compte les conflits stériques entre atomes (défaut : False). Active show_H à True 
+        - macrocycle: si vrai, active une meilleure représentation de macrocycles (par CoordGen)
         - highlightAtoms : liste des numéros des atomes qu'on souhaite surligner
         - legend : ajoute le contenu de la variable comme légende du dessin
         '''
@@ -878,6 +1160,7 @@ class easy_rdkit():
         from rdkit import Chem
         from rdkit.Chem import GetPeriodicTable, Draw
         from rdkit.Chem import AllChem
+        from rdkit.Chem import rdCoordGen
         import pandas as pd
         from IPython.display import SVG
         from PIL import Image
@@ -906,6 +1189,9 @@ class easy_rdkit():
             mol = Chem.AddHs(self.mol)
             self.mol = mol
             AllChem.EmbedMolecule(mol)
+
+        if macrocycle:
+            rdCoordGen.AddCoords(self.mol)
                 
         d2d = rdMolDraw2D.MolDraw2DSVG(size[0],size[1])
         
@@ -1594,3 +1880,453 @@ class SurveyApp:
             "<h4>✅ Dashboard summary saved in:</h4>"
             f"<code>{os.path.abspath(self.summary_dir)}</code>"
         ))
+
+############################################################
+#                       Absorption spectra
+############################################################
+
+import numpy as np
+import matplotlib.pyplot as plt
+import scipy.constants as sc
+
+class SpectrumSimulator:
+
+    def __init__(self, sigma_ev=0.3, plotWH=(12,8), \
+                 fontSize_axisText=14, fontSize_axisLabels=14, fontSize_legends=12,
+                 fontsize_peaks=12,
+                 colorS='#3e89be',colorVT='#469cd6'
+                ):
+        """
+        Initializes the spectrum simulator
+
+        Args:
+            - sigma_ev (float): Gaussian half-width at half-maximum in electron-volts (eV).
+                                Default is 0.3 eV (GaussView default is 0.4 eV).
+            - plotWH (tuple(int,int)): Width and Height of the matplotlib figures in inches. Default is (12,8).
+            - colorS: color of the simulated spectrum (default ='#3e89be')
+            - colorVT: color of the vertical transition line (default = '#469cd6')
+
+        Returns:
+            None: This method initializes the instance attributes.
+        Calculates:
+            - sigmanm = half-width of the Gaussian band, in nm
+        """
+        self.sigma_ev = sigma_ev
+        # Conversion constante eV -> nm sigma
+        self.ev2nm_const = (sc.h * sc.c) * 1e9 / sc.e
+        self.sigmanm = self.ev2nm_const / self.sigma_ev
+        self.plotW = plotWH[0]
+        self.plotH = plotWH[1]
+        self.colorS = colorS
+        self.colorVT = colorVT
+        self.fig = None
+        self.graph = None
+        self.fontSize_axisText = fontSize_axisText
+        self.fontSize_axisLabels = fontSize_axisLabels
+        self.fontSize_legends = fontSize_legends
+        self.fontsize_peaks = fontsize_peaks
+
+        print(f"sigma = {sigma_ev} eV -> sigmanm = {self.sigmanm:.1f} nm")
+    
+    def _initializePlot(self):
+        fig, graph = plt.subplots(figsize=(self.plotW,self.plotH))
+        plt.subplots_adjust(wspace=0)
+        plt.xticks(fontsize=self.fontSize_axisText,fontweight='bold')
+        plt.yticks(fontsize=self.fontSize_axisText,fontweight='bold')
+        return fig, graph
+    
+    def _calc_epsiG(self,lambdaX,lambdai,fi):
+        '''
+        calculates a Gaussian band shape around a vertical transition
+        input:
+            - lambdaX = wavelength variable, in nm
+            - lambdai = vertical excitation wavelength for i_th state, in nm
+            - fi = oscillator strength for state i (dimensionless)
+        output :
+            molar absorption coefficient, in L mol-1 cm-1
+        '''
+        import scipy.constants as sc
+        import numpy as np
+        c = sc.c*1e2 #cm-1
+        NA = sc.N_A #mol-1
+        me = sc.m_e*1000 #g
+        e = sc.e*sc.c*10 #elementary charge in esu 
+        pf = np.sqrt(np.pi)*e**2*NA/(1000*np.log(10)*c**2*me)
+        nubarX = 1e7 / lambdaX # nm to cm-1
+        nubari = 1e7 / lambdai
+        sigmabar = 1e7 / self.sigmanm
+        epsi = pf * (fi / sigmabar) * np.exp(-((nubarX - nubari)/sigmabar)**2)
+        return epsi
+    
+    def _Absorbance(self,eps,opl,cc):
+        '''
+        Calculates the Absorbance with the Beer-Lambert law
+        input:
+            - eps = molar absorption coefficient, in L mol-1 cm-1
+            - opl = optical path length, in cm
+            - cc = concentration of the attenuating species, in mol.L-1
+        output :
+            Absorbance, A (dimensionless)
+        '''
+        return eps*opl*cc
+    
+    def _sumStatesWithGf(self,wavel,wavelTAB,feTAB):
+        '''
+        '''
+        import numpy as np
+        sumInt = np.zeros(len(wavel))
+        for l in wavel:
+            for i in range(len(wavelTAB)):
+                sumInt[np.argwhere(l==wavel)[0][0]] += self._calc_epsiG(l,wavelTAB[i],feTAB[i])
+        return sumInt
+    
+    def _FindPeaks(self,sumInt,height,prom=1):
+        '''
+        Finds local maxima within the spectrum based on height and prominence.
+        
+        Prominence is crucial when switching between linear and logarithmic scales:
+        - In Linear mode: A large prominence (e.g., 1 to 1000) filters out noise.
+        - In Log mode: Data is compressed into a range of ~0 to 5. A large 
+          prominence will 'hide' real peaks. A smaller value (0.01 to 0.1) 
+          is required to detect shoulders and overlapping bands.
+
+        Input:
+            - sumInt: Array of intensities (Epsilon or Absorbance).
+            - height: Minimum height a peak must reach to be considered.
+            - prom: Required vertical distance between the peak and its lowest contour line.
+        
+        Returns:
+            - PeakIndex: Indices of the detected peaks in the wavelength array.
+            - PeakHeight: The intensity values at these peak positions.
+        '''
+        from scipy.signal import find_peaks
+        peaks = find_peaks(sumInt, height = height, threshold = None, distance = 1, prominence=prom)
+        PeakIndex = peaks[0]
+        # Check if 'peak_heights' exists in the properties dictionary
+        if 'peak_heights' in peaks[1]:
+            PeakHeight = peaks[1]['peak_heights']
+        else:
+            # If height=None, we extract values manually from the input data
+            PeakHeight = sumInt[PeakIndex]
+        return PeakIndex,PeakHeight
+
+    def _FindShoulders(self, data, tP):
+        '''
+        ###not working
+        Detects shoulders using the second derivative.
+        A shoulder appears as a peak in the negative second derivative.
+        
+        Note on scales:
+        - If ylog is True: data should be log10(sumInt) and tP should be log10(tP).
+          The second derivative on log data is much more sensitive to subtle 
+          inflection points in weak transitions (like n -> pi*).
+        - If ylog is False: data is linear sumInt and tP is linear.
+        
+        Returns:
+            - shoulder_idx (ndarray): Array of indices where shoulders were found.
+            - shoulder_heights (ndarray): The intensity values at these positions 
+              extracted from the input data.
+        '''
+        import numpy as np
+        # Calculate the second derivative (rate of change of the slope)
+        d2 = np.gradient(np.gradient(data))
+        
+        # We search for peaks in the opposite of the second derivative (-d2).
+        # A local maximum in -d2 corresponds to a point of maximum curvature 
+        # (inflection), which identifies a shoulder.
+        # We use a very low prominence threshold to capture subtle inflections.
+        shoulder_idx, _ = self._FindPeaks(-d2, height=None, prom=0.0001)
+        shoulder_heights = data[shoulder_idx]
+        print(shoulder_idx, shoulder_heights )
+        
+        return shoulder_idx, shoulder_heights 
+    
+    def _pickPeak(self,wavel,peaksIndex,peaksH,color,\
+                  shift=500,height=500,posAnnotation=200, ylog=False):
+        '''
+        Annotates peaks with a small vertical tick and the wavelength value.
+        Adjusts offsets based on whether the plot is in log10 scale or linear.
+        In log mode, peaksH must already be log10 values.
+        '''
+        s=shift
+        h=height
+        a=posAnnotation
+        
+
+        for i in range(len(peaksIndex)):
+            x = wavel[peaksIndex[i]]
+            y = peaksH[i]
+            if ylog:
+                # In log scale, we use multipliers to keep the same visual distance
+                # 1.1 means "10% above the peak"
+                # Adjust these factors based on your preference
+                y_s = y * 1.1
+                y_h = y * 1.3
+                y_a = y * 1.5
+                self.graph.vlines(x, y_s, y_h, colors=color, linestyles='solid')
+                self.graph.annotate(f"{x:.1f}",xy=(x,y),xytext=(x,y_a),rotation=90,size=self.fontsize_peaks,ha='center',va='bottom', color=color)
+            else:
+                # Classic linear offsets
+                self.graph.vlines(x, y+s, y+s+h, colors=color, linestyles='solid')
+                self.graph.annotate(f"{x:.1f}",xy=(x,y),xytext=(x,y+s+h+a),rotation=90,size=self.fontsize_peaks,ha='center',va='bottom',color=color)
+        return
+
+    def _setup_axes(self, lambdamin, lambdamax, ymax, ylabel="Absorbance"):
+            self.graph.set_xlabel('wavelength / nm', size=self.fontSize_axisLabels, fontweight='bold', color='#2f6b91')
+            self.graph.set_ylabel(ylabel, size=self.fontSize_axisLabels, fontweight='bold', color='#2f6b91')
+            self.graph.set_xlim(lambdamin, lambdamax)
+            self.graph.set_ylim(0, ymax)
+            self.graph.tick_params(axis='both', labelsize=self.fontSize_axisText,labelcolor='black')
+            for tick in self.graph.xaxis.get_majorticklabels(): tick.set_fontweight('bold') #it is both powerful
+                                                # (you can specify the type of a specific tick) and annoying
+            for tick in self.graph.yaxis.get_majorticklabels(): tick.set_fontweight('bold')
+    
+    def plotTDDFTSpectrum(self,wavel,sumInt,wavelTAB,feTAB,tP,ylog,labelSpectrum,colorS='#0000ff',colorT='#0000cf'):
+        
+        '''
+        Called by plotEps_lambda_TDDFT. Plots a single simulated UV-Vis spectrum, i.e. after
+        gaussian broadening, together with the TDDFT vertical transitions (i.e. plotted as lines)
+        
+        input:
+            - wavel = array of gaussian-broadened wavelengths, in nm
+            - sumInt = corresponding molar absorptiopn coefficients, in L. mol-1 cm-1
+            - wavelTAB = wavelength of TDDFT, e.g. discretized, transitions
+            - ylog = log plot of epsilon
+            - tP: threshold for finding the peaks
+            - feTAB = TDDFT oscillator strength for each transition of wavelTAB
+            - labelSpectrum = title for the spectrum
+        '''
+
+        # # --- DEBUG START ---
+        # if ylog:
+        #     print(f"\n--- DEBUG LOG MODE ---")
+        #     print(f"Max sumInt (linear): {np.max(sumInt):.2f}")
+        #     print(f"Max sumInt (log10):  {np.log10(max(np.max(sumInt), 1e-5)):.2f}")
+        # # --- DEBUG END ---
+        if ylog:
+            # Apply safety floor to the entire array
+            self.graph.set_yscale('log')
+            ymin_val = 1.0 # Epsilon = 1
+        else:
+            self.graph.set_yscale('linear')
+            ymin_val = 0
+            
+        # vertical lines
+        for i in range(len(wavelTAB)):
+            val_eps = self._calc_epsiG(wavelTAB[i],wavelTAB[i],feTAB[i])
+            self.graph.vlines(x=wavelTAB[i], ymin=ymin_val, ymax=max(val_eps, ymin_val), colors=colorT)
+
+        self.graph.plot(wavel,sumInt,linewidth=3,linestyle='-',color=colorS,label=labelSpectrum)
+
+        self.graph.legend(fontsize=self.fontSize_legends)
+        if ylog:
+            # Use log-transformed data and log-transformed threshold
+            # Clipping tP to 1e-5 ensures we don't take log of 0 or negative
+            tPlog = np.log10(max(tP, 1e-5))
+            # prom=0.05 allows detection of peaks that are close in log-magnitude
+            peaks, peaksH_log = self._FindPeaks(np.log10(np.clip(sumInt, 1e-5, None)), tPlog, prom=0.05)
+            peaksH = 10**peaksH_log
+            # shoulders, shouldersH_log = self._FindShoulders(np.log10(np.clip(sumInt, 1e-5, None)), tPlog)
+            # all_idx = np.concatenate((peaks, shoulders))
+            # allH_log = np.concatenate((peaksH_log, shouldersH_log))
+            # allH = 10**allH_log
+        else:
+            peaks, peaksH = self._FindPeaks(sumInt,tP)
+            # shoulders, shouldersH = self._FindShoulders(wavel, sumInt, tP)
+            # all_idx = np.concatenate((peaks, shoulders))
+            # allH = np.concatenate((peaksH, shouldersH))
+        self._pickPeak(wavel,peaks,peaksH,colorS,500,500,200,ylog)
+        
+    
+    def plotEps_lambda_TDDFT(self,datFile,lambdamin=200,lambdamax=800,\
+                             epsMax=None, titles=None, tP = 10, \
+                             ylog=False,\
+                             filename=None):
+        '''
+        Plots a TDDFT VUV simulated spectrum (vertical transitions and transitions summed with gaussian functions)
+        between lambdamin and lambdamax (sum of states done in the range [lambdamin-50, lambdamlax+50] nm)
+        input:
+            - datFile: list of pathway/names to files generated by 'GParser Gaussian.log -S'
+            - lambdamin, lambdamax: plot range
+            - epsMax: y axis graph limit
+            - titles: list of titles (1 per spectrum plot)
+            - tP: threshold for finding the peaks (default = 10 L. mol-1 cm-1)
+            - ylog: y logarithmic axis (default: False).
+            - save: saves in a png file (300 dpi) if True (default = False)
+            - filename: saves figure in a 300 dpi png file if not None (default), with filename=full pathway
+        '''
+        if self.fig is not None:
+            graph = self.graph
+            fig = self.fig
+            lambdamin = self.lambdamin
+            lambdamax = self.lambdamax
+            epsMax = self.epsMax
+        else:
+            fig, graph = self._initializePlot()
+
+        graph.set_prop_cycle(None)
+
+        if self.fig is None:
+            self.fig = fig
+            self.graph = graph
+            self.lambdamin = lambdamin
+            self.lambdamax = lambdamax
+            self.epsMax = epsMax
+            
+            graph.set_xlabel('wavelength / nm',size=self.fontSize_axisLabels,fontweight='bold',color='#2f6b91')
+
+            graph.set_xlim(lambdamin,lambdamax)
+
+            import matplotlib.ticker as ticker
+            graph.xaxis.set_major_locator(ticker.MultipleLocator(50)) # sets a tick for every integer multiple of the base (here 250) within the view interval
+        
+        istate,state,wavel,fe,SSq = np.genfromtxt(datFile,skip_header=1,dtype="<U20,<U20,float,float,<U20",unpack=True)
+        wavel = np.array(wavel)
+        fe = np.array(fe)
+        if wavel.size == 1:
+            wavel = np.array([wavel])
+            fe = np.array([fe])
+        wvl = np.arange(lambdamin-50,lambdamax+50,1)
+        sumInt = self._sumStatesWithGf(wvl,wavel,fe)
+        self.plotTDDFTSpectrum(wvl,sumInt,wavel,fe,tP,ylog,titles,self.colorS,self.colorVT)
+        if ylog:
+            graph.set_ylabel('log(molar absorption coefficient / L mol$^{-1}$ cm$^{-1})$',size=self.fontSize_axisLabels,fontweight='bold',color='#2f6b91')
+            graph.set_ylim(1, epsMax * 5 if epsMax else None)
+        else:
+            graph.set_yscale('linear')
+            graph.set_ylabel('molar absorption coefficient / L mol$^{-1}$ cm$^{-1}$',size=self.fontSize_axisLabels,fontweight='bold',color='#2f6b91')
+            graph.set_ylim(0, epsMax if epsMax else np.max(sumInt)*1.18)
+        if filename is not None: self.fig.savefig(filename, dpi=300, bbox_inches='tight')
+        plt.show()
+
+        peaksI, peaksH = self._FindPeaks(sumInt,tP)
+        print(f"{bg.LIGHTREDB}{titles}{bg.OFF}")
+        for i in range(len(peaksI)):
+            print(f"peak {i:3}. {wvl[peaksI[i]]:4} nm. epsilon_max = {peaksH[i]:.1f} L mol-1 cm-1")
+        if ylog:
+            print()
+            # prom=0.05 allows detection of peaks that are close in log-magnitude
+            peaksI, peaksH = self._FindPeaks(np.log10(np.clip(sumInt, 1e-5, None)), np.log10(max(tP, 1e-5)), prom=0.05)
+            for i in range(len(peaksI)):
+                print(f"peak {i:3}. {wvl[peaksI[i]]:4} nm. log10(epsilon_max) = {peaksH[i]:.1f}")
+
+    def plotAbs_lambda_TDDFT(self, datFiles=None, C0=1e-5, lambdamin=200, lambdamax=800, Amax=2.0,\
+                             titles=None, linestyles=[], annotateP=[], tP = 0.1,\
+                             resetColors=False,\
+                             filename=None):
+        '''
+        Plots a simulated TDDFT VUV absorbance spectrum (transitions summed with gaussian functions)
+        between lambdamin and lambdamax (sum of states done in the range [lambdamin-50, lambdamlax+50] nm)
+        input:
+            - datFiles: list of pathway/name to files generated by 'GParser Gaussian.log -S'
+            - C0: list of concentrations needed to calculate A = epsilon x l x c (in mol.L-1)
+            - lambdamin, lambdamax: plot range (x axis)
+            - Amax: y axis graph limit
+            - titles: list of titles (1 per spectrum plot)
+            - linestyles: list of line styles(default = "-", i.e. a continuous line)
+            - annotateP: list of Boolean (annotate lambda max True or False. Default = True)
+            - tP: threshold for finding the peaks (default = 0.1)
+            - resetColors (bool): If True, resets the matplotlib color cycle 
+                                 to the first color. This allows different series 
+                                 (e.g., gas phase vs. solvent) to share the same 
+                                 color coding for each molecule across multiple calls. Default: False
+            - save: saves in a png file (300 dpi) if True (default = False)
+            - filename: saves figure in a 300 dpi png file if not None (default), with filename=full pathway
+        '''
+
+        if self.fig is None:
+            fig, graph = self._initializePlot()
+            self.fig = fig
+            self.graph = graph
+            self.lambdamin = lambdamin
+            self.lambdamax = lambdamax
+            self.Amax = Amax
+        else:
+            graph = self.graph
+            fig = self.fig
+            lambdamin = self.lambdamin
+            lambdamax = self.lambdamax
+            Amax = self.Amax
+            if resetColors: graph.set_prop_cycle(None)
+            
+        if linestyles == []: linestyles = len(datFiles)*['-']
+        if annotateP == []: annotateP = len(datFiles)*[True]
+
+        self._setup_axes(lambdamin, lambdamax, self.Amax, ylabel="Absorbance")
+        
+        wvl = np.arange(lambdamin-50,lambdamax+50,1)
+        for f in range(len(datFiles)):
+            istate,state,wavel,fe,SSq = np.genfromtxt(datFiles[f],skip_header=1,dtype="<U20,<U20,float,float,<U20",unpack=True)
+            sumInt = self._sumStatesWithGf(wvl,wavel,fe)
+            Abs = self._Absorbance(sumInt,1,C0[f])
+            plot=self.graph.plot(wvl,Abs,linewidth=3,linestyle=linestyles[f],label=f"{titles[f]}. TDDFT ($C_0$={C0[f]} mol/L)")
+            peaksI, peaksH = self._FindPeaks(Abs,tP,0.01)
+            if (annotateP[f]): self._pickPeak(wvl,peaksI,peaksH,plot[0].get_color(),0.01,0.04,0.02)
+            print(f"{bg.LIGHTREDB}TDDFT. {titles[f]}{bg.OFF}")
+            for i in range(len(peaksI)):
+                print(f"peak {i:3}. {wvl[peaksI[i]]:4} nm. A = {peaksH[i]:.2f}")
+                
+        self.graph.legend(fontsize=self.fontSize_legends)
+
+        if filename is not None: self.fig.savefig(filename, dpi=300, bbox_inches='tight')
+
+        return
+    
+    def plotAbs_lambda_exp(self, csvFiles, C0, lambdamin=200, lambdamax=800,\
+                             Amax=2.0, titles=None, linestyles=[], annotateP=[], tP = 0.1,\
+                             filename=None):
+        '''
+        Plots an experimental VUV absorbance spectrum read from a csv file between lambdamin and lambdamax
+        input:
+            - superpose: False = plots a new graph, otherwise the plot is superposed to a previously created one
+                         (probably with plotAbs_lambda_TDDFT())
+            - csvfiles: list of pathway/name to experimental csvFiles (see examples for the format)
+            - C0: list of experimental concentrations, i.e. for each sample
+            - lambdamin, lambdamax: plot range (x axis)
+            - Amax: graph limit (y axis)
+            - titles: list of titles (1 per spectrum plot)
+            - linestyles: list of line styles(default = "--", i.e. a dashed line)
+            - annotateP: list of Boolean (annotate lambda max True or False. Default = True)
+            - tP: threshold for finding the peaks (default = 0.1)
+            - save: saves in a png file (300 dpi) if True (default = False)
+            - filename: saves figure in a 300 dpi png file if not None (default), with filename=full pathway
+        '''
+        if linestyles == []: linestyles = len(csvFiles)*['--']
+        if annotateP == []: annotateP = len(csvFiles)*[True]
+
+        if self.fig is not None:
+            graph = self.graph
+            fig = self.fig
+            lambdamin = self.lambdamin
+            lambdamax = self.lambdamax
+            Amax = self.Amax
+        else:
+            fig, graph = self._initializePlot()
+            
+        graph.set_prop_cycle(None)
+        
+        if self.fig is None:
+            self.graph = graph
+            self.fig = fig
+            self.lambdamin = lambdamin
+            self.lambdamax = lambdamax
+            self.Amax = Amax
+            
+        self._setup_axes(lambdamin, lambdamax, self.Amax, ylabel="Absorbance")
+                
+        for f in range(len(csvFiles)):
+            wavel,Abs = np.genfromtxt(csvFiles[f],skip_header=1,unpack=True,delimiter=";")
+            wavel *= 1e9
+            plot=graph.plot(wavel,Abs,linewidth=3,linestyle=linestyles[f],label=f"{titles[f]}. exp ($C_0$={C0[f]} mol/L)")
+            peaksI, peaksH = self._FindPeaks(Abs,tP,0.01)
+            if (annotateP[f]): self._pickPeak(wavel,peaksI,peaksH,plot[0].get_color(),0.01,0.04,0.02)
+            print(f"{bg.LIGHTREDB}exp. {titles[f]}{bg.OFF}")
+            for i in range(len(peaksI)):
+                print(f"peak {i:3}. {wavel[peaksI[i]]:4} nm. A = {peaksH[i]:.2f}")
+
+        graph.legend(fontsize=self.fontSize_legends)
+
+        if filename is not None: self.fig.savefig(filename, dpi=300, bbox_inches='tight')
+    
+        return
+        

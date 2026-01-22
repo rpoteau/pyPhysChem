@@ -29,15 +29,24 @@ MiscUnshared/**
 Feedback/**
 *dev/**
 
+0Research/**
+
 Bibliography/*
 
 # Files over 50mb
 
+DS4B-Slides/intro.odp
 ML-SavedModels/autoencoders/10000SMILES_df_train.pickle
 ML-SavedModels/autoencoders/10000SMILES_df_valid.pickle
 ML-SavedModels/autoencoders/10000SMILES_df_tokenized.pickle
 ML-data/Conv1D_functions.csv
+0Research/Spiropyran/BIPS/MD/MDProduction_TTC.datac
+0Research/Spiropyran/BIPS/MD/MDProduction_TTC.data
+0Research/ProjetCatal-Stella-Sterimol/sterimol-20250206/sterimoltests.zip
+0Research/ProjetCatal-Stella-Sterimol/Archive.tar.gz
 .git/lfs/objects/40/7a/407aebc7d374185e78932cee30fa582cfe347145f3afc9fb297b3d0842b1a8c8
+.git/objects/f9/02186737631c73d25c7236f33aa52c58d034e4
 .git/objects/pack/pack-9a157027d9f8c2be3d9b19138a137bef74035805.pack
+.git/objects/pack/pack-b11751de1fb5c6d779839d4ed716aaa085eedae6.pack
 ImageProcessing/data/square_data_preprocess.npy
 ImageProcessing/data/square_video.mp4
