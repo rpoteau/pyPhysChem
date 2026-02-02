@@ -2,6 +2,10 @@
 
 [<img width="700px" src="./icons_logos_banner/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2026.02.02. release 2.2.1**
+### Fixed
+- former `./config/img` and `./config/svg` folders, moved to to new `pyphyschemtools` project have been reintroduced in a new `icons_logos_banner` folder, mainly for displaying the banner in the markdown files
+
 ## **2026.02.02. release 2.2.0**
 ### Changed
 - `tools4pyPhysChem` is now an independent library
