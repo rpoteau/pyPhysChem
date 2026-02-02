@@ -1,6 +1,6 @@
 <a name="top"></a>
 
-[<img width="700px" src="./tools4pyPhysChem/resources/svg/pyPhysChemBanner.svg"/>](#top)
+[<img width="700px" src="./icons_logos_banner/svg/pyPhysChemBanner.svg"/>](#top)
 
 ## **2026.02.02. release 2.2.0**
 ### Changed

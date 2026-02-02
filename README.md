@@ -1,7 +1,7 @@
 <a name="top">
 
 <p style="text-align:center;"> 
-</a><img width="800px" src="./tools4pyPhysChem/resources/svg/pyPhysChemBanner.svg"/>
+</a><img width="800px" src="./icons_logos_banner/svg/pyPhysChemBanner.svg"/>
 </p>
 
 **Ce dépôt GitHub propose une collection de notebooks Jupyter conçus pour intégrer la programmation en Python dans l'enseignement de la chimie physique. Ces notebooks fournissent des exemples commentés et illustrés, couvrant des sujets tels que les dérivées et les intégrales, l'atome d'hydrogène et les représentations moléculaires. Ce dépôt inclut également des ressources pour des applications d'apprentissage automatique en chimie, comme les réseaux de neurones artificiels et les autoencodeurs. Pour utiliser ces outils, les utilisateurs sont invités à installer Jupyter ainsi qu'une distribution Python, Anaconda étant recommandée. Des instructions détaillées pour cloner le dépôt et exécuter les notebooks sont disponibles dans ce fichier README.md**
