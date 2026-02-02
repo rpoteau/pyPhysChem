@@ -1,6 +1,45 @@
 <a name="top"></a>
 
-[<img width="700px" src="./config/svg/pyPhysChemBanner.svg"/>](#top)
+[<img width="700px" src="./tools4pyPhysChem/resources/svg/pyPhysChemBanner.svg"/>](#top)
+
+## **2026.02.02. release 2.2.0**
+### Changed
+- `tools4pyPhysChem` is now an independent library
+    - it can (must!) be installed with pip, under the `pyphyschemtools` name:
+      ```bash
+      pip install pyphyschemtools
+      ```
+    - commands:
+      ```python
+      import pyphyschemtools as t4pPC
+      t4pPC.init()
+      ```
+- each jupyter notebook has been changed accordingly
+    - first cell replaced with:
+      ```python
+      import pyphyschemtools as t4pPC
+      from pyphyschemtools import fg, hl, bg, color
+      t4pPC.init()
+      %matplotlib inline
+      # the next commands are optional
+      #cancel the "last show-up" behaviour of Jupyter notebooks
+      from IPython.core.interactiveshell import InteractiveShell
+      InteractiveShell.ast_node_interactivity = "all"
+      ```
+    - final command, `vID.end(cwd0)` has been replaced with `t4pPC.end()`
+
+## **2026.01.25. unreleased version**
+### Added
+- **Self-Aware Resource Mapping**: The library now automatically finds its own CSS and SVG files using internal paths (`_PKG_PATH`).
+- **Session Timer**: Added an automatic timer that starts at `init()` and reports total duration at `end()`.
+
+### Changed (Major Architecture Update)
+- **Modularization**: The legacy standalone script `tools4pyPhysChem.py` has been replaced by a formal package structure in the `tools4pyPhysChem/` directory.
+- **Automated Resource Management**: Removed all manual path handling (`sys.path.append`, `cwd0`). The library now uses **self-aware mapping** (`_PKG_PATH`) to locate its own CSS and SVG resources internally.
+- **Unified Entry Point**: All tools (Spectra, ML, 3D, and UI) are now centralized under the `t4pPC` namespace via `__init__.py`.
+- **Simplified Notebook Setup**: 
+    - **Before**: 10 lines of code to handle paths and imports.
+    - **Now**: 2 lines (`import tools4pyPhysChem as t4pPC` and `t4pPC.init()`).
 
 ## **2025.10.07 unreleased version**
 ### added

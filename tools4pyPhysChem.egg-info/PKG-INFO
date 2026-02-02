@@ -1,0 +1,30 @@
+Metadata-Version: 2.4
+Name: tools4pyPhysChem
+Version: 2026.1.25
+Summary: Analysis and visualization tools for Physical Chemistry
+Author: Romuald POTEAU
+Author-email: romuald.poteau@utoulouse.fr
+Requires-Python: >=3.7
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: rdkit
+Requires-Dist: mendeleev
+Requires-Dist: ase
+Requires-Dist: py3Dmol
+Requires-Dist: bokeh
+Requires-Dist: requests
+Requires-Dist: tensorflow
+Requires-Dist: ipywidgets
+Requires-Dist: pyyaml
+Requires-Dist: wordcloud
+Requires-Dist: scikit-learn
+Requires-Dist: sentence-transformers
+Requires-Dist: umap-learn
+Requires-Dist: openpyxl
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

@@ -1,0 +1,59 @@
+<style>
+h1, h2, h3, h4, h5, h6 {
+  font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
+  font-weight: bold;
+}
+body {
+  font-family: Verdana, "DejaVu Sans", "Bitstream Vera Sans", Geneva, sans-serif;
+  font-weight: 200;
+}
+h1 {
+  border: 0 solid #333;
+  padding: 30px ;
+  color: white;
+  background: #b11d01;
+  text-align: center;
+}
+h2 {
+  border: 3px solid #333;
+  padding: 18px ;
+  color: #b11d01;
+  background: #ffffff;
+  text-align: center;
+}
+h3 {
+  border: 0 solid #333;
+  padding: 12px ;
+  color: #000000;
+  background: #c1c1c1;
+  text-align: left;
+}
+h4 {
+  border: 0 solid #333;
+  padding: 2px ;
+  color: #000000;
+  background: #d9fffc;
+  text-align: left;
+}
+h5 {
+  border: 1px solid #333;
+  padding: 2px ;
+  color: #000000;
+  background: #ffffff;
+  text-align: left;
+}
+.warn {    
+    background-color: #fcf2f2;
+    border-color: #dFb5b4;
+    border-left: 5px solid #dfb5b4;
+    padding: 0.5em;
+    font-weight: 200;
+    }
+.rq {    
+    background-color: #e2e2e2;
+    border-color: #969696;
+    border-left: 5px solid #969696;
+    padding: 0.5em;
+    font-weight: 200;
+    }
+</style>
