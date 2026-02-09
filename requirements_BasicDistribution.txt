@@ -45,6 +45,7 @@ plotly
 py3Dmol
 pyarrow
 pymatgen
+pyphyschemtools
 rdkit
 scikit-image
 scipy

@@ -4,9 +4,18 @@
 </a><img width="800px" src="./icons_logos_banner/svg/pyPhysChemBanner.svg"/>
 </p>
 
-**Ce dépôt GitHub propose une collection de notebooks Jupyter conçus pour intégrer la programmation en Python dans l'enseignement de la chimie physique. Ces notebooks fournissent des exemples commentés et illustrés, couvrant des sujets tels que les dérivées et les intégrales, l'atome d'hydrogène et les représentations moléculaires. Ce dépôt inclut également des ressources pour des applications d'apprentissage automatique en chimie, comme les réseaux de neurones artificiels et les autoencodeurs. Pour utiliser ces outils, les utilisateurs sont invités à installer Jupyter ainsi qu'une distribution Python, Anaconda étant recommandée. Des instructions détaillées pour cloner le dépôt et exécuter les notebooks sont disponibles dans ce fichier README.md**
+**Ce dépôt GitHub propose une collection de notebooks Jupyter conçus pour intégrer la programmation en Python dans l'enseignement de la chimie physique.**
 
-&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">**This GitHub repository offers a collection of Jupyter Notebooks designed to integrate Python programming into physical chemistry education. These notebooks provide commented and illustrated examples, covering topics such as derivatives and integrals, the hydrogen atom, and molecular representations. The repository also includes resources for machine learning applications in chemistry, like artificial neural networks and autoencoders. To utilize these materials, users are advised to install Jupyter and a Python distribution, with Anaconda being a recommended option. Detailed instructions for cloning the repository and running the notebooks are provided in the present README.md document**</span>
+**L'ensemble repose sur `pyphyschemtools`, une infrastructure logicielle modulaire conçue comme une "API d'API" qui simplifie l'accès aux bibliothèques standards de la chimie-physique et de la cheminformatique.**
+
+**Ces notebooks fournissent des exemples commentés et illustrés, couvrant des sujets tels que les dérivées et les intégrales, l'atome d'hydrogène et les représentations moléculaires. Ce dépôt inclut également des ressources pour des applications d'apprentissage automatique en chimie, comme les réseaux de neurones artificiels et les autoencodeurs. Pour utiliser ces outils, les utilisateurs sont invités à installer Jupyter ainsi qu'une distribution Python, Anaconda étant recommandée. Des instructions détaillées pour cloner le dépôt et exécuter les notebooks sont disponibles dans ce fichier README.md**
+
+&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">
+**This GitHub repository offers a collection of Jupyter Notebooks designed to integrate Python programming into physical chemistry education.**</span>
+
+<span style="color:blue; font-style: italic;">**The ecosystem is powered by `pyphyschemtools`, a modular software infrastructure designed as an "API of APIs" that unifies and simplifies access to standard physical chemistry and cheminformatics libraries.**</span>
+
+<span style="color:blue; font-style: italic;">**These notebooks provide commented and illustrated examples, covering topics such as derivatives and integrals, the hydrogen atom, and molecular representations. The repository also includes resources for machine learning applications in chemistry, like artificial neural networks and autoencoders. To utilize these materials, users are advised to install Jupyter and a Python distribution, with Anaconda being a recommended option. Detailed instructions for cloning the repository and running the notebooks are provided in the present README.md document**</span>
 
 <u>**Table des Matières**</u>
 
@@ -313,7 +322,9 @@ pyPhysChem étant un projet en évolution, il faut régulièrement vérifier qu'
     git pull origin main
     ```
 
-### Installation des bibliothèques requises / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Installation of the necessary libraries
+### Installation des bibliothèques requises / &#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Installation of the necessary libraries</span>
+
+#### Le fichier `requirements.txt` / <span style="color:blue; font-style: italic;">The `requirements.txt` file</span>
 
 Comme pour les autres installations, toutes les commandes s'exécutent à partir d'un terminal **Linux** avec l'environnement de base activé, ou bien depuis l'application Anaconda PowerShell Prompt sous **Windows**
 
@@ -333,8 +344,32 @@ Comme pour les autres installations, toutes les commandes s'exécutent à partir
     </span>
 - **Dépannage**: si une erreur d'installation se produit car une bibliothèque est indisponible pour votre OS, éditez le fichier `requirements4pyPhysChem-LastVersion.txt`, effacez la ligne correspondante, et relancez la commande d'installation
     <br>&#x1f1ec;&#x1f1e7;<span style="color:blue; font-style: italic;">**Troubleshooting**: If an installation error occurs because a library is unavailable for your OS, edit the `requirements4pyPhysChem-LastVersion.txt` file, delete the corresponding line, and rerun the installation command</span>
-- il ne vous reste plus qu'à vérifier qu'il n'y a pas de problèmes. La commande `pip check` doit renvoyer `No broken requirements found`
-    <br>&#x1f1ec;&#x1f1e7;<span style="color:blue; font-style: italic;">All that’s left is to check that there are no issues. The command `pip check` should return `No broken requirements found`</span>
+- il ne vous reste plus qu'à vérifier qu'il n'y a pas de problèmes. La commande `pip list` doit renvoyer la liste des bibliothèques, similaire à celles du fichier `requirements4pyPhysChem-LastVersion.txt`. S'il en manque c'est que vous avez eu des probl-mes d'installation.
+    <br>&#x1f1ec;&#x1f1e7;<span style="color:blue; font-style: italic;">All that’s left is to check that there are no issues. The `pip list` command should return a list of the installed libraries, almost identical to those of `requirements4pyPhysChem-LastVersion.txt`</span>
+
+#### Focus sur l'infrastructure `pyphyschemtools` / 
+
+La pièce maîtresse de ce dépôt est la bibliothèque `pyphyschemtools`. Elle est automatiquement installée via le fichier `requirements4pyPhysChem-LastVersion.txt`, mais peut également être installée indépendamment depuis PyPI pour vos propres projets :
+
+&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">The cornerstone of this repository is the `pyphyschemtools` library. While it is automatically installed via the `requirements4pyPhysChem-LastVersion.txt` file, it can also be installed independently from PyPI for your own projects:</span>
+
+
+```bash
+pip install pyphyschemtools
+```
+
+Une documentation complète est disponible en ligne. Elle détaille l'utilisation de chaque module, inclut des tutoriels et fournit les références techniques de l'infrastructure `pyphyschemtools`.
+
+&#x1f1ec;&#x1f1e7; <span style="color:blue; font-style: italic;">Comprehensive and documentation is available online. It details the use of each module, includes tutorials, and provides technical references for the `pyphyschemtools` infrastructure.</span>
+
+<p style="text-align:center;">
+    <a href="https://pypi.org/project/pyphyschemtools/">
+        <img src="https://img.shields.io/pypi/v/pyphyschemtools.svg" alt="PyPI version">
+    </a>
+    <a href="https://pyphyschemtools.readthedocs.io/">
+        <img src="https://readthedocs.org/projects/pyphyschemtools/badge/?version=latest" alt="Documentation Status">
+    </a>
+</p>
 
 [&#x1F51D; top &#x1F51D;](#top)
 

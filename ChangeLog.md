@@ -2,6 +2,15 @@
 
 [<img width="700px" src="./icons_logos_banner/svg/pyPhysChemBanner.svg"/>](#top)
 
+## **2026.02.09 [2.2.2]** "requirements & README"
+
+### Added
+- **Infrastructure**: Full integration of the `pyphyschemtools` library as the core dependency via `requirements4pyPhysChem-LastVersion.txt`.
+
+### Changed
+- Updated the main `README.md` (English/French) to reflect the use of the `pyphyschemtools` API as the primary engine for spectral calculations and utilities.
+- Improved the "Library Installation" section to include `pyphyschemtools` API management via PyPI, with a link toward its own documentation
+
 ## **2026.02.02. release 2.2.1**
 ### Fixed
 - former `./config/img` and `./config/svg` folders, moved to to new `pyphyschemtools` project have been reintroduced in a new `icons_logos_banner` folder, mainly for displaying the banner in the markdown files

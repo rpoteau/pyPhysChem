@@ -187,6 +187,7 @@ Pygments
 pymatgen
 pymatgen-analysis-diffusion
 pyparsing
+pyphyschemtools
 pystow
 pytest
 python-dateutil
