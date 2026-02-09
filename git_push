@@ -10,6 +10,50 @@ else
    echo "exit"
    exit 1
 fi
+
+# --- SEMANTIC VERSIONING ENGINE ---
+# Retrieve the latest tag from git history
+last_tag=$(git describe --tags --abbrev=0 2>/dev/null | xargs || echo "2.3.0")
+echo $last_tag
+#
+# Strip 'v' prefix if exists
+clean_version=$(echo "$last_tag" | sed 's/^v//')
+
+# Extract major, minor, and patch components
+major=$(echo $clean_version | cut -d. -f1)
+minor=$(echo $clean_version | cut -d. -f2)
+patch=$(echo $clean_version | cut -d. -f3)
+
+echo "📈 Last version detected: $clean_version"
+
+# Prompt the user to choose the increment type
+echo "What type of update is this?"
+select opt in "Patch (x.x.X)" "Minor (x.X.0)" "Major (X.0.0)" "Skip Tagging"; do
+    case $opt in
+        "Patch (x.x.X)")
+            new_version="$major.$minor.$((patch + 1))"
+            break
+            ;;
+        "Minor (x.X.0)")
+            new_version="$major.$((minor + 1)).0"
+            break
+            ;;
+        "Major (X.0.0)")
+            new_version="$((major + 1)).0.0"
+            break
+            ;;
+        "Skip Tagging")
+            new_version=""
+            break
+            ;;
+        *) echo "Invalid option $REPLY";;
+    esac
+done
+
+if [ -n "$new_version" ]; then
+    echo "🚀 Next version: $new_version"
+fi
+
 echo "---------------------------------------------------------------"
 echo "First finding if there are large files in [sub]folders"
 find . -size +49M -print | sed 's|^\./||' > .LargeFiles
@@ -26,12 +70,22 @@ while true; do
     case $yn in
         [Yy]* )
             echo "---------------------------------------------------------------"
-            echo "Now processing git add > commit > push"
             git add --all
             git status
             git commit -m "$1"
-	    git push
-	    break
+            
+            if [ -n "$new_version" ]; then
+                # Create a local tag with the commit message
+                git tag -a "$new_version" -m "$1"
+                # Push both the branch and the specific tag to origin
+                git push origin main
+                git push origin "$new_version"
+                echo "✅ Successfully pushed $new_version to GitHub"
+            else
+                git push origin main
+                echo "✅ Pushed to main without new tag"
+            fi
+            break
             ;;
         [Nn]* )
             exit

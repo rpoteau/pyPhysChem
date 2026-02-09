@@ -2,6 +2,16 @@
 
 [<img width="700px" src="./icons_logos_banner/svg/pyPhysChemBanner.svg"/>](#top)
 
+All notable changes to this project will be documented in this file.
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## **2026.02.09 [2.2.3]** "git_push"
+
+### Changed
+- **Management**: Updated `git_push` automation script to support English technical comments and automated Semantic Versioning (Major/Minor/Patch).
+- **Branding**: Unified versioning format across GitHub and Zenodo by removing the 'v' prefix.
+
 ## **2026.02.09 [2.2.2]** "requirements & README"
 
 ### Added
