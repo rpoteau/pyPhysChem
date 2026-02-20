@@ -6,6 +6,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## **2026.02.19** "pyphyschemtools paradigm fixes & shap initjs"
+
+### Fixed
+* Migrated the core timing reference functionss from `vID.chrono` to `t4pPC.chrono` across all the following Jupyter Notebooks (executed global string replacement to ensure compatibility with the updated `pyphyschemtools`).
+    - `DS4B-BasicsOfANN.ipynb`
+    - `DS4B-Appendix.ipynb`
+    - `DS4B-CO2_solubility-ANN.ipynb`
+    - `DS4B-Iris3.ipynb`
+    - `DS4B-IrisUML.ipynb`
+    - `ML-1DCNN.ipynb`
+    - `ML-Autoencoders.ipynb`
+    - `ML-RNN.ipynb`
+    - `ML-TCCM-HW1-solution.ipynb`
+* **javascript rendering issue with `shap.plots.force` in `DS4B-Iris4.ipynb`**:force plots failed to display in Jupyter Notebooks due to improper JavaScript initialization and the necessity to introduce `display`. 
+
 ## **2026.02.09 [2.2.3]** "git_push"
 
 ### Changed
