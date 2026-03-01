@@ -15,14 +15,18 @@ def setup_environment(ML=False):
 
         # 2. Machine Learning
         if ML:
-            ml_dict = {"keras": "keras", "tensorflow": "tensorflow", "sklearn": "scikit-learn", "shap": "shap"}
+            ml_dict = {"keras": "keras",
+                       "tensorflow": "tensorflow",
+                       "sklearn": "scikit-learn",
+                       "shap": "shap"}
             to_install = []
             for imp_name, ins_name in ml_dict.items():
+                print(imp_name, ins_name)
                 try:
                     __import__(imp_name)
                 except ImportError:
                     to_install.append(ins_name)
-            
+            print(f"{to_install=")
             if to_install:
                 print(f"🧠 Installing ML packages ({', '.join(to_install)})... ", end="", flush=True)
                 subprocess.check_call([sys.executable, "-m", "pip", "install", "-q"] + to_install)
@@ -31,9 +35,9 @@ def setup_environment(ML=False):
                 print("✅ ML packages already available.")
 
         # 3. Colab specific
-        # On utilise une méthode plus sûre pour détecter Colab sans get_ipython() qui peut bugger
         if 'google.colab' in sys.modules:
             repo_name = "pyPhysChem"
+            print("✅ Google Colab setup.")
             if os.path.basename(os.getcwd()) != repo_name:
                 if not os.path.exists(repo_name):
                     print(f"☁️ Fetching {repo_name} repository... ", end="", flush=True)
