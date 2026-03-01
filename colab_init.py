@@ -38,7 +38,7 @@ def setup_environment(ML=False):
         # 3. Colab specific
         if 'google.colab' in sys.modules:
             repo_name = "pyPhysChem"
-            print("✅ Google Colab setup.")
+            print("📦 Google Colab setup.")
             if os.path.basename(os.getcwd()) != repo_name:
                 if not os.path.exists(repo_name):
                     print(f"☁️ Fetching {repo_name} repository... ", end="", flush=True)
@@ -50,7 +50,7 @@ def setup_environment(ML=False):
                 sys.path.append(os.getcwd())
 
         print("🚀 Environment is ready.")
-        return True # On confirme que tout s'est bien passé
+        return True
 
     except Exception as e:
         print(f"\n❌ Setup Error: {e}")
