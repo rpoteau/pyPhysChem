@@ -29,7 +29,7 @@ def setup_environment(ML=False):
                     to_install.append(ins_name)
             print(f"{to_install=}")
             if to_install:
-                print(f"🧠 Installing ML packages ({', '.join(to_install)})... ", end="", flush=True)
+                print(f"🧠 Installing ML Packages ({', '.join(to_install)})... ", end="", flush=True)
                 subprocess.check_call([sys.executable, "-m", "pip", "install", "-q"] + to_install)
                 print("Done! ✅")
             else:
