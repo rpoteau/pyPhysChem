@@ -4,6 +4,7 @@ import subprocess
 
 def setup_environment(ML=False):
     try:
+        print("toto")
         # 1. pyphyschemtools
         try:
             import pyphyschemtools
