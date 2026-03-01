@@ -27,7 +27,7 @@ def setup_environment(ML=False):
                     __import__(imp_name)
                 except ImportError:
                     to_install.append(ins_name)
-            print(f"{to_install=")
+            print(f"{to_install=}")
             if to_install:
                 print(f"🧠 Installing ML packages ({', '.join(to_install)})... ", end="", flush=True)
                 subprocess.check_call([sys.executable, "-m", "pip", "install", "-q"] + to_install)
