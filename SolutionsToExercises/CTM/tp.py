@@ -1,6 +1,7 @@
 print("# Question 1")
 
 # il faut d'abord faire tourner le code qui définit la classe, voir paragraphe précédent
+from pyphyschemtools import TableauPeriodique
 tp = TableauPeriodique()
 tp.afficher()
 

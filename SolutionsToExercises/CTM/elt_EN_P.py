@@ -1,3 +1,6 @@
+from pyphyschemtools import TableauPeriodique
+tp = TableauPeriodique()
+
 print("## Question 1")
 from matplotlib import pyplot as plt
 Z = tp.elements["atomic_number"]

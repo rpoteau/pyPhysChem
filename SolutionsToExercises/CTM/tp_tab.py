@@ -1,4 +1,5 @@
 # création d'une instance Tableau Périodique
+from pyphyschemtools import TableauPeriodique # au cas où vous ne l'auriez pas fait avant
 tp = TableauPeriodique()
 
 # affichage du tableau "elements" qui est une des données associées au tableau périodique "tp"
