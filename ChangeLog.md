@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## **2026.03.02 [2.2.6]** "cargese"
+## **2026.03.02 [2.2.6 > 2.2.8]** "cargese"
 
 ### Added `OrNano2026.ipynb` notebook: 🧪 Machine Learning in Analytical Chemistry
 A comprehensive introductory notebook on Machine Learning (ML) applied to analytical chemistry (Wine Quality/Classification dataset).
