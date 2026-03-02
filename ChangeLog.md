@@ -6,6 +6,35 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## **2026.03.02 [2.2.6]** "cargese"
+
+### Added `OrNano2026.ipynb` notebook: 🧪 Machine Learning in Analytical Chemistry
+A comprehensive introductory notebook on Machine Learning (ML) applied to analytical chemistry (Wine Quality/Classification dataset).
+
+* **Transferable Framework**: Designed as a modular template applicable to various physicochemical datasets (spectroscopy, chromatography, etc.).
+* **Google Colab Ready**: Fully compatible with the new cloud initialization system for instant execution without local setup.
+* **Core Curriculum**:
+    * **Exploratory Data Analysis (EDA)**: Correlation matrices and data distribution.
+    * **Dimensionality Reduction**: Principal Component Analysis (PCA) to visualize chemical variance and clustering.
+    * **White-Box Modeling**: Implementation of **Decision Trees** for transparent, rule-based chemical classification.
+    * **Non-Linear Modeling**: Implementation of **XGBoost** for high-accuracy classification.
+    * **Advanced Interpretability**: Full integration of **SHAP (Shapley Additive Explanations)** to deconstruct XGBoost model decisions into physical chemical influences.
+
+## **2026.03.02 [2.2.5]** "Google Colab"
+
+### [2.2.5] - 2026-03-02
+
+#### 🚀 Environment & Infrastructure
+* **Cloud-Ready Environment Bootstrap**: Implementation of a new automated setup system (`colab_init.py`) designed for seamless switching between Google Colab and Local environments.
+* **Dynamic Dependency Management**: Integrated a remote initialization script to handle automatic installation of `pyphyschemtools` and the Machine Learning stack (TensorFlow, Keras, Scikit-Learn, SHAP).
+* **Notebook Integration**: Deployment of the new setup cell and "README first" User Interface component in:
+    * `PPCL.ipynb`
+    * `ChimieTheoEtModelisation.ipynb`
+
+#### 📖 Documentation & User Experience (UX)
+* **Interactive Onboarding**: Added a dedicated guide [**Colab vs Local**](./colab_vs_local.md) to help users choose the best execution mode.
+* **One-Click Deployment**: Added an official **"Open in Colab" badge** to the notebook header, allowing users to trigger a cloud session instantly from the GitHub repository.
+
 ## **2026.02.19** "pyphyschemtools paradigm fixes & shap initjs"
 
 ### Fixed
