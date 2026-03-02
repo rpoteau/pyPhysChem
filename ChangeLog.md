@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## **2026.03.02 [2.2.6 > 2.2.8]** "cargese"
+## **2026.03.02 [2.2.6 > 2.2.10]** "cargese + Add display_pdf function"
 
 ### Added `OrNano2026.ipynb` notebook: 🧪 Machine Learning in Analytical Chemistry
 A comprehensive introductory notebook on Machine Learning (ML) applied to analytical chemistry (Wine Quality/Classification dataset).
@@ -19,6 +19,12 @@ A comprehensive introductory notebook on Machine Learning (ML) applied to analyt
     * **White-Box Modeling**: Implementation of **Decision Trees** for transparent, rule-based chemical classification.
     * **Non-Linear Modeling**: Implementation of **XGBoost** for high-accuracy classification.
     * **Advanced Interpretability**: Full integration of **SHAP (Shapley Additive Explanations)** to deconstruct XGBoost model decisions into physical chemical influences.
+
+### Added 
+* **Hybrid PDF Rendering**: Added `display_pdf()` to the `colab_init.py` core utility script.
+    * **Smart Detection**: Automatically switches between local file rendering and Google Docs Viewer for Colab compatibility.
+    * **Remote Fallback**: Ensures slides are accessible via GitHub even if local files are missing.
+* **Unified Setup**: Consolidated environment initialization and document visualization into a single remote-loadable script.
 
 ## **2026.03.02 [2.2.5]** "Google Colab"
 
