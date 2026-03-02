@@ -93,18 +93,45 @@ while true; do
             git add --all
             git status
             git commit -m "$1"
-            
+
             if [ -n "$new_version" ]; then
-                # Create a local tag with the commit message
+                # 1. Créer le tag local
                 git tag -a "$new_version" -m "$1"
-                # Push both the branch and the specific tag to origin
+                
+                # 2. Pousser la branche et le tag
                 git push origin main
                 git push origin "$new_version"
+                
+                # 3. CRÉER LA RELEASE GITHUB AUTOMATIQUEMENT
+                # On utilise le message de commit ($1) comme titre et contenu de la release
+                if command -v gh >/dev/null 2>&1; then
+                    echo -e "${CYAN}📦 Creating GitHub Release $new_version...${NC}"
+                    gh release create "$new_version" --title "$new_version - $1" --notes "Release generated from commit: $1"
+                    echo -e "${BGREEN}✅ Release $new_version created on GitHub!${NC}"
+                else
+                    echo -e "${YELLOW}⚠️  GitHub CLI (gh) not found. Skipping Release creation (Tag pushed).${NC}"
+                fi
+                
                 echo -e "${BGREEN}✅ Successfully pushed $new_version to GitHub${NC}"
             else
                 git push origin main
                 echo -e "${GREEN}✅ Pushed to main without new tag${NC}"
             fi
+	    # --- FINAL SUMMARY ---
+            echo "---------------------------------------------------------------"
+            if [ -n "$new_version" ]; then
+                echo -e "${BGREEN}🚀 PUBLISHED VERSION: $new_version${NC}"
+                echo -e "${CYAN}📌 Tag & GitHub Release are active.${NC}"
+                # If 'gh' is used, we can get the URL of the release
+                if command -v gh >/dev/null 2>&1; then
+                    release_url=$(gh release view "$new_version" --json url -q .url)
+                    echo -e "🔗 View it here: ${BOLD}$release_url${NC}"
+                fi
+            else
+                echo -e "${YELLOW}💾 CODE SYNCHRONIZED (No new version)${NC}"
+                echo -e "Current version remains: ${BCYAN}$clean_version${NC}"
+            fi
+            echo "---------------------------------------------------------------"
             break
             ;;
         [Nn]* )
