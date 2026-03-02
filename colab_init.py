@@ -4,7 +4,6 @@ import subprocess
 
 def setup_environment(ML=False):
     try:
-        print("toto")
         # 1. pyphyschemtools
         try:
             import pyphyschemtools
@@ -16,13 +15,15 @@ def setup_environment(ML=False):
 
         # 2. Machine Learning
         if ML:
-            ml_dict = {"keras": "keras",
-                       "tensorflow": "tensorflow",
+            ml_dict = {"tensorflow": "tensorflow",
+                       "keras": "keras",
                        "sklearn": "scikit-learn",
-                       "shap": "shap"}
+                       "pandas": "pandas",
+                       "seaborn": "seaborn",
+                       "shap": "shap",
+                      }
             to_install = []
             for imp_name, ins_name in ml_dict.items():
-                print(imp_name, ins_name)
                 try:
                     __import__(imp_name)
                 except ImportError:
