@@ -1,0 +1,22 @@
+<div style="padding:15px; border:2px solid #6a0000; border-radius:10px; background-color: #fff5f5; font-family: sans-serif;">
+    <div style="color:#6a0000; margin-top:0; font-weight:bold;">💡 Analyse de la séparabilité</div>
+    <p>L'observation des courbes de densité (KDE plots) permet d'identifier immédiatement le potentiel prédictif de chaque descripteur :</p>
+    
+    <ul>
+        <li>
+            <b style="color:#2e7d32;">Séparateurs potentiels (Proxys de couleur) :</b> 
+            <b>Chlorides</b>, <b>Total Sulfur Dioxide</b>, <b>Volatile Acidity</b>. 
+	    Ici, les sommets des courbes sont distants (faible recouvrement) : ce sont d'excellents candidats pour classer les vins selon leur couleur. À noter le fort recouvrement partiel du descripteur <b>residual sugar</b>. C'est en partie un marqueur de la couleur, compte tenu du caractère liquoreux de nombreux vins blancs.
+        </li>
+        <br>
+        <li>
+            <b style="color:#d32f2f;">Mauvais séparateurs :</b> 
+            <b>pH</b>, <b>Alcohol</b>,...
+            Les courbes sont presque l'une sur l'autre (fort recouvrement). Un vin à 12% d'alcool peut aussi bien être rouge que blanc ; l'alcool seul ne permet pas de trancher.
+        </li>
+    </ul>
+    
+    <p style="font-weight:bold; border-top: 1px solid #6a0000; pt: 10px; margin-top: 10px;">
+        Conclusion : Un bon modèle de Machine Learning devra s'appuyer prioritairement sur les variables présentant le plus faible recouvrement pour minimiser l'erreur de classification.
+    </p>
+</div>

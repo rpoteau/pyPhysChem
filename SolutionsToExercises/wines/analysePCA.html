@@ -1,0 +1,46 @@
+<div style="padding:15px; border:2px solid #6a0000; border-radius:10px; background-color: #fff5f5; font-family: sans-serif; line-height: 1.5;">
+    <div style="color:#6a0000; margin-top:0; font-weight:bold; font-size: 1.1em; margin-bottom: 15px;">
+        💡 Interprétation des Axes (PCA)
+    </div>
+
+    <p style="margin-bottom: 10px;">
+    Le signe d'une composante PCA montre une "force d'attraction" (un vecteur) de cette composante vers un côté de l'axe.
+    </p>
+    <p style="margin-bottom: 10px;">
+        <b>L'axe 1 (PC1) est le marqueur de la couleur</b>, puisqu'il y a séparation rouge/blanc selon cet axe :
+    </p>
+    
+    <ul style="margin-top: 0;">
+        <li style="margin-bottom: 15px;">
+            <b style="color:#0277bd;">Côté Positif — Descripteurs typiques des vins Blancs :</b>
+            <ul style="margin-top: 8px;">
+                <li style="margin-bottom: 5px;"><b>Total SO2 (+0.49)</b> et <b>Free SO2 (+0.43)</b> : les vins blancs ne bénéficient pas des tanins (polyphénols) des peaux de raisin, qui sont des antioxydants naturels. Pour éviter qu'un vin blanc ne brunisse ou ne s'oxyde, l'œnologue est obligé d'ajouter plus de sulfites.</li>
+                <li><b>Sucre résiduel (+0.34)</b> : on le retrouve souvent associé aux blancs dans ces jeux de données, car les vins liquoreux ou demi-secs sont quasi exclusivement des blancs.</li>
+            </ul>
+        </li>
+        <li style="margin-bottom: 5px;">
+            <b style="color:#800020;">Côté Négatif — Descripteurs typiques des vins Rouges :</b>
+            <ul style="margin-top: 8px;">
+                <li style="margin-bottom: 5px;"><b>Volatile Acidity (-0.38)</b> : les rouges subissent souvent des macérations plus longues et une fermentation malolactique systématique. Ces processus augmentent naturellement l'acidité volatile (essentiellement l'acide acétique) par rapport aux blancs, qui sont filtrés plus rapidement.</li>
+                <li style="margin-bottom: 5px;"><b>Chlorides (-0.29)</b> : témoignent de l'extraction minérale plus intense lors de la macération des peaux, spécifique au rouge.</li>
+                <li style="margin-bottom: 5px;"><b>Sulphates (-0.29)</b> : attention à ne pas confondre avec les sulfites (SO₂). Les sulfates dans le rouge proviennent souvent de l'extraction des matières solides (peaux, pépins) et parfois de l'usage de sulfate de cuivre à la vigne.</li>
+                <li><b>Fixed Acidity (-0.24)</b> : c'est l'ensemble des acides du vin : tartrique, malique, citrique, succinique et lactique, l'acide tartrique étant le plus important. Il est en effet souvent plus présent dans les vins rouges.</li>
+            </ul>
+        </li>
+    </ul>
+
+    <p style="margin-bottom: 10px; margin-top: 20px;">
+        <b>L'axe 2 est dominé par deux variables opposées : Density et Alcohol</b>
+    </p>
+    
+    <ul style="margin-top: 0; margin-bottom: 0;">
+        <li style="margin-bottom: 15px;">
+            <b style="color:#0277bd;">Côté Positif — Le "Lourd" :</b> <b>Density (+0.58)</b>, <b>Residual Sugar (+0.33)</b>, <b>Fixed Acidity (+0.34)</b>.<br>
+            Plus un vin monte sur l'axe 2, plus il est "dense" et chargé en extraits secs. On y trouve des vins qui ont soit beaucoup de sucre résiduel, soit une forte acidité fixe, ce qui augmente la densité physique du liquide.
+        </li>
+        <li>
+            <b style="color:#800020;">Côté Négatif — Le "Léger/Alcooleux" :</b> <b>Alcohol (-0.46)</b>.<br>
+	    C'est l'opposé mathématique de la densité (l'éthanol est moins dense que l'eau, 0.789 g/cm<sup>3</sup> vs 1 g/cm<sup>3</sup>). Un vin situé en bas de l'axe 2 est un vin avec un fort degré alcoolique et moins de corps/sucre.
+        </li>
+    </ul>
+</div>

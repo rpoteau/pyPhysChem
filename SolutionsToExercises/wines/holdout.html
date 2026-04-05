@@ -1,0 +1,20 @@
+<div style="padding:15px; border:2px solid #6a0000; border-radius:10px; background-color: #fff5f5; font-family: sans-serif; line-height: 1.5;">
+    <div style="color:#6a0000; margin-top:0; font-weight:bold; font-size: 1.1em; margin-bottom: 15px;">
+        💡 Corrigé : Le modèle qui apprend mal
+    </div>
+
+    <p style="margin-bottom: 5px; color:#800020;">
+        <b>1. Trouvez l'erreur logique dans cette ligne de code. Quelle est la correction à apporter ?</b>
+    </p>
+    <p style="margin-top: 0; margin-bottom: 20px; padding-left: 15px; border-left: 3px solid #800020;">
+        L'erreur se situe au niveau de l'argument <code>test_size=0.80</code>.<br>
+        <b>Correction :</b> Il faut inverser la proportion et écrire <b><code>test_size=0.20</code></b> (ce qui allouera automatiquement 80% des données à l'entraînement, et 20% au test).
+    </p>
+    
+    <p style="margin-bottom: 5px; color:#0277bd;">
+        <b>2. Expliquez pourquoi cette erreur provoque de très mauvaises performances pour l'algorithme (Que se passe-t-il au niveau de l'apprentissage ?)</b>
+    </p>
+    <p style="margin-top: 0; margin-bottom: 0; padding-left: 15px; border-left: 3px solid #0277bd;">
+        En mettant 0.80, l'étudiant a réservé 80% des données pour l'évaluation et seulement 20% pour l'entraînement. L'algorithme n'a tout simplement pas vu assez d'exemples pour comprendre la "chimie" du vin : c'est ce qu'on appelle un phénomène de <b>sous-apprentissage</b> (ou <i>underfitting</i>). N'ayant pas pu dégager de règles mathématiques fiables lors de son entraînement, il est incapable de généraliser et échoue à généraliser aux 80% restants.
+    </p>
+</div>
