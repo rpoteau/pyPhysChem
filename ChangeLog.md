@@ -6,6 +6,12 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## **2026.04.12 [2.2.14]** "AuNP RDF data fixed"
+
+### Fixed
+
+- `ML-data/RDFs/simulRDF/` data simulated again (data augmentation was wrong: same signal was reproduced 20 times!)
+
 ## **2026.04.12 [2.2.13]** "Cargese. Lecture"
 
 ### Added
