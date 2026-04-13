@@ -29,6 +29,12 @@ authors:
       LPCNO (INSA, CNRS UMR 5215, UT3, Université de
       Toulouse)
     orcid: 'https://orcid.org/0009-0007-7221-2781'
+  - given-names: Sara
+    family-names: Mokhtari
+    email: smokhtari@insa-toulouse.fr
+    affiliation: >-
+      LPCNO (INSA, CNRS UMR 5215, UT3, Université de
+      Toulouse)
   - given-names: Iann C.
     family-names: Gerber
     email: iann.gerber@insa-toulouse.fr
@@ -66,7 +72,7 @@ keywords:
   - Computer Algebra System
   - Machine Learning
   - Data analyzis
-  - XAI
+  - xAI
 license: CC-BY-NC-SA-4.0
 version: 2.1.0
 date-released: '2025-02-25'
