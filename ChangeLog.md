@@ -6,6 +6,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## **2026.06.09[2.2.18] ** "BasicsdOfANN and MolecularRepresentations can now be run in Google Colab"
+
+### Changed
+
+- copied the Google Colab Initialization developped for the OrNano Cargese School in `DS4B-BasicsOfANN.ipynb` and in `MolecularRepresentations.ipynb`
+- `MolecularRepresentations.ipynb` now uses the `pyphyschemtools` library, in particular its `molView` class
+
+## **2026.05.07 [2.2.18]** "CTM & ReadTheDocs"
+
+### Changed
+
+- introduced in `ChimieTheoEtModelisation.ipynb` links to the code source in ReadtheDocs rather than github
+
 ## **2026.04.13 [2.2.17]** "Conv1DCNN"
 
 ### Changed
