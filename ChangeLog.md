@@ -6,7 +6,11 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## **2026.06.09[2.2.18] ** "BasicsdOfANN and MolecularRepresentations can now be run in Google Colab"
+## **2026.06.15[2.2.21] ** "DSCN"
+
+- OrNano2026.ipynb now comes with an English counterpart and renamed DSCN.ipynb (DataScience for Chemistry in a Nutschell)
+
+## **2026.06.09[2.2.19-2.2.20] ** "BasicsdOfANN and MolecularRepresentations can now be run in Google Colab"
 
 ### Changed
 
