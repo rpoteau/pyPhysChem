@@ -17,3 +17,25 @@
     </code>
     </p>
 </div>
+
+<br>
+
+<div style="padding:15px; border:2px solid #6a0000; border-radius:10px; background-color: #fff5f5; font-family: sans-serif;">
+    <div style="color:#6a0000; margin-top:0; font-weight:bold;">💡 Explanation of the error</div>
+    <p>The problem does not come from the data or from the calculation of the Pearson correlation matrix, but from the scale of the <b>Heatmap</b>.</p>
+    <ul>
+        <li>The Pearson coefficient lies between <b>-1 and +1</b>.</li>
+        <li>By setting <code>vmax=10</code> and <code>vmin=-10</code>, the color variations have been "flattened".</li>
+    </ul>
+    <p style="font-weight:bold; color:red;">A correlation of 0.6 (strong) looks insignificant on a scale that goes up to 10!</p>
+    
+    <p>Change the following line:<br>
+    <code style="background-color: #ffb4b5; display: block; padding: 5px; margin: 5px 0;; border-left: 5px solid #ff0004;">
+        sns.heatmap(corrWW, vmin = -10, vmax = +10, annot = True, cmap='coolwarm', annot_kws={"fontsize":8})
+    </code>
+    to:<br>
+    <code style="background-color: #e8f5e9; display: block; padding: 5px; margin: 5px 0; border-left: 5px solid #4caf50;">
+        sns.heatmap(corrWW, vmin = -1, vmax = +1, annot = True, cmap='coolwarm', annot_kws={"fontsize":8})
+    </code>
+    </p>
+</div>

@@ -20,3 +20,28 @@
         Conclusion : Un bon modèle de Machine Learning devra s'appuyer prioritairement sur les variables présentant le plus faible recouvrement pour minimiser l'erreur de classification.
     </p>
 </div>
+
+<br>
+
+<div style="padding:15px; border:2px solid #6a0000; border-radius:10px; background-color: #fff5f5; font-family: sans-serif;">
+    <div style="color:#6a0000; margin-top:0; font-weight:bold;">💡 Separability analysis</div>
+    <p>Examining the density curves (KDE plots) makes it possible to immediately identify the predictive potential of each descriptor:</p>
+    
+    <ul>
+        <li>
+            <b style="color:#2e7d32;">Potential separators (Color proxies):</b> 
+            <b>Chlorides</b>, <b>Total Sulfur Dioxide</b>, <b>Volatile Acidity</b>. 
+	    Here, the peaks of the curves are far apart (low overlap): these are excellent candidates for classifying wines by their color. Note the strong partial overlap of the <b>residual sugar</b> descriptor. It is partly a marker of color, given the sweet character of many white wines.
+        </li>
+        <br>
+        <li>
+            <b style="color:#d32f2f;">Poor separators:</b> 
+            <b>pH</b>, <b>Alcohol</b>,...
+            The curves are almost on top of each other (high overlap). A wine at 12% alcohol can just as easily be red as white; alcohol alone does not allow a decision.
+        </li>
+    </ul>
+    
+    <p style="font-weight:bold; border-top: 1px solid #6a0000; pt: 10px; margin-top: 10px;">
+        Conclusion: A good Machine Learning model will need to rely primarily on the variables with the lowest overlap to minimize the classification error.
+    </p>
+</div>

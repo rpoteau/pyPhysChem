@@ -1,8 +1,7 @@
 <div style="padding:15px; border:2px solid #6a0000; border-radius:10px; background-color: #fff5f5; font-family: sans-serif; line-height: 1.5;">
     <div style="color:#6a0000; margin-top:0; font-weight:bold; font-size: 1.1em; margin-bottom: 15px;">
-        💡 Interprétation des Axes (PCA)
+        💡 Interprétation des Axes (ACP)
     </div>
-
     <p style="margin-bottom: 10px;">
     Le signe d'une composante PCA montre une "force d'attraction" (un vecteur) de cette composante vers un côté de l'axe.
     </p>
@@ -28,7 +27,6 @@
             </ul>
         </li>
     </ul>
-
     <p style="margin-bottom: 10px; margin-top: 20px;">
         <b>L'axe 2 est dominé par deux variables opposées : Density et Alcohol</b>
     </p>
@@ -41,6 +39,53 @@
         <li>
             <b style="color:#800020;">Côté Négatif — Le "Léger/Alcooleux" :</b> <b>Alcohol (-0.46)</b>.<br>
 	    C'est l'opposé mathématique de la densité (l'éthanol est moins dense que l'eau, 0.789 g/cm<sup>3</sup> vs 1 g/cm<sup>3</sup>). Un vin situé en bas de l'axe 2 est un vin avec un fort degré alcoolique et moins de corps/sucre.
+        </li>
+    </ul>
+</div>
+
+<br>
+
+<div style="padding:15px; border:2px solid #6a0000; border-radius:10px; background-color: #fff5f5; font-family: sans-serif; line-height: 1.5;">
+    <div style="color:#6a0000; margin-top:0; font-weight:bold; font-size: 1.1em; margin-bottom: 15px;">
+        💡 Interpreting the Axes (PCA)
+    </div>
+    <p style="margin-bottom: 10px;">
+    The sign of a PCA component shows a "pull" (a vector) of that component toward one side of the axis.
+    </p>
+    <p style="margin-bottom: 10px;">
+        <b>Axis 1 (PC1) is the color marker</b>, since there is a red/white separation along this axis:
+    </p>
+    
+    <ul style="margin-top: 0;">
+        <li style="margin-bottom: 15px;">
+            <b style="color:#0277bd;">Positive Side — Descriptors typical of White wines:</b>
+            <ul style="margin-top: 8px;">
+                <li style="margin-bottom: 5px;"><b>Total SO2 (+0.49)</b> and <b>Free SO2 (+0.43)</b>: white wines do not benefit from the tannins (polyphenols) of grape skins, which are natural antioxidants. To prevent a white wine from browning or oxidizing, the winemaker has to add more sulfites.</li>
+                <li><b>Residual sugar (+0.34)</b>: it is often associated with whites in these datasets, since sweet or off-dry wines are almost exclusively whites.</li>
+            </ul>
+        </li>
+        <li style="margin-bottom: 5px;">
+            <b style="color:#800020;">Negative Side — Descriptors typical of Red wines:</b>
+            <ul style="margin-top: 8px;">
+                <li style="margin-bottom: 5px;"><b>Volatile Acidity (-0.38)</b>: reds often undergo longer macerations and systematic malolactic fermentation. These processes naturally increase volatile acidity (essentially acetic acid) compared with whites, which are filtered more quickly.</li>
+                <li style="margin-bottom: 5px;"><b>Chlorides (-0.29)</b>: reflect the more intense mineral extraction during skin maceration, specific to red.</li>
+                <li style="margin-bottom: 5px;"><b>Sulphates (-0.29)</b>: be careful not to confuse these with sulfites (SO₂). Sulphates in red often come from the extraction of solid matter (skins, seeds) and sometimes from the use of copper sulfate in the vineyard.</li>
+                <li><b>Fixed Acidity (-0.24)</b>: this is the set of acids in wine: tartaric, malic, citric, succinic, and lactic, with tartaric acid being the most important. It is indeed often more present in red wines.</li>
+            </ul>
+        </li>
+    </ul>
+    <p style="margin-bottom: 10px; margin-top: 20px;">
+        <b>Axis 2 is dominated by two opposing variables: Density and Alcohol</b>
+    </p>
+    
+    <ul style="margin-top: 0; margin-bottom: 0;">
+        <li style="margin-bottom: 15px;">
+            <b style="color:#0277bd;">Positive Side — The "Heavy":</b> <b>Density (+0.58)</b>, <b>Residual Sugar (+0.33)</b>, <b>Fixed Acidity (+0.34)</b>.<br>
+            The higher a wine rises on axis 2, the more "dense" it is and the more loaded with dry extract. Here we find wines that have either a lot of residual sugar or high fixed acidity, which increases the physical density of the liquid.
+        </li>
+        <li>
+            <b style="color:#800020;">Negative Side — The "Light/Alcoholic":</b> <b>Alcohol (-0.46)</b>.<br>
+	    This is the mathematical opposite of density (ethanol is less dense than water, 0.789 g/cm<sup>3</sup> vs 1 g/cm<sup>3</sup>). A wine located at the bottom of axis 2 is a wine with a high alcohol content and less body/sugar.
         </li>
     </ul>
 </div>

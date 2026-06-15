@@ -2,7 +2,6 @@
     <div style="color:#6a0000; margin-top:0; font-weight:bold; font-size: 1.1em; margin-bottom: 15px;">
         💡 Corrigé : Le modèle qui apprend mal
     </div>
-
     <p style="margin-bottom: 5px; color:#800020;">
         <b>1. Trouvez l'erreur logique dans cette ligne de code. Quelle est la correction à apporter ?</b>
     </p>
@@ -16,5 +15,27 @@
     </p>
     <p style="margin-top: 0; margin-bottom: 0; padding-left: 15px; border-left: 3px solid #0277bd;">
         En mettant 0.80, l'étudiant a réservé 80% des données pour l'évaluation et seulement 20% pour l'entraînement. L'algorithme n'a tout simplement pas vu assez d'exemples pour comprendre la "chimie" du vin : c'est ce qu'on appelle un phénomène de <b>sous-apprentissage</b> (ou <i>underfitting</i>). N'ayant pas pu dégager de règles mathématiques fiables lors de son entraînement, il est incapable de généraliser et échoue à généraliser aux 80% restants.
+    </p>
+</div>
+
+<br>
+
+<div style="padding:15px; border:2px solid #6a0000; border-radius:10px; background-color: #fff5f5; font-family: sans-serif; line-height: 1.5;">
+    <div style="color:#6a0000; margin-top:0; font-weight:bold; font-size: 1.1em; margin-bottom: 15px;">
+        💡 Solution: The model that learns poorly
+    </div>
+    <p style="margin-bottom: 5px; color:#800020;">
+        <b>1. Find the logical error in this line of code. What correction should be made?</b>
+    </p>
+    <p style="margin-top: 0; margin-bottom: 20px; padding-left: 15px; border-left: 3px solid #800020;">
+        The error lies in the argument <code>test_size=0.80</code>.<br>
+        <b>Correction:</b> The proportion must be reversed to <b><code>test_size=0.20</code></b> (which will automatically allocate 80% of the data to training and 20% to testing).
+    </p>
+    
+    <p style="margin-bottom: 5px; color:#0277bd;">
+        <b>2. Explain why this error causes very poor performance for the algorithm (What happens during learning?)</b>
+    </p>
+    <p style="margin-top: 0; margin-bottom: 0; padding-left: 15px; border-left: 3px solid #0277bd;">
+        By setting 0.80, the student reserved 80% of the data for evaluation and only 20% for training. The algorithm simply did not see enough examples to understand the "chemistry" of the wine: this is what is called <b>underfitting</b>. Having been unable to derive reliable mathematical rules during its training, it is incapable of generalizing and fails to generalize to the remaining 80%.
     </p>
 </div>

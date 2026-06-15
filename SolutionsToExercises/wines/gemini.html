@@ -2,12 +2,10 @@
     <div style="color:#6a0000; margin-top:0; font-weight:bold; font-size: 1.1em; margin-bottom: 10px;">
         🍷 Analyse de l'Arbre de Décision
     </div>
-
     <div style="background-color: #fce4ec; padding: 10px; border-radius: 5px; margin-bottom: 20px; font-size: 0.9em; border-left: 4px solid #c2185b;">
        <b>Note technique :</b> Les seuils affichés (ex: -0.89) correspondent à des données <b>centrées-réduites</b> obtenues après application du <code>StandardScaler</code>. <br>
         <i>0</i> représente la moyenne, une valeur négative est inférieure à la moyenne.
     </div>
-
     <div style="margin-top: 10px; padding-left: 5px;">
         <ul style="list-style-type: none; padding-left: 0; margin: 0;">
             <li style="margin-bottom: 15px;">
@@ -16,25 +14,61 @@
                 <b>Observation :</b> Si le taux est très bas (≤ -0.89), le modèle s'oriente vers le vin <b>rouge</b>. <br>
                 <i>Interprétation :</i> Les vins blancs nécessitent des doses de sulfites plus élevées pour leur stabilisation et protection contre l'oxydation.
             </li>
-
             <li style="margin-bottom: 15px;">
                 <b style="color:#800020; display: block; margin-bottom: 5px;">2. Le second critère : Les Chlorures (<code>chlorides</code>)</b>
                 L'algorithme utilise ensuite la concentration en sels. <br>
                 <b>Observation :</b> Un taux de soufre bas couplé à des chlorures élevés (> -0.27) mène quasi systématiquement au <b>rouge</b>. <br>
                 <i>Interprétation :</i> Les chlorures constituent ici une signature chimique discriminante liée au terroir et aux pratiques de vinification.
             </li>
-
             <li style="margin-bottom: 15px;">
                 <b style="color:#800020; display: block; margin-bottom: 5px;">3. Zones d'incertitude</b>
                 L'arbre se complexifie quand le soufre et les chlorures sont tous deux très bas. <br>
                 <b>Observation :</b> L'algorithme doit alors effectuer un troisième test sur le soufre. <br>
                 <i>Interprétation :</i> Cela révèle une zone de recouvrement où les profils des blancs et des rouges "légers" sont très proches.
             </li>
-
             <li>
                 <b style="color:#800020; display: block; margin-bottom: 5px;">4. Le "juge de paix" : L'Acidité Volatile (<code>volatile acidity</code>)</b>
                 Ce critère n'intervient qu'en fin de parcours pour les échantillons ambigus. <br>
                 <i>Interprétation :</i> L'acidité volatile est typiquement plus élevée dans les vins rouges (processus de fermentation/élevage). L'arbre l'utilise pour affiner la séparation finale.
+            </li>
+        </ul>
+    </div>
+</div>
+
+<br>
+
+<div style="padding:15px; border:2px solid #6a0000; border-radius:10px; background-color: #fff5f5; font-family: sans-serif; line-height: 1.5;">
+    <div style="color:#6a0000; margin-top:0; font-weight:bold; font-size: 1.1em; margin-bottom: 10px;">
+        🍷 Decision Tree Analysis
+    </div>
+    <div style="background-color: #fce4ec; padding: 10px; border-radius: 5px; margin-bottom: 20px; font-size: 0.9em; border-left: 4px solid #c2185b;">
+       <b>Technical note:</b> The thresholds shown (e.g. -0.89) correspond to <b>standardized (centered and scaled)</b> data obtained after applying the <code>StandardScaler</code>. <br>
+        <i>0</i> represents the mean, and a negative value is below the mean.
+    </div>
+    <div style="margin-top: 10px; padding-left: 5px;">
+        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+            <li style="margin-bottom: 15px;">
+                <b style="color:#800020; display: block; margin-bottom: 5px;">1. The major decider: Sulfur Dioxide (<code>total sulfur dioxide</code>)</b>
+                The root of the tree is based on the SO₂ level. <br>
+                <b>Observation:</b> If the level is very low (≤ -0.89), the model leans toward <b>red</b> wine. <br>
+                <i>Interpretation:</i> White wines require higher doses of sulfites for their stabilization and protection against oxidation.
+            </li>
+            <li style="margin-bottom: 15px;">
+                <b style="color:#800020; display: block; margin-bottom: 5px;">2. The second criterion: Chlorides (<code>chlorides</code>)</b>
+                The algorithm then uses the salt concentration. <br>
+                <b>Observation:</b> A low sulfur level combined with high chlorides (> -0.27) almost systematically leads to <b>red</b>. <br>
+                <i>Interpretation:</i> Chlorides here constitute a discriminating chemical signature linked to terroir and winemaking practices.
+            </li>
+            <li style="margin-bottom: 15px;">
+                <b style="color:#800020; display: block; margin-bottom: 5px;">3. Zones of uncertainty</b>
+                The tree becomes more complex when both sulfur and chlorides are very low. <br>
+                <b>Observation:</b> The algorithm must then perform a third test on the sulfur. <br>
+                <i>Interpretation:</i> This reveals an overlap zone where the profiles of whites and "light" reds are very close.
+            </li>
+            <li>
+                <b style="color:#800020; display: block; margin-bottom: 5px;">4. The "tie-breaker": Volatile Acidity (<code>volatile acidity</code>)</b>
+                This criterion only comes into play at the end for the ambiguous samples. <br>
+                <i>Interpretation:</i> Volatile acidity is typically higher in red wines (fermentation/aging process). The tree uses it to refine the final separation.
             </li>
         </ul>
     </div>

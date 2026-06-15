@@ -2,11 +2,9 @@
     <div style="color:#6a0000; margin-top:0; font-weight:bold; font-size: 1.1em; margin-bottom: 15px;">
         💡 Guide de lecture : Anatomie d'un nœud de l'arbre
     </div>
-
     <p style="margin-bottom: 10px;">
         Chaque "boîte" (nœud) de l'arbre contient des informations clés pour comprendre la logique de classification :
     </p>
-
     <div style="margin-top: 10px; padding-left: 15px; ">
         <ul style="list-style-type: none; padding-left: 0; margin: 0;">
             <li style="margin-bottom: 8px;">
@@ -23,6 +21,36 @@
             </li>
             <li>
                 <b style="color:#800020;">5. Class :</b> La couleur majoritaire. C'est l'étiquette que le modèle prédirait si l'on s'arrêtait à ce niveau de l'arbre.
+            </li>
+        </ul>
+    </div>
+</div>
+
+<br>
+
+<div style="padding:15px; border:2px solid #6a0000; border-radius:10px; background-color: #fff5f5; font-family: sans-serif; line-height: 1.5;">
+    <div style="color:#6a0000; margin-top:0; font-weight:bold; font-size: 1.1em; margin-bottom: 15px;">
+        💡 Reading guide: Anatomy of a tree node
+    </div>
+    <p style="margin-bottom: 10px;">
+        Each "box" (node) in the tree contains key information for understanding the classification logic:
+    </p>
+    <div style="margin-top: 10px; padding-left: 15px; ">
+        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+            <li style="margin-bottom: 8px;">
+                <b style="color:#800020;">1. Chemical condition:</b> (e.g. <code>chlorides <= -0.272</code>). This is the most discriminating criterion at this step. If the wine satisfies the condition, we follow the <b>left</b> branch, otherwise the <b>right</b> one.
+            </li>
+            <li style="margin-bottom: 8px;">
+                <b style="color:#800020;">2. Gini index:</b> Measures the impurity of the node. <code>0.0</code> means the group is "pure" (a single color). The closer it is to <code>0.5</code>, the more balanced the mixture of red and white.
+            </li>
+            <li style="margin-bottom: 8px;">
+                <b style="color:#800020;">3. Samples:</b> The total number of wine bottles analyzed and present in this specific node.
+            </li>
+            <li style="margin-bottom: 8px;">
+                <b style="color:#800020;">4. Value:</b> The exact distribution of the classes. For example, <code>[987, 95]</code> indicates the presence of 987 red wines and 95 white wines.
+            </li>
+            <li>
+                <b style="color:#800020;">5. Class:</b> The majority color. This is the label the model would predict if we stopped at this level of the tree.
             </li>
         </ul>
     </div>
