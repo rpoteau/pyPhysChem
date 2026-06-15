@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## **2026.06.15[2.2.21-2.2.22] ** "DSCN"
+## **2026.06.15[2.2.21-2.2.23] ** "DSCN & intro.pdf"
 
 - OrNano2026.ipynb now comes with an English counterpart and renamed DSCN.ipynb (DataScience for Chemistry in a Nutschell)
 
