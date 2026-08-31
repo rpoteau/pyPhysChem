@@ -6,10 +6,21 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## **2026.06.15[2.2.26]** "PPCL: beginner-friendly additions"
+
+### Changed
+
+- In ["Python in the Physical Chemistry Lab (PPCL) in a nutshell"](./PPCL.ipynb) notebook:
+    - new *Survival kit* and *Usual mistakes and how to solve them* subsections (kernel memory, cell execution order, accumulating variables, overwriting imported names)
+    - explanation of the import mechanism (module vs alias) and a note on why libraries are re-imported across sections in this notebook
+    - new coverage of zero-based indexing/slicing, `**`/`//`/`%`, `=` vs `==`, and a *Dictionaries* subsection
+    - new exercises (array slicing with `np.log`, dictionary of solvent boiling points) and self-check targets on existing exercises
+
 ## **2026.06.15[2.2.25]** "DSCN: translation in English of the solutions to the exercises"
 
-
 ## **2026.06.15[2.2.21-2.2.24]** "DSCN & intro.pdf"
+
+### Changed
 
 - `OrNano2026.ipynb` now comes with an English counterpart and it is renamed `DSCN.ipynb` (DataScience for Chemistry in a Nutschell)
 
