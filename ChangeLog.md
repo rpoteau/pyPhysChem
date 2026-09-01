@@ -6,25 +6,44 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## **2026.06.15[2.2.26]** "PPCL: beginner-friendly additions"
+## **2026.08.01 [2.3.0]** "PPCL: beginner-friendly additions (2)"
 
 ### Changed
 
 - In ["Python in the Physical Chemistry Lab (PPCL) in a nutshell"](./PPCL.ipynb) notebook:
+    - array-creation functions (`np.arange`, `np.linspace`, `np.zeros`, `np.ones`) with a note on `arange` vs `linspace`
+    - new *Reading data files with pandas* section (`pd.read_csv`, DataFrames, access by column name), presented as the fundamental data-science tool to read, organise and transform tables, alongside the existing `genfromtxt` section
+    - clarified in the *How to use this notebook* intro the role of the *Applications* as advanced code to be understood rather than written from scratch
+    - note that function argument names are free and local in scope (illustrated with a deliberately silly `banana`/`gizmo` example)
+    - discrete-sampling application (markers, effect of the number of points on plotting and on numerical-integration accuracy)
+    - new "Getting started with... Google Colab" section and new companion video
+
+### Added
+- new `add_labels.py` utility: inserts a bold label with an icon (📌 In a nutshell, 💡 Hint, 📝 Exercise, 🚀 Application, ⚠️ Pay Attention, 🔑 Solution) at the start of styled `<div>` blocks (`intro`, `hint`, `exE`, `app`, `rqE`, `sol`), so the labels stay visible where the CSS is not loaded (e.g. Google Colab). Each div is processed independently and already-labelled divs are skipped (no duplication); a new notebook is written, leaving the input unchanged. Includes a `--help` message listing the current labels.
+
+## **2026.08.31 [2.2.26 & 2.2.27]** "PPCL: beginner-friendly additions"
+
+### Changed
+
+- In ["Python in the Physical Chemistry Lab (PPCL) in a nutshell"](./PPCL.ipynb) notebook:
+    - new *How to use this notebook* intro, laying out the write / understand-the-spirit / think-critically philosophy (reading and judging code in the age of AI-generated code)
     - new *Survival kit* and *Usual mistakes and how to solve them* subsections (kernel memory, cell execution order, accumulating variables, overwriting imported names)
     - explanation of the import mechanism (module vs alias) and a note on why libraries are re-imported across sections in this notebook
     - new coverage of zero-based indexing/slicing, `**`/`//`/`%`, `=` vs `==`, and a *Dictionaries* subsection
     - new exercises (array slicing with `np.log`, dictionary of solvent boiling points) and self-check targets on existing exercises
+    - `quad` introduced alongside `simpson`/`trapezoid` (integrating a function vs. integrating samples), with a chemistry example (ΔH from heat capacity); note on numerical derivatives (`np.gradient`, `sympy.diff`, `scipy.differentiate.derivative`)
+    - note that the companion video is chaptered, with a clickable timeline
+    - basic hands-on exercises at the end of the notebook
 
-## **2026.06.15[2.2.25]** "DSCN: translation in English of the solutions to the exercises"
+## **2026.06.15 [2.2.25]** "DSCN: translation in English of the solutions to the exercises"
 
-## **2026.06.15[2.2.21-2.2.24]** "DSCN & intro.pdf"
+## **2026.06.15 [2.2.21-2.2.24]** "DSCN & intro.pdf"
 
 ### Changed
 
 - `OrNano2026.ipynb` now comes with an English counterpart and it is renamed `DSCN.ipynb` (DataScience for Chemistry in a Nutschell)
 
-## **2026.06.09[2.2.19-2.2.20]** "BasicsdOfANN and MolecularRepresentations can now be run in Google Colab"
+## **2026.06.09 [2.2.19-2.2.20]** "BasicsdOfANN and MolecularRepresentations can now be run in Google Colab"
 
 ### Changed
 

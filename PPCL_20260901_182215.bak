@@ -71,16 +71,12 @@
     "<br>\n",
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "**This Python computer lab assumes a very basic knowledge of a programming language and algorithm development.**\n",
     "\n",
     "</div>\n",
     "\n",
     "<br>\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "\n",
     "There is a well known Easter Egg in Python called `import this` that when added to your code will automatically output the core philosophy of Python\n",
     "\n",
@@ -107,8 +103,6 @@
     "### Content\n",
     "\n",
     "<div style=\"text-align:center\" class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "<!-- Video Thumbnail -->\n",
     "<a href=\"https://youtu.be/8o8g-ykcM9Q?si=qyKYhMXMK14nBBn_\" target=\"_blank\" style=\"display: inline-block;\">\n",
     "<img src=\"MiscImages/YT-PPCL.png\" width=\"500\">\n",
@@ -118,16 +112,12 @@
     "<br>\n",
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "▶️ The companion video is **chaptered**: a clickable timeline lets you jump straight to the section you need. You'll find the chapter markers on the video's progress bar (the segments below the timeline) and listed in the description under the YouTube player.\n",
     "</div>\n",
     "\n",
     "### General philosophy\n",
     "\n",
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "\n",
     "Programming is no longer about *producing* code: an AI can now write code in seconds. What matters is knowing how to **read it, understand its logic, and judge whether its result makes sense**. This notebook is built around that idea, at three levels:\n",
     "\n",
@@ -150,8 +140,6 @@
     "###  ... Jupyter notebooks and Jupyter-lab\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "\n",
     "<div style=\"text-align:center\">\n",
     "<!-- Video Thumbnail -->\n",
@@ -195,8 +183,6 @@
     "\n",
     "<div class=\"intro\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
-    "\n",
     "**Google Colab** lets you run the very same notebooks in your browser, on Google's servers, without installing anything on your computer. It is a convenient alternative to a local JupyterLab installation — especially handy on a machine where you cannot install Python. Here's what you need to know:\n",
     "\n",
     "**1. Opening a notebook**\n",
@@ -219,8 +205,6 @@
     "<br>\n",
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "**Ready?** Put down your mobile phone &#x1F4F5;, please, and let's enter into the Python realm. &#x1F451;&#x1F40D;&#x1F451;\n",
     "</div>"
    ]
@@ -242,8 +226,6 @@
     "\n",
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "Three things that confuse almost every beginner with notebooks:\n",
     "\n",
     "1. **Order matters.** A notebook has a *memory* (the \"kernel\"). A cell can only use variables that were defined by cells **already run before it**. If you jump around or skip a cell, you will get errors like `NameError: name 'x' is not defined`.\n",
@@ -261,8 +243,6 @@
     "### Basic operations and library import\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "\n",
     "Let's start this Python interactive session with basic operations\n",
     "</div>"
@@ -316,8 +296,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "**It's not very convenient to print operations, isn't it?** &#x1F615; This '*last operation show-up*' is specific to Jupyter Notebooks.\n",
     "\n",
     "There is actually a trick that consists in importing a so-called `InteractiveShell` and then to setup a config option\n",
@@ -366,8 +344,6 @@
    "source": [
     "<div class=\"intro\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
-    "\n",
     "Now we want to use basic functions such as sine, cosine, logarithm, exponential, etc... Let's start first with the sine function, aka `sin`\n",
     "\n",
     "</div>"
@@ -390,8 +366,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "First, errors are **normal** and useful — they are not the computer being angry at you. When Python stops, it prints a *traceback*. **Read it from the bottom up:** the very last line tells you the type of error and a short reason. The lines above just show *where* it happened.\n",
     "\n",
     "`name 'sin' is not defined` !!??\n",
@@ -411,8 +385,6 @@
    "metadata": {},
    "source": [
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "\n",
     "**How importing works.** A library is a collection of ready-made functions. Before you can use them, you must load the library into the kernel's memory with `import`. Two common forms:\n",
     "\n",
@@ -456,8 +428,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "**What is the best choice between `math` and `numpy`?** It depends. `math.sin` works on a single number, whilst the numpy version works on numpy arrays and is tremendously faster due to the benefits of vectorization. For the moment, this notion of arrays may seem obscure to you, but we will soon introduce them, together with lists.\n",
     "    \n",
     "All mathematical functions available in `numpy` are listed on [this webpage](https://numpy.org/doc/stable/reference/routines.math.html#), whereas those available in the `math` library are listed [here](https://docs.python.org/3/library/math.html). The `math` library is actually a module of the [Python Standard Library](https://docs.python.org/3/library/index.html#the-python-standard-library).\n",
@@ -466,8 +436,6 @@
     "<br>\n",
     "\n",
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "\n",
     "**How often do you import?** Normally **once per kernel session**: a single `import` at the top makes the library available in every cell below; you don't re-import it each time.\n",
     "\n",
@@ -484,8 +452,6 @@
     "### Powers and division: two classic traps\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "\n",
     "Two things surprise newcomers coming from a calculator or another language:\n",
     "\n",
@@ -516,9 +482,6 @@
     "### Variables\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
-    "\n",
     "They are useful if you want to store a number to use later in another calculation.\n",
     "</div>"
    ]
@@ -549,8 +512,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "An alternative would be to systematically type in the 273.15 conversion factor or copy and paste its value every time you need it. This is a bad idea. In such a situation it is strongly recommended to use variables\n",
     "\n",
     "</div>"
@@ -575,8 +536,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "what is actually illustrated here is that the `c2K` variable is unknown, as opposed to `C2K`. Yes, in Python **upper-case and lower-case letters are not the same**\n",
     "\n",
     "</div>"
@@ -600,8 +559,6 @@
    "metadata": {},
    "source": [
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "\n",
     "Let's now use variables to apply the Law of Mass Action to the calculation of equilibrium constants. We introduce it by using a general chemical reaction equation in which reactants A and B react to give products C and D:\n",
     "    \n",
@@ -629,7 +586,7 @@
     "    \n",
     "<div class=\"exE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "📝 **Exercise**\n",
     "\n",
     "The decomposition reaction of N$_2$O$_4$ to NO$_2$ can be summarized as N$_2$O$_4$ = 2NO$_2$.\n",
     "\n",
@@ -663,8 +620,6 @@
    "source": [
     "<div class=\"sol\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px\">🔑 <b>Answer</b></span>\n",
-    "\n",
     "Want to see a possible answer? Uncomment the `# %load ./SolutionsToExercises/...` command below and then run the content of the cell\n",
     "\n",
     "</div>"
@@ -696,8 +651,6 @@
    "metadata": {},
    "source": [
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "\n",
     "The \"algorithmic\" is obviously less straightforward than the \"calculator\" way. **Yet, such longer piece of code is to be preferred.**\n",
     "- First, it is more readable. So if you save your notebook as a kind of well-organized calculation spreadsheet, you can later on use the same code and variables, or redo the same application\n",
@@ -747,8 +700,6 @@
     "\n",
     "<div class=\"intro\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
-    "\n",
     "As seen in the previous lines, we can easily print things to the screen. It is also possible to use \"\" and commas to print text, as done below:\n",
     "    \n",
     "</div>"
@@ -770,8 +721,6 @@
    "metadata": {},
    "source": [
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "\n",
     "The `print` command displays as many digits as Python's precision allows: floating point numbers are represented with a precision of up to 15 significant digits. So how can you manage significant figures? Well, it is recommended to store floating point numbers in variables with the highest precision of Python, and to print them with the desired precision.\n",
     "\n",
@@ -799,8 +748,6 @@
    "metadata": {},
    "source": [
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "\n",
     "So how do we specify 4 decimal places? We just need to add an `f`, which means that we want our floatting point number displayed as a \"fixed point number\":\n",
     "</div>"
@@ -832,8 +779,6 @@
     "### Lists\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "    \n",
     "A list is a data structure that's built into Python and holds a collection of items. Their main characteristics are:\n",
     "\n",
@@ -871,8 +816,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "It's actually the second item that has been deleted. **It's because the list index starts with 0 in Python**. So, the index value of the first item is 0, that of the second item is 1, etc...\n",
     "\n",
     "</div>"
@@ -888,8 +831,6 @@
     "#### Basic manipulation\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "    \n",
     "An array is also a data structure that stores a collection of items. Like lists, arrays are enclosed in square brackets, they are ordered, and they can be modified\n",
     "\n",
@@ -922,8 +863,6 @@
    "metadata": {},
    "source": [
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "\n",
     "Arrays are great for numerical operations, whereas lists cannot directly handle math operations. **An important feature is that operations can simultaneously be applied to all array elements**. Let's illustrate this: \n",
     "\n",
@@ -960,8 +899,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "The last cell execution returned the following error. Why? It's because `my_array` contains both numbers (`int64` type, as integer) and strings (`<U21` type, as unicode). This `2*my_array` command generates an error, since it is not possible to do numerical applications on such hybrid arrays.\n",
     "\n",
     "\n",
@@ -987,8 +924,6 @@
     "#### Creating arrays without typing every element\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "\n",
     "Writing `np.array([...])` by hand is fine for a few values, but NumPy offers several functions to build arrays automatically:\n",
     "\n",
@@ -1024,8 +959,6 @@
     "\n",
     "<div class=\"intro\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
-    "\n",
     "**Accessing elements: counting starts at 0.** The first element of a list is at position `0`, not `1`. Negative indices count from the end (`-1` is the last one). A **slice** `[start:stop]` returns the elements from `start` up to - but **not including** - `stop`.\n",
     "\n",
     "</div>"
@@ -1052,8 +985,6 @@
    "metadata": {},
    "source": [
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "\n",
     "The **exact same** indexing and slicing rules apply to NumPy arrays.\n",
     "\n",
@@ -1082,7 +1013,7 @@
    "source": [
     "<div class=\"exE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "📝  **Exercise**\n",
     "\n",
     "Starting from `my_array`, build a new array `log_slice` containing the natural logarithm of elements 1 to 3 (i.e. positions 1, 2 and 3). Print it.\n",
     "\n",
@@ -1110,8 +1041,6 @@
    "source": [
     "<div class=\"sol\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px\">🔑 <b>Answer</b></span>\n",
-    "\n",
     "Want to see a possible answer? Uncomment the `# %load ./SolutionsToExercises/...` command below and then run the content of the cell\n",
     "\n",
     "</div>"
@@ -1135,16 +1064,12 @@
     "### Usual mistakes and how to solve them\n",
     "\n",
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "    \n",
     "Most beginner bugs come from **one misunderstanding**: what you see on the screen is *not* the state of the kernel's memory. Deleting a cell, or clearing its output, does **not** erase the variables it created: they stay in memory <u>until you restart the kernel</u>. Here are the two most common surprises.\n",
     "</div>\n",
     "\n",
     "#### Mistake 1: Re-running a cell keeps accumulating\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "\n",
     "Run the two cells below. Then run the second one **a second time** and watch the array keep growing: the old my_array is still in memory.\n",
     "</div>"
@@ -1182,8 +1107,6 @@
     "#### Mistake 2: Overwriting the name of a function\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "\n",
     "When you write, fro example, `from numpy import sin`, the name `sin` now points to a function. If somewhere later you do `sin = 4`, you have **replaced** the function with the number 4 in memory, until you re-import it.\n",
     "\n",
@@ -1231,8 +1154,6 @@
     "### How to easily read arrays from text files in Python?\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "    \n",
     "Data files can be loaded into a Python code in several ways. We will concentrate here on the reading of data saved as columns under the so-called CSV format, using the `genfromtxt` function of the NumPy library. \n",
     "\n",
@@ -1247,7 +1168,7 @@
     "\n",
     "<div class=\"app\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#d8edf4; color:#0D47A1; padding:4px 10px; border-radius:4px\">🚀 <b>Application</b></span>\n",
+    "🚀 **Application**\n",
     "\n",
     "Let's now have a look at the content of a file named `VolcanoPlot-woA.csv`, contained in the `MiscData/` folder. If you open it with an editor, or directly with this Jupyter tool, you will see\n",
     "```\n",
@@ -1315,8 +1236,6 @@
     "\n",
     "<div class=\"intro\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
-    "\n",
     "`pandas` is *the* fundamental tool of data science in Python: it is used everywhere to **read, organise and transform** tabular data before analysis or plotting.\n",
     "\n",
     "`genfromtxt` returns plain NumPy arrays, which is perfect for pure numerical work. But when your data has **named columns**, mixed types, or missing values, `pandas` is far more convenient. It reads a file into a **DataFrame** — a table whose columns have names, a bit like a spreadsheet inside Python.\n",
@@ -1333,7 +1252,7 @@
    "source": [
     "<div class=\"app\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#d8edf4; color:#0D47A1; padding:4px 10px; border-radius:4px\">🚀 <b>Application</b></span>\n",
+    "🚀 **Application**\n",
     "\n",
     "Let's read the same `MiscData/VolcanoPlot-woA.csv` file, this time with `pandas`.\n",
     "\n",
@@ -1386,8 +1305,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "**genfromtxt or pandas?** For a quick, purely numerical file, `genfromtxt` is light and sufficient. For real datasets — named columns, text and numbers mixed, missing entries, thousands of rows — `pandas` is the standard tool, and its DataFrames connect directly to plotting, statistics, and machine-learning libraries.\n",
     "\n",
     "</div>"
@@ -1401,8 +1318,6 @@
     "## Functions and plotting, with a word about indentation\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "    \n",
     "**Do you want to plot a function?** Then you need to know how to define it. Among other applications\n",
     "</div>\n",
@@ -1411,8 +1326,6 @@
     "### Definition of a function\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "\n",
     "A function is a piece of code that we want to use multiple times but don't want to write out each time. This typically involves taking some input, manipulating the input and returning an output. It only runs when it is called. In Python a function is defined using the `def` keyword:\n",
     "```Python\n",
@@ -1452,8 +1365,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "The `print(\"My message is: \",message)` statement belongs to an **indented block**, consisting in this case of one statement. The indentation tells Python which statements are in the function, and which are outside it.\n",
     "\n",
     "In the main block of the previous cell, you first print  `This is outside the function` and then you call  `my_function1`, that has been previously defined at the beginning of this cell.\n",
@@ -1470,8 +1381,6 @@
    "metadata": {},
    "source": [
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "    \n",
     "To let a function return a value, use the return statement:\n",
     "\n",
@@ -1507,7 +1416,7 @@
    "source": [
     "<div class=\"exE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "📝 **Exercise**\n",
     "\n",
     "We are now going to define a `DrG(K,T)` function that will return the standard change in free energy of a reaction, $\\Delta_rG°$, as a function of the equilibrium constant (*K*) and the temperature (*T*):\n",
     "$$\\Delta_rG° = -RT \\ln K(T)$$\n",
@@ -1517,8 +1426,6 @@
     "</div>\n",
     "<br>\n",
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "\n",
     "**Self-check:**\n",
     "\n",
@@ -1547,8 +1454,6 @@
    "metadata": {},
    "source": [
     "<div class=\"sol\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px\">🔑 <b>Answer</b></span>\n",
     "\n",
     "Want to see a possible answer? Uncomment the `# %load ./SolutionsToExercises/...` command below and then run the content of the cell\n",
     "\n",
@@ -1594,8 +1499,6 @@
    "metadata": {},
    "source": [
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "    \n",
     "<span style=\"color:red\">**Why a docstring section?**</span> **<u>It's part of a good practice</u>** &#x1F44C;\n",
     "    \n",
@@ -1649,7 +1552,7 @@
    "source": [
     "<div class=\"exE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "📝 **Exercise**\n",
     "\n",
     "**1.** Define an array `K` with the following equilibrium constants values: 0.05, 0.1, 0.5, 1, 5, 10, 30, 50, 100, 500, 1000\n",
     "\n",
@@ -1675,8 +1578,6 @@
    "source": [
     "<div class=\"sol\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px\">🔑 <b>Answer</b></span>\n",
-    "\n",
     "Want to see a possible answer? Uncomment the `# %load ./SolutionsToExercises/...` command below and then run the content of the cell\n",
     "\n",
     "</div>"
@@ -1698,8 +1599,6 @@
    "metadata": {},
    "source": [
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "Like everything else in Python, functions are just objects\n",
     "</div>"
    ]
@@ -1712,22 +1611,18 @@
     "### Plotting\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "    \n",
     "There are no plotting functions in the Python Standard Library Python, so we have to import a module for this task. The most widely used one is the `pyplot` module of the [Matplotlib library](https://matplotlib.org/stable/tutorials/introductory/quick_start.html), which is a widely used and useful plotting library. Simple plots are then easy to create and customize. \n",
     "</div>\n",
     "<br>\n",
     "<div class=\"exE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "📝 **Exercise**\n",
     "\n",
     "Let's start by plotting $\\Delta_rG°(25°C)$ as a function of *K*\n",
     "</div>\n",
     "<br>\n",
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "\n",
     "**It is assumed that you have already defined a `DrG(K,T)` function and that you have defined a K array in the previous application. If not, uncomment the next cell**\n",
     "</div>"
@@ -1772,8 +1667,6 @@
    },
    "source": [
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "\n",
     "The plotting cells that you will define below return objects (Line2D, Legend...) that would be\n",
     "displayed because this notebook uses `ast_node_interactivity = \"all\"`.\n",
@@ -1856,15 +1749,13 @@
    "source": [
     "<div class=\"app\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#d8edf4; color:#0D47A1; padding:4px 10px; border-radius:4px\">🚀 <b>Application</b></span>\n",
+    "🚀 **Application**\n",
     "\n",
     "Let's now work again on the `VolcanoPlot-woA.csv` datafile, contained in the `MiscData/` folder. According to its header, this file contains a first column named DGads and a second one named log i0. Explaining in details what these properties are would be far beyond the scope of this notebook. Let's just say that what is reported here is related to the electrocatalytic production of molecular hydrogen at a metal electrode. The $\\log(i_0)$ property is the exchange current density, it is related the quantity of hydrogen produced. DGads is the so-called Gibbs energy of adsorption of hydrogen at the electrode, $\\Delta_\\mathrm{ads}G°$. Each ($\\Delta_\\mathrm{ads}G°$, $\\log(i_0)$) couple characterizes the efficiency of a specific metal electrode. The plot is expected to look like a **Sabatier-like volcano**, with the best electrode materials on the peak. Well. It's time to bring this digression to an end.\n",
     "    \n",
     "</div>\n",
     "<br>\n",
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "\n",
     "**It is assumed that you have already read the `MiscData/VolcanoPlot-woA.csv` data in the previous section. If not, uncomment the next cell**\n",
     "</div>"
@@ -1909,15 +1800,11 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "**Hey!** It barely looks as a volcano &#x1F30B;! &#x1F914;\n",
     "    \n",
     "</div>\n",
     "<br>\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "\n",
     "Well, the volcano plot is a somewhat idealized concept, not to mention the experimental uncertainties on $\\Delta_\\mathrm{ads}G°$ and $\\log(i_0)$. To highlight the volcano shape of these data, we need to **smooth** them. The idea is to create an approximating function that attempts to capture important patterns in the data, while leaving out noise. We will use for that the Savitzky–Golay digital filter available in a library called **SciPy**. This library provides fundamental algorithms for scientific computing in Python. One of its modules, `scipy.signal` is a signal processing toolbox that currently contains some filtering functions. The Savitzky–Golay digital filter, `savgol_filter`, is part of the `scipy.signal` toolbox.\n",
     "    \n",
@@ -1925,7 +1812,7 @@
     "<br>\n",
     "<div class=\"app\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#d8edf4; color:#0D47A1; padding:4px 10px; border-radius:4px\">🚀 <b>Application</b></span>\n",
+    "🚀 **Application**\n",
     "\n",
     "Compare the next cell with the previous one to find the differences between them.\n",
     "</div>"
@@ -1964,8 +1851,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "The volcano shape of the ($\\Delta_\\mathrm{ads}G°$, $\\log(i_0)$) data is somewhat more convincing now, isn't it? &#x1F4AA;\n",
     "    \n",
     "**Take-home message**: there is probably a method or function somewhere in a general python library that meets your needs and that is worth using instead of developing your own code. Just ask your favorite search engine or generative AI... And try to find a simple tutorial, not a one written ~~by a nerd~~ by a pythonic programmer &#x1F913;. At least not in the first place.\n",
@@ -1979,8 +1864,6 @@
    "metadata": {},
    "source": [
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "\n",
     "Cancel again the \"last show-up\" behaviour of Jupyter notebooks\n",
     "</div>"
@@ -2005,8 +1888,6 @@
     "### Naming variables of functions\n",
     "\n",
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "\n",
     "**The names of the arguments are up to you.** In `def f(x): return x**2`, the name `x` is just a placeholder — a local name that stands for whatever value you pass when you call the function. You could write `def f(t): return t**2` or `def f(temperature): return temperature**2` and the function would behave **exactly** the same.\n",
     "\n",
@@ -2041,8 +1922,8 @@
    "metadata": {},
    "source": [
     "<div class=\"exE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "    \n",
+    "📝 **Exercise**\n",
     "\n",
     "Remember that the name of a function's argument is completely free, it doesn't have to be `x`. That name lives **inside** the function only: it is how the function refers to whatever value it receives. **Outside** the function, you can store and pass your data under a completely different name, the two need not match.\n",
     "\n",
@@ -2069,8 +1950,6 @@
    "source": [
     "<div class=\"sol\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px\">🔑 <b>Answer</b></span>\n",
-    "\n",
     "Want to see a possible answer? Uncomment the `# %load ./SolutionsToExercises/...` command below and then run the content of the cell\n",
     "\n",
     "</div>"
@@ -2093,8 +1972,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "Look closely at what the markers reveal: even though `h` is defined by a formula, the plot is really made of **discrete points**: one diamond per value in `gizmo`. The curve you see is just these 100 points *joined by straight segments*.\n",
     "\n",
     "This highlights an important idea. The function `h` is a **recipe**: give it any value (analytically, it maps any real number to its square), and it returns the corresponding result. But a computer cannot handle *every* real number — so to draw the curve, we **sample** the function at a finite set of inputs (here, 100 values between -2 and 2) and evaluate `h` at each one. The more points we use, the smoother the curve looks; with very few points, its discrete, piecewise nature becomes obvious.\n",
@@ -2108,8 +1985,8 @@
    "metadata": {},
    "source": [
     "<div class=\"exE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "    \n",
+    "📝 **Exercise**\n",
     "\n",
     "To *see* the sampling at work, redo the previous plot but with only **6 points** between -2 and 2 instead of 100. Keep the diamond markers. Compare the two figures: with few points, the curve is visibly a series of straight segments joining discrete diamonds: the discrete nature of the sampling becomes obvious.\n",
     "</div>"
@@ -2131,8 +2008,6 @@
    "metadata": {},
    "source": [
     "<div class=\"sol\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px\">🔑 <b>Answer</b></span>\n",
     "\n",
     "Want to see a possible answer? Uncomment the `# %load ./SolutionsToExercises/...` command below and then run the content of the cell\n",
     "\n",
@@ -2171,8 +2046,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "With fewer sampling points, the function is described more coarsely, and **any calculation based on these samples may be less accurate**. For example, computing the numerical integral of `h` between -2 and 2 from only 8 points can give a result further from the exact value than one computed from 100 points, depending on the integration method used. \n",
     "\n",
     "</div>"
@@ -2188,8 +2061,6 @@
     "### The linear regression case\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "    \n",
     "Regression is a basic and commonly used type of predictive analysis, that can be applied to various areas in business and academic studies. It predicts the value of unknown data by using another related and known data value. **Linear** regression mathematically models the unknown (or dependent) variable and the known (or independent) variable as a linear equation.\n",
     "\n",
@@ -2217,8 +2088,6 @@
     "<br>\n",
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "**Do not make a confusion between smoothing and model fitting**. Let's adapt what is said in [Wikipedia](https://en.wikipedia.org/wiki/Smoothing) on this topic: curve fitting often involves the use of an **explicit function form** for the result, whereas the immediate results from smoothing are the \"smoothed\" values with no final explicit functional form\n",
     "\n",
     "</div>"
@@ -2231,7 +2100,7 @@
    "source": [
     "<div class=\"exE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "📝 **Exercise**\n",
     "\n",
     "Linear regression is illustrated in the next python cell, using the `linregress` method of the `stats` module of the `scipy` library. Accordinf to the [online manual](https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.linregress.html), `linregress` returns the slope, the intercept, and the *R*-value, which square  is equal to the coefficient of determination $R^2$.\n",
     "\n",
@@ -2262,8 +2131,6 @@
    "source": [
     "<div class=\"sol\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px\">🔑 <b>Answer</b></span>\n",
-    "\n",
     "Want to see a possible answer? Uncomment the `# %load ./SolutionsToExercises/...` command below and then run the content of the cell\n",
     "\n",
     "</div>"
@@ -2286,7 +2153,7 @@
    "source": [
     "<div class=\"exE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "📝 **Exercise**\n",
     "\n",
     "**3.** Use the `linregress` function of `scipy.stats` to find $E_a$ and $\\ln (A)$. Evaluate the performance of this regression model with the coefficient of determination, $R^2$ (R-squared). The closer to 1 the R-squared value is, the better the model is.\n",
     "\n",
@@ -2321,8 +2188,6 @@
    "source": [
     "<div class=\"sol\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px\">🔑 <b>Answer</b></span>\n",
-    "\n",
     "Want to see a possible answer? Uncomment the `# %load ./SolutionsToExercises/...` command below and then run the content of the cell\n",
     "\n",
     "</div>"
@@ -2345,8 +2210,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "Given that the temperature domain of the experimental data couples is [283-318]K, the 300K value for *k* is an interpolated value, whilst the 373.15K value for *k* is extrapolated.\n",
     "\n",
     "</div>\n",
@@ -2354,7 +2217,7 @@
     "\n",
     "<div class=\"exE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "📝 **Exercise**\n",
     "\n",
     "**6.** Plot again the [$\\frac{1}{RT_\\mathrm{exp}}$, $\\ln(k_\\mathrm{exp})$] couples on a graph as well as the [$\\frac{1}{RT_\\mathrm{exp}}$, $\\ln(k_\\mathrm{Arr})$] couples.\n",
     "<br>\n",
@@ -2383,8 +2246,6 @@
    "source": [
     "<div class=\"sol\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px\">🔑 <b>Answer</b></span>\n",
-    "\n",
     "Want to see a possible answer? Uncomment the `# %load ./SolutionsToExercises/...` command below and then run the content of the cell\n",
     "\n",
     "</div>"
@@ -2406,8 +2267,6 @@
    "metadata": {},
    "source": [
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "    \n",
     "**I have the feeling that you have a question !!** &#x1F642;\n",
     "    \n",
@@ -2430,8 +2289,6 @@
     "\n",
     "<div class=\"intro\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
-    "\n",
     "Nonlinear regression is a form of regression analysis in which data *y* are modeled by a function which is a nonlinear combination of the model parameters *a*, *b*, ...and depends on at least one variable *x*:\n",
     "$$y=f(x,\\alpha)$$\n",
     "where $\\alpha=a,b,c,...$\n",
@@ -2452,7 +2309,7 @@
    "source": [
     "<div class=\"app\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#d8edf4; color:#0D47A1; padding:4px 10px; border-radius:4px\">🚀 <b>Application</b></span>\n",
+    "🚀 **Application**\n",
     "\n",
     "**1.** Define a function `kArr` that will return the rate constant calculated after the Arrhenius equation. It will take three arguments: a temperature `T` (in K), the pre-exponential factor `A` and the activation energy, `Ea` (in J/mol). Use the molar gas constant, *R*, of the `scipy.constants` module.\n",
     "    \n",
@@ -2534,8 +2391,6 @@
    "metadata": {},
    "source": [
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "    \n",
     "**This is a plot of the segments between the four pairs of experimental data, it does not look like an exponential function!** \n",
     "\n",
@@ -2553,7 +2408,7 @@
    "source": [
     "<div class=\"app\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#d8edf4; color:#0D47A1; padding:4px 10px; border-radius:4px\">🚀 <b>Application</b></span>\n",
+    "🚀 **Application**\n",
     "\n",
     "**4.** Use `np.linspace` to define 100 temperatures between T(exp A) - 10K and T(exp D) + 10K. It is suggested to name the array `Tdense`\n",
     "\n",
@@ -2603,8 +2458,6 @@
    "metadata": {},
    "source": [
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "    \n",
     "Even though the optimized parameters differ, the resulting plots are very close. Evaluating the best fit is beyond the scope of this notebook.\n",
     "\n",
@@ -2624,8 +2477,6 @@
     "\n",
     "<div class=\"intro\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
-    "\n",
     "Is it necessary to recall that \"*definite integrals can be interpreted as the signed area of the region in the plane that is bounded by the graph of a given function between two points in the real line. Conventionally, areas above the horizontal axis of the plane are positive while areas below are negative*\" ([Wikipedia](https://en.wikipedia.org/wiki/Integral)).\n",
     "    \n",
     "We will now consider an integration process from a pragmatic point of view, *i.e.* the calculation of an area under a curve. We will use the `integrate` sub-package of `SciPy`, that provides several integration techniques. Methods for integrating functions include `trapezoid` ([trapezoidal rule](https://en.wikipedia.org/wiki/Trapezoidal_rule) to compute integral) and `simpson` (uses [Simpson's rule](https://en.wikipedia.org/wiki/Simpson%27s_rule) to compute integral from samples).\n",
@@ -2635,8 +2486,6 @@
     "</div>\n",
     "<br>\n",
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "\n",
     "There is an important distinction to keep in mind. `trapezoid` and `simpson` integrate **samples**: they need arrays of *x* and *f(x)* values, which is what you use when the function is only known through data. When, on the contrary, the function is known **analytically**, *i.e.* defined by an equation such as $f(x)=x^2$ — you can integrate it directly with `quad`, which takes the Python function itself (not samples) and the two integration bounds. `quad` returns two values: the estimated integral and an estimate of the absolute error.\n",
     "</div>\n",
@@ -2662,7 +2511,7 @@
    "source": [
     "<div class=\"app\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#d8edf4; color:#0D47A1; padding:4px 10px; border-radius:4px\">🚀 <b>Application</b></span>\n",
+    "🚀 **Application**\n",
     "\n",
     "**1.** Tranform these three lists as arrays. Name them `x`, `f1`, `f2` and `f3`.\n",
     "- `x = [-5.,-4.5,-4.,-3.5,-3.,-2.5,-2.,-1.5,-1.,-0.5,0.,0.5,1.,1.5,2.,2.5,3.,3.5,4.,4.5,5.]`\n",
@@ -2726,8 +2575,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "The three functions are actually numerical representations of:\n",
     "- $f_1(x) = x^2$, a positive even function\n",
     "- $f_2(x) = -x^2$, a negative even function\n",
@@ -2754,8 +2601,6 @@
    "source": [
     "<div class=\"intro\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
-    "\n",
     "Function area measurements are very important in various spectroscopy techniques, such as Visible-Ultra-Violet (VUV), Nuclear Magnetic Resonance (NMR), chromatography... For example, the area under 1H-NMR peaks is **proportional** to the number of hydrogens which that signal represents. \n",
     "    \n",
     "Even if you are not (yet) familiar with NMR, you must at least know that **equivalent H in a molecule** will give the **same signal** (it is said that they resonate at the same frequency). For example, all H atoms of a methyl group (CH3) will give the same signal. In this way, by integrating the different NMR peaks, information regarding the relative numbers of chemically distinct hydrogens can be found. Actually, the integrated intensities, in conjunction with the positions of the peaks, called chemical shifts, and with the signal splittings (called spin-spin coupling), enable structural assignments. \n",
@@ -2763,7 +2608,7 @@
     "<br>\n",
     "<div class=\"app\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#d8edf4; color:#0D47A1; padding:4px 10px; border-radius:4px\">🚀 <b>Application</b></span>\n",
+    "🚀 **Application**\n",
     "\n",
     "The 1H NMR spectrum of propan-1-ol, C<sub>3</sub>H<sub>8</sub>O, has been recorded and saved in the `NMR-Propan-1-ol.csv` file that can be found in the `MiscData` folder. The first column contains the x-axis data, *i.e.* the chemical shift (unit = ppm), whereas the second column contains the y-axis data, *i.e.* the intensity of the NMR signal (arbitrary unit).\n",
     "    \n",
@@ -2814,7 +2659,7 @@
    "source": [
     "<div class=\"app\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#d8edf4; color:#0D47A1; padding:4px 10px; border-radius:4px\">🚀 <b>Application</b></span>\n",
+    "🚀 **Application**\n",
     "\n",
     "The previous plot shows that there are four signals, located between:\n",
     "- [0.85, 1.0] ppm\n",
@@ -2948,8 +2793,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "**Do you want to generalize this code?**\n",
     "\n",
     "If you need to analyze an NMR spectrum with many peaks, repeating the same code several times is not the best way to proceed. This will make the notebook difficult to read, and in the end you may make mistakes that are hard to find. Let's develop functions in order to avoid this.\n",
@@ -3039,8 +2882,6 @@
     "#### Integrating a function = Integrating from an equation\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "    \n",
     "Unlike `simpson` and `trapezoid`, which work on **samples** (arrays of values), `quad` integrates a function known **analytically**, *i.e.* defined by an equation. You pass it the Python function itself and the two integration bounds, there is no need to build an array of points.\n",
     "\n",
@@ -3075,7 +2916,7 @@
    "source": [
     "<div class=\"exE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "📝 **Exercise**\n",
     "\n",
     "<u>**Enthalpy change from heat capacity**</u>\n",
     "\n",
@@ -3112,8 +2953,6 @@
    "source": [
     "<div class=\"sol\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px\">🔑 <b>Answer</b></span>\n",
-    "\n",
     "Want to see a possible answer? Uncomment the `# %load ./SolutionsToExercises/...` command below and then run the content of the cell\n",
     "\n",
     "</div>"
@@ -3140,8 +2979,6 @@
     "\n",
     "<div class=\"intro\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
-    "\n",
     "Let's now move to thermodynamics, and more specifically to two thermodynamic properties: the enthalpy, $H$, and the heat capacity at constant pressure, $C_P$. The enthalpy value of a chemical system is determined entirely by the temperature, pressure, and composition of this system. $H$ has the dimensions of **energy**.\n",
     "\n",
     "If we consider a constant pressure process, it can be shown that the first derivative of *H* with respect to temperature is nothing else but $C_P$:\n",
@@ -3154,7 +2991,7 @@
     "<br>\n",
     "<div class=\"app\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#d8edf4; color:#0D47A1; padding:4px 10px; border-radius:4px\">🚀 <b>Application</b></span>\n",
+    "🚀 **Application**\n",
     "\n",
     "In the next cell, we will:\n",
     "    \n",
@@ -3204,8 +3041,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "**There are two very interesting features at ∼1350 K and ∼2850 K**: a sudden increase of *H*. This pattern is characteristic of **phase transitions** (e.g. solid ↔ liquid or liquid ↔ gas). During these transitions very large changes in the value of the enthalpy for a substance occur without any noticeable change in temperature.\n",
     "    \n",
     "Two phase transitions occur in this temperature domain:\n",
@@ -3215,8 +3050,6 @@
     "</div>\n",
     "<br>\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "    \n",
     "We are now going to calculate $C_p$ as the firt derivative of *H* with respect to *T*. Yet, we do not have a function $H(T)$, but values of *H* measured for different temperatures. So we have to numerically calculate the first derivative. The simplest way to do that is by calculating for each temperature $T_i$:\n",
     "\n",
@@ -3227,7 +3060,7 @@
     "<br>\n",
     "<div class=\"app\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#d8edf4; color:#0D47A1; padding:4px 10px; border-radius:4px\">🚀 <b>Application</b></span>\n",
+    "🚀 **Application**\n",
     "\n",
     "In the next cell, we are going to:\n",
     "\n",
@@ -3237,8 +3070,6 @@
     "</div>\n",
     "<br>\n",
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "\n",
     "But first of all, a gentle mathematical reminder... The plot of $H(T)$ shows two discontinuities of the curve at each phase transition. Given the genuine definition of the first derivative, *i.e.*:\n",
     "\n",
@@ -3291,8 +3122,6 @@
     "\n",
     "<div class=\"intro\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
-    "\n",
     "In computer programming, loops are used to repeat a block of code. The `for` loop is used to run a block of code for a certain number of times. It is used to iterate over any sequences such as lists, range of numbers,.. The simplest way to figure out how it works is to run the blocks of codes below:\n",
     "</div>"
    ]
@@ -3330,8 +3159,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "The `print(i)` command must belong to an **indented block**, consisting in this case of one statement. The indentation tells Python which statements are in the loop, and which are outside the loop.\n",
     "</div>"
    ]
@@ -3343,7 +3170,7 @@
    "source": [
     "<div class=\"app\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#d8edf4; color:#0D47A1; padding:4px 10px; border-radius:4px\">🚀 <b>Application</b></span>\n",
+    "🚀 **Application**\n",
     "\n",
     "We want to annotate all the points on the graph with the name of the electrode, using a built-in `annotate` function of `matplotlib.pyplot` (aka `plt`) that takes the text, and then the x and y coordinates of the point.\n",
     "    \n",
@@ -3413,8 +3240,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "The identification of the best electrocatalytic electrodes for the production of molecular hydrogen is now straightforward... provided of course that you know how to analyze such volcano plots: it is pure platinum or palladium electrodes, because they lie on top of the volcano. &#x1F60E;\n",
     "</div>"
    ]
@@ -3427,8 +3252,6 @@
     "### Conditional branching and interactive script with `input()`\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     " \n",
     "Conditional branching is the term used to describe the set of operations such as `if <condition> do <something> else do <something else>`\n",
     "\n",
@@ -3462,8 +3285,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "**One equals (=) sign vs two (==).** This is *the* most common beginner bug:\n",
     "\n",
     "- `=` **assigns** a value: `T = 298` puts 298 into the variable `T`.\n",
@@ -3480,8 +3301,6 @@
    "metadata": {},
    "source": [
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     " \n",
     "There are often choices programs have to make that are not simply `True` or `False`. For situations in which there are three or more choices, there is the `elif` keyword, which is an abbreviation for else, if:\n",
     "</div>"
@@ -3512,8 +3331,6 @@
     "## A word about object-oriented programming (OOP) in Python\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "\n",
     "The next short Python script illustrates the practical consequence of **object-oriented programming** (**OOP**) in Python. Let's consider a NumPy array, named `dummy`. Since it is declared as `dummy = np.array([items])`, it is a **NumPy object**. It is actually NumPy’s main object. As such, all methods (or functions) defined in the NumPy library apply to this `dummy` object.\n",
     "    \n",
@@ -3546,8 +3363,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "**Don't forget, in the dot notation, the () after the name of the function (or method)**. Otherwise, the Python interpreter will assume that you are calling a variable (a so-called *instance attribute* or *class attribute*) associated to the `dummy` object. For example, `dummy.size` returns the number of elements of the `dummy` array.\n",
     "</div>"
    ]
@@ -3579,8 +3394,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "The second statement (Test 2) returned an error, saying about `dummy.size()` that the `'int' object is not callable`:\n",
     "```Python\n",
     "TypeError                                 Traceback (most recent call last)\n",
@@ -3607,8 +3420,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "**Do you want to know more?**\n",
     "\n",
     "Let's develop a simple application. **If you don't feel comfortable, jump to the *[Python fancy plotting](#pfp)* section &#x1F447; and come back later.**\n",
@@ -3616,7 +3427,7 @@
     "<br>\n",
     "<div class=\"app\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#d8edf4; color:#0D47A1; padding:4px 10px; border-radius:4px\">🚀 <b>Application</b></span>\n",
+    "🚀 **Application**\n",
     "\n",
     "We will now define a class named [`square`](https://en.wikipedia.org/wiki/Square). \n",
     "\n",
@@ -3681,7 +3492,7 @@
    "source": [
     "<div class=\"app\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#d8edf4; color:#0D47A1; padding:4px 10px; border-radius:4px\">🚀 <b>Application</b></span>\n",
+    "🚀 **Application**\n",
     "\n",
     "**4.** Now, use the square class:\n",
     "\n",
@@ -3750,9 +3561,7 @@
     "Each plot that we see in a figure, is an `axes` object. The `axes` object holds the actual data that we are going to display. It will also contain X- and Y-axis labels, a title.\n",
     "\n",
     "Don't make a confusion between `axes` and `axis` objects. `axis` objects set the data limits. They also contain the ticks and ticks labels. They belong to an `axes` object.\n",
-    "</div>\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n"
+    "</div>"
    ]
   },
   {
@@ -3803,8 +3612,6 @@
    "metadata": {},
    "source": [
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "\n",
     "Now that you are an advanced python programmer &#x1F4AA;, try to analyze the next piece of code for yourself. But first, let's provide some context.\n",
     "\n",
@@ -3869,8 +3676,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "As you can see, the higher *k* is, the faster the decrease in *C*, *i.e.* the reactant R is transformed more and more rapidly into the product of the reaction, P.\n",
     "</div>"
    ]
@@ -3883,8 +3688,6 @@
     "## Dictionaries\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "\n",
     "A **dictionary** stores pairs of `key: value`. Instead of remembering that \"position 2 is the boiling point\", you look things up **by name**. This is very natural in chemistry: mapping a species to its concentration, or a constant to its value.\n",
     "\n",
@@ -3926,8 +3729,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "**When to use what?** Use a **list/array** when order and position matter (a series of measurements). Use a **dictionary** when you want to look things up **by name** (a table of physical constants, results labelled by species).\n",
     "\n",
     "</div>"
@@ -3940,7 +3741,7 @@
    "source": [
     "<div class=\"exE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "📝 **Exercise**\n",
     "\n",
     "Here are the boiling points (in °C, at 1 atm) of a few solvents:\n",
     "\n",
@@ -3976,8 +3777,6 @@
    "source": [
     "<div class=\"sol\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px\">🔑 <b>Answer</b></span>\n",
-    "\n",
     "Want to see a possible answer? Uncomment the `# %load ./SolutionsToExercises/...` command below and then run the content of the cell\n",
     "\n",
     "</div>"
@@ -4001,8 +3800,6 @@
     "## Interactive matplotlib plots\n",
     "\n",
     "<div class=\"intro\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
     "\n",
     "It requires the `ipympl` library, that is specifically called as a widget. It enables using the interactive features of matplotlib in Jupyter Notebooks, Jupyter Lab and Google Colab. You can basically zoom (&#9744; icon), switch between views (&larr; and &rarr; icons), move the graph (&#9532; icon) and revert to the initial view (&#127968; icon)\n",
     "</div>"
@@ -4067,8 +3864,6 @@
     "\n",
     "<div class=\"intro\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px\">📖 <b>Introduction</b></span>\n",
-    "\n",
     "These are meant to be solved independently, ideally with little or no help from generative AI, so you can build the core skills yourself. \n",
     "</div>"
    ]
@@ -4082,7 +3877,7 @@
     "\n",
     "<div class=\"exE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "📝 **Exercise**\n",
     "    \n",
     "**1.** In a variable called `val`, store the list [1, 4, -6, 12, 1.55] and display its content.\n",
     "\n",
@@ -4115,8 +3910,6 @@
    "source": [
     "<div class=\"sol\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px\">🔑 <b>Answer</b></span>\n",
-    "\n",
     "Want to see a possible answer? Uncomment the `# %load ./SolutionsToExercises/...` command below and then run the content of the cell\n",
     "\n",
     "</div>"
@@ -4141,7 +3934,7 @@
     "\n",
     "<div class=\"exE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "📝 **Exercise**\n",
     "\n",
     "**1)** Check whether a number is even or odd.  \n",
     "\n",
@@ -4172,8 +3965,6 @@
    "metadata": {},
    "source": [
     "<div class=\"sol\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px\">🔑 <b>Answer</b></span>\n",
     "\n",
     "Want to see a possible answer? Uncomment the `# %load ./SolutionsToExercises/...` command below and then run the content of the cell\n",
     "\n",
@@ -4207,8 +3998,6 @@
    "source": [
     "<div class=\"rqE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
-    "\n",
     "The plotting cells that you will define below return objects (Line2D, Legend...) that would be\n",
     "displayed because this notebook uses `ast_node_interactivity = \"all\"`.\n",
     "We switch to the standard \"last_expr\" behaviour to keep the output clean:\n",
@@ -4234,7 +4023,7 @@
    "source": [
     "<div class=\"exE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "📝 **Exercise**\n",
     "\n",
     "\n",
     "**1)** Plot, as simply as possible, the curve of $\\sin(x)$ between 0 and $2\\pi$.\n",
@@ -4266,8 +4055,6 @@
    "source": [
     "<div class=\"sol\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px\">🔑 <b>Answer</b></span>\n",
-    "\n",
     "Want to see a possible answer? Uncomment the `# %load ./SolutionsToExercises/...` command below and then run the content of the cell\n",
     "\n",
     "</div>"
@@ -4290,14 +4077,12 @@
    "source": [
     "<div class=\"exE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "📝 **Exercise**\n",
     "\n",
     "**6)** Load, using either `genfromtxt` or `read_csv`, the data contained in the file `MysteryCurve.dat`, stored in the `MiscData` folder, and plot it with a solid red line. Use the interactive widget of matplotlib.\n",
     "</div>\n",
     "<br>\n",
     "<div class=\"hintE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#ededb6; color:#8B4513; padding:4px 10px; border-radius:4px\">💡 <b>Hint</b></span>\n",
     "\n",
     "To inspect the raw content of a data file before loading it, first open it and print it (the `range(10)` below limits the display to the first ten lines; change it to show more):\n",
     "\n",
@@ -4315,8 +4100,6 @@
    "metadata": {},
    "source": [
     "<div class=\"sol\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px\">🔑 <b>Answer</b></span>\n",
     "\n",
     "Want to see a possible answer? Uncomment the `# %load ./SolutionsToExercises/...` command below and then run the content of the cell\n",
     "\n",
@@ -4342,7 +4125,7 @@
     "\n",
     "<div class=\"exE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "📝 **Exercise**\n",
     "\n",
     "Formic acid (HCOOH, abbreviated here as AH, pKa = 3.8) is added at an initial concentration $[AH]_0$ to water at pH = 7. We assume $[AH]_0 \\gg 10^{-7}$ M so that the dissociation of water can be neglected. Consider the dissociation reaction\n",
     "\n",
@@ -4392,8 +4175,6 @@
    "source": [
     "<div class=\"sol\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px\">🔑 <b>Answer</b></span>\n",
-    "\n",
     "Want to see a possible answer? Uncomment the `# %load ./SolutionsToExercises/...` command below and then run the content of the cell\n",
     "\n",
     "</div>"
@@ -4418,7 +4199,7 @@
     "\n",
     "<div class=\"exE\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px\">📝 <b>Exercise</b></span>\n",
+    "📝 **Exercise**\n",
     "\n",
     "For each of the following, choose the right SciPy tool (use `quad` when the function is known **analytically**, *i.e.* defined by an equation, and `simpson` when it is only known through **samples**, *i.e.* arrays of values). In each case, also plot the function together with a horizontal dashed line at $y = 0$, so you can qualitatively check the sign and magnitude of the area you computed.\n",
     "\n",
@@ -4447,8 +4228,6 @@
    "source": [
     "<div class=\"sol\">\n",
     "\n",
-    "<span style=\"display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px\">🔑 <b>Answer</b></span>\n",
-    "\n",
     "Want to see a possible answer? Uncomment the `# %load ./SolutionsToExercises/...` command below and then run the content of the cell\n",
     "\n",
     "</div>"
@@ -4470,8 +4249,6 @@
    "metadata": {},
    "source": [
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "\n",
     "Cancel again the \"last show-up\" behaviour of Jupyter notebooks\n",
     "</div>"
@@ -4496,8 +4273,6 @@
     "## Final words\n",
     "\n",
     "<div class=\"rqE\">\n",
-    "\n",
-    "<span style=\"display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px\">⚠️ <b>Pay Attention</b></span>\n",
     "\n",
     "Let's cite Bravenec and Ward [1]: \"*Programming in Python empowers scientists to apply their knowledge to scales beyond what can be accomplished with manual effort. Whether automating operations for large volumes of data, solving numerical problems, or creating simulations, there's a wealth of applications out there. **We've only just scratched the surface**.*\" **One cannot but agree.** &#x1F642;\n",
     "\n",
