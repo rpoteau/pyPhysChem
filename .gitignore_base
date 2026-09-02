@@ -1,7 +1,11 @@
-**/.*    # ignore all dotted files, at any depth
-**/.*/   # ignore all dotted folders, at any depth
-!/.gitignore  # except `gitignore` :)
-!/.gitignore_base  # except `gitignore_base`
+# ignore all dotted files, at any depth
+**/.*
+# ignore all dotted folders, at any depth
+**/.*/
+# except `gitignore` :)
+!/.gitignore
+# except `gitignore_base`
+!/.gitignore_base  
 
 __pycache__
 .ipynb_checkpoints
@@ -11,7 +15,8 @@ __pycache__
 */.directory
 
 *.swp
-*.bak #vi text editor
+# vi text editor / backup files
+*.bak
 
 Thumbs.db
 Thumbs.db:encryptable

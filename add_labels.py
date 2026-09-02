@@ -20,12 +20,12 @@ import json, re, sys, shutil
 from datetime import datetime
 
 LABELS = {
-    "hintE": '<span style="display:block; background-color:#ededb6; color:#8B4513; padding:4px 10px; border-radius:4px">💡 <b>Hint</b></span>',
-    "rqE":   '<span style="display:block; background-color:#fde9e9; color:#B71C1C; padding:4px 10px; border-radius:4px">⚠️ <b>Pay Attention</b></span>',
-    "exE":   '<span style="display:block; background-color:#E8F0FE; color:#0D47A1; padding:4px 10px; border-radius:4px">📝 <b>Exercise</b></span>',
-    "app":   '<span style="display:block; background-color:#d8edf4; color:#0D47A1; padding:4px 10px; border-radius:4px">🚀 <b>Application</b></span>',
-    "sol":   '<span style="display:block; background-color:#ddf4db; color:#1B5E20; padding:4px 10px; border-radius:4px">🔑 <b>Answer</b></span>',
-    "intro": '<span style="display:block; background-color:#e6e6e6; color:#000000; padding:4px 10px; border-radius:4px">📖 <b>Introduction</b></span>',
+    "hintE": '<table width="100%" cellpadding="6"><tr><td bgcolor="#ededb6"><span style="color:#8B4513">💡 <b>Hint</b></span></td></tr></table>',
+    "rqE": '<table width="100%" cellpadding="6"><tr><td bgcolor="#fde9e9"><span style="color:#B71C1C">⚠️ <b>Pay Attention</b></span></td></tr></table>',
+    "exE": '<table width="100%" cellpadding="6"><tr><td bgcolor="#E8F0FE"><span style="color:#0D47A1">📝 <b>Exercise</b></span></td></tr></table>',
+    "app": '<table width="100%" cellpadding="6"><tr><td bgcolor="#d8edf4"><span style="color:#0D47A1">🚀 <b>Application</b></span></td></tr></table>',
+    "sol": '<table width="100%" cellpadding="6"><tr><td bgcolor="#ddf4db"><span style="color:#1B5E20">🔑 <b>Answer</b></span></td></tr></table>',
+    "intro": '<table width="100%" cellpadding="6"><tr><td bgcolor="#e6e6e6"><span style="color:#000000">📖 <b>Introduction</b></span></td></tr></table>',
 }
 USAGE = "usage: ./add_labels.py input.ipynb [output.ipynb]"
 
