@@ -21,10 +21,14 @@ from datetime import datetime
 
 LABELS = {
     "hintE": '<table width="100%" cellpadding="6"><tr><td bgcolor="#ededb6"><span style="color:#8B4513">💡 <b>Hint</b></span></td></tr></table>',
+    "hint": '<table width="100%" cellpadding="6"><tr><td bgcolor="#ededb6"><span style="color:#8B4513">💡 <b>Indice(s)</b></span></td></tr></table>',
     "rqE": '<table width="100%" cellpadding="6"><tr><td bgcolor="#fde9e9"><span style="color:#B71C1C">⚠️ <b>Pay Attention</b></span></td></tr></table>',
+    "rq": '<table width="100%" cellpadding="6"><tr><td bgcolor="#fde9e9"><span style="color:#B71C1C">⚠️ <b>Remarque</b></span></td></tr></table>',
     "exE": '<table width="100%" cellpadding="6"><tr><td bgcolor="#E8F0FE"><span style="color:#0D47A1">📝 <b>Exercise</b></span></td></tr></table>',
+    "ex": '<table width="100%" cellpadding="6"><tr><td bgcolor="#E8F0FE"><span style="color:#0D47A1">📝 <b>Exercice</b></span></td></tr></table>',
     "app": '<table width="100%" cellpadding="6"><tr><td bgcolor="#d8edf4"><span style="color:#0D47A1">🚀 <b>Application</b></span></td></tr></table>',
-    "sol": '<table width="100%" cellpadding="6"><tr><td bgcolor="#ddf4db"><span style="color:#1B5E20">🔑 <b>Answer</b></span></td></tr></table>',
+    "solE": '<table width="100%" cellpadding="6"><tr><td bgcolor="#ddf4db"><span style="color:#1B5E20">🔑 <b>Answer</b></span></td></tr></table>',
+    "sol": '<table width="100%" cellpadding="6"><tr><td bgcolor="#ddf4db"><span style="color:#1B5E20">🔑 <b>Réponse</b></span></td></tr></table>',
     "intro": '<table width="100%" cellpadding="6"><tr><td bgcolor="#e6e6e6"><span style="color:#000000">📖 <b>Introduction</b></span></td></tr></table>',
 }
 USAGE = "usage: ./add_labels.py input.ipynb [output.ipynb]"

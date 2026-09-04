@@ -6,13 +6,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## **2026.08.02 [2.3.1]** "PPCL: beginner-friendly additions (3)"
+## **2026.09.04 [2.3.2]** "Ato1PS"
+
+### Added
+
+- `Ato1PS.ipynb`: new numerical support notebook for atomic chemistry ("Ato 1 Parcours Spéciaux"): isotopes, energy levels of H/hydrogenoids, Rydberg transitions (numerical + SymPy). A working document for teachers and students at the University of Toulouse, France. Work in progress.
+
+## **2026.09.02 [2.3.1]** "PPCL: beginner-friendly additions (3)"
 
 ### Changed
 
 - `add_labels.py`: labels switched to `<table bgcolor>` so backgrounds render on Google Colab too (not just Jupyter).
 
-## **2026.08.01 [2.3.0]** "PPCL: beginner-friendly additions (2)"
+## **2026.09.01 [2.3.0]** "PPCL: beginner-friendly additions (2)"
 
 ### Changed
 
