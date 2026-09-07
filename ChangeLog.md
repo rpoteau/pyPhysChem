@@ -6,6 +6,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## **2026.09.04 [2.3.6]** "Ato1PS(2)"
+
+### Added
+
+- in `Ato1PS.ipynb`:
+    - Lyman, Balmer... series
+    - analytic calculation for H of <psi_100|H|psi_100>/<psi_100|psi_100>, using the SymPy library
+
 ## **2026.09.04 [2.3.2, 2.3.3, 2.3.4, 2.3.5]** "Ato1PS"
 
 ### Added
