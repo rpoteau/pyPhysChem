@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## **2026.17.10 [2.4.0]** "ULR_DigitalChem1, make_student"
+## **2026.17.10 [2.4.0], [2.4.1], [2.4.2] ** "ULR_DigitalChem1, make_student, numbering"
 
 ### Added
 
@@ -38,6 +38,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
       `--no-ask`: report only; `--lang Fr|En`: language of the added markers (default: detected).
     - Final report of the code cells without marker (kept in full), with their number, section
       title and first line.
+
+- in **`add_labels.py`**: automatic numbering of section headings and exercises.
+    - Section headings (`##` to `######`) numbered `[A]`, `[A.1]`, `[A.1.1]`, `[A.1.1.a]`,
+      `[A.1.1.a.i]` (uppercase letter, numeric, numeric, lowercase letter, lowercase roman),
+      inserted or updated at the start of the heading text.
+    - `<div class="ex">` / `<div class="exE">` (exercises) share a single counter numbered
+      `[A.1]`, `[A.2]`... reset to 1 at each new top-level (`##`) section; the label
+      (`📝 Exercice`/`Exercise`) is computed per occurrence instead of fixed.
+    - Idempotent: an existing `[...]` section or exercise number is detected and replaced, not
+      duplicated — safe to re-run after sections are reordered, added or removed.
 
 ## **2026.09.15 [2.3.11]** "Ato1PS(6)"
 
