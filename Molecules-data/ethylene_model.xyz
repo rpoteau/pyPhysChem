@@ -1,0 +1,8 @@
+6
+C2H4 ethylene - idealized D2h model, C=C 1.339 A, C-H 1.087 A, HCC 121.3 deg; molecule in the yz plane, C=C along z; not an experimental structure
+C      0.000000     0.000000     0.669500
+C      0.000000     0.000000    -0.669500
+H      0.000000     0.928797     1.234217
+H      0.000000    -0.928797     1.234217
+H      0.000000     0.928797    -1.234217
+H      0.000000    -0.928797    -1.234217

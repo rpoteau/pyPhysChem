@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="534.20483pt"
+   height="348.10883pt"
+   viewBox="0 0 534.20485 348.10882"
+   version="1.1"
+   id="svg42"
+   sodipodi:docname="boxplot_lecture.svg"
+   inkscape:version="1.4.4 (unknown)"
+   inkscape:export-filename="boxplot_lecture.png"
+   inkscape:export-xdpi="300.008"
+   inkscape:export-ydpi="300.008"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="namedview42"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="pt"
+     inkscape:zoom="1.5230841"
+     inkscape:cx="192.37283"
+     inkscape:cy="293.48346"
+     inkscape:window-width="2544"
+     inkscape:window-height="1344"
+     inkscape:window-x="83"
+     inkscape:window-y="58"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="axes_1" />
+  <metadata
+     id="metadata1">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:date>2026-10-13T16:47:09.309354</dc:date>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+          </cc:Agent>
+        </dc:creator>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1">
+    <style
+       type="text/css"
+       id="style1">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+  </defs>
+  <g
+     id="figure_1"
+     transform="translate(-11.195464,-11.944438)">
+    <g
+       id="axes_1">
+      <g
+         id="matplotlib.axis_1" />
+      <g
+         id="matplotlib.axis_2">
+        <g
+           id="ytick_1">
+          <g
+             id="line2d_1">
+            <defs
+               id="defs2">
+              <path
+                 id="m3d533cde4b"
+                 d="M 0,0 H -3.5"
+                 style="stroke:#000000;stroke-width:0.8" />
+            </defs>
+            <g
+               id="g2">
+              <use
+                 xlink:href="#m3d533cde4b"
+                 x="44.959999"
+                 y="311.54764"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use2" />
+            </g>
+          </g>
+          <g
+             id="text_1">
+            <text
+               style="font-size:11px;font-family:Calibri, Carlito, sans-serif;text-anchor:end"
+               x="37.959999"
+               y="315.67264"
+               id="text2">9</text>
+          </g>
+        </g>
+        <g
+           id="ytick_2">
+          <g
+             id="line2d_2">
+            <g
+               id="g3">
+              <use
+                 xlink:href="#m3d533cde4b"
+                 x="44.959999"
+                 y="263.48288"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use3" />
+            </g>
+          </g>
+          <g
+             id="text_2">
+            <text
+               style="font-size:11px;font-family:Calibri, Carlito, sans-serif;text-anchor:end"
+               x="37.959999"
+               y="267.60788"
+               id="text3">10</text>
+          </g>
+        </g>
+        <g
+           id="ytick_3">
+          <g
+             id="line2d_3">
+            <g
+               id="g4">
+              <use
+                 xlink:href="#m3d533cde4b"
+                 x="44.959999"
+                 y="215.41811"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use4" />
+            </g>
+          </g>
+          <g
+             id="text_3">
+            <text
+               style="font-size:11px;font-family:Calibri, Carlito, sans-serif;text-anchor:end"
+               x="37.959999"
+               y="219.54311"
+               id="text4">11</text>
+          </g>
+        </g>
+        <g
+           id="ytick_4">
+          <g
+             id="line2d_4">
+            <g
+               id="g5">
+              <use
+                 xlink:href="#m3d533cde4b"
+                 x="44.959999"
+                 y="167.35333"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use5" />
+            </g>
+          </g>
+          <g
+             id="text_4">
+            <text
+               style="font-size:11px;font-family:Calibri, Carlito, sans-serif;text-anchor:end"
+               x="37.959999"
+               y="171.47833"
+               id="text5">12</text>
+          </g>
+        </g>
+        <g
+           id="ytick_5">
+          <g
+             id="line2d_5">
+            <g
+               id="g6">
+              <use
+                 xlink:href="#m3d533cde4b"
+                 x="44.959999"
+                 y="119.28856"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use6" />
+            </g>
+          </g>
+          <g
+             id="text_5">
+            <text
+               style="font-size:11px;font-family:Calibri, Carlito, sans-serif;text-anchor:end"
+               x="37.959999"
+               y="123.41356"
+               id="text6">13</text>
+          </g>
+        </g>
+        <g
+           id="ytick_6">
+          <g
+             id="line2d_6">
+            <g
+               id="g7">
+              <use
+                 xlink:href="#m3d533cde4b"
+                 x="44.959999"
+                 y="71.223785"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use7" />
+            </g>
+          </g>
+          <g
+             id="text_6">
+            <text
+               style="font-size:11px;font-family:Calibri, Carlito, sans-serif;text-anchor:end"
+               x="37.959999"
+               y="75.348785"
+               id="text7">14</text>
+          </g>
+        </g>
+        <g
+           id="ytick_7">
+          <g
+             id="line2d_7">
+            <g
+               id="g8">
+              <use
+                 xlink:href="#m3d533cde4b"
+                 x="44.959999"
+                 y="23.159012"
+                 style="stroke:#000000;stroke-width:0.8"
+                 id="use8" />
+            </g>
+          </g>
+          <g
+             id="text_7">
+            <text
+               style="font-size:11px;font-family:Calibri, Carlito, sans-serif;text-anchor:end"
+               x="37.959999"
+               y="27.284012"
+               id="text8">15</text>
+          </g>
+        </g>
+        <g
+           id="text_8">
+          <text
+             style="font-size:12px;font-family:Calibri, Carlito, sans-serif;text-anchor:middle"
+             x="19.80875"
+             y="184.17599"
+             transform="rotate(-90,19.80875,184.176)"
+             id="text9">teneur en alcool / % vol.</text>
+        </g>
+      </g>
+      <g
+         id="patch_3">
+        <path
+           d="m 160.75652,287.51526 h 63.16174 v -76.90364 h -63.16174 z"
+           clip-path="url(#p325428b84d)"
+           style="fill:#e8c7cf;stroke:#5a1024;stroke-width:1.5;stroke-linejoin:miter"
+           id="path9" />
+      </g>
+      <g
+         id="line2d_8">
+        <path
+           d="m 192.33739,287.51526 v 52.87125"
+           clip-path="url(#p325428b84d)"
+           style="fill:none;stroke:#5a1024;stroke-width:1.5;stroke-linecap:square"
+           id="path10" />
+      </g>
+      <g
+         id="line2d_9">
+        <path
+           d="M 192.33739,210.61162 V 95.25617"
+           clip-path="url(#p325428b84d)"
+           style="fill:none;stroke:#5a1024;stroke-width:1.5;stroke-linecap:square"
+           id="path11" />
+      </g>
+      <g
+         id="line2d_10">
+        <path
+           d="m 176.54696,340.38651 h 31.58087"
+           clip-path="url(#p325428b84d)"
+           style="fill:none;stroke:#5a1024;stroke-width:1.5;stroke-linecap:square"
+           id="path12" />
+      </g>
+      <g
+         id="line2d_11">
+        <path
+           d="m 176.54696,95.25617 h 31.58087"
+           clip-path="url(#p325428b84d)"
+           style="fill:none;stroke:#5a1024;stroke-width:1.5;stroke-linecap:square"
+           id="path13" />
+      </g>
+      <g
+         id="line2d_12">
+        <defs
+           id="defs13">
+          <path
+             id="mbcdfc61995"
+             d="M 0,2.5 C 0.663008,2.5 1.29895,2.236584 1.767767,1.767767 2.236584,1.29895 2.5,0.663008 2.5,0 2.5,-0.663008 2.236584,-1.29895 1.767767,-1.767767 1.29895,-2.236584 0.663008,-2.5 0,-2.5 c -0.663008,0 -1.29895,0.263416 -1.767767,0.732233 C -2.236584,-1.29895 -2.5,-0.663008 -2.5,0 c 0,0.663008 0.263416,1.29895 0.732233,1.767767 C -1.29895,2.236584 -0.663008,2.5 0,2.5 Z"
+             style="stroke:#000000;stroke-opacity:0" />
+        </defs>
+        <g
+           clip-path="url(#p325428b84d)"
+           id="g24">
+          <use
+             xlink:href="#mbcdfc61995"
+             x="192.33739"
+             y="71.223785"
+             style="fill:#8e1b3a;stroke:#000000;stroke-opacity:0"
+             id="use13" />
+          <use
+             xlink:href="#mbcdfc61995"
+             x="192.33739"
+             y="71.223785"
+             style="fill:#8e1b3a;stroke:#000000;stroke-opacity:0"
+             id="use14" />
+          <use
+             xlink:href="#mbcdfc61995"
+             x="192.33739"
+             y="71.223785"
+             style="fill:#8e1b3a;stroke:#000000;stroke-opacity:0"
+             id="use15" />
+          <use
+             xlink:href="#mbcdfc61995"
+             x="192.33739"
+             y="27.965488"
+             style="fill:#8e1b3a;stroke:#000000;stroke-opacity:0"
+             id="use16" />
+          <use
+             xlink:href="#mbcdfc61995"
+             x="192.33739"
+             y="71.223785"
+             style="fill:#8e1b3a;stroke:#000000;stroke-opacity:0"
+             id="use17" />
+          <use
+             xlink:href="#mbcdfc61995"
+             x="192.33739"
+             y="90.449692"
+             style="fill:#8e1b3a;stroke:#000000;stroke-opacity:0"
+             id="use18" />
+          <use
+             xlink:href="#mbcdfc61995"
+             x="192.33739"
+             y="90.449692"
+             style="fill:#8e1b3a;stroke:#000000;stroke-opacity:0"
+             id="use19" />
+          <use
+             xlink:href="#mbcdfc61995"
+             x="192.33739"
+             y="90.449692"
+             style="fill:#8e1b3a;stroke:#000000;stroke-opacity:0"
+             id="use20" />
+          <use
+             xlink:href="#mbcdfc61995"
+             x="192.33739"
+             y="71.223785"
+             style="fill:#8e1b3a;stroke:#000000;stroke-opacity:0"
+             id="use21" />
+          <use
+             xlink:href="#mbcdfc61995"
+             x="192.33739"
+             y="71.223785"
+             style="fill:#8e1b3a;stroke:#000000;stroke-opacity:0"
+             id="use22" />
+          <use
+             xlink:href="#mbcdfc61995"
+             x="192.33739"
+             y="92.051849"
+             style="fill:#8e1b3a;stroke:#000000;stroke-opacity:0"
+             id="use23" />
+          <use
+             xlink:href="#mbcdfc61995"
+             x="192.33739"
+             y="90.449692"
+             style="fill:#8e1b3a;stroke:#000000;stroke-opacity:0"
+             id="use24" />
+        </g>
+      </g>
+      <g
+         id="line2d_13">
+        <path
+           d="m 160.75652,253.86992 h 63.16174"
+           clip-path="url(#p325428b84d)"
+           style="fill:none;stroke:#5a1024;stroke-width:2.5"
+           id="path24" />
+      </g>
+      <g
+         id="patch_4">
+        <path
+           d="M 44.96,356.00756 V 12.344438"
+           style="fill:none;stroke:#000000;stroke-width:0.8;stroke-linecap:square;stroke-linejoin:miter"
+           id="path25" />
+      </g>
+      <g
+         id="patch_5">
+        <path
+           d="m 265.53664,27.965489 q -33.49419,0 -65.87034,0"
+           style="fill:none;stroke:#333333;stroke-linecap:round"
+           id="path26" />
+        <path
+           d="m 204.4663,30.365489 -4.8,-2.4 4.8,-2.4"
+           style="fill:none;stroke:#333333;stroke-linecap:round"
+           id="path27" />
+      </g>
+      <g
+         id="text_9">
+        <text
+           style="font-size:12px;font-family:Calibri, Carlito, sans-serif"
+           transform="translate(269.53507,23.64127)"
+           id="text27">valeurs atypiques (outliers statistiques)</text>
+        <text
+           style="font-size:12px;font-family:Calibri, Carlito, sans-serif"
+           transform="translate(269.53507,38.289707)"
+           id="text28">au-delà de Q₃ + 1,5 × IQR</text>
+      </g>
+      <g
+         id="patch_6">
+        <path
+           d="m 265.5364,92.448124 q -27.17871,1.354235 -53.24077,2.65283"
+           style="fill:none;stroke:#333333;stroke-linecap:round"
+           id="path28" />
+        <path
+           d="m 217.20912,97.259107 -4.91349,-2.158153 4.67462,-2.6359"
+           style="fill:none;stroke:#333333;stroke-linecap:round"
+           id="path29" />
+      </g>
+      <g
+         id="text_10">
+        <text
+           style="font-size:12px;font-family:Calibri, Carlito, sans-serif"
+           transform="translate(269.53507,83.722236)"
+           id="text29">extrémité supérieure de la moustache :</text>
+        <text
+           style="font-size:12px;font-family:Calibri, Carlito, sans-serif"
+           transform="translate(269.53507,98.370673)"
+           id="text30">plus grande valeur mesurée avant la limite Q₃ + 1,5 × IQR</text>
+      </g>
+      <g
+         id="patch_7">
+        <path
+           d="m 302.00041,202.01038 q -37.696,4.19012 -74.28081,8.25671"
+           style="fill:none;stroke:#333333;stroke-linecap:round"
+           id="path30" />
+        <path
+           d="m 232.75536,212.12212 -5.03576,-1.85503 4.50548,-2.91559"
+           style="fill:none;stroke:#333333;stroke-linecap:round"
+           id="path31" />
+      </g>
+      <g
+         id="text_11">
+        <text
+           style="font-size:12px;font-family:Calibri, Carlito, sans-serif;text-anchor:start"
+           x="269.53506"
+           y="196.78896"
+           id="text31">3ᵉ quartile Q₃ (75 % des valeurs en dessous)</text>
+      </g>
+      <g
+         id="patch_8">
+        <path
+           d="m 265.53684,253.86992 q -19.45695,0 -37.79586,0"
+           style="fill:none;stroke:#333333;stroke-linecap:round"
+           id="path32" />
+        <path
+           d="m 232.54098,256.26992 -4.8,-2.4 4.8,-2.4"
+           style="fill:none;stroke:#333333;stroke-linecap:round"
+           id="path33" />
+      </g>
+      <g
+         id="text_12">
+        <text
+           style="font-size:12px;font-family:Calibri, Carlito, sans-serif;text-anchor:start"
+           x="269.53506"
+           y="256.86993"
+           id="text33">médiane (50 %)</text>
+      </g>
+      <g
+         id="patch_9">
+        <path
+           d="m 290.42965,293.74662 q -31.91066,-3.02155 -62.70827,-5.9377"
+           style="fill:none;stroke:#333333;stroke-linecap:round"
+           id="path34" />
+        <path
+           d="m 232.27377,290.65071 -4.55239,-2.84179 5.00486,-1.93684"
+           style="fill:none;stroke:#333333;stroke-linecap:round"
+           id="path35" />
+      </g>
+      <g
+         id="text_13">
+        <text
+           style="font-size:12px;font-family:Calibri, Carlito, sans-serif;text-anchor:start"
+           x="269.53506"
+           y="304.93469"
+           id="text35">1ᵉʳ quartile Q₁ (25 % des valeurs en dessous)</text>
+      </g>
+      <g
+         id="patch_10">
+        <path
+           d="m 265.53537,343.25618 q -27.17821,-1.38395 -53.23984,-2.71105"
+           style="fill:none;stroke:#333333;stroke-linecap:round"
+           id="path36" />
+        <path
+           d="m 216.96727,343.18613 -4.67174,-2.641 4.91584,-2.15279"
+           style="fill:none;stroke:#333333;stroke-linecap:round"
+           id="path37" />
+      </g>
+      <g
+         id="text_14">
+        <text
+           style="font-size:12px;font-family:Calibri, Carlito, sans-serif"
+           transform="translate(269.53507,343.27201)"
+           id="text37">extrémité inférieure de la moustache :</text>
+        <text
+           style="font-size:12px;font-family:Calibri, Carlito, sans-serif"
+           transform="translate(269.53507,357.92045)"
+           id="text38">plus petite valeur mesurée après la limite Q₁ − 1,5 × IQR</text>
+      </g>
+      <g
+         id="patch_11">
+        <path
+           d="m 147.42238,213.95753 q 0,35.10917 0,70.21835"
+           style="fill:none;stroke:#333333;stroke-width:1.2;stroke-linecap:round"
+           id="path38" />
+        <path
+           d="m 145.42238,217.95753 2,-4 2,4"
+           style="fill:none;stroke:#333333;stroke-width:1.2;stroke-linecap:round"
+           id="path39" />
+        <path
+           d="m 149.42238,280.17588 -2,4 -2,-4"
+           style="fill:none;stroke:#333333;stroke-width:1.2;stroke-linecap:round"
+           id="path40" />
+      </g>
+      <g
+         id="text_15">
+        <text
+           style="font-size:12px;font-family:Calibri, Carlito, sans-serif"
+           transform="translate(78.27175,237.41501)"
+           id="text40">IQR = Q₃ − Q₁</text>
+        <text
+           style="font-size:12px;font-family:Calibri, Carlito, sans-serif"
+           transform="translate(64.4605,252.06344)"
+           id="text41">(moitié centrale</text>
+        <text
+           style="font-size:12px;font-family:Calibri, Carlito, sans-serif"
+           transform="translate(76.608625,266.71188)"
+           id="text42">des données)</text>
+      </g>
+    </g>
+  </g>
+  <defs
+     id="defs42">
+    <clipPath
+       id="p325428b84d">
+      <rect
+         x="44.959999"
+         y="12.344438"
+         width="484.23999"
+         height="343.66312"
+         id="rect42" />
+    </clipPath>
+  </defs>
+</svg>

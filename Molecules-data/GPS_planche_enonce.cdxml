@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE CDXML SYSTEM "http://www.cambridgesoft.com/xml/cdxml.dtd">
+<CDXML BoldWidth="5.0" BondLength="24.0" BondSpacing="21" CaptionColor="0" CaptionFace="0" CaptionFont="22" CaptionSize="11" ChainAngle="120" CreationProgram="ChemDoodle v12.12.1" FractionalWidths="yes" HashSpacing="3.0" HideImplicitHydrogens="no" InterpretChemically="yes" LabelColor="0" LabelFace="0" LabelFont="21" LabelSize="10" LineWidth="1.2" MacPrintInfo="000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" MarginWidth="2.0" Name="GPS_planche_enonce.cdxml" PrintMargins="36.0 36.0 36.0 36.0" ShowAtomEnhancedStereo="yes" ShowNonTerminalCarbonLabels="no" ShowTerminalCarbonLabels="no" id="-1">
+    <colortable>
+        <color b="1.0" g="1.0" r="1.0"/>
+        <color b="0.0" g="0.0" r="0.0"/>
+        <color b="0.6" g="0.14901961" r="0.14901961"/>
+    </colortable>
+    <fonttable>
+        <font id="21" name="Arial"/>
+        <font id="22" name="Times New Roman"/>
+    </fonttable>
+    <page BoundingBox="0.0 0.0 780.0 495.0" HeightPages="1" WidthPages="1" id="-1">
+        <fragment id="1">
+            <n Element="6" id="2" p="98.0 87.5"/>
+            <n Element="9" id="3" p="86.0 108.28">
+                <t color="0" id="3">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="6" id="4" p="122.0 87.5"/>
+            <n Element="1" id="5" p="86.0 66.72">
+                <t color="0" id="5">
+                    <s color="0" face="96" font="21" size="10.0">H</s>
+                </t>
+            </n>
+            <n Element="1" id="6" p="134.0 66.72">
+                <t color="0" id="6">
+                    <s color="0" face="96" font="21" size="10.0">H</s>
+                </t>
+            </n>
+            <n Element="9" id="7" p="134.0 108.28">
+                <t color="0" id="7">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <b B="2" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="4" HashSpacing="3.0" LineWidth="1.2" Order="2" color="0" id="8"/>
+            <b B="2" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="5" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="9"/>
+            <b B="2" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="3" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="10"/>
+            <b B="4" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="6" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="11"/>
+            <b B="4" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="7" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="12"/>
+        </fragment>
+        <fragment id="13">
+            <n Element="6" id="14" p="238.0 87.5"/>
+            <n Element="9" id="15" p="226.0 66.72">
+                <t color="0" id="15">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="1" id="16" p="226.0 108.28">
+                <t color="0" id="16">
+                    <s color="0" face="96" font="21" size="10.0">H</s>
+                </t>
+            </n>
+            <n Element="6" id="17" p="262.0 87.5"/>
+            <n Element="9" id="18" p="274.0 108.28">
+                <t color="0" id="18">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="1" id="19" p="274.0 66.72">
+                <t color="0" id="19">
+                    <s color="0" face="96" font="21" size="10.0">H</s>
+                </t>
+            </n>
+            <b B="14" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="17" HashSpacing="3.0" LineWidth="1.2" Order="2" color="0" id="20"/>
+            <b B="14" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="15" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="21"/>
+            <b B="14" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="16" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="22"/>
+            <b B="17" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="19" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="23"/>
+            <b B="17" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="18" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="24"/>
+        </fragment>
+        <fragment id="25">
+            <n Element="13" id="26" p="390.0 87.5">
+                <t color="0" id="26">
+                    <s color="0" face="96" font="21" size="10.0">Al</s>
+                </t>
+            </n>
+            <n Element="17" id="27" p="390.0 63.5">
+                <t color="0" id="27">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <n Element="17" id="28" p="369.22 99.5">
+                <t color="0" id="28">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <n Element="17" id="29" p="410.78 99.5">
+                <t color="0" id="29">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <b B="26" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="27" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="30"/>
+            <b B="26" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="28" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="31"/>
+            <b B="26" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="29" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="32"/>
+        </fragment>
+        <fragment id="33">
+            <n Element="7" id="34" p="530.0 87.5">
+                <t color="0" id="34">
+                    <s color="0" face="96" font="21" size="10.0">N</s>
+                </t>
+            </n>
+            <n Element="1" id="35" p="545.43 105.89">
+                <t color="0" id="35">
+                    <s color="0" face="96" font="21" size="10.0">H</s>
+                </t>
+            </n>
+            <n Element="1" id="36" p="552.55 79.29">
+                <t color="0" id="36">
+                    <s color="0" face="96" font="21" size="10.0">H</s>
+                </t>
+            </n>
+            <n Element="17" id="37" p="507.45 95.70999">
+                <t color="0" id="37">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <b B="34" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="37" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="38"/>
+            <b B="34" BoldWidth="4.0" BondSpacing="21" Display="WedgedHashBegin" Display2="Solid" E="36" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="39"/>
+            <b B="34" BoldWidth="4.0" BondSpacing="21" Display="WedgeBegin" E="35" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="40"/>
+        </fragment>
+        <fragment id="41">
+            <n Element="15" id="42" p="670.0 87.5">
+                <t color="0" id="42">
+                    <s color="0" face="96" font="21" size="10.0">P</s>
+                </t>
+            </n>
+            <n Element="9" id="43" p="692.8 75.5">
+                <t color="0" id="43">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="9" id="44" p="692.8 98.3">
+                <t color="0" id="44">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="9" id="45" p="646.0 87.5">
+                <t color="0" id="45">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="9" id="46" p="670.0 63.5">
+                <t color="0" id="46">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="9" id="47" p="670.0 111.5">
+                <t color="0" id="47">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <b B="42" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="46" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="48"/>
+            <b B="42" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="47" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="49"/>
+            <b B="42" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="45" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="50"/>
+            <b B="42" BoldWidth="4.0" BondSpacing="21" Display="WedgedHashBegin" Display2="Solid" E="43" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="51"/>
+            <b B="42" BoldWidth="4.0" BondSpacing="21" Display="WedgeBegin" E="44" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="52"/>
+        </fragment>
+        <fragment id="53">
+            <n Element="16" id="54" p="110.0 217.5">
+                <t color="0" id="54">
+                    <s color="0" face="96" font="21" size="10.0">S</s>
+                </t>
+            </n>
+            <n Element="9" id="55" p="110.0 193.5">
+                <t color="0" id="55">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="17" id="56" p="110.0 241.5">
+                <t color="0" id="56">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <n Element="9" id="57" p="132.8 206.7">
+                <t color="0" id="57">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="9" id="58" p="87.2 206.7">
+                <t color="0" id="58">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="9" id="59" p="132.8 227.1">
+                <t color="0" id="59">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="9" id="60" p="87.2 227.1">
+                <t color="0" id="60">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <b B="54" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="55" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="61"/>
+            <b B="54" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="56" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="62"/>
+            <b B="54" BoldWidth="4.0" BondSpacing="21" Display="WedgedHashBegin" Display2="Solid" E="58" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="63"/>
+            <b B="54" BoldWidth="4.0" BondSpacing="21" Display="WedgedHashBegin" Display2="Solid" E="57" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="64"/>
+            <b B="54" BoldWidth="4.0" BondSpacing="21" Display="WedgeBegin" E="60" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="65"/>
+            <b B="54" BoldWidth="4.0" BondSpacing="21" Display="WedgeBegin" E="59" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="66"/>
+        </fragment>
+        <fragment id="67">
+            <n Element="16" id="68" p="250.0 217.5">
+                <t color="0" id="68">
+                    <s color="0" face="96" font="21" size="10.0">S</s>
+                </t>
+            </n>
+            <n Element="9" id="69" p="227.20001 206.7">
+                <t color="0" id="69">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="17" id="70" p="250.0 193.5">
+                <t color="0" id="70">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <n Element="17" id="71" p="250.0 241.5">
+                <t color="0" id="71">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <n Element="9" id="72" p="227.20001 227.1">
+                <t color="0" id="72">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="9" id="73" p="272.8 227.1">
+                <t color="0" id="73">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="9" id="74" p="272.8 206.7">
+                <t color="0" id="74">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <b B="68" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="70" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="75"/>
+            <b B="68" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="71" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="76"/>
+            <b B="68" BoldWidth="4.0" BondSpacing="21" Display="WedgedHashBegin" Display2="Solid" E="69" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="77"/>
+            <b B="68" BoldWidth="4.0" BondSpacing="21" Display="WedgedHashBegin" Display2="Solid" E="74" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="78"/>
+            <b B="68" BoldWidth="4.0" BondSpacing="21" Display="WedgeBegin" E="72" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="79"/>
+            <b B="68" BoldWidth="4.0" BondSpacing="21" Display="WedgeBegin" E="73" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="80"/>
+        </fragment>
+        <fragment id="81">
+            <n Element="16" id="82" p="390.0 217.5">
+                <t color="0" id="82">
+                    <s color="0" face="96" font="21" size="10.0">S</s>
+                </t>
+            </n>
+            <n Element="17" id="83" p="390.0 193.5">
+                <t color="0" id="83">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <n Element="9" id="84" p="367.2 206.7">
+                <t color="0" id="84">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="9" id="85" p="367.2 227.1">
+                <t color="0" id="85">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="17" id="86" p="412.8 206.7">
+                <t color="0" id="86">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <n Element="9" id="87" p="412.8 227.1">
+                <t color="0" id="87">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="9" id="88" p="390.0 241.5">
+                <t color="0" id="88">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <b B="82" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="83" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="89"/>
+            <b B="82" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="88" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="90"/>
+            <b B="82" BoldWidth="4.0" BondSpacing="21" Display="WedgedHashBegin" Display2="Solid" E="84" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="91"/>
+            <b B="82" BoldWidth="4.0" BondSpacing="21" Display="WedgedHashBegin" Display2="Solid" E="86" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="92"/>
+            <b B="82" BoldWidth="4.0" BondSpacing="21" Display="WedgeBegin" E="85" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="93"/>
+            <b B="82" BoldWidth="4.0" BondSpacing="21" Display="WedgeBegin" E="87" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="94"/>
+        </fragment>
+        <fragment id="95">
+            <n Element="16" id="96" p="530.0 217.5">
+                <t color="0" id="96">
+                    <s color="0" face="96" font="21" size="10.0">S</s>
+                </t>
+            </n>
+            <n Element="9" id="97" p="552.8 227.1">
+                <t color="0" id="97">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="17" id="98" p="530.0 193.5">
+                <t color="0" id="98">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <n Element="17" id="99" p="507.2 227.1">
+                <t color="0" id="99">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <n Element="9" id="100" p="507.2 206.7">
+                <t color="0" id="100">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="9" id="101" p="530.0 241.5">
+                <t color="0" id="101">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="17" id="102" p="552.8 206.7">
+                <t color="0" id="102">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <b B="96" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="98" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="103"/>
+            <b B="96" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="101" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="104"/>
+            <b B="96" BoldWidth="4.0" BondSpacing="21" Display="WedgedHashBegin" Display2="Solid" E="100" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="105"/>
+            <b B="96" BoldWidth="4.0" BondSpacing="21" Display="WedgedHashBegin" Display2="Solid" E="102" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="106"/>
+            <b B="96" BoldWidth="4.0" BondSpacing="21" Display="WedgeBegin" E="99" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="107"/>
+            <b B="96" BoldWidth="4.0" BondSpacing="21" Display="WedgeBegin" E="97" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="108"/>
+        </fragment>
+        <fragment id="109">
+            <n Element="16" id="110" p="670.0 217.5">
+                <t color="0" id="110">
+                    <s color="0" face="96" font="21" size="10.0">S</s>
+                </t>
+            </n>
+            <n Element="9" id="111" p="647.2 206.7">
+                <t color="0" id="111">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="17" id="112" p="692.8 227.1">
+                <t color="0" id="112">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <n Element="9" id="113" p="670.0 241.5">
+                <t color="0" id="113">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="9" id="114" p="647.2 227.1">
+                <t color="0" id="114">
+                    <s color="0" face="96" font="21" size="10.0">F</s>
+                </t>
+            </n>
+            <n Element="17" id="115" p="692.8 206.7">
+                <t color="0" id="115">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <n Element="17" id="116" p="670.0 193.5">
+                <t color="0" id="116">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <b B="110" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="116" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="117"/>
+            <b B="110" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="113" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="118"/>
+            <b B="110" BoldWidth="4.0" BondSpacing="21" Display="WedgedHashBegin" Display2="Solid" E="111" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="119"/>
+            <b B="110" BoldWidth="4.0" BondSpacing="21" Display="WedgedHashBegin" Display2="Solid" E="115" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="120"/>
+            <b B="110" BoldWidth="4.0" BondSpacing="21" Display="WedgeBegin" E="114" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="121"/>
+            <b B="110" BoldWidth="4.0" BondSpacing="21" Display="WedgeBegin" E="112" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="122"/>
+        </fragment>
+        <fragment id="123">
+            <n Element="5" id="124" p="166.0 372.5">
+                <t color="0" id="124">
+                    <s color="0" face="96" font="21" size="10.0">B</s>
+                </t>
+            </n>
+            <n Element="8" id="125" p="166.0 348.5">
+                <t color="0" id="125">
+                    <s color="0" face="96" font="21" size="10.0">O</s>
+                </t>
+            </n>
+            <n Element="8" id="126" p="186.78 384.5">
+                <t color="0" id="126">
+                    <s color="0" face="96" font="21" size="10.0">O</s>
+                </t>
+            </n>
+            <n Element="8" id="127" p="145.22 384.5">
+                <t color="0" id="127">
+                    <s color="0" face="96" font="21" size="10.0">O</s>
+                </t>
+            </n>
+            <n Element="1" id="128" p="186.78 336.5">
+                <t color="0" id="128">
+                    <s color="0" face="96" font="21" size="10.0">H</s>
+                </t>
+            </n>
+            <n Element="1" id="129" p="186.78 408.5">
+                <t color="0" id="129">
+                    <s color="0" face="96" font="21" size="10.0">H</s>
+                </t>
+            </n>
+            <n Element="1" id="130" p="124.42999 372.5">
+                <t color="0" id="130">
+                    <s color="0" face="96" font="21" size="10.0">H</s>
+                </t>
+            </n>
+            <b B="124" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="125" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="131"/>
+            <b B="125" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="128" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="132"/>
+            <b B="124" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="127" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="133"/>
+            <b B="127" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="130" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="134"/>
+            <b B="124" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="126" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="135"/>
+            <b B="126" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="129" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="136"/>
+        </fragment>
+        <fragment id="137">
+            <n Element="7" id="138" p="390.0 348.5">
+                <t color="0" id="138">
+                    <s color="0" face="96" font="21" size="10.0">N</s>
+                </t>
+            </n>
+            <n Element="6" id="139" p="410.78 360.5"/>
+            <n Element="6" id="140" p="369.22 360.5"/>
+            <n Element="17" id="141" p="390.0 324.5">
+                <t color="0" id="141">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <n Element="8" id="142" p="431.57 348.5">
+                <t color="0" id="142">
+                    <s color="0" face="96" font="21" size="10.0">O</s>
+                </t>
+            </n>
+            <n Element="7" id="143" p="410.78 384.5">
+                <t color="0" id="143">
+                    <s color="0" face="96" font="21" size="10.0">N</s>
+                </t>
+            </n>
+            <n Element="7" id="144" p="369.22 384.5">
+                <t color="0" id="144">
+                    <s color="0" face="96" font="21" size="10.0">N</s>
+                </t>
+            </n>
+            <n Element="8" id="145" p="348.43 348.5">
+                <t color="0" id="145">
+                    <s color="0" face="96" font="21" size="10.0">O</s>
+                </t>
+            </n>
+            <n Element="6" id="146" p="390.0 396.5"/>
+            <n Element="17" id="147" p="431.57 396.5">
+                <t color="0" id="147">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <n Element="17" id="148" p="348.43 396.5">
+                <t color="0" id="148">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <n Element="8" id="149" p="390.0 420.5">
+                <t color="0" id="149">
+                    <s color="0" face="96" font="21" size="10.0">O</s>
+                </t>
+            </n>
+            <b B="138" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="139" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="150"/>
+            <b B="139" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="143" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="151"/>
+            <b B="143" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="146" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="152"/>
+            <b B="146" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="144" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="153"/>
+            <b B="144" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="140" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="154"/>
+            <b B="140" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="138" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="155"/>
+            <b B="138" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="141" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="156"/>
+            <b B="139" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="142" HashSpacing="3.0" LineWidth="1.2" Order="2" color="0" id="157"/>
+            <b B="143" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="147" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="158"/>
+            <b B="146" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="149" HashSpacing="3.0" LineWidth="1.2" Order="2" color="0" id="159"/>
+            <b B="144" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="148" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="160"/>
+            <b B="140" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="145" HashSpacing="3.0" LineWidth="1.2" Order="2" color="0" id="161"/>
+        </fragment>
+        <fragment id="162">
+            <n Element="7" id="163" p="614.0 348.5">
+                <t color="0" id="163">
+                    <s color="0" face="96" font="21" size="10.0">N</s>
+                </t>
+            </n>
+            <n Element="6" id="164" p="593.22 360.5"/>
+            <n Element="17" id="165" p="614.0 324.5">
+                <t color="0" id="165">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <n Element="6" id="166" p="634.78 360.5"/>
+            <n Element="8" id="167" p="572.43 348.5">
+                <t color="0" id="167">
+                    <s color="0" face="96" font="21" size="10.0">O</s>
+                </t>
+            </n>
+            <n Charge="-1" id="168" p="593.22 384.5">
+                <t color="0" id="168">
+                    <s color="0" face="96" font="21" size="10.0">N–</s>
+                </t>
+            </n>
+            <n Element="7" id="169" p="634.78 384.5">
+                <t color="0" id="169">
+                    <s color="0" face="96" font="21" size="10.0">N</s>
+                </t>
+            </n>
+            <n Element="8" id="170" p="655.57 348.5">
+                <t color="0" id="170">
+                    <s color="0" face="96" font="21" size="10.0">O</s>
+                </t>
+            </n>
+            <n Element="6" id="171" p="614.0 396.5"/>
+            <n Element="17" id="172" p="655.57 396.5">
+                <t color="0" id="172">
+                    <s color="0" face="96" font="21" size="10.0">Cl</s>
+                </t>
+            </n>
+            <n Element="8" id="173" p="614.0 420.5">
+                <t color="0" id="173">
+                    <s color="0" face="96" font="21" size="10.0">O</s>
+                </t>
+            </n>
+            <b B="163" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="166" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="174"/>
+            <b B="166" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="169" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="175"/>
+            <b B="169" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="171" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="176"/>
+            <b B="171" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="168" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="177"/>
+            <b B="168" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="164" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="178"/>
+            <b B="164" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="163" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="179"/>
+            <b B="163" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="165" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="180"/>
+            <b B="166" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="170" HashSpacing="3.0" LineWidth="1.2" Order="2" color="0" id="181"/>
+            <b B="169" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="172" HashSpacing="3.0" LineWidth="1.2" Order="1" color="0" id="182"/>
+            <b B="171" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="173" HashSpacing="3.0" LineWidth="1.2" Order="2" color="0" id="183"/>
+            <b B="164" BoldWidth="5.0" BondSpacing="21" Display="Solid" E="167" HashSpacing="3.0" LineWidth="1.2" Order="2" color="0" id="184"/>
+        </fragment>
+        <t BoundingBox="59.858887 126.47531 160.14111 136.49094" Justification="Center" color="0" id="185" p="110.0 134.28">
+            <s color="4" face="0" font="22" size="11.0">Z</s>
+            <s color="4" face="0" font="22" size="11.0">-1,2-difluoroéthylène</s>
+        </t>
+        <t BoundingBox="199.8667 126.47531 300.1333 136.49094" Justification="Center" color="0" id="186" p="250.0 134.28">
+            <s color="4" face="0" font="22" size="11.0">E</s>
+            <s color="4" face="0" font="22" size="11.0">-1,2-difluoroéthylène</s>
+        </t>
+        <t BoundingBox="377.24097 117.60156 402.75903 126.99219" Justification="Center" color="0" id="187" p="390.0 125.5">
+            <s color="4" face="0" font="22" size="11.0">A</s>
+            <s color="4" face="0" font="22" size="11.0">lCl</s>
+            <s color="4" face="32" font="22" size="11.0">3</s>
+        </t>
+        <t BoundingBox="514.20654 124.08531 545.79346 133.38219" Justification="Center" color="0" id="188" p="530.0 131.89">
+            <s color="4" face="0" font="22" size="11.0">N</s>
+            <s color="4" face="0" font="22" size="11.0">H</s>
+            <s color="4" face="32" font="22" size="11.0">2</s>
+            <s color="4" face="0" font="22" size="11.0">Cl</s>
+        </t>
+        <t BoundingBox="661.9922 129.875 678.0078 138.90625" Justification="Center" color="0" id="189" p="670.0 137.5">
+            <s color="4" face="0" font="22" size="11.0">P</s>
+            <s color="4" face="0" font="22" size="11.0">F</s>
+            <s color="4" face="32" font="22" size="11.0">5</s>
+        </t>
+        <t BoundingBox="96.95654 259.6953 123.04346 269.08594" Justification="Center" color="0" id="190" p="110.0 267.5">
+            <s color="4" face="0" font="22" size="11.0">S</s>
+            <s color="4" face="0" font="22" size="11.0">F</s>
+            <s color="4" face="32" font="22" size="11.0">5</s>
+            <s color="4" face="0" font="22" size="11.0">Cl</s>
+        </t>
+        <t BoundingBox="220.76953 258.96875 279.23047 268.26562" Justification="Center" color="0" id="191" p="250.0 267.5">
+            <s color="4" face="2" font="22" size="11.0">t</s>
+            <s color="4" face="2" font="22" size="11.0">rans</s>
+            <s color="4" face="0" font="22" size="11.0">-SF</s>
+            <s color="4" face="32" font="22" size="11.0">4</s>
+            <s color="4" face="0" font="22" size="11.0">Cl</s>
+            <s color="4" face="32" font="22" size="11.0">2</s>
+        </t>
+        <t BoundingBox="366.2334 258.3047 413.7666 267.60156" Justification="Center" color="0" id="192" p="390.0 267.5">
+            <s color="4" face="2" font="22" size="11.0">c</s>
+            <s color="4" face="2" font="22" size="11.0">is</s>
+            <s color="4" face="0" font="22" size="11.0">-SF</s>
+            <s color="4" face="32" font="22" size="11.0">4</s>
+            <s color="4" face="0" font="22" size="11.0">Cl</s>
+            <s color="4" face="32" font="22" size="11.0">2</s>
+        </t>
+        <t BoundingBox="504.08594 258.3047 555.91406 267.6953" Justification="Center" color="0" id="193" p="530.0 267.5">
+            <s color="4" face="2" font="22" size="11.0">m</s>
+            <s color="4" face="2" font="22" size="11.0">er</s>
+            <s color="4" face="0" font="22" size="11.0">-SF</s>
+            <s color="4" face="32" font="22" size="11.0">3</s>
+            <s color="4" face="0" font="22" size="11.0">Cl</s>
+            <s color="4" face="32" font="22" size="11.0">3</s>
+        </t>
+        <t BoundingBox="643.7146 259.6953 696.2854 269.71094" Justification="Center" color="0" id="194" p="670.0 267.5">
+            <s color="4" face="2" font="22" size="11.0">f</s>
+            <s color="4" face="2" font="22" size="11.0">ac</s>
+            <s color="4" face="0" font="22" size="11.0">-SF</s>
+            <s color="4" face="32" font="22" size="11.0">3</s>
+            <s color="4" face="0" font="22" size="11.0">Cl</s>
+            <s color="4" face="32" font="22" size="11.0">3</s>
+        </t>
+        <t BoundingBox="149.12305 426.51562 182.87695 436.51562" Justification="Center" color="0" id="195" p="166.0 434.5">
+            <s color="4" face="0" font="22" size="11.0">B</s>
+            <s color="4" face="0" font="22" size="11.0">(OH)</s>
+            <s color="4" face="32" font="22" size="11.0">3</s>
+        </t>
+        <t BoundingBox="326.885 438.6953 453.115 448.71094" Justification="Center" color="0" id="196" p="390.0 446.5">
+            <s color="4" face="0" font="22" size="11.0">a</s>
+            <s color="4" face="0" font="22" size="11.0">cide</s>
+            <s color="4" face="0" font="22" size="11.0"> </s>
+            <s color="4" face="0" font="22" size="11.0">trichloroisocyanurique</s>
+        </t>
+        <t BoundingBox="559.218 438.6953 668.782 448.71094" Justification="Center" color="0" id="197" p="614.0 446.5">
+            <s color="4" face="0" font="22" size="11.0">i</s>
+            <s color="4" face="0" font="22" size="11.0">on</s>
+            <s color="4" face="0" font="22" size="11.0"> </s>
+            <s color="4" face="0" font="22" size="11.0">dichloroisocyanurate</s>
+        </t>
+    </page>
+</CDXML>

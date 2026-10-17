@@ -6,6 +6,39 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## **2026.17.10 [2.4.0]** "ULR_DigitalChem1, make_student"
+
+### Added
+
+- **New notebook `ULR_DigitalChem1.ipynb`**: L3 "Digital chemistry" TD/TP (in French), built on
+  `pyphyschemtools`. Physical constants and units (`scipy.constants`, `PhysicalQuantity`), isotopes,
+  hydrogen atom and atomic orbitals (`AO`), periodic properties (`TableauPeriodique`), molecules from
+  SMILES and Lewis structures (`easy_rdkit`), 3D structures (`molView`), molecular symmetry and point
+  groups (`symmetry`, `MolSym`), Hückel π MOs (`HMO`) and their symmetry.
+    - The master copy with the solutions, `ULR_DigitalChem1-dev.ipynb`, is not published (`*-dev`
+      notebooks are not pushed to GitHub); the student version is generated with `make_student.py`.
+    - Labels of the `<div>` blocks (Exercice, Indice(s), Remarque...) added with `add_labels.py`,
+      so that they are displayed where the CSS is not loaded (Google Colab).
+
+- **New script `make_student.py`**: builds the student version of a teaching notebook from its
+  `-dev` master copy (`name-dev.ipynb` → `name.ipynb`), or a correction (`--corrige` →
+  `name-corrige.ipynb`).
+    - In each code cell, the code after a start marker (`# Entrez le code python`,
+      `# Ajoutez votre code ici`, `# Enter your code here`...) is erased, down to an end marker
+      (`# FinSol`, `# Fin de la solution`, `# EndSol`...) or to the end of the cell; the code before
+      the marker (code given to the students) and after the end marker is kept. Cells starting with
+      `# Démo` / `# Demo` are kept in full.
+    - Markers recognized whatever the case, accents, number of `#` and spaces; French and English.
+    - `<div class="sol">` / `<div class="solE">` blocks removed from the markdown cells.
+    - All outputs, execution counts and saved widget states cleared (the outputs give the solutions
+      away; the notebook goes from 74 MB to 0.1 MB).
+    - Interactive mode: each code cell without marker is shown, and the user tells whether it is a
+      solution (s), a demo (d) or leaves it as is (Enter); the marker is then added in the `-dev`
+      notebook itself (after a timestamped backup), so the question is not asked again.
+      `--no-ask`: report only; `--lang Fr|En`: language of the added markers (default: detected).
+    - Final report of the code cells without marker (kept in full), with their number, section
+      title and first line.
+
 ## **2026.09.15 [2.3.11]** "Ato1PS(6)"
 
 ### Added
