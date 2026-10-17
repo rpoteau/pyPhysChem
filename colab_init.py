@@ -1,6 +1,9 @@
 import os
 import sys
 import subprocess
+from IPython.display import IFrame, HTML, display
+from pathlib import Path
+
 
 def setup_environment(ML=False):
     try:
@@ -58,9 +61,6 @@ def setup_environment(ML=False):
         return False
 
 
-import sys
-from IPython.display import IFrame, display
-from pathlib import Path
 
 def display_pdf(filename, folder="DS4B-Slides", width=1000, height=800):
     """
@@ -97,3 +97,43 @@ def display_pdf(filename, folder="DS4B-Slides", width=1000, height=800):
 
 # Example usage in your notebook:
 # display_pdf("intro.pdf")
+
+def display_image(filename, folder="MiscImages", width=1000, center=True, caption=None):
+    """
+    Displays an image, locally or on Colab.
+    - Local: relative path to the file.
+    - Colab: raw GitHub URL (no filesystem access for markdown rendering).
+
+    Parameters:
+    - filename (str): image file name (e.g. 'logo_univ_reunion_DigitalChem.png')
+    - folder (str): subfolder containing the image
+    - width (int): width in pixels
+    - center (bool): center the image
+    - caption (str, optional): caption displayed below the image
+    """
+    local_path = Path() / folder / filename
+    repo_url = f"https://raw.githubusercontent.com/rpoteau/pyPhysChem/main/{folder}/{filename}"
+
+    if 'google.colab' in sys.modules:
+        src = repo_url
+    else:
+        src = str(local_path) if local_path.exists() else repo_url
+
+    style = "text-align:center" if center else ""
+
+    if caption:
+        html = (
+            f'<figure style="{style}">'
+            f'<img src="{src}" width="{width}">'
+            f'<figcaption style="font-style:italic; margin-top:4px;">{caption}</figcaption>'
+            f'</figure>'
+        )
+    else:
+        html = f'<div style="{style}"><img src="{src}" width="{width}"></div>'
+
+    display(HTML(html))
+
+# Example usage:
+# display_image("logo_univ_reunion_DigitalChem.png", width=1000)
+# display_image("logo_univ_reunion_DigitalChem.png", width=1000,
+#                caption="Fig. 1 — Logo de l'université de la Réunion")
