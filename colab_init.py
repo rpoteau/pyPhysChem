@@ -140,50 +140,59 @@ def display_image(filename, folder="MiscImages", width=1000, center=True, captio
 # display_image("logo_univ_reunion_DigitalChem.png", width=1000,
 #                caption="Fig. 1 — Logo de l'université de la Réunion")
 
-def get_data(file: str, repo: str = "pyPhysChem", branch: str = "main",
-             source: str = "auto", force: bool = False) -> Path:
+def get_data(file: str = None, repo: str = "pyPhysChem", branch: str = "main",
+             source: str = "auto", force: bool = False,
+             single: bool = True, verbose: bool = True):
     """
-    Retrieves a data file, from (in order of priority):
-    - a local copy, if it already exists (unless force=True)
-    - an upload prompt (Colab only), if source="upload"
-    - GitHub, otherwise (source="auto" or "github")
+    Retrieves a data file, either from the local disk / GitHub, or from an
+    upload on Google Colab.
 
     Args:
-        file (str): path of the file, relative to the repo root,
-                    e.g. "ML-data/Titration/Titration_KMnO4.xlsx"
-                    or "Molecules-data/anisole.mol"
+        file (str): path of the file relative to the repo root,
+                    e.g. "ML-data/Titration/Titration_KMnO4.xlsx".
+                    Not needed (ignored) when source="colab".
         repo (str): GitHub repo name (default: "pyPhysChem")
         branch (str): branch name (default: "main")
-        source (str): "auto" (local then GitHub), "github" (force GitHub),
-                      or "upload" (prompt the student to upload the file,
-                      Colab only — raises an error elsewhere)
-        force (bool): ignore any existing local copy and re-fetch/re-upload
+        source (str): "auto" (local copy if it exists, otherwise GitHub),
+                      or "colab" (opens the Colab upload button and returns
+                      the name of the uploaded file; Colab only).
+        force (bool): with source="auto", re-download even if a local copy exists
+        single (bool): with source="colab", return one path (the first file
+                       chosen) or, if False, the list of all uploaded files
+        verbose (bool): with source="colab", print the name(s) of the received file(s)
 
     Returns:
-        Path: local path to the file
+        Path (or list[Path] if source="colab" and single=False)
     """
-    local_path = Path(file)
+    # --- Upload from the user's computer (Colab only) ---
+    if source == "colab":
+        try:
+            from google.colab import files
+        except ImportError:
+            raise ImportError(
+                "get_data(source='colab') only works inside Google Colab. "
+                "Locally, pass the path of your file directly to pandas/open."
+            )
+        uploaded = files.upload()
+        if not uploaded:
+            raise FileNotFoundError("No file uploaded.")
+        paths = []
+        for name, content in uploaded.items():
+            Path(name).write_bytes(content)   # guarantees that disk content == returned name
+            paths.append(Path(name))
+            if verbose:
+                print(f"Fichier reçu / File received: {name}")
+        return paths[0] if single else paths
 
+    # --- Local copy or GitHub ---
+    if source != "auto":
+        raise ValueError(f"Unknown source '{source}': use 'auto' or 'colab'.")
+    if file is None:
+        raise ValueError("get_data() needs a file path (except with source='colab').")
+
+    local_path = Path(file)
     if local_path.exists() and not force:
         return local_path
-
-    if source == "upload":
-        if 'google.colab' in sys.modules:
-            from google.colab import files
-            print(f"📤 Please upload the file: {file}")
-            uploaded = files.upload()
-            if not uploaded:
-                raise FileNotFoundError("No file uploaded.")
-            uploaded_name = next(iter(uploaded))
-            local_path.parent.mkdir(parents=True, exist_ok=True)
-            local_path.write_bytes(uploaded[uploaded_name])
-            return local_path
-        else:
-            raise RuntimeError(
-                "source='upload' is only available on Google Colab. "
-                "Run this locally by placing the file at "
-                f"'{local_path}', or call get_data(..., source='auto') instead."
-            )
 
     url = f"https://raw.githubusercontent.com/rpoteau/{repo}/{branch}/{file}"
     local_path.parent.mkdir(parents=True, exist_ok=True)
@@ -195,4 +204,3 @@ def get_data(file: str, repo: str = "pyPhysChem", branch: str = "main",
     print("Done! ✅")
 
     return local_path
-    

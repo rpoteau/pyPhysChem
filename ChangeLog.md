@@ -6,23 +6,30 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## **2026.20.10 [2.4.3]** "colab /optional cloning"
+## **2026.20.10 [2.4.3]-[2.4.6]** "colab /optional cloning"
 
 ### Added
-- `colab_init.get_data(file, main_folder="ML-data", repo="pyPhysChem", branch="main", source="auto", force=False)`:
-  fetches a data file from GitHub on demand (or reuses a local copy if present), avoiding the need to clone
-  the full repo just to access `ML-data/`, `Molecules-data/`, etc. Supports `source="upload"` for students
-  to upload their own file instead (Colab only).
+- `colab_init.get_data(file, repo="pyPhysChem", branch="main", source="auto", force=False, single=True, verbose=True)`:
+  fetches a data file on demand. `file` is the path relative to the repo root
+  (e.g. `"ML-data/Titration/Titration_KMnO4.xlsx"`). A local copy is used if it exists; otherwise the file is
+  downloaded from GitHub (raw URL), so the repo no longer needs to be cloned just to access `ML-data/`,
+  `Molecules-data/`, etc.
+- `get_data(source="colab")`: opens the Google Colab upload button and returns the path of the uploaded file
+  (or a list of paths with `single=False`), ready for `pd.read_excel(...)`. Raises an explicit `ImportError`
+  outside Colab. The file is written to disk under its original name, so the returned path is always valid.
 
 ### Changed
-- `colab_init.setup_environment()` now takes a `clone_repo` keyword argument (default `True`) to make the
-  `git clone` of `pyPhysChem` on Google Colab optional, for notebooks that only need `pyphyschemtools` plus
-  a few data files fetched via `get_data`.
-- `ULR_DigitalChem1.ipynb`: replaced local relative paths (`ML-data/...`, `Molecules-data/...`) with
-  `get_data(...)` calls, and switched the Aspirin illustration to the raw GitHub URL so the notebook no
-  longer depends on cloning the repo.
+- `colab_init.setup_environment()` takes a new `clone_repo` keyword argument (default `True`) that makes the
+  `git clone` of `pyPhysChem` on Google Colab optional. Notebooks that only need `pyphyschemtools` plus a few
+  data files call `setup_environment(ML=False, clone_repo=False)`, which noticeably shortens the Colab startup.
+- `ULR_DigitalChem1.ipynb`: all local relative paths (`ML-data/...`, `Molecules-data/...`) now go through
+  `get_data(...)`; images (Aspirin, RDKit, boxplot) use raw GitHub URLs; links to `colab_vs_local.md` and the
+  DS4B notebooks point to GitHub. A new "Remarque" box explains `get_data` to students.
+- `DS4B-Iris1.ipynb`, `DS4B-Iris2.ipynb`: ran `add_labels.py`, which inserts coloured labels/icons
+  (Hint, Remark, Answer, Introduction...) in the styled `<div>` blocks and numbers section headings and
+  exercises (`[A]`, `[A.1]`...), so they remain readable where the CSS is not loaded (e.g. Google Colab).
 
-## **2026.17.10 [2.4.0], [2.4.1], [2.4.2] ** "ULR_DigitalChem1, make_student, numbering"
+## **2026.17.10 [2.4.0], [2.4.1], [2.4.2]** "ULR_DigitalChem1, make_student, numbering"
 
 ### Added
 
