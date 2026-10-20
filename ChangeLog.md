@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## **2026.20.10 [2.4.3]** "colab/cloning issue"
+## **2026.20.10 [2.4.3]** "colab /optional cloning"
 
 ### Added
 - `colab_init.get_data(file, main_folder="ML-data", repo="pyPhysChem", branch="main", source="auto", force=False)`:

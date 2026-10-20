@@ -140,8 +140,7 @@ def display_image(filename, folder="MiscImages", width=1000, center=True, captio
 # display_image("logo_univ_reunion_DigitalChem.png", width=1000,
 #                caption="Fig. 1 — Logo de l'université de la Réunion")
 
-def get_data(file: str, main_folder: str = "ML-data",
-             repo: str = "pyPhysChem", branch: str = "main",
+def get_data(file: str, repo: str = "pyPhysChem", branch: str = "main",
              source: str = "auto", force: bool = False) -> Path:
     """
     Retrieves a data file, from (in order of priority):
@@ -150,10 +149,9 @@ def get_data(file: str, main_folder: str = "ML-data",
     - GitHub, otherwise (source="auto" or "github")
 
     Args:
-        file (str): path/name of the file inside main_folder,
-                    e.g. "Titration/Titration_KMnO4.xlsx" or "anisole.mol"
-        main_folder (str): top-level data folder in the repo
-                            ("ML-data", "Molecules-data", "MiscImages"...)
+        file (str): path of the file, relative to the repo root,
+                    e.g. "ML-data/Titration/Titration_KMnO4.xlsx"
+                    or "Molecules-data/anisole.mol"
         repo (str): GitHub repo name (default: "pyPhysChem")
         branch (str): branch name (default: "main")
         source (str): "auto" (local then GitHub), "github" (force GitHub),
@@ -164,7 +162,7 @@ def get_data(file: str, main_folder: str = "ML-data",
     Returns:
         Path: local path to the file
     """
-    local_path = Path(main_folder) / file
+    local_path = Path(file)
 
     if local_path.exists() and not force:
         return local_path
@@ -187,10 +185,10 @@ def get_data(file: str, main_folder: str = "ML-data",
                 f"'{local_path}', or call get_data(..., source='auto') instead."
             )
 
-    url = f"https://raw.githubusercontent.com/rpoteau/{repo}/{branch}/{main_folder}/{file}"
+    url = f"https://raw.githubusercontent.com/rpoteau/{repo}/{branch}/{file}"
     local_path.parent.mkdir(parents=True, exist_ok=True)
 
-    print(f"☁️ Fetching {main_folder}/{file}... ", end="", flush=True)
+    print(f"☁️ Fetching {file}... ", end="", flush=True)
     r = requests.get(url, timeout=10)
     r.raise_for_status()
     local_path.write_bytes(r.content)
