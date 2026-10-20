@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## **2026.20.10 [2.4.3]-[2.4.8]** "colab /optional cloning"
+## **2026.20.10 [2.4.3]-[2.4.9]** "colab /optional cloning"
 
 ### Added
 - `colab_init.get_data(file, repo="pyPhysChem", branch="main", source="auto", force=False, single=True, verbose=True)`:
@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `get_data(source="colab")`: opens the Google Colab upload button and returns the path of the uploaded file
   (or a list of paths with `single=False`), ready for `pd.read_excel(...)`. Raises an explicit `ImportError`
   outside Colab. The file is written to disk under its original name, so the returned path is always valid.
+- new `Ato1PS.ipynb`, based on `ULR_DigitalChem1.ipynb` (chapters A & B)
 
 ### Changed
 - `colab_init.setup_environment()` takes a new `clone_repo` keyword argument (default `True`) that makes the
@@ -28,6 +29,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `DS4B-Iris1.ipynb`, `DS4B-Iris2.ipynb`: ran `add_labels.py`, which inserts coloured labels/icons
   (Hint, Remark, Answer, Introduction...) in the styled `<div>` blocks and numbers section headings and
   exercises (`[A]`, `[A.1]`...), so they remain readable where the CSS is not loaded (e.g. Google Colab).
+- `ULR_DigitalChem1.ipynb`: the links to `DS4B-Iris1.ipynb` and `DS4B-Iris2.ipynb` now offer two options:
+  open locally, or open on Colab (badge).
 
 ## **2026.17.10 [2.4.0], [2.4.1], [2.4.2]** "ULR_DigitalChem1, make_student, numbering"
 
