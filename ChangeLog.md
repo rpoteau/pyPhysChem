@@ -6,6 +6,22 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## **2026.20.10 [2.4.3]** "colab/cloning issue"
+
+### Added
+- `colab_init.get_data(file, main_folder="ML-data", repo="pyPhysChem", branch="main", source="auto", force=False)`:
+  fetches a data file from GitHub on demand (or reuses a local copy if present), avoiding the need to clone
+  the full repo just to access `ML-data/`, `Molecules-data/`, etc. Supports `source="upload"` for students
+  to upload their own file instead (Colab only).
+
+### Changed
+- `colab_init.setup_environment()` now takes a `clone_repo` keyword argument (default `True`) to make the
+  `git clone` of `pyPhysChem` on Google Colab optional, for notebooks that only need `pyphyschemtools` plus
+  a few data files fetched via `get_data`.
+- `ULR_DigitalChem1.ipynb`: replaced local relative paths (`ML-data/...`, `Molecules-data/...`) with
+  `get_data(...)` calls, and switched the Aspirin illustration to the raw GitHub URL so the notebook no
+  longer depends on cloning the repo.
+
 ## **2026.17.10 [2.4.0], [2.4.1], [2.4.2] ** "ULR_DigitalChem1, make_student, numbering"
 
 ### Added

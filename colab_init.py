@@ -5,7 +5,9 @@ from IPython.display import IFrame, HTML, display
 from pathlib import Path
 
 
-def setup_environment(ML=False):
+import requests
+
+def setup_environment(ML=False, clone_repo=True):
     try:
         # 1. pyphyschemtools
         try:
@@ -41,17 +43,17 @@ def setup_environment(ML=False):
 
         # 3. Colab specific
         if 'google.colab' in sys.modules:
-            repo_name = "pyPhysChem"
             print("📦 Google Colab setup.")
-            if os.path.basename(os.getcwd()) != repo_name:
-                if not os.path.exists(repo_name):
-                    print(f"☁️ Fetching {repo_name} repository... ", end="", flush=True)
-                    subprocess.check_call(["git", "clone", "--depth", "1", f"https://github.com/rpoteau/{repo_name}.git"])
-                    print("Done! ✅")
-                os.chdir(repo_name)
-                
-            if os.getcwd() not in sys.path:
-                sys.path.append(os.getcwd())
+            if clone_repo:
+                repo_name = "pyPhysChem"
+                if os.path.basename(os.getcwd()) != repo_name:
+                    if not os.path.exists(repo_name):
+                        print(f"☁️ Fetching {repo_name} repository... ", end="", flush=True)
+                        subprocess.check_call(["git", "clone", "--depth", "1", f"https://github.com/rpoteau/{repo_name}.git"])
+                        print("Done! ✅")
+                    os.chdir(repo_name)
+                if os.getcwd() not in sys.path:
+                    sys.path.append(os.getcwd())
 
         print("🚀 Environment is ready.")
         return True
@@ -137,3 +139,61 @@ def display_image(filename, folder="MiscImages", width=1000, center=True, captio
 # display_image("logo_univ_reunion_DigitalChem.png", width=1000)
 # display_image("logo_univ_reunion_DigitalChem.png", width=1000,
 #                caption="Fig. 1 — Logo de l'université de la Réunion")
+
+def get_data(file: str, main_folder: str = "ML-data",
+             repo: str = "pyPhysChem", branch: str = "main",
+             source: str = "auto", force: bool = False) -> Path:
+    """
+    Retrieves a data file, from (in order of priority):
+    - a local copy, if it already exists (unless force=True)
+    - an upload prompt (Colab only), if source="upload"
+    - GitHub, otherwise (source="auto" or "github")
+
+    Args:
+        file (str): path/name of the file inside main_folder,
+                    e.g. "Titration/Titration_KMnO4.xlsx" or "anisole.mol"
+        main_folder (str): top-level data folder in the repo
+                            ("ML-data", "Molecules-data", "MiscImages"...)
+        repo (str): GitHub repo name (default: "pyPhysChem")
+        branch (str): branch name (default: "main")
+        source (str): "auto" (local then GitHub), "github" (force GitHub),
+                      or "upload" (prompt the student to upload the file,
+                      Colab only — raises an error elsewhere)
+        force (bool): ignore any existing local copy and re-fetch/re-upload
+
+    Returns:
+        Path: local path to the file
+    """
+    local_path = Path(main_folder) / file
+
+    if local_path.exists() and not force:
+        return local_path
+
+    if source == "upload":
+        if 'google.colab' in sys.modules:
+            from google.colab import files
+            print(f"📤 Please upload the file: {file}")
+            uploaded = files.upload()
+            if not uploaded:
+                raise FileNotFoundError("No file uploaded.")
+            uploaded_name = next(iter(uploaded))
+            local_path.parent.mkdir(parents=True, exist_ok=True)
+            local_path.write_bytes(uploaded[uploaded_name])
+            return local_path
+        else:
+            raise RuntimeError(
+                "source='upload' is only available on Google Colab. "
+                "Run this locally by placing the file at "
+                f"'{local_path}', or call get_data(..., source='auto') instead."
+            )
+
+    url = f"https://raw.githubusercontent.com/rpoteau/{repo}/{branch}/{main_folder}/{file}"
+    local_path.parent.mkdir(parents=True, exist_ok=True)
+
+    print(f"☁️ Fetching {main_folder}/{file}... ", end="", flush=True)
+    r = requests.get(url, timeout=10)
+    r.raise_for_status()
+    local_path.write_bytes(r.content)
+    print("Done! ✅")
+
+    return local_path
