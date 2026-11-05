@@ -6,7 +6,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## **2026.20.10 [2.4.3]-[2.4.9]** "colab /optional cloning"
+## **2026.11.05 [2.5.0]** "colab /optional cloning"
+
+### Added
+- **`MolecularRepresentations.ipynb`**: new "Chemical reactions (reaction SMILES)" subsection after substructure search / SMARTS, before Morgan fingerprints.
+    - Literal reaction SMILES (`esterification`) and a worked example showing it only reliably matches the exact reactants it was built from.
+    - Generic SMIRKS esterification template (`esterification_smirks`, atom-mapped) applied to two independent acid/alcohol pairs (ethanol + acetic acid, propanol + benzoic acid), illustrating proper substituent carryover via atom mapping.
+    - Closing remark on the single-step / non-organometallic scope of reaction SMILES.
+
+### Changed
+- **`TB.ipynb` (tight-binding)** can now run on Google Colab
+
+## **2026.10.20 [2.4.3]-[2.4.9]** "colab /optional cloning"
 
 ### Added
 - `colab_init.get_data(file, repo="pyPhysChem", branch="main", source="auto", force=False, single=True, verbose=True)`:
@@ -32,7 +43,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `ULR_DigitalChem1.ipynb`: the links to `DS4B-Iris1.ipynb` and `DS4B-Iris2.ipynb` now offer two options:
   open locally, or open on Colab (badge).
 
-## **2026.17.10 [2.4.0], [2.4.1], [2.4.2]** "ULR_DigitalChem1, make_student, numbering"
+## **2026.10.17 [2.4.0], [2.4.1], [2.4.2]** "ULR_DigitalChem1, make_student, numbering"
 
 ### Added
 

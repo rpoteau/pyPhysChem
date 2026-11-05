@@ -66,19 +66,19 @@ def setup_environment(ML=False, clone_repo=True):
 
 def display_pdf(filename, folder="DS4B-Slides", width=1000, height=800):
     """
-    Displays a PDF file in a Jupyter environment. 
+    Displays a PDF file in a Jupyter environment.
     Automatically detects if running in Google Colab or locally.
-    
+
     Parameters:
     - filename (str): Name of the PDF file (e.g., 'intro.pdf').
     - folder (str): The subfolder containing the PDF.
     - width/height (int): Dimensions of the IFrame.
     """
-    
+
     # 1. Define paths
     local_path = Path() / folder / filename
     repo_url = f"https://raw.githubusercontent.com/rpoteau/pyPhysChem/main/{folder}/{filename}"
-    
+
     # 2. Environment Detection
     if 'google.colab' in sys.modules:
         # Google Colab requires a web-accessible URL and usually a viewer to bypass security
@@ -86,7 +86,7 @@ def display_pdf(filename, folder="DS4B-Slides", width=1000, height=800):
         print(f"🌐 Colab detected: Fetching {filename} from GitHub...")
         google_viewer_url = f"https://docs.google.com/viewer?url={repo_url}&embedded=true"
         display(IFrame(google_viewer_url, width=width, height=height))
-        
+
     else:
         # Local environments can render physical files directly
         if local_path.exists():
