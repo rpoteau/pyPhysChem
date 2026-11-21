@@ -10,11 +10,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - **`MolecularRepresentations.ipynb`**: Google Colab compatibility added (`get_data(...)` replacing hardcoded local paths); new **TMAP** section (tree-map visualization of chemical space) with a worked application on the ESOL solubility dataset
+- in the **`add_labels`** script:
+    - `appE` and `introE` added to `LABELS` — the English callout boxes were silently left unlabelled, hence invisible on Google Colab where the CSS is not loaded
+    - `open_tag()` now accepts spaces around the `=` of the class attribute (`<div class = "introE">`), a variant present in several notebooks and until now skipped without warning
+    - end-of-run report listing every `<div>` class covered by no label rule, with its occurrence count and its `title=` attribute when it has one — those boxes stay silent on Colab, so they should not go unnoticed
 
 ### Added
 - new notebook for the TCCM school in Aspet (23–27 November 2026): banner header and a linked list (with icons) to the notebooks used during the session — `PPCL.ipynb`, `MolecularRepresentations.ipynb`, `DS4B-BasicsOfANN.ipynb`, `DS4B-CO2_solubility-ANN.ipynb`, `ML-2DCNN.ipynb` — plus two appendices, `ML-Integrity_Ethics_Fairness.ipynb` and `ML-Glossary.ipynb`
 - `colab_init.get_sol2ex(file, repo="pyPhysChem", branch="main")`: fetches an exercise-solution file (local copy if present, otherwise downloaded from GitHub, same logic as `get_data`) and inserts its content as a **new cell right below** the calling one — unlike `%load`, the calling cell itself is left untouched, so it can be re-run freely while a solution file is still being written and has not yet been pushed to GitHub
 - **`ML-TCCM-Aspet2026.ipynb`**: homework section — a master-level project on **blood–brain barrier (BBB) permeability**: students compile and curate their own SMILES + permeability dataset, compute RDKit descriptors, explore it with TMAP (including a confrontation with Lipinski's and Veber's rules), then train a model on Morgan fingerprints (2048 bits, radius 3) to predict permeability and interpret it with SHAP
+- **`clear_outputs`** script: shell script clearing all outputs and execution counts of notebooks, in place. Takes either notebook paths or a **named group** (`Aspet2026`, `dev`, ... defined in the script), the two being mixable; lists the targets and asks for confirmation before acting, since the operation is irreversible
+- **`rename_classes.py`** script: renames the French callout classes of markdown cells to their English variant (`rq`→`rqE`, `sol`→`solE`, `intro`→`introE`, `app`→`appE`), leaving `rqT`, `introT` and the already-English classes untouched. Idempotent, so it is safe to re-run
 
 ### Changed
 - **`DS4B-CO2_solubility-ANN.ipynb`**: substantial update
@@ -35,7 +41,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `print` and `plt.show()` commands added in **`TB.ipynb`** (tight-binding)
 - **`colab_init.py`**: a missing `:` in the `ml_dict` dictionary literal (`"pydot", "pydot"` instead of `"pydot": "pydot"`) was a Python `SyntaxError` — since the Colab setup cells `exec()` the whole file at once, this made the setup fail entirely for **every** notebook fetching `colab_init.py` on Google Colab, not just the `ML=True` branch
 
-## **2026.11.05 [2.5.0], [2.5.1]** "colab /optional cloning"
+## **2026.11.05 [2.5.0], [2.5.1], [2.5.2], [2.5.3]** "colab /optional cloning"
 
 ### Added
 - **`MolecularRepresentations.ipynb`**: new "Chemical reactions (reaction SMILES)" subsection after substructure search / SMARTS, before Morgan fingerprints.

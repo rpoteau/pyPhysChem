@@ -27,6 +27,7 @@ def setup_environment(ML=False, clone_repo=True):
                        "seaborn": "seaborn",
                        "shap": "shap",
                        "pydot": "pydot",
+                       "dataframe_image": "dataframe_image",
                       }
             to_install = []
             for imp_name, ins_name in ml_dict.items():

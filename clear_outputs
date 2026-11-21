@@ -1,0 +1,93 @@
+#!/bin/bash
+# clear_outputs — clear all outputs of Jupyter notebooks, in place.
+#
+# usage:
+#   ./clear_outputs <group|notebook.ipynb> [...]
+#   ./clear_outputs groups          list the known groups and their notebooks
+#
+# A group is a named set of notebooks defined in NB_GROUPS below (one entry per
+# course, school, ...); anything else is taken as a notebook path. Groups and
+# paths can be mixed on the same command line.
+#
+# Clearing is irreversible: commit before running.
+
+set -euo pipefail
+
+# Colours, only when writing to a terminal (keeps piped/redirected output clean)
+if [ -t 1 ]; then
+    BLUE=$'\033[1;34m'
+    RED=$'\033[1;31m'
+    RESET=$'\033[0m'
+else
+    BLUE='' RED='' RESET=''
+fi
+
+declare -A NB_GROUPS=(
+    [Aspet2026]="PPCL.ipynb
+                 MolecularRepresentations.ipynb
+                 DS4B-BasicsOfANN.ipynb
+                 DS4B-CO2_solubility-ANN.ipynb
+                 ML-2DCNN.ipynb
+                 ML-10algorithms-AppliedToChemistry.ipynb
+                 ML-Integrity_Ethics_Fairness.ipynb
+                 ML-Glossary.ipynb
+                 ML-TCCM-Aspet2026.ipynb"
+
+    [dev]="ML-2DCNN-v0-dev.ipynb
+           ML-1DCNN-v0-dev.ipynb
+           ML-2DCNN-v1-dev.ipynb
+           MolecularRepresentations-v0.ipynb
+           ML-CombineRegressionAndClassification-dev.ipynb"
+)
+
+usage() {
+    cat <<EOF
+usage: ./clear_outputs <group|notebook.ipynb> [...]
+       ./clear_outputs groups
+
+known groups: ${!NB_GROUPS[@]}
+
+Clearing is irreversible: commit before running.
+EOF
+    exit "${1:-0}"
+}
+
+list_groups() {
+    for g in $(printf '%s\n' "${!NB_GROUPS[@]}" | sort); do
+        printf '%s\n' "$g"
+        printf '  %s\n' ${NB_GROUPS[$g]}
+        printf '\n'
+    done
+}
+
+[ $# -ge 1 ] || usage 1
+case "$1" in
+    groups)         list_groups; exit 0 ;;
+    help|-h|--help) usage ;;
+esac
+
+# --- resolve every argument to a list of notebooks -------------------------
+notebooks=()
+for arg in "$@"; do
+    if [[ -v NB_GROUPS[$arg] ]]; then
+        notebooks+=( ${NB_GROUPS[$arg]} )          # unquoted on purpose: word splitting
+    elif [ -f "$arg" ]; then
+        notebooks+=( "$arg" )
+    else
+        echo "${RED}❌ neither a known group nor an existing file: $arg${RESET}"
+        exit 1
+    fi
+done
+
+printf '%sOutputs will be cleared, in place, in %d notebook(s):%s\n' "$BLUE" "${#notebooks[@]}" "$RESET"
+printf '  %s\n' "${notebooks[@]}"
+read -rp "${RED}Proceed? [y/N] ${RESET}" answer
+[[ "$answer" =~ ^[Yy]$ ]] || { echo "aborted."; exit 0; }
+
+for nb in "${notebooks[@]}"; do
+    if [ ! -f "$nb" ]; then
+        echo "⚠️  skipped (not found): $nb"
+        continue
+    fi
+    jupyter nbconvert --ClearOutputPreprocessor.enabled=True --inplace "$nb"
+done
