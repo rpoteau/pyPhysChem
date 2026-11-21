@@ -23,11 +23,17 @@ counter numbered [A.1], [A.2]... reset to 1 at each new top-level (##)
 section. Their label is computed, not fixed, and is inserted/replaced the
 same way as the other labels.
 
+At the end of the run, every <div class="..."> whose class is covered by no
+label rule (rqT, introT, a typo...) is reported with its occurrence count and,
+when it has one, its title= attribute. Those boxes stay silent wherever the
+CSS is not loaded, so the warning is there to make sure none is forgotten.
+
 By default the notebook is updated IN PLACE, after a timestamped backup
 (name_YYYYMMDD_HHMMSS.bak) is written next to it. If an output path is given,
 the result is written there instead — the backup of the original is still kept.
 """
 import json, re, sys, shutil
+from collections import Counter
 from datetime import datetime
 
 LABELS = {
@@ -35,10 +41,12 @@ LABELS = {
     "hint": '<table width="100%" cellpadding="6"><tr><td bgcolor="#ededb6"><span style="color:#8B4513">💡 <b>Indice(s)</b></span></td></tr></table>',
     "rqE": '<table width="100%" cellpadding="6"><tr><td bgcolor="#fde9e9"><span style="color:#B71C1C">⚠️ <b>Pay Attention</b></span></td></tr></table>',
     "rq": '<table width="100%" cellpadding="6"><tr><td bgcolor="#fde9e9"><span style="color:#B71C1C">⚠️ <b>Remarque</b></span></td></tr></table>',
+    "appE": '<table width="100%" cellpadding="6"><tr><td bgcolor="#d8edf4"><span style="color:#0D47A1">🚀 <b>Application</b></span></td></tr></table>',
     "app": '<table width="100%" cellpadding="6"><tr><td bgcolor="#d8edf4"><span style="color:#0D47A1">🚀 <b>Application</b></span></td></tr></table>',
     "solE": '<table width="100%" cellpadding="6"><tr><td bgcolor="#ddf4db"><span style="color:#1B5E20">🔑 <b>Answer</b></span></td></tr></table>',
     "sol": '<table width="100%" cellpadding="6"><tr><td bgcolor="#ddf4db"><span style="color:#1B5E20">🔑 <b>Réponse</b></span></td></tr></table>',
     "intro": '<table width="100%" cellpadding="6"><tr><td bgcolor="#e6e6e6"><span style="color:#000000">📖 <b>Introduction</b></span></td></tr></table>',
+    "introE": '<table width="100%" cellpadding="6"><tr><td bgcolor="#e6e6e6"><span style="color:#000000">📖 <b>Introduction</b></span></td></tr></table>',
 }
 
 # Exercise classes: numbered, so the label is a template, built at runtime.
@@ -51,6 +59,14 @@ EX_TEMPLATES = {
 EX_LABEL_RE = re.compile(
     r'^<table\b.*?(?:Exercice|Exercise)\b(?:\s*\[[^\]]*\])?.*?</table>[ \t]*\n?', re.S
 )
+
+# Every class the script knows how to label. Anything else found in a
+# <div class="..."> is reported at the end of the run: such boxes stay silent
+# where the CSS is not loaded, which is precisely what this script avoids.
+KNOWN_CLASSES = set(LABELS) | set(EX_TEMPLATES)
+
+DIV_RE   = re.compile(r'<div\b[^>]*?\bclass\s*=\s*(["\'])([^"\']*)\1[^>]*>', re.I)
+TITLE_RE = re.compile(r'\btitle\s*=\s*(["\'])([^"\']*)\1', re.I)
 
 USAGE = "usage: ./add_labels.py input.ipynb [output.ipynb]"
 
@@ -89,7 +105,7 @@ def bare(s):
 
 def open_tag(cls):
     """Regex for an opening <div ...> whose class list contains cls."""
-    return (r'<div\b[^>]*\bclass=["\'][^"\']*\b'
+    return (r'<div\b[^>]*\bclass\s*=\s*["\'][^"\']*\b'
             + re.escape(cls) + r'\b[^"\']*["\'][^>]*>[ \t]*\n?')
 
 def backup(path):
@@ -195,6 +211,28 @@ def number_sections_and_exercises(nb):
 
 # ---------------------------------------------------------------------------
 
+def report_unknown_classes(nb):
+    """Count the <div> classes no label rule covers, and collect their title=
+    attribute when they have one (rqT, introT... carry their heading there, and
+    Colab renders it no more than it renders the CSS). Returns (counter, titles)."""
+    unknown = Counter()
+    titles  = {}
+    for c in nb["cells"]:
+        if c["cell_type"] != "markdown":
+            continue
+        for m in DIV_RE.finditer("".join(c["source"])):
+            tag = m.group(0)
+            for cls in m.group(2).split():
+                if cls in KNOWN_CLASSES:
+                    continue
+                unknown[cls] += 1
+                t = TITLE_RE.search(tag)
+                if t:
+                    titles.setdefault(cls, []).append(t.group(2))
+    return unknown, titles
+
+# ---------------------------------------------------------------------------
+
 def process(nbpath, outpath):
     bak = backup(nbpath)
     print(f"backup saved:   {bak}")
@@ -246,6 +284,20 @@ def process(nbpath, outpath):
         print(f"  {cls:6s} ({txt}): +{inserted[cls]} inserted, {updated[cls]} updated")
     print(f"\nsection headings numbered: {n_sections}")
     print(f"exercises numbered: {n_exercises}")
+
+    unknown, titles = report_unknown_classes(nb)
+    if unknown:
+        print("\n⚠️  div classes with no label rule (these boxes stay silent on Colab):")
+        for cls, n in unknown.most_common():
+            seen = list(dict.fromkeys(titles.get(cls, [])))   # unique, order kept
+            extra = ""
+            if seen:
+                extra = "   title= " + ", ".join(f'"{t}"' for t in seen[:3])
+                if len(seen) > 3:
+                    extra += f", ... ({len(seen)} distinct)"
+            print(f"  {cls:10s} x{n}{extra}")
+    else:
+        print("\nno unlabelled div class")
 
 if __name__ == "__main__":
     if any(a in ("-h", "--help") for a in sys.argv[1:]):

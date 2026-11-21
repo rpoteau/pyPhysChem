@@ -26,6 +26,7 @@ def setup_environment(ML=False, clone_repo=True):
                        "pandas": "pandas",
                        "seaborn": "seaborn",
                        "shap": "shap",
+                       "pydot": "pydot",
                       }
             to_install = []
             for imp_name, ins_name in ml_dict.items():
@@ -204,3 +205,32 @@ def get_data(file: str = None, repo: str = "pyPhysChem", branch: str = "main",
     print("Done! ✅")
 
     return local_path
+
+from IPython import get_ipython
+
+def get_sol2ex(file, repo="pyPhysChem", branch="main"):
+    """
+    Fetches an exercise-solution file (local copy if present, otherwise from
+    GitHub, exactly like get_data), then inserts its content as a NEW cell
+    right below the current one. Unlike %load, the calling cell itself is
+    left untouched, so it can be re-run as many times as needed while you're
+    still developing/testing the solution file (each run adds a fresh new
+    cell with the current content of the file).
+
+    Args:
+        file (str): path of the solution file relative to the repo root,
+                    e.g. "SolutionsToExercises/ML/proxy_career_gender.py"
+        repo (str): GitHub repo name (default: "pyPhysChem")
+        branch (str): branch name (default: "main")
+
+    Returns:
+        Path to the local copy of the file.
+    """
+    path = get_data(file, repo=repo, branch=branch)
+    code = path.read_text(encoding="utf-8")
+    ip = get_ipython()
+    if ip is not None:
+        ip.set_next_input(code, replace=False)
+    else:
+        print(code)
+    return path

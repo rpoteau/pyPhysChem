@@ -6,6 +6,35 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## **2026.11.22 [2.6.0]** "TB & TCCM school"
+
+### Changed
+- **`MolecularRepresentations.ipynb`**: Google Colab compatibility added (`get_data(...)` replacing hardcoded local paths); new **TMAP** section (tree-map visualization of chemical space) with a worked application on the ESOL solubility dataset
+
+### Added
+- new notebook for the TCCM school in Aspet (23–27 November 2026): banner header and a linked list (with icons) to the notebooks used during the session — `PPCL.ipynb`, `MolecularRepresentations.ipynb`, `DS4B-BasicsOfANN.ipynb`, `DS4B-CO2_solubility-ANN.ipynb`, `ML-2DCNN.ipynb` — plus two appendices, `ML-Integrity_Ethics_Fairness.ipynb` and `ML-Glossary.ipynb`
+- `colab_init.get_sol2ex(file, repo="pyPhysChem", branch="main")`: fetches an exercise-solution file (local copy if present, otherwise downloaded from GitHub, same logic as `get_data`) and inserts its content as a **new cell right below** the calling one — unlike `%load`, the calling cell itself is left untouched, so it can be re-run freely while a solution file is still being written and has not yet been pushed to GitHub
+- **`ML-TCCM-Aspet2026.ipynb`**: homework section — a master-level project on **blood–brain barrier (BBB) permeability**: students compile and curate their own SMILES + permeability dataset, compute RDKit descriptors, explore it with TMAP (including a confrontation with Lipinski's and Veber's rules), then train a model on Morgan fingerprints (2048 bits, radius 3) to predict permeability and interpret it with SHAP
+
+### Changed
+- **`DS4B-CO2_solubility-ANN.ipynb`**: substantial update
+    - new section on data-quality auditing: detection and cleaning of duplicate/conflicting entries in the raw dataset
+    - the *k*-fold cross-validation now keeps the best-performing fold (highest validation R²) instead of the last one by construction
+    - several bug fixes: Pearson's *r* mistakenly used in place of the true R² in a few cells, a NumPy broadcasting bug in the residuals calculation, a deprecated `plotly.offline` API, a pandas Copy-on-Write `ChainedAssignmentError`
+    - new SHAP (SHapley Additive exPlanations) interpretability section: global and local feature importance, with an empirical, model-free check of the Tf2N anion's effect on CO<sub>2</sub> solubility
+    - new take-home message section
+    - Google Colab compatibility added (`colab_init.py`-based setup)
+- **`ML-2DCNN.ipynb`**: Google Colab initialization cell added (same `colab_init.py`-based remote setup as the other notebooks)
+- **`ML-Integrity_Ethics_Fairness.ipynb`**: the markdown figure now points to a raw GitHub URL instead of a local relative path, so it also displays on Google Colab without cloning the repo
+- exercise-solution hint boxes (`<div class="sol">`) reworded across the teaching notebooks to describe the new `get_sol2ex(...)` workflow, replacing the previous `%load ./SolutionsToExercises/...` instructions (which required running the cell twice and erased its content on load)
+- **`MolecularRepresentations.ipynb`**: Google Colab compatibility added (`get_data(...)` replacing hardcoded local paths); new **TMAP** section (tree-map visualization of chemical space) with a worked application on the ESOL solubility dataset
+- **`ML-10algorithms-AppliedToChemistry.ipynb`**: Google Colab compatibility added (`get_data(...)` replacing the hardcoded `./ML-data/10algos/*.csv` paths); `intro`/`introT` callout boxes converted to `introE`, the `introT` titles being rewritten in bold inside the box
+- **`DS4B-BasicsOfANN.ipynb`**: Google Colab compatibility added (`get_data(...)` for `DS4B-iris-data/iris.csv`, and markdown figures now pointing to raw GitHub URLs instead of local relative paths); `intro`/`introT` callout boxes converted to `introE`, the `introT` titles being rewritten in bold inside the box
+- 
+### Fixed
+- `print` and `plt.show()` commands added in **`TB.ipynb`** (tight-binding)
+- **`colab_init.py`**: a missing `:` in the `ml_dict` dictionary literal (`"pydot", "pydot"` instead of `"pydot": "pydot"`) was a Python `SyntaxError` — since the Colab setup cells `exec()` the whole file at once, this made the setup fail entirely for **every** notebook fetching `colab_init.py` on Google Colab, not just the `ML=True` branch
+
 ## **2026.11.05 [2.5.0], [2.5.1]** "colab /optional cloning"
 
 ### Added
