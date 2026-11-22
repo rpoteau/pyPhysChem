@@ -6,13 +6,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## **2026.11.22 [2.6.1]** "TB & TCCM school"
+## **2026.11.22 [2.6.1], [2.6.2]** "TB & TCCM school"
 
 ### Added
 - **`ML-SHAP-MNIST.ipynb`**: new notebook on CNN explainability, split out of `Sandbox.ipynb` and translated into English. Applies SHAP (`GradientExplainer`, `DeepExplainer`) and Integrated Gradients to CNNs trained on MNIST, with attribution maps overlaid on the digits, and a reusable `ShapVisualizer` class. Needs no file from the repository: MNIST is downloaded by `keras.datasets`, hence `setup_environment(ML=True, clone_repo=False)`. It is the companion of the SHAP section of `ML-2DCNN.ipynb`, which now links to it
 - **`PPCL.ipynb`**: the 17 exercise solutions switch from `%load` to `get_sol2ex`
     - `# %load ./SolutionsToExercises/PPCL/*.py` replaced by `# get_sol2ex('SolutionsToExercises/PPCL/*.py')`, which fetches the solution file (local copy if present, otherwise from GitHub) and inserts it as a new cell instead of overwriting the calling cell — the latter can therefore be re-run freely
     - the 17 `solE` boxes rewritten accordingly, and they now ask for the cell to be run **with Ctrl+Enter**: the new cell is created below whichever cell holds the focus, so Shift+Enter — which moves the focus on before the payload arrives — drops the solution one cell too far down
+    - `FiguresCreatedInNotebooks/` created in the setup cell, so that the two `plt.savefig` calls no longer fail on a bare virtual machine. The calls themselves are deliberately left as plain matplotlib rather than routed through `save_fig`: in a first-level tutorial, the full path in sight is worth more than the convenience
+    - the six markdown figures given as local relative paths converted to raw GitHub URLs
+    - the *Interactive matplotlib plots* section made environment-aware: `ipympl` is not available on Colab, so the backend falls back to `inline` there, with a message saying why, and a following cell restores `%matplotlib inline` for the rest of the notebook — `%matplotlib widget` otherwise stays active and would affect every later plot, including the `plotA` and `plotB` exercises. Exercise 6 now asks for the interactive widget *if the environment supports it*
 
 ### Changed
 - **`ML-TCCM-Aspet2026.ipynb`**:
