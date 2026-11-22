@@ -6,7 +6,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## **2026.11.22 [2.6.0]** "TB & TCCM school"
+## **2026.11.22 [2.6.1]** "TB & TCCM school"
+
+### Added
+- **`ML-SHAP-MNIST.ipynb`**: new notebook on CNN explainability, split out of `Sandbox.ipynb` and translated into English. Applies SHAP (`GradientExplainer`, `DeepExplainer`) and Integrated Gradients to CNNs trained on MNIST, with attribution maps overlaid on the digits, and a reusable `ShapVisualizer` class. Needs no file from the repository: MNIST is downloaded by `keras.datasets`, hence `setup_environment(ML=True, clone_repo=False)`. It is the companion of the SHAP section of `ML-2DCNN.ipynb`, which now links to it
+- **`PPCL.ipynb`**: the 17 exercise solutions switch from `%load` to `get_sol2ex`
+    - `# %load ./SolutionsToExercises/PPCL/*.py` replaced by `# get_sol2ex('SolutionsToExercises/PPCL/*.py')`, which fetches the solution file (local copy if present, otherwise from GitHub) and inserts it as a new cell instead of overwriting the calling cell — the latter can therefore be re-run freely
+    - the 17 `solE` boxes rewritten accordingly, and they now ask for the cell to be run **with Ctrl+Enter**: the new cell is created below whichever cell holds the focus, so Shift+Enter — which moves the focus on before the payload arrives — drops the solution one cell too far down
+
+### Changed
+- **`ML-TCCM-Aspet2026.ipynb`**:
+    - the *Data Literacy* bullet now states that, with generative AI, reading someone else's code critically matters more than writing it from scratch
+    - homework: the requirements on comments and organization merged into two explicit criteria — the notebook is expected to read as a structured, chaptered, self-explanatory document, and a large share of the mark depends on it
+    - homework: a Colab link may now be provided in addition to the zip file, the zip remaining the submitted work of record
+    - figures and captions re-centred with a plain `<div style="text-align:center">`, the `<figure>` / `<figcaption>` pair being overridden by the notebook stylesheet
+- **`Sandbox.ipynb`**: the SHAP/MNIST section moved out to `ML-SHAP-MNIST.ipynb`; the notebook now holds only the PDF-to-RDF and KORD sections, and switches to `clone_repo=True`, which its local data files require
+- Google Colab compatibility, across the teaching notebooks:
+    - markdown figures given as local relative paths converted to raw GitHub
+
+## **2026.11.21 [2.6.0]** "TB & TCCM school"
 
 ### Changed
 - **`MolecularRepresentations.ipynb`**: Google Colab compatibility added (`get_data(...)` replacing hardcoded local paths); new **TMAP** section (tree-map visualization of chemical space) with a worked application on the ESOL solubility dataset
