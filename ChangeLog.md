@@ -6,7 +6,7 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## **2026.11.22 [2.6.1], [2.6.2]** "TB & TCCM school"
+## **2026.11.22 [2.6.1] - [2.6.4]** "TB & TCCM school"
 
 ### Added
 - **`ML-SHAP-MNIST.ipynb`**: new notebook on CNN explainability, split out of `Sandbox.ipynb` and translated into English. Applies SHAP (`GradientExplainer`, `DeepExplainer`) and Integrated Gradients to CNNs trained on MNIST, with attribution maps overlaid on the digits, and a reusable `ShapVisualizer` class. Needs no file from the repository: MNIST is downloaded by `keras.datasets`, hence `setup_environment(ML=True, clone_repo=False)`. It is the companion of the SHAP section of `ML-2DCNN.ipynb`, which now links to it
