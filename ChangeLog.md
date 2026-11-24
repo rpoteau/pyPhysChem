@@ -6,12 +6,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## **2026.11.23 [2.6.5] - [2.6.7]** "TCCM school. Small bug fixes"
+## **2026.11.24 [2.6.8] "backpropagation"
+
+### Fixed
+
+- Added `from rdkit.Chem.Draw import IPythonConsole` in **`MolecularRepresentations.ipynb`**. Without it, molecules are displayed as `<rdkit.Chem.rdchem.Mol at 0x...>` on a fresh runtime, since the import is what registers RDKit's renderer with IPython. SVG rendering enabled, and default molecule size set
+
+### Added 
+
+- Added a section introducing **backpropagation** in **`DS4B-BasicsOfANN.ipynb`** (§B.2.2), with the derivatives written out explicitly for the two parameters of the perceptron, and a `rqE` box distinguishing backpropagation (which computes the gradients) from the optimizer (which uses them)
+- New notebook **`ML-PINN_dev.ipynb`**: Physics-Informed Neural Networks, applied to the consecutive reaction A → B → C. Forward problem (solving the rate equations with no data at all, mass balance recovered to 1e-3) and inverse problem (k1 and k2 recovered from 8 measurements with 2% noise). Initial conditions hard-wired into the architecture rather than added as a penalty term
+- `plotModel` added to **pyphyschemtools**: saves a keras model diagram to a folder, which is created if needed, and displays it at a readable size. `MODELS_PATH` now accepts a `str` as well as a `Path`
+
+### Changed
+- The talktorial list of **`ML-TCCM-Aspet2026.ipynb`** now renders correctly on Google Colab. Colab's markdown sanitizer discards `<style>` blocks and overrides inline `style` attributes on links, so the flexbox layout and the font, weight and colour settings were silently dropped. Replaced by inline images with legacy `<font>` markup, which survives sanitization. Added the **`ML-10algorithms-AppliedToChemistry.ipynb`** entry, with its icon
 
 ## **2026.11.22 [2.6.1] - [2.6.4]** "TB & TCCM school"
 
 ### Added
-- **`ML-SHAP-MNIST.ipynb`**: new notebook on CNN explainability, split out of `Sandbox.ipynb` and translated into English. Applies SHAP (`GradientExplainer`, `DeepExplainer`) and Integrated Gradients to CNNs trained on MNIST, with attribution maps overlaid on the digits, and a reusable `ShapVisualizer` class. Needs no file from the repository: MNIST is downloaded by `keras.datasets`, hence `setup_environment(ML=True, clone_repo=False)`. It is the companion of the SHAP section of `ML-2DCNN.ipynb`, which now links to it
+- **`ML-SHAP-MNIST.ipynb`**: new notebook on CNN explainability, split out of `Sandbox.ipynb` and translated into English. Applies SHAP (`GradientExplainer`, `DeepExplainer`) and Integrated Gradients to CNNs trained on MNIST, with attribution maps overlaid on the digits, and a reusable `ShapVisualizer` class. Needs no file from the repository: MNIST is downloaded by `kerfrom rdkit.Chem.Draw import IPythonConsole{as.datasets`, hence `setup_environment(ML=True, clone_repo=False)`. It is the companion of the SHAP section of `ML-2DCNN.ipynb`, which now links to it
 - **`PPCL.ipynb`**: the 17 exercise solutions switch from `%load` to `get_sol2ex`
     - `# %load ./SolutionsToExercises/PPCL/*.py` replaced by `# get_sol2ex('SolutionsToExercises/PPCL/*.py')`, which fetches the solution file (local copy if present, otherwise from GitHub) and inserts it as a new cell instead of overwriting the calling cell — the latter can therefore be re-run freely
     - the 17 `solE` boxes rewritten accordingly, and they now ask for the cell to be run **with Ctrl+Enter**: the new cell is created below whichever cell holds the focus, so Shift+Enter — which moves the focus on before the payload arrives — drops the solution one cell too far down
